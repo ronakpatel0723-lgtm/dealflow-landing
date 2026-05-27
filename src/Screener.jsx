@@ -223,15 +223,27 @@ function RowReveal({ rowIndex, style, className, onClick, children }) {
 
 // ─── Main Screener ────────────────────────────────────────────────────────────
 export default function Screener() {
+  const [companies, setCompanies] = useState(SAMPLE_COMPANIES);
+  const [loading,   setLoading]   = useState(true);
   const [query,    setQuery]    = useState("");
   const [tier,     setTier]     = useState("All");
   const [sector,   setSector]   = useState("All");
   const [selected, setSelected] = useState(null);
 
-  const sectors = ["All", ...Array.from(new Set(SAMPLE_COMPANIES.map(c => c.sector))).sort()];
+  useEffect(() => {
+    fetch("/scores.json")
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        if (data?.companies?.length) setCompanies(data.companies);
+      })
+      .catch(() => {})
+      .finally(() => setLoading(false));
+  }, []);
+
+  const sectors = ["All", ...Array.from(new Set(companies.map(c => c.sector))).sort()];
   const tiers   = ["All", "High", "Medium", "Low"];
 
-  const filtered = useMemo(() => SAMPLE_COMPANIES.filter(c => {
+  const filtered = useMemo(() => companies.filter(c => {
     const q = query.toLowerCase();
     const matchQ = !q || c.name.toLowerCase().includes(q) || c.ticker.toLowerCase().includes(q);
     const matchT = tier   === "All" || c.tier   === tier;
@@ -239,10 +251,10 @@ export default function Screener() {
     return matchQ && matchT && matchS;
   }), [query, tier, sector]);
 
-  const highCount = SAMPLE_COMPANIES.filter(c => c.tier === "High").length;
-  const avgScore  = Math.round(SAMPLE_COMPANIES.reduce((s, c) => s + c.score, 0) / SAMPLE_COMPANIES.length);
+  const highCount = companies.filter(c => c.tier === "High").length;
+  const avgScore  = Math.round(companies.reduce((s, c) => s + c.score, 0) / Math.max(companies.length, 1));
 
-  const selC = selected !== null ? SAMPLE_COMPANIES.find(c => c.rank === selected) : null;
+  const selC = selected !== null ? companies.find(c => c.rank === selected) : null;
 
   return (
     <div style={{ background: C.bg, color: C.text, fontFamily: disp, minHeight: "100vh" }}>
@@ -321,7 +333,7 @@ export default function Screener() {
           {/* ── METRIC CARDS ──────────────────────────────────────────────── */}
           <div style={{ display:"grid", gridTemplateColumns:"repeat(4,1fr)", gap:12, marginBottom:24 }}>
             {[
-              { label:"Companies Tracked", value:"65",        mono:true,  sub:"across 4 verticals" },
+              { label:"Companies Tracked", value: String(companies.length), mono:true, sub: loading ? "loading…" : "across 4 verticals" },
               { label:"High Tier",         value:String(highCount), mono:true, sub:"acquisition-ready", col:C.green },
               { label:"Avg Score",         value:String(avgScore),  mono:true, sub:"universe mean" },
               { label:"Data Updated",      value:"Weekly",    mono:false, sub:"via SEC EDGAR" },
