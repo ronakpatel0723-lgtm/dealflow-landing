@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 /* ── DealFlow AI — Screener Page ────────────────────────────────────────────
@@ -195,6 +195,32 @@ function DetailPanel({ company, onClose }) {
   );
 }
 
+// ─── Animated row reveal (IntersectionObserver, 30ms stagger, cap at row 12) ──
+function RowReveal({ rowIndex, style, className, onClick, children }) {
+  const ref = useRef(null);
+  const [vis, setVis] = useState(false);
+  const delay = Math.min(rowIndex, 11) * 30;
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const ob = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) { setVis(true); ob.disconnect(); }
+    }, { threshold: 0.05 });
+    ob.observe(el);
+    return () => ob.disconnect();
+  }, []);
+  return (
+    <div ref={ref} className={className} onClick={onClick} style={{
+      ...style,
+      opacity: vis ? 1 : 0,
+      transform: vis ? "none" : "translateY(8px)",
+      transition: `opacity 0.35s ease ${delay}ms, transform 0.35s ease ${delay}ms`,
+    }}>
+      {children}
+    </div>
+  );
+}
+
 // ─── Main Screener ────────────────────────────────────────────────────────────
 export default function Screener() {
   const [query,    setQuery]    = useState("");
@@ -369,7 +395,7 @@ export default function Screener() {
               const tc  = tierColor(c.tier);
               const isSelected = selected === c.rank;
               return (
-                <div key={c.ticker}
+                <RowReveal key={c.ticker} rowIndex={i}
                   className={`df-row${isSelected ? " df-sel" : ""}`}
                   onClick={() => setSelected(isSelected ? null : c.rank)}
                   style={{ display:"grid", gridTemplateColumns:"44px 1.8fr 60px 120px 70px 90px 72px 72px 56px", gap:0,
@@ -404,7 +430,7 @@ export default function Screener() {
                   <div style={{ display:"flex", justifyContent:"flex-end" }}>
                     <Sparkline data={c.spark} />
                   </div>
-                </div>
+                </RowReveal>
               );
             })}
           </div>
