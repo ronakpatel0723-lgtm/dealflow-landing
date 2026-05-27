@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Bookmark, BookmarkCheck } from "lucide-react";
 
 /* ── DealFlow AI — Screener Page ────────────────────────────────────────────
    Same visual language as App.jsx: Bricolage Grotesque, IBM Plex Mono,
@@ -113,7 +114,7 @@ function SubBar({ label, val }) {
 }
 
 // ─── Detail Panel (slide-in from right) ──────────────────────────────────────
-function DetailPanel({ company, onClose }) {
+function DetailPanel({ company, onClose, watchlist, onWatch }) {
   const col = scoreColor(company.score);
   return (
     <>
@@ -182,12 +183,19 @@ function DetailPanel({ company, onClose }) {
 
           {/* action buttons */}
           <div style={{ display: "flex", gap: 10 }}>
-            <button style={{ flex: 1, background: C.blue, color: "#fff", border: "none", borderRadius: 8, padding: "11px", fontFamily: disp, fontSize: 13.5, fontWeight: 600, cursor: "pointer" }}>
-              + Add to Watchlist
+            <button onClick={() => onWatch(company.ticker)}
+              style={{ flex: 1, background: watchlist?.includes(company.ticker) ? "rgba(91,141,239,0.15)" : C.blue,
+                color: watchlist?.includes(company.ticker) ? C.blue : "#fff",
+                border: watchlist?.includes(company.ticker) ? `1px solid ${C.blue}50` : "none",
+                borderRadius: 8, padding: "11px", fontFamily: disp, fontSize: 13.5, fontWeight: 600, cursor: "pointer" }}>
+              {watchlist?.includes(company.ticker) ? "✓ Watchlisted" : "+ Watchlist"}
             </button>
-            <button style={{ flex: 1, background: "none", color: C.text, border: `1px solid ${C.lineHi}`, borderRadius: 8, padding: "11px", fontFamily: disp, fontSize: 13.5, fontWeight: 500, cursor: "pointer" }}>
-              Export Row
-            </button>
+            <Link to={`/company/${company.ticker}`}
+              style={{ flex: 1, background: "none", color: C.text, border: `1px solid ${C.lineHi}`,
+                borderRadius: 8, padding: "11px", fontFamily: disp, fontSize: 13.5, fontWeight: 500,
+                cursor: "pointer", textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              View Full Profile →
+            </Link>
           </div>
         </div>
       </div>
@@ -229,27 +237,44 @@ export default function Screener() {
   const [tier,     setTier]     = useState("All");
   const [sector,   setSector]   = useState("All");
   const [selected, setSelected] = useState(null);
+  const [watchlist, setWatchlist]   = useState([]);
+  const [viewMode,  setViewMode]    = useState("all");
+  const [changes,   setChanges]     = useState(null);
+  const [changesDismissed, setChangesDismissed] = useState(false);
+
+  const toggleWatch = (ticker, e) => {
+    if (e) e.stopPropagation();
+    setWatchlist(prev => prev.includes(ticker) ? prev.filter(t => t !== ticker) : [...prev, ticker]);
+  };
 
   useEffect(() => {
     fetch("/scores.json")
       .then(r => r.ok ? r.json() : null)
-      .then(data => {
-        if (data?.companies?.length) setCompanies(data.companies);
-      })
+      .then(data => { if (data?.companies?.length) setCompanies(data.companies); })
       .catch(() => {})
       .finally(() => setLoading(false));
+  }, []);
+
+  useEffect(() => {
+    fetch("/score_changes.json")
+      .then(r => r.ok ? r.json() : null)
+      .then(data => { if (data?.tier_changes?.length) setChanges(data); })
+      .catch(() => {});
   }, []);
 
   const sectors = ["All", ...Array.from(new Set(companies.map(c => c.sector))).sort()];
   const tiers   = ["All", "High", "Medium", "Low"];
 
-  const filtered = useMemo(() => companies.filter(c => {
-    const q = query.toLowerCase();
-    const matchQ = !q || c.name.toLowerCase().includes(q) || c.ticker.toLowerCase().includes(q);
-    const matchT = tier   === "All" || c.tier   === tier;
-    const matchS = sector === "All" || c.sector === sector;
-    return matchQ && matchT && matchS;
-  }), [query, tier, sector]);
+  const filtered = useMemo(() => {
+    const source = viewMode === "watchlist" ? companies.filter(c => watchlist.includes(c.ticker)) : companies;
+    return source.filter(c => {
+      const q = query.toLowerCase();
+      const matchQ = !q || c.name.toLowerCase().includes(q) || c.ticker.toLowerCase().includes(q);
+      const matchT = tier   === "All" || c.tier   === tier;
+      const matchS = sector === "All" || c.sector === sector;
+      return matchQ && matchT && matchS;
+    });
+  }, [query, tier, sector, companies, viewMode, watchlist]);
 
   const highCount = companies.filter(c => c.tier === "High").length;
   const avgScore  = Math.round(companies.reduce((s, c) => s + c.score, 0) / Math.max(companies.length, 1));
@@ -293,19 +318,35 @@ export default function Screener() {
             </Link>
             <div style={{ display:"flex", gap:6 }}>
               {[
-                { label:"Dashboard",  to:"/" },
-                { label:"Screener",   to:"/screener", active:true },
-                { label:"Companies",  to:"/screener" },
-                { label:"Watchlist",  to:"/screener" },
-                { label:"Reports",    to:"/screener" },
+                { label:"Dashboard", to:"/" },
+                { label:"Screener",  to:"/screener", active: viewMode === "all" },
+                { label:"Companies", to:"/screener" },
+                { label:"Reports",   to:"/screener" },
               ].map(({ label, to, active }) => (
-                <Link key={label} to={to} style={{ fontFamily:disp, fontSize:13, fontWeight: active ? 600 : 400,
-                  color: active ? C.text : C.sub, padding:"6px 12px", borderRadius:7,
-                  background: active ? "rgba(255,255,255,0.08)" : "none",
-                  borderBottom: active ? `2px solid ${C.blue}` : "2px solid transparent" }}>
+                <Link key={label} to={to} onClick={() => setViewMode("all")}
+                  style={{ fontFamily:disp, fontSize:13, fontWeight: active ? 600 : 400,
+                    color: active ? C.text : C.sub, padding:"6px 12px", borderRadius:7,
+                    background: active ? "rgba(255,255,255,0.08)" : "none",
+                    borderBottom: active ? `2px solid ${C.blue}` : "2px solid transparent" }}>
                   {label}
                 </Link>
               ))}
+              <button onClick={() => setViewMode(v => v === "watchlist" ? "all" : "watchlist")}
+                style={{ fontFamily:disp, fontSize:13, cursor:"pointer", border:"none",
+                  fontWeight: viewMode === "watchlist" ? 600 : 400,
+                  color: viewMode === "watchlist" ? C.text : C.sub,
+                  padding:"6px 12px", borderRadius:7,
+                  background: viewMode === "watchlist" ? "rgba(255,255,255,0.08)" : "none",
+                  borderBottom: viewMode === "watchlist" ? `2px solid ${C.blue}` : "2px solid transparent",
+                  display:"flex", alignItems:"center", gap:5 }}>
+                Watchlist
+                {watchlist.length > 0 && (
+                  <span style={{ fontFamily:mono, fontSize:10, background:C.blue, color:"#fff",
+                    borderRadius:9, padding:"1px 6px" }}>
+                    {watchlist.length}
+                  </span>
+                )}
+              </button>
             </div>
           </div>
           {/* right: export */}
@@ -318,6 +359,20 @@ export default function Screener() {
             Export CSV
           </button>
         </nav>
+
+        {/* ── ALERT BANNER ─────────────────────────────────────────────────── */}
+        {changes && !changesDismissed && (
+          <div style={{ background:"rgba(245,194,75,0.1)", borderBottom:`1px solid rgba(245,194,75,0.25)`,
+            padding:"10px 32px", display:"flex", alignItems:"center", justifyContent:"space-between" }}>
+            <span style={{ fontFamily:disp, fontSize:13, color:C.amber }}>
+              ⚡ {changes.tier_changes.length} companies changed tier this week — scroll to review
+            </span>
+            <button onClick={() => setChangesDismissed(true)}
+              style={{ background:"none", border:"none", color:C.muted, fontSize:18, cursor:"pointer", lineHeight:1 }}>
+              ×
+            </button>
+          </div>
+        )}
 
         {/* ── PAGE HEADER ──────────────────────────────────────────────────── */}
         <div style={{ padding:"32px 32px 0", maxWidth:1300, margin:"0 auto" }}>
@@ -388,9 +443,9 @@ export default function Screener() {
           {/* ── TABLE ────────────────────────────────────────────────────── */}
           <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:14, overflow:"hidden", marginBottom:40 }}>
             {/* header row */}
-            <div style={{ display:"grid", gridTemplateColumns:"44px 1.8fr 60px 120px 70px 90px 72px 72px 56px", gap:0,
+            <div style={{ display:"grid", gridTemplateColumns:"44px 1.8fr 60px 120px 70px 90px 72px 72px 56px 32px", gap:0,
               padding:"10px 20px", borderBottom:`1px solid ${C.lineHi}`, background:C.panelHi }}>
-              {["#","Company","Score","","Tier","Revenue","GM%","R40","7d"].map((h, i) => (
+              {["#","Company","Score","","Tier","Revenue","GM%","R40","7d",""].map((h, i) => (
                 <span key={i} style={{ fontFamily:mono, fontSize:9.5, letterSpacing:1, color:C.muted,
                   textTransform:"uppercase", textAlign: i >= 5 ? "right" : "left" }}>{h}</span>
               ))}
@@ -398,7 +453,9 @@ export default function Screener() {
 
             {filtered.length === 0 && (
               <div style={{ padding:"48px 24px", textAlign:"center", color:C.muted, fontSize:14 }}>
-                No companies match your filters.
+                {viewMode === "watchlist"
+                  ? "No companies watchlisted. Click the bookmark icon to track a company."
+                  : "No companies match your filters."}
               </div>
             )}
 
@@ -410,11 +467,11 @@ export default function Screener() {
                 <RowReveal key={c.ticker} rowIndex={i}
                   className={`df-row${isSelected ? " df-sel" : ""}`}
                   onClick={() => setSelected(isSelected ? null : c.rank)}
-                  style={{ display:"grid", gridTemplateColumns:"44px 1.8fr 60px 120px 70px 90px 72px 72px 56px", gap:0,
+                  style={{ display:"grid", gridTemplateColumns:"44px 1.8fr 60px 120px 70px 90px 72px 72px 56px 32px", gap:0,
                     alignItems:"center", padding:"13px 20px",
                     borderBottom: i < filtered.length - 1 ? `1px solid ${C.line}` : "none",
                     background: i % 2 ? "rgba(255,255,255,0.010)" : "transparent",
-                    borderLeft: isSelected ? `2px solid ${C.blue}` : "2px solid transparent" }}>
+                    borderLeft: isSelected ? `2px solid ${C.blue}` : watchlist.includes(c.ticker) ? `2px solid ${C.blue}50` : "2px solid transparent" }}>
                   <span style={{ fontFamily:mono, fontSize:11.5, color:C.muted }}>{String(c.rank).padStart(2,"0")}</span>
                   <div style={{ paddingRight:12 }}>
                     <span style={{ fontSize:14, fontWeight:600 }}>{c.name} </span>
@@ -442,6 +499,12 @@ export default function Screener() {
                   <div style={{ display:"flex", justifyContent:"flex-end" }}>
                     <Sparkline data={c.spark} />
                   </div>
+                  <div style={{ display:"flex", justifyContent:"center", alignItems:"center" }}
+                    onClick={e => toggleWatch(c.ticker, e)}>
+                    {watchlist.includes(c.ticker)
+                      ? <BookmarkCheck size={14} color={C.blue} />
+                      : <Bookmark size={14} color={C.muted} />}
+                  </div>
                 </RowReveal>
               );
             })}
@@ -450,7 +513,7 @@ export default function Screener() {
       </div>
 
       {/* ── DETAIL PANEL ─────────────────────────────────────────────────── */}
-      {selC && <DetailPanel company={selC} onClose={() => setSelected(null)} />}
+      {selC && <DetailPanel company={selC} onClose={() => setSelected(null)} watchlist={watchlist} onWatch={toggleWatch} />}
     </div>
   );
 }
