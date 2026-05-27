@@ -71,6 +71,23 @@ function CountUp({ to, decimals = 0, suffix = "", duration = 1400 }) {
   return <span ref={ref}>{val.toFixed(decimals)}{suffix}</span>;
 }
 
+function ScrollProgress() {
+  const [pct, setPct] = useState(0);
+  useEffect(() => {
+    const onScroll = () => {
+      const el = document.documentElement;
+      const scrolled = el.scrollTop || document.body.scrollTop;
+      const max = el.scrollHeight - el.clientHeight;
+      setPct(max > 0 ? (scrolled / max) * 100 : 0);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  return (
+    <div style={{ position: "fixed", top: 0, left: 0, zIndex: 1000, height: 2, width: `${pct}%`, background: "#5B8DEF", transition: "width 0.05s linear", pointerEvents: "none" }} />
+  );
+}
+
 export default function DealFlowLanding() {
   const [load, setLoad] = useState(false);
   useEffect(() => { const t = setTimeout(() => setLoad(true), 60); return () => clearTimeout(t); }, []);
@@ -84,6 +101,7 @@ export default function DealFlowLanding() {
 
   return (
     <div style={{ background: C.bg, color: C.text, fontFamily: sans, minHeight: "100vh", position: "relative", overflow: "hidden" }}>
+      <ScrollProgress />
       <style>{`@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
         *{box-sizing:border-box}
         @keyframes breathe{0%,100%{opacity:0.7;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
@@ -267,7 +285,10 @@ export default function DealFlowLanding() {
         {/* FOOTER */}
         <footer style={{ maxWidth: 1080, margin: "120px auto 0", padding: "32px", borderTop: `1px solid ${C.line}`, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
           <span style={{ fontFamily: mono, fontSize: 12, color: C.muted }}>DealFlow AI · acquisition intelligence</span>
-          <span style={{ fontFamily: mono, fontSize: 12, color: C.muted }}>built on SEC EDGAR · {new Date().getFullYear()}</span>
+          <span style={{ fontFamily: mono, fontSize: 12, color: C.muted }}>
+            built on SEC EDGAR · {new Date().getFullYear()}
+            {typeof __GIT_SHA__ !== "undefined" && <span style={{ color: C.muted, opacity: 0.5 }}> · {__GIT_SHA__}</span>}
+          </span>
         </footer>
       </div>
     </div>
