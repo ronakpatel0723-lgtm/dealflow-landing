@@ -129,7 +129,9 @@ export default function DealFlowLanding() {
             <span style={{ fontWeight: 700, fontSize: 17, letterSpacing: -0.2 }}>DealFlow<span style={{ color: C.blue }}> AI</span></span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
-            {["Product", "Methodology", "Pricing"].map((n) => <span key={n} style={{ fontSize: 14, color: C.sub, cursor: "pointer" }}>{n}</span>)}
+            <Link to="/screener" style={{ fontSize: 14, color: C.sub }}>Product</Link>
+            <Link to="/methodology" style={{ fontSize: 14, color: C.sub }}>Methodology</Link>
+            <span style={{ fontSize: 14, color: C.sub, cursor: "pointer" }}>Pricing</span>
             <span className="df-cta" style={{ fontSize: 14, fontWeight: 600, background: C.text, color: C.bg, padding: "9px 16px", borderRadius: 8, cursor: "pointer" }}>Request Access</span>
           </div>
         </nav>
@@ -155,7 +157,7 @@ export default function DealFlowLanding() {
           {/* hero proof number */}
           <div style={{ ...hero(5), marginTop: 64, display: "flex", alignItems: "baseline", justifyContent: "center", gap: 18 }}>
             <span style={{ fontFamily: mono, fontWeight: 600, fontSize: "clamp(64px, 11vw, 132px)", letterSpacing: "-0.04em", background: `linear-gradient(180deg, ${C.text}, ${C.blue})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", lineHeight: 1 }}>
-              <CountUp to={3.1} decimals={1} suffix="×" />
+              <CountUp to={3.08} decimals={2} suffix="×" />
             </span>
             <span style={{ textAlign: "left", maxWidth: 240 }}>
               <span style={{ fontFamily: mono, fontSize: 13, color: C.green, letterSpacing: 1 }}>TOP-DECILE LIFT</span>
@@ -254,7 +256,7 @@ export default function DealFlowLanding() {
                 </p>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, maxWidth: 540 }}>
                   <div style={{ borderLeft: `2px solid ${C.green}`, paddingLeft: 18 }}>
-                    <div style={{ fontFamily: mono, fontSize: 34, fontWeight: 600, color: C.text }}><CountUp to={3.1} decimals={1} suffix="×" /></div>
+                    <div style={{ fontFamily: mono, fontSize: 34, fontWeight: 600, color: C.text }}><CountUp to={3.08} decimals={2} suffix="×" /></div>
                     <div style={{ fontSize: 13, color: C.sub, marginTop: 6 }}>real out-of-sample top-decile lift</div>
                   </div>
                   <div style={{ borderLeft: `2px solid ${C.muted}`, paddingLeft: 18 }}>
@@ -285,10 +287,19 @@ export default function DealFlowLanding() {
         {/* FOOTER */}
         <footer style={{ maxWidth: 1080, margin: "120px auto 0", padding: "32px", borderTop: `1px solid ${C.line}`, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
           <span style={{ fontFamily: mono, fontSize: 12, color: C.muted }}>DealFlow AI · acquisition intelligence</span>
-          <span style={{ fontFamily: mono, fontSize: 12, color: C.muted }}>
-            built on SEC EDGAR · {new Date().getFullYear()}
-            {typeof __GIT_SHA__ !== "undefined" && <span style={{ color: C.muted, opacity: 0.5 }}> · {__GIT_SHA__}</span>}
-          </span>
+          <div style={{ display: "flex", gap: 20, alignItems: "center" }}>
+            <a href="https://github.com/ronakpatel0723-lgtm/dealflow-ai" target="_blank" rel="noreferrer"
+              style={{ fontFamily: mono, fontSize: 12, color: C.muted, display: "flex", alignItems: "center", gap: 5 }}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={C.muted} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              GitHub
+            </a>
+            <span style={{ fontFamily: mono, fontSize: 12, color: C.muted }}>
+              built on SEC EDGAR · {new Date().getFullYear()}
+              {typeof __GIT_SHA__ !== "undefined" && <span style={{ opacity: 0.5 }}> · {__GIT_SHA__}</span>}
+            </span>
+          </div>
         </footer>
       </div>
     </div>
