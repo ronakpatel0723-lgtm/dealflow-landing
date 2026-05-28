@@ -230,24 +230,58 @@ export default function DealFlowLanding() {
           </div>
         </section>
 
-        {/* WHAT IT DOES */}
+        {/* HOW IT WORKS — animated 3-step sequence */}
         <section style={{ maxWidth: 1080, margin: "120px auto 0", padding: "0 32px" }}>
-          <Reveal><div style={{ textAlign: "center", marginBottom: 50 }}>
+          <Reveal><div style={{ textAlign: "center", marginBottom: 56 }}>
             <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: 2, color: C.blue, textTransform: "uppercase" }}>How it works</div>
             <h2 style={{ fontFamily: disp, fontSize: "clamp(30px,4.5vw,48px)", fontWeight: 700, letterSpacing: "-0.02em", margin: "14px 0 0" }}>Prioritization, not prediction.</h2>
             <p style={{ fontSize: 16, color: C.sub, maxWidth: 560, margin: "16px auto 0", lineHeight: 1.55 }}>No tool predicts the future. DealFlow does something more useful — it tells you which companies to look at first, ranked by the financial signature that precedes an acquisition.</p>
           </div></Reveal>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 16 }}>
+          <style>{`.df-how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}@media(max-width:640px){.df-how-grid{grid-template-columns:1fr}}`}</style>
+          <div className="df-how-grid">
             {[
-              { i: "M", t: "Ingest the universe", d: "Every public software company that's filed with the SEC since 2010 — including the 500+ that were acquired and delisted. No survivorship bias." },
-              { i: "Σ", t: "Score the signal", d: "A point-in-time model weighs revenue scale, margin quality, Rule of 40, and insider activity against a decade of verified acquisitions." },
-              { i: "↗", t: "Rank what matters", d: "Sort your universe by likelihood. The top decile carries 6.31× the acquisition rate — your week's worth of targets, in seconds." },
+              {
+                color: C.blue, bg: "rgba(91,141,239,0.1)", border: "rgba(91,141,239,0.25)",
+                step: "01", t: "Ingest",
+                d: "Every public software company since 2010, including 500+ that were acquired and delisted. No survivorship bias.",
+                icon: (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/>
+                  </svg>
+                ),
+              },
+              {
+                color: C.green, bg: "rgba(54,211,153,0.08)", border: "rgba(54,211,153,0.2)",
+                step: "02", t: "Score",
+                d: "XGBoost model trained on 130 verified acquisitions scores each company on the financial signature that precedes deals.",
+                icon: (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                  </svg>
+                ),
+              },
+              {
+                color: C.amber, bg: "rgba(245,194,75,0.08)", border: "rgba(245,194,75,0.2)",
+                step: "03", t: "Rank",
+                d: "Sort your universe. The top decile contains 6.31× more future targets than random — validated walk-forward 2020–2024.",
+                icon: (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+                    <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+                  </svg>
+                ),
+              },
             ].map((card, i) => (
-              <Reveal key={card.t} delay={i * 90}>
+              <Reveal key={card.t} delay={i * 150}>
                 <div className="df-card" style={{ background: C.panel, border: `1px solid ${C.line}`, borderRadius: 14, padding: "28px 24px", height: "100%" }}>
-                  <div style={{ fontFamily: mono, fontSize: 20, color: C.blue, width: 44, height: 44, display: "flex", alignItems: "center", justifyContent: "center", borderRadius: 10, background: "rgba(91,141,239,0.1)", border: `1px solid rgba(91,141,239,0.25)` }}>{card.i}</div>
-                  <h3 style={{ fontFamily: disp, fontSize: 19, fontWeight: 600, margin: "20px 0 10px" }}>{card.t}</h3>
-                  <p style={{ fontSize: 14, color: C.sub, lineHeight: 1.6, margin: 0 }}>{card.d}</p>
+                  <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
+                    <div style={{ color: card.color, width: 46, height: 46, display: "flex", alignItems: "center", justifyContent: "center", borderRadius: 12, background: card.bg, border: `1px solid ${card.border}`, flexShrink: 0 }}>
+                      {card.icon}
+                    </div>
+                    <span style={{ fontFamily: mono, fontSize: 11, color: card.color, letterSpacing: 2, opacity: 0.7 }}>STEP {card.step}</span>
+                  </div>
+                  <h3 style={{ fontFamily: disp, fontSize: 20, fontWeight: 700, marginBottom: 10, color: C.text }}>{card.t}</h3>
+                  <p style={{ fontSize: 14, color: C.sub, lineHeight: 1.65, margin: 0 }}>{card.d}</p>
                 </div>
               </Reveal>
             ))}
