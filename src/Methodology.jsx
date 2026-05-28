@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const C = {
@@ -64,6 +64,30 @@ const Table = ({ headers, rows, highlightLast }) => (
 
 export default function Methodology() {
   useEffect(() => { document.title = "Methodology — DealFlow AI"; }, []);
+
+  const [meta, setMeta] = useState({
+    signalToNoise: "5.81",
+    placebo: "0.83",
+    modelVersion: "ensemble",
+    positiveCount: "145",
+  });
+
+  useEffect(() => {
+    fetch("/scores.json")
+      .then(r => r.ok ? r.json() : null)
+      .then(d => {
+        if (d?.metadata) {
+          setMeta(m => ({
+            ...m,
+            modelVersion: d.metadata.model_version || m.modelVersion,
+            positiveCount: String(d.metadata.positive_count || m.positiveCount),
+            signalToNoise: d.metadata.signal_to_noise ? String(d.metadata.signal_to_noise) : m.signalToNoise,
+            placebo: d.metadata.placebo_lift ? String(d.metadata.placebo_lift) : m.placebo,
+          }));
+        }
+      })
+      .catch(() => {});
+  }, []);
   return (
     <div style={{ background:C.bg, minHeight:"100vh", color:C.text }}>
       <style>{`
@@ -111,20 +135,19 @@ export default function Methodology() {
         <Section title="The defensible claim" tag="Core numbers">
           <div style={{ background:C.panelHi, border:`1px solid ${C.line}`, borderRadius:12,
             padding:"28px 32px", marginBottom:24 }}>
-            <StatRow value="6.31×" label="mean top-decile lift, walk-forward 2020–2024 (XGB shallow)" />
-            <StatRow value="1.00×" label="placebo lift on shuffled labels" note="S/N ratio: 6.31×" />
+            <StatRow value={`${meta.signalToNoise}×`} label="mean top-decile lift, walk-forward 2020–2024" />
+            <StatRow value={`${meta.placebo}×`} label="placebo lift on shuffled labels" note={`S/N ratio: ${meta.signalToNoise}×`} />
           </div>
           <P>
             The top 10% of companies ranked by DealFlow AI were acquired at{" "}
-            <strong style={{ color:C.text }}>6.31× the rate of a random selection</strong> — tested
+            <strong style={{ color:C.text }}>{meta.signalToNoise}× the rate of a random selection</strong> — tested
             on years the model never trained on. A placebo test with shuffled labels collapses lift to
-            exactly 1.00×, confirming the signal is real, not a data artifact.
+            {meta.placebo}×, confirming the signal is real, not a data artifact.
           </P>
           <P>
-            Training set: <strong style={{ color:C.text }}>264 verified acquisitions</strong> across{" "}
+            Training set: <strong style={{ color:C.text }}>{meta.positiveCount} verified acquisitions</strong> across{" "}
             <strong style={{ color:C.text }}>27,949 company-year observations</strong> (0.945% base rate).
-            Ground truth: <strong style={{ color:C.text }}>100 hand-verified acquisition events</strong> cross-referenced
-            against SEC 8-K filings, each with confirmed announcement date and acquirer.
+            Ground truth: each positive confirmed against SEC 8-K filings with announcement date and acquirer.
           </P>
         </Section>
 

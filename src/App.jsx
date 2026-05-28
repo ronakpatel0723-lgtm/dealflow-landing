@@ -92,8 +92,15 @@ function ScrollProgress() {
 export default function DealFlowLanding() {
   const [load, setLoad] = useState(false);
   const [waitlistOpen, setWaitlistOpen] = useState(false);
+  const [heroSN, setHeroSN] = useState("5.81");
   useEffect(() => { document.title = "DealFlow AI — Acquisition Intelligence"; }, []);
   useEffect(() => { const t = setTimeout(() => setLoad(true), 60); return () => clearTimeout(t); }, []);
+  useEffect(() => {
+    fetch("/scores.json")
+      .then(r => r.ok ? r.json() : null)
+      .then(d => { if (d?.metadata?.signal_to_noise) setHeroSN(String(d.metadata.signal_to_noise)); })
+      .catch(() => {});
+  }, []);
   const today = new Date().toLocaleDateString("en-US", { month: "short", day: "numeric" });
 
   const hero = (i) => ({
@@ -153,7 +160,7 @@ export default function DealFlowLanding() {
               color: C.blue, letterSpacing: "-0.02em",
               textShadow: `0 0 32px rgba(91,141,239,0.55), 0 0 64px rgba(91,141,239,0.25)`,
             }}>
-              6.31× signal-to-noise
+              {heroSN}× signal-to-noise
             </span>
             <span style={{ fontFamily: mono, fontSize: "clamp(12px, 1.5vw, 15px)", color: C.sub, marginLeft: 12 }}>
               · walk-forward validated
