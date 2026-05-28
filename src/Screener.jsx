@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Bookmark, BookmarkCheck } from "lucide-react";
+import { Bookmark, BookmarkCheck, Download } from "lucide-react";
+import WaitlistModal from "./WaitlistModal.jsx";
 
 /* ── DealFlow AI — Screener Page ────────────────────────────────────────────
    Same visual language as App.jsx: Bricolage Grotesque, IBM Plex Mono,
@@ -241,6 +242,9 @@ export default function Screener() {
   const [viewMode,  setViewMode]    = useState("all");
   const [changes,   setChanges]     = useState(null);
   const [changesDismissed, setChangesDismissed] = useState(false);
+  const [sort, setSort]             = useState({ col: "score", dir: "desc" });
+  const [exportUnlocked, setExportUnlocked] = useState(false);
+  const [exportModal, setExportModal] = useState(false);
 
   const toggleWatch = (ticker, e) => {
     if (e) e.stopPropagation();
@@ -265,16 +269,39 @@ export default function Screener() {
   const sectors = ["All", ...Array.from(new Set(companies.map(c => c.sector))).sort()];
   const tiers   = ["All", "High", "Medium", "Low"];
 
+  const SORT_KEYS = { "#": "rank", "Score": "score", "Revenue": "revenue", "GM%": "gm", "R40": "r40" };
+
+  const handleSort = (label) => {
+    const col = SORT_KEYS[label];
+    if (!col) return;
+    setSort(s => s.col === col ? { col, dir: s.dir === "desc" ? "asc" : "desc" } : { col, dir: "desc" });
+  };
+
   const filtered = useMemo(() => {
     const source = viewMode === "watchlist" ? companies.filter(c => watchlist.includes(c.ticker)) : companies;
-    return source.filter(c => {
+    const base = source.filter(c => {
       const q = query.toLowerCase();
       const matchQ = !q || c.name.toLowerCase().includes(q) || c.ticker.toLowerCase().includes(q);
       const matchT = tier   === "All" || c.tier   === tier;
       const matchS = sector === "All" || c.sector === sector;
       return matchQ && matchT && matchS;
     });
-  }, [query, tier, sector, companies, viewMode, watchlist]);
+    return [...base].sort((a, b) => {
+      const va = a[sort.col] ?? 0, vb = b[sort.col] ?? 0;
+      return sort.dir === "desc" ? vb - va : va - vb;
+    });
+  }, [query, tier, sector, companies, viewMode, watchlist, sort]);
+
+  const downloadCSV = () => {
+    const headers = ["Rank","Ticker","Company","Score","Tier","Revenue_M","GrossMargin","RuleOf40","RevenueGrowth","Sector"];
+    const rows = filtered.map(c => [c.rank, c.ticker, `"${c.name}"`, c.score, c.tier, c.revenue, c.gm, c.r40, c.growth, c.sector]);
+    const csv = [headers, ...rows].map(r => r.join(",")).join("\n");
+    const blob = new Blob([csv], { type: "text/csv" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url; a.download = `dealflow-screener-${new Date().toISOString().slice(0,10)}.csv`;
+    a.click(); URL.revokeObjectURL(url);
+  };
 
   const highCount = companies.filter(c => c.tier === "High").length;
   const avgScore  = Math.round(companies.reduce((s, c) => s + c.score, 0) / Math.max(companies.length, 1));
@@ -355,12 +382,11 @@ export default function Screener() {
             </div>
           </div>
           {/* right: export */}
-          <button style={{ display:"flex", alignItems:"center", gap:7, fontFamily:disp, fontSize:13, fontWeight:600,
-            background:"none", color:C.text, border:`1px solid ${C.lineHi}`, borderRadius:8,
-            padding:"7px 14px", cursor:"pointer" }}>
-            <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
-              <path d="M8 2v9M4 8l4 4 4-4M2 14h12" stroke={C.text} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+          <button onClick={() => exportUnlocked ? downloadCSV() : setExportModal(true)}
+            style={{ display:"flex", alignItems:"center", gap:7, fontFamily:disp, fontSize:13, fontWeight:600,
+              background:"none", color:C.text, border:`1px solid ${C.lineHi}`, borderRadius:8,
+              padding:"7px 14px", cursor:"pointer" }}>
+            <Download size={13} />
             Export CSV
           </button>
         </nav>
@@ -386,7 +412,7 @@ export default function Screener() {
             <p style={{ fontSize:14, color:C.sub, marginTop:6, display:"flex", alignItems:"center", gap:8 }}>
               <span style={{ fontFamily:mono, color:C.green, fontSize:12 }}>● LIVE</span>
               Public SaaS universe ranked by acquisition attractiveness ·
-              <span style={{ fontFamily:mono, color:C.amber }}> 3.05× walk-forward lift, 2020–2023</span>
+              <span style={{ fontFamily:mono, color:C.amber }}> 6.31× signal/noise, walk-forward 2020–2024</span>
             </p>
           </div>
 
@@ -449,12 +475,24 @@ export default function Screener() {
           <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:14, overflow:"hidden", marginBottom:40 }}>
             {/* header row */}
             <div className="df-table-grid" style={{ padding:"10px 20px", borderBottom:`1px solid ${C.lineHi}`, background:C.panelHi }}>
-              {["#","Company","Score","","Tier","Revenue","GM%","R40","7d",""].map((h, i) => (
-                <span key={i}
-                  className={[3,5,6,7,8].includes(i) ? "df-hide-mobile" : ""}
-                  style={{ fontFamily:mono, fontSize:9.5, letterSpacing:1, color:C.muted,
-                    textTransform:"uppercase", textAlign: i >= 5 ? "right" : "left" }}>{h}</span>
-              ))}
+              {["#","Company","Score","","Tier","Revenue","GM%","R40","7d",""].map((h, i) => {
+                const sortKey = SORT_KEYS[h];
+                const isActive = sortKey && sort.col === sortKey;
+                return (
+                  <span key={i}
+                    className={[3,5,6,7,8].includes(i) ? "df-hide-mobile" : ""}
+                    onClick={() => handleSort(h)}
+                    style={{ fontFamily:mono, fontSize:9.5, letterSpacing:1,
+                      color: isActive ? C.blue : C.muted,
+                      textTransform:"uppercase", textAlign: i >= 5 ? "right" : "left",
+                      cursor: sortKey ? "pointer" : "default",
+                      userSelect: "none",
+                      display:"inline-flex", alignItems:"center",
+                      gap:3, justifyContent: i >= 5 ? "flex-end" : "flex-start" }}>
+                    {h}{isActive && <span style={{ fontSize:10 }}>{sort.dir === "desc" ? " ↓" : " ↑"}</span>}
+                  </span>
+                );
+              })}
             </div>
 
             {filtered.length === 0 && (
@@ -519,6 +557,13 @@ export default function Screener() {
 
       {/* ── DETAIL PANEL ─────────────────────────────────────────────────── */}
       {selC && <DetailPanel company={selC} onClose={() => setSelected(null)} watchlist={watchlist} onWatch={toggleWatch} />}
+
+      {/* Export lead-capture modal */}
+      <WaitlistModal
+        open={exportModal}
+        onClose={() => { setExportModal(false); setExportUnlocked(true); }}
+        tier="Export Access"
+      />
     </div>
   );
 }
