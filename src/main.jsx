@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App.jsx";
+import { AuthProvider } from "./AuthContext.jsx";
 
 const Screener    = lazy(() => import("./Screener.jsx"));
 const Methodology = lazy(() => import("./Methodology.jsx"));
@@ -16,18 +17,20 @@ const Fallback = () => (
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Suspense fallback={<Fallback />}>
-        <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/screener" element={<Screener />} />
-          <Route path="/methodology" element={<Methodology />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/research" element={<Research />} />
-          <Route path="/company/:ticker" element={<Company />} />
-          <Route path="/monitor" element={<Monitor />} />
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <Suspense fallback={<Fallback />}>
+          <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="/screener" element={<Screener />} />
+            <Route path="/methodology" element={<Methodology />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/research" element={<Research />} />
+            <Route path="/company/:ticker" element={<Company />} />
+            <Route path="/monitor" element={<Monitor />} />
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
+    </AuthProvider>
   </React.StrictMode>
 );

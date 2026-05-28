@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import WaitlistModal from "./WaitlistModal.jsx";
+import LoginModal from "./LoginModal.jsx";
+import { useAuth } from "./AuthContext.jsx";
 
 /* DealFlow AI — Landing. Dark cinematic, high-contrast.
    Display: Bricolage Grotesque · Numerals: IBM Plex Mono */
@@ -92,7 +94,9 @@ function ScrollProgress() {
 export default function DealFlowLanding() {
   const [load, setLoad] = useState(false);
   const [waitlistOpen, setWaitlistOpen] = useState(false);
+  const [loginOpen, setLoginOpen] = useState(false);
   const [heroSN, setHeroSN] = useState("5.81");
+  const { isLoggedIn, userTier, userEmail, logout } = useAuth();
   useEffect(() => { document.title = "DealFlow AI — Acquisition Intelligence"; }, []);
   useEffect(() => { const t = setTimeout(() => setLoad(true), 60); return () => clearTimeout(t); }, []);
   useEffect(() => {
@@ -143,7 +147,18 @@ export default function DealFlowLanding() {
             <Link to="/screener" style={{ fontSize: 14, color: C.sub }}>Product</Link>
             <Link to="/methodology" style={{ fontSize: 14, color: C.sub }}>Methodology</Link>
             <Link to="/pricing" style={{ fontSize: 14, color: C.sub }}>Pricing</Link>
-            <button onClick={() => setWaitlistOpen(true)} className="df-cta" style={{ fontSize: 14, fontWeight: 600, background: C.text, color: C.bg, padding: "9px 16px", borderRadius: 8, cursor: "pointer", border: "none" }}>Request Access</button>
+            {isLoggedIn ? (
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <span style={{ fontFamily: mono, fontSize: 11, color: C.blue, border: `1px solid rgba(91,141,239,0.35)`, borderRadius: 5, padding: "3px 8px", textTransform: "uppercase" }}>{userTier}</span>
+                <span style={{ fontFamily: mono, fontSize: 12, color: C.muted }}>{userEmail}</span>
+                <button onClick={logout} style={{ fontFamily: mono, fontSize: 12, color: C.muted, background: "none", border: "none", cursor: "pointer" }}>Sign Out</button>
+              </div>
+            ) : (
+              <>
+                <button onClick={() => setLoginOpen(true)} style={{ fontSize: 14, color: C.sub, background: "none", border: "none", cursor: "pointer" }}>Sign In</button>
+                <button onClick={() => setWaitlistOpen(true)} className="df-cta" style={{ fontSize: 14, fontWeight: 600, background: C.text, color: C.bg, padding: "9px 16px", borderRadius: 8, cursor: "pointer", border: "none" }}>Request Access</button>
+              </>
+            )}
           </div>
         </nav>
 
@@ -357,6 +372,7 @@ export default function DealFlowLanding() {
         </footer>
       </div>
       <WaitlistModal open={waitlistOpen} onClose={() => setWaitlistOpen(false)} />
+      <LoginModal open={loginOpen} onClose={() => setLoginOpen(false)} />
     </div>
   );
 }

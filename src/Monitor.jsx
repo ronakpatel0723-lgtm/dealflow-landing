@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
+import { useAuth } from "./AuthContext.jsx";
 
 const C = {
   bg:"#04060D", panel:"#0A0E1A", panelHi:"#0E1424",
@@ -22,6 +23,8 @@ function Chip({ label, value, ok }) {
 }
 
 export default function Monitor() {
+  const { isLoggedIn } = useAuth();
+  if (!isLoggedIn) return <Navigate to="/" replace />;
   useEffect(() => { document.title = "Monitor — DealFlow AI [internal]"; }, []);
 
   const [meta, setMeta] = useState(null);
