@@ -204,12 +204,13 @@ function DetailPanel({ company, onClose, watchlist, onWatch }) {
           </div>
 
           {/* SHAP mini hint */}
-          {(company.shap_factors?.top_positive?.[0] || company.scores) && (() => {
+          {(() => {
             let topSignal = null;
-            if (company.shap_factors?.top_positive?.[0]) {
-              const f = company.shap_factors.top_positive[0];
+            const shapArr = Array.isArray(company.shap_factors) ? company.shap_factors : [];
+            const topShap = shapArr.find(f => f.direction === 'positive');
+            if (topShap) {
               const SHAP_DISP = { gross_margin_pct:"Gross Margin", gross_margin:"Gross Margin", revenue_M:"Revenue Scale", rule_of_40:"Rule of 40", ev_revenue:"EV/Revenue", revenue_growth_yoy:"Revenue Growth", operating_margin_pct:"Operating Margin", insider_net_buy_ratio:"Insider Activity", sector_bucket:"Sector" };
-              topSignal = SHAP_DISP[f.feature] || f.feature.replace(/_/g," ").replace(/\b\w/g,l=>l.toUpperCase());
+              topSignal = SHAP_DISP[topShap.feature] || topShap.feature.replace(/_/g," ").replace(/\b\w/g,l=>l.toUpperCase());
             } else if (company.scores && Object.keys(company.scores).length > 0) {
               const top = Object.entries(company.scores).sort((a,b)=>b[1]-a[1])[0];
               const SCORE_DISP = { margins:"Margins", growth:"Growth", revenue:"Revenue", valuation:"Valuation", marketPosition:"Market Position", ruleOf40:"Rule of 40", sizeFit:"Size Fit" };
@@ -222,11 +223,18 @@ function DetailPanel({ company, onClose, watchlist, onWatch }) {
             ) : null;
           })()}
 
-          {/* AI rationale */}
-          <div style={{ background: "rgba(91,141,239,0.06)", border: `1px solid rgba(91,141,239,0.2)`, borderRadius: 10, padding: "16px 18px", marginBottom: 22 }}>
-            <div style={{ fontFamily: mono, fontSize: 10, color: C.blue, letterSpacing: 1, textTransform: "uppercase", marginBottom: 10 }}>AI Rationale</div>
-            <p style={{ fontSize: 13.5, color: C.sub, lineHeight: 1.65, margin: 0 }}>{company.rationale}</p>
-          </div>
+          {/* AI rationale teaser */}
+          {company.rationale && (
+            <div style={{ background: "rgba(91,141,239,0.06)", border: `1px solid rgba(91,141,239,0.2)`, borderRadius: 10, padding: "16px 18px", marginBottom: 22 }}>
+              <div style={{ fontFamily: mono, fontSize: 10, color: C.blue, letterSpacing: 1, textTransform: "uppercase", marginBottom: 10 }}>AI Analysis</div>
+              <p style={{ fontFamily: mono, fontSize: 11, color: C.sub, lineHeight: 1.55, margin: 0 }}>
+                {company.rationale.slice(0, 120)}...
+                <Link to={`/company/${company.ticker}`} style={{ color: C.blue, marginLeft: 4 }}>
+                  Full analysis →
+                </Link>
+              </p>
+            </div>
+          )}
 
           {/* action buttons */}
           <div style={{ display: "flex", gap: 10 }}>
