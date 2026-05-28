@@ -337,7 +337,10 @@ export default function Company() {
           .co-metrics{grid-template-columns:1fr 1fr!important}
           .co-comps{grid-template-columns:1fr!important}
           .co-why{gap:10px!important}
+          .co-header{flex-direction:column!important;align-items:center!important;text-align:center!important}
+          .co-header-text{align-items:center!important;justify-content:center!important}
         }
+        @keyframes pulse{0%,100%{opacity:0.4}50%{opacity:0.8}}
       `}</style>
 
       {/* Nav */}
@@ -363,14 +366,14 @@ export default function Company() {
       <div style={{ maxWidth:900, margin:"0 auto", padding:"48px 32px 100px" }}>
 
         {/* Header */}
-        <div style={{ display:"flex", alignItems:"flex-start", justifyContent:"space-between",
+        <div className="co-header" style={{ display:"flex", alignItems:"flex-start", justifyContent:"space-between",
           marginBottom:40, flexWrap:"wrap", gap:24 }}>
           <div>
             <div style={{ fontFamily:mono, fontSize:11, color:C.muted, letterSpacing:2,
               textTransform:"uppercase", marginBottom:8 }}>{sectorLabel}</div>
             <h1 style={{ fontFamily:disp, fontSize:"clamp(28px,5vw,52px)", fontWeight:800,
               letterSpacing:"-0.03em", lineHeight:1 }}>{company.name}</h1>
-            <div style={{ display:"flex", alignItems:"center", gap:10, marginTop:12, flexWrap:"wrap" }}>
+            <div className="co-header-text" style={{ display:"flex", alignItems:"center", gap:10, marginTop:12, flexWrap:"wrap" }}>
               <span style={{ fontFamily:mono, fontSize:16, color:C.sub }}>{company.ticker}</span>
               <span style={{ fontFamily:disp, fontSize:12, fontWeight:600, color:tc,
                 border:`1px solid ${tc}40`, borderRadius:5, padding:"3px 10px",
