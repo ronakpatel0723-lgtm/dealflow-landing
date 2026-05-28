@@ -199,6 +199,8 @@ function norm(raw) {
     sectorRank: raw.sector_rank ?? null,
     analystUpside: raw.analyst_target_upside ?? null,
     shap_factors: raw.shap_factors ?? null,
+    has_thesis: raw.has_thesis ?? false,
+    thesis_preview: raw.thesis_preview ?? null,
   };
 }
 
@@ -210,6 +212,8 @@ export default function Company() {
   const [sectorContext, setSectorContext] = useState({});
   const [loading, setLoading]     = useState(true);
   const [thesisModal, setThesisModal] = useState(false);
+  const [thesis, setThesis]         = useState(null);
+  const [thesisLoading, setThesisLoading] = useState(false);
 
   useEffect(() => {
     fetch("/scores.json")
@@ -233,6 +237,18 @@ export default function Company() {
         setComps(data?.companies?.[t] ?? []);
       })
       .catch(() => {});
+  }, [ticker]);
+
+  useEffect(() => {
+    setThesis(null);
+    const t = ticker?.toUpperCase();
+    if (!t) return;
+    setThesisLoading(true);
+    fetch(`/theses/${t}_thesis.md`)
+      .then(r => r.ok ? r.text() : null)
+      .then(text => setThesis(text))
+      .catch(() => setThesis(null))
+      .finally(() => setThesisLoading(false));
   }, [ticker]);
 
   useEffect(() => {
@@ -524,17 +540,41 @@ export default function Company() {
           padding:"28px 32px", marginBottom:32 }}>
           <div style={{ fontFamily:mono, fontSize:10, color:C.blue, letterSpacing:1.5,
             textTransform:"uppercase", marginBottom:12 }}>Acquisition Thesis</div>
-          <p style={{ fontFamily:disp, fontSize:14, color:C.muted, lineHeight:1.7, marginBottom:20 }}>
-            Deep-dive acquisition thesis available to Team plan subscribers — sector positioning,
-            likely acquirers, deal structure analysis, and full probability driver breakdown.
-          </p>
-          <button onClick={() => setThesisModal(true)} style={{
-            fontFamily:disp, fontSize:13, fontWeight:600, color:C.blue,
-            background:"rgba(91,141,239,0.1)", border:`1px solid rgba(91,141,239,0.25)`,
-            borderRadius:8, padding:"10px 20px", cursor:"pointer",
-          }}>
-            Get full analysis →
-          </button>
+          {thesisLoading ? (
+            <div style={{ display:"flex", flexDirection:"column", gap:10, marginBottom:20 }}>
+              {[1,2,3].map(i => (
+                <div key={i} style={{ height:14, background:"rgba(255,255,255,0.06)",
+                  borderRadius:4, width:`${[100,85,70][i-1]}%`,
+                  animation:"pulse 1.5s ease-in-out infinite" }} />
+              ))}
+            </div>
+          ) : thesis ? (
+            <>
+              <div style={{ marginBottom:16 }}>
+                {thesis.split('\n').filter(l => l.trim() && !l.startsWith('#') && !l.startsWith('**') && !l.startsWith('---')).map((para, i) => (
+                  <p key={i} style={{ fontFamily:disp, fontSize:14, color:C.sub,
+                    lineHeight:1.75, marginBottom:14 }}>{para}</p>
+                ))}
+              </div>
+              <Link to="/methodology" style={{ fontFamily:disp, fontSize:13, color:C.blue }}>
+                Full model methodology →
+              </Link>
+            </>
+          ) : (
+            <>
+              <p style={{ fontFamily:disp, fontSize:14, color:C.muted, lineHeight:1.7, marginBottom:20 }}>
+                Deep-dive acquisition thesis available to Team plan subscribers — sector positioning,
+                likely acquirers, deal structure analysis, and full probability driver breakdown.
+              </p>
+              <button onClick={() => setThesisModal(true)} style={{
+                fontFamily:disp, fontSize:13, fontWeight:600, color:C.blue,
+                background:"rgba(91,141,239,0.1)", border:`1px solid rgba(91,141,239,0.25)`,
+                borderRadius:8, padding:"10px 20px", cursor:"pointer",
+              }}>
+                Get Access →
+              </button>
+            </>
+          )}
         </div>
 
         {/* Footer CTA */}
