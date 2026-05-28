@@ -62,6 +62,96 @@ const Table = ({ headers, rows, highlightLast }) => (
   </div>
 );
 
+const WF_DATA = [
+  { year: 2020, lift: 1.34, placebo: 1.16 },
+  { year: 2021, lift: 6.17, placebo: 0.74 },
+  { year: 2022, lift: 8.45, placebo: 1.57 },
+  { year: 2023, lift: 5.46, placebo: 0.65 },
+];
+
+function WalkForwardChart() {
+  const W = 560, H = 220, PL = 48, PR = 24, PT = 20, PB = 36;
+  const chartW = W - PL - PR, chartH = H - PT - PB;
+  const maxY = 10, minY = 0;
+  const xStep = chartW / (WF_DATA.length - 1);
+  const toX = i => PL + i * xStep;
+  const toY = v => PT + chartH - ((v - minY) / (maxY - minY)) * chartH;
+
+  const liftPts = WF_DATA.map((d, i) => `${toX(i)},${toY(d.lift)}`).join(" ");
+  const placeboPts = WF_DATA.map((d, i) => `${toX(i)},${toY(d.placebo)}`).join(" ");
+
+  // Shade signal zone between the two lines
+  const zonePts = [
+    ...WF_DATA.map((d, i) => `${toX(i)},${toY(d.lift)}`),
+    ...WF_DATA.slice().reverse().map((d, i) => `${toX(WF_DATA.length - 1 - i)},${toY(d.placebo)}`),
+  ].join(" ");
+
+  const yTicks = [0, 2, 4, 6, 8, 10];
+
+  return (
+    <div style={{ background:C.panelHi, border:`1px solid ${C.line}`, borderRadius:12,
+      padding:"20px 24px", marginBottom:24 }}>
+      <div style={{ fontFamily:mono, fontSize:10, color:C.muted, letterSpacing:1.5,
+        textTransform:"uppercase", marginBottom:16 }}>Walk-forward lift by year</div>
+      <svg width="100%" viewBox={`0 0 ${W} ${H}`} style={{ overflow:"visible" }}>
+        {/* grid lines */}
+        {yTicks.map(v => (
+          <g key={v}>
+            <line x1={PL} y1={toY(v)} x2={W-PR} y2={toY(v)}
+              stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
+            <text x={PL-8} y={toY(v)+4} textAnchor="end"
+              style={{ fontFamily:mono, fontSize:9, fill:C.muted }}>{v}×</text>
+          </g>
+        ))}
+        {/* signal zone */}
+        <polygon points={zonePts} fill="rgba(91,141,239,0.08)" />
+        {/* 1× reference */}
+        <line x1={PL} y1={toY(1)} x2={W-PR} y2={toY(1)}
+          stroke="rgba(255,255,255,0.15)" strokeWidth="1" strokeDasharray="4 4" />
+        {/* placebo line */}
+        <polyline points={placeboPts} fill="none" stroke={C.amber}
+          strokeWidth="1.5" strokeDasharray="5 3" strokeLinejoin="round" strokeLinecap="round" />
+        {/* lift line */}
+        <polyline points={liftPts} fill="none" stroke={C.blue}
+          strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" />
+        {/* data points */}
+        {WF_DATA.map((d, i) => (
+          <g key={d.year}>
+            <circle cx={toX(i)} cy={toY(d.lift)} r="4" fill={C.blue} />
+            <circle cx={toX(i)} cy={toY(d.placebo)} r="3" fill={C.amber} />
+            <text x={toX(i)} y={H - 6} textAnchor="middle"
+              style={{ fontFamily:mono, fontSize:10, fill:C.muted }}>{d.year}</text>
+          </g>
+        ))}
+        {/* annotations */}
+        <text x={W-PR-4} y={toY(WF_DATA[WF_DATA.length-1].lift)-10}
+          textAnchor="end" style={{ fontFamily:mono, fontSize:10, fill:C.blue, fontWeight:600 }}>
+          Real: 5.81×
+        </text>
+        <text x={W-PR-4} y={toY(WF_DATA[WF_DATA.length-1].placebo)+16}
+          textAnchor="end" style={{ fontFamily:mono, fontSize:10, fill:C.amber }}>
+          Placebo: 0.83×
+        </text>
+      </svg>
+      <div style={{ display:"flex", gap:24, marginTop:8 }}>
+        <div style={{ display:"flex", alignItems:"center", gap:6 }}>
+          <div style={{ width:20, height:2, background:C.blue, borderRadius:1 }} />
+          <span style={{ fontFamily:mono, fontSize:10, color:C.sub }}>Top-decile lift (actual)</span>
+        </div>
+        <div style={{ display:"flex", alignItems:"center", gap:6 }}>
+          <div style={{ width:20, height:1.5, background:C.amber, borderRadius:1,
+            borderTop:`1.5px dashed ${C.amber}` }} />
+          <span style={{ fontFamily:mono, fontSize:10, color:C.sub }}>Placebo lift (shuffled labels)</span>
+        </div>
+      </div>
+      <p style={{ fontFamily:disp, fontSize:12, color:C.muted, marginTop:10, lineHeight:1.5 }}>
+        Walk-forward: model trained only on years before each test year. If the model found noise,
+        the lines would overlap. The shaded gap is the signal zone.
+      </p>
+    </div>
+  );
+}
+
 export default function Methodology() {
   useEffect(() => { document.title = "Methodology — DealFlow AI"; }, []);
 
@@ -159,6 +249,7 @@ export default function Methodology() {
             enforces strict temporal separation: train only on observations before year Y, predict year Y.
             Each row below is an independent experiment — the 2022 model never saw a single 2022 data point.
           </P>
+          <WalkForwardChart />
           <Table
             headers={["Test year", "Train rows", "Test positives", "Lift@10%", "Placebo"]}
             rows={[
