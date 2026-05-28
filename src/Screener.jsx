@@ -251,6 +251,8 @@ export default function Screener() {
     setWatchlist(prev => prev.includes(ticker) ? prev.filter(t => t !== ticker) : [...prev, ticker]);
   };
 
+  useEffect(() => { document.title = "Screener — DealFlow AI"; }, []);
+
   useEffect(() => {
     fetch("/scores.json")
       .then(r => r.ok ? r.json() : null)

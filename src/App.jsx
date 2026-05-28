@@ -92,6 +92,7 @@ function ScrollProgress() {
 export default function DealFlowLanding() {
   const [load, setLoad] = useState(false);
   const [waitlistOpen, setWaitlistOpen] = useState(false);
+  useEffect(() => { document.title = "DealFlow AI — Acquisition Intelligence"; }, []);
   useEffect(() => { const t = setTimeout(() => setLoad(true), 60); return () => clearTimeout(t); }, []);
   const today = new Date().toLocaleDateString("en-US", { month: "short", day: "numeric" });
 

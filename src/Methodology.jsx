@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const C = {
@@ -63,6 +63,7 @@ const Table = ({ headers, rows, highlightLast }) => (
 );
 
 export default function Methodology() {
+  useEffect(() => { document.title = "Methodology — DealFlow AI"; }, []);
   return (
     <div style={{ background:C.bg, minHeight:"100vh", color:C.text }}>
       <style>{`

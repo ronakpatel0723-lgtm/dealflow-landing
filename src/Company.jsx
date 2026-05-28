@@ -187,6 +187,10 @@ export default function Company() {
       .catch(() => {});
   }, [ticker]);
 
+  useEffect(() => {
+    if (company) document.title = `${company.ticker} — DealFlow AI`;
+  }, [company]);
+
   const subScoreLabels = { revenue:"Revenue", margins:"Margins", growth:"Growth", valuation:"Valuation" };
 
   if (loading) return (

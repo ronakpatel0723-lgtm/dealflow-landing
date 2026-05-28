@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import WaitlistModal from "./WaitlistModal.jsx";
 
@@ -62,6 +62,7 @@ const TIERS = [
 ];
 
 export default function Pricing() {
+  useEffect(() => { document.title = "Pricing — DealFlow AI"; }, []);
   const [waitlistOpen, setWaitlistOpen] = useState(false);
   const [selectedTier, setSelectedTier] = useState("");
 
