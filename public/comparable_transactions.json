@@ -1,0 +1,1505 @@
+{
+  "metadata": {
+    "generated": "2026-05-28T18:13:07Z",
+    "lseg_source": "lseg_sdc_software_ma_2010_2024.csv",
+    "universe_count": 65,
+    "comps_per_co": 3
+  },
+  "companies": {
+    "QLYS": [
+      {
+        "target": "Imperva Inc",
+        "acquirer": "Thales SA",
+        "date": "2023-07-25",
+        "deal_value_M": 3600.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Thomson Reuters Corp- Intellectual Property & Science Business",
+        "acquirer": "Investor Group",
+        "date": "2016-07-11",
+        "deal_value_M": 3550.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Envestnet Inc",
+        "acquirer": "BCPE Pequod Buyer Inc",
+        "date": "2024-07-11",
+        "deal_value_M": 3627.7,
+        "industry": "Software"
+      }
+    ],
+    "CWAN": [
+      {
+        "target": "Grubhub Inc",
+        "acquirer": "Just Eat Takeaway.com NV",
+        "date": "2020-06-10",
+        "deal_value_M": 7326.1,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Blue Yonder Group Inc",
+        "acquirer": "Panasonic Corp",
+        "date": "2021-04-23",
+        "deal_value_M": 7100.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Lightower Fiber Networks LLC",
+        "acquirer": "Crown Castle International Corp",
+        "date": "2017-07-18",
+        "deal_value_M": 7100.0,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "DUOL": [
+      {
+        "target": "Interactive Data Corp",
+        "acquirer": "Intercontinental Exchange Inc",
+        "date": "2015-10-26",
+        "deal_value_M": 5267.2,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Informatica Corp",
+        "acquirer": "Informatica Corp SPV",
+        "date": "2015-04-07",
+        "deal_value_M": 5173.3,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Cloudera Inc",
+        "acquirer": "Cloudera Inc SPV",
+        "date": "2021-06-01",
+        "deal_value_M": 5287.9,
+        "industry": "Software"
+      }
+    ],
+    "HIMS": [
+      {
+        "target": "MultiPlan Inc",
+        "acquirer": "Churchill Capital Corp III",
+        "date": "2020-07-12",
+        "deal_value_M": 5678.0,
+        "industry": "IT Consulting & Services"
+      },
+      {
+        "target": "Brocade Communications Systems Inc",
+        "acquirer": "Broadcom Ltd",
+        "date": "2016-11-02",
+        "deal_value_M": 5535.8,
+        "industry": "Software"
+      },
+      {
+        "target": "Altium Ltd",
+        "acquirer": "Renesas Electronics Corp",
+        "date": "2024-02-14",
+        "deal_value_M": 5830.7,
+        "industry": "IT Consulting & Services"
+      }
+    ],
+    "SEMR": [
+      {
+        "target": "MINDBODY Inc",
+        "acquirer": "Vista Equity Partners Management LLC",
+        "date": "2018-12-24",
+        "deal_value_M": 1815.3,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Everbridge Inc",
+        "acquirer": "Project Emerson Parent LLC",
+        "date": "2024-02-05",
+        "deal_value_M": 1811.5,
+        "industry": "Software"
+      },
+      {
+        "target": "Appriss Insights LLC",
+        "acquirer": "Equifax Inc",
+        "date": "2021-08-10",
+        "deal_value_M": 1825.0,
+        "industry": "Software"
+      }
+    ],
+    "GDRX": [
+      {
+        "target": "ConvergeOne Holdings Inc",
+        "acquirer": "CVC Capital Partners VII Associates LP",
+        "date": "2018-11-06",
+        "deal_value_M": 946.7,
+        "industry": "IT Consulting & Services"
+      },
+      {
+        "target": "Symantec Corp-Website Certification Business",
+        "acquirer": "DigiCert Inc",
+        "date": "2017-08-02",
+        "deal_value_M": 950.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Veracode Inc",
+        "acquirer": "Thoma Bravo LP",
+        "date": "2018-11-05",
+        "deal_value_M": 950.0,
+        "industry": "Software"
+      }
+    ],
+    "SPSC": [
+      {
+        "target": "Hortonworks Inc",
+        "acquirer": "Cloudera Inc",
+        "date": "2018-10-03",
+        "deal_value_M": 1872.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Mailgun Technologies Inc",
+        "acquirer": "Pegasus Corp One",
+        "date": "2021-09-30",
+        "deal_value_M": 1885.7,
+        "industry": "Software"
+      },
+      {
+        "target": "Matterport Inc",
+        "acquirer": "CoStar Group Inc",
+        "date": "2024-04-22",
+        "deal_value_M": 1864.9,
+        "industry": "Software"
+      }
+    ],
+    "FLYW": [
+      {
+        "target": "Risk Management Solutions Inc",
+        "acquirer": "Moody's Corp",
+        "date": "2021-08-05",
+        "deal_value_M": 1978.6,
+        "industry": "Software"
+      },
+      {
+        "target": "SendGrid Inc",
+        "acquirer": "Twilio Inc",
+        "date": "2018-10-15",
+        "deal_value_M": 1970.8,
+        "industry": "Software"
+      },
+      {
+        "target": "Grindr LLC",
+        "acquirer": "Tiga Acquisition Corp",
+        "date": "2022-05-09",
+        "deal_value_M": 1965.9,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "PAYC": [
+      {
+        "target": "ProQuest LLC",
+        "acquirer": "Clarivate PLC",
+        "date": "2021-05-17",
+        "deal_value_M": 6336.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Medallia Inc",
+        "acquirer": "Thoma Bravo LP",
+        "date": "2021-07-26",
+        "deal_value_M": 6271.8,
+        "industry": "Software"
+      },
+      {
+        "target": "Auth0 Inc",
+        "acquirer": "Okta Inc",
+        "date": "2021-03-03",
+        "deal_value_M": 6252.7,
+        "industry": "Software"
+      }
+    ],
+    "GTLB": [
+      {
+        "target": "Anthropic PBC",
+        "acquirer": "Amazon.com Inc",
+        "date": "2024-11-22",
+        "deal_value_M": 4000.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Honey Science Corp",
+        "acquirer": "PayPal Holdings Inc",
+        "date": "2019-11-20",
+        "deal_value_M": 4000.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Apparate USA LLC",
+        "acquirer": "Aurora Innovation Inc",
+        "date": "2020-12-07",
+        "deal_value_M": 4000.0,
+        "industry": "Software"
+      }
+    ],
+    "FRSH": [
+      {
+        "target": "Matterport Inc",
+        "acquirer": "Gores Holdings VI Inc",
+        "date": "2021-02-08",
+        "deal_value_M": 2476.4,
+        "industry": "Software"
+      },
+      {
+        "target": "Waymo LLC",
+        "acquirer": "Investor Group",
+        "date": "2021-06-16",
+        "deal_value_M": 2500.0,
+        "industry": "Software"
+      },
+      {
+        "target": "LifeLock Inc",
+        "acquirer": "Symantec Corp",
+        "date": "2016-11-20",
+        "deal_value_M": 2449.5,
+        "industry": "Software"
+      }
+    ],
+    "DV": [
+      {
+        "target": "Gearbox Software LLC",
+        "acquirer": "Embracer Group AB",
+        "date": "2021-02-03",
+        "deal_value_M": 1381.5,
+        "industry": "Software"
+      },
+      {
+        "target": "Adobe Inc",
+        "acquirer": "Adobe Inc",
+        "date": "2023-01-17",
+        "deal_value_M": 1400.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Jasper Technologies Inc",
+        "acquirer": "Cisco Systems Inc",
+        "date": "2016-02-03",
+        "deal_value_M": 1400.0,
+        "industry": "Software"
+      }
+    ],
+    "VRNS": [
+      {
+        "target": "Thomson Reuters Corp- Intellectual Property & Science Business",
+        "acquirer": "Investor Group",
+        "date": "2016-07-11",
+        "deal_value_M": 3550.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Imperva Inc",
+        "acquirer": "Thales SA",
+        "date": "2023-07-25",
+        "deal_value_M": 3600.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Ellie Mae Inc",
+        "acquirer": "Thoma Bravo LP",
+        "date": "2019-02-12",
+        "deal_value_M": 3540.7,
+        "industry": "Software"
+      }
+    ],
+    "ASAN": [
+      {
+        "target": "Rubicon Technologies LLC",
+        "acquirer": "Founder SPAC",
+        "date": "2021-12-16",
+        "deal_value_M": 1483.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Cision Ltd",
+        "acquirer": "Platinum Equity LLC",
+        "date": "2019-10-22",
+        "deal_value_M": 1484.8,
+        "industry": "Software"
+      },
+      {
+        "target": "ServiceMax Inc",
+        "acquirer": "PTC Inc",
+        "date": "2022-11-17",
+        "deal_value_M": 1485.0,
+        "industry": "Software"
+      }
+    ],
+    "KVYO": [
+      {
+        "target": "LogMeIn Inc",
+        "acquirer": "LogMeIn Inc SPV",
+        "date": "2019-12-17",
+        "deal_value_M": 4354.9,
+        "industry": "Software"
+      },
+      {
+        "target": "Nextdoor Inc",
+        "acquirer": "Khosla Ventures Acquisition Co II",
+        "date": "2021-07-06",
+        "deal_value_M": 4142.0,
+        "industry": "Software"
+      },
+      {
+        "target": "KnowBe4 Inc",
+        "acquirer": "Vista Equity Partners Management LLC",
+        "date": "2022-09-19",
+        "deal_value_M": 4139.8,
+        "industry": "Software"
+      }
+    ],
+    "APLM": [
+      {
+        "target": "C3.ai Inc",
+        "acquirer": "Undisclosed Acquiror",
+        "date": "2020-08-15",
+        "deal_value_M": 50.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Dura Software Inc",
+        "acquirer": "Peterson Partners LP",
+        "date": "2023-04-03",
+        "deal_value_M": 50.0,
+        "industry": "Software"
+      },
+      {
+        "target": "DroneDeploy Inc",
+        "acquirer": "Investor Group",
+        "date": "2021-02-04",
+        "deal_value_M": 50.0,
+        "industry": "Software"
+      }
+    ],
+    "VEEV": [
+      {
+        "target": "Match Group Inc",
+        "acquirer": "Shareholders",
+        "date": "2019-08-07",
+        "deal_value_M": 23917.3,
+        "industry": "IT Consulting & Services"
+      },
+      {
+        "target": "Splunk Inc",
+        "acquirer": "Cisco Systems Inc",
+        "date": "2023-09-21",
+        "deal_value_M": 28133.1,
+        "industry": "Software"
+      },
+      {
+        "target": "Cerner Corp",
+        "acquirer": "Oracle Corp",
+        "date": "2021-12-20",
+        "deal_value_M": 28171.9,
+        "industry": "IT Consulting & Services"
+      }
+    ],
+    "FTNT": [
+      {
+        "target": "Activision Blizzard Inc",
+        "acquirer": "Microsoft Corp",
+        "date": "2022-01-18",
+        "deal_value_M": 75621.3,
+        "industry": "Software"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Broadcom Inc",
+        "date": "2022-05-26",
+        "deal_value_M": 68066.1,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Shareholders",
+        "date": "2020-07-15",
+        "deal_value_M": 51259.5,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "WEAV": [
+      {
+        "target": "Wag Labs Inc",
+        "acquirer": "CHW Acquisition Corp",
+        "date": "2022-02-03",
+        "deal_value_M": 446.9,
+        "industry": "Software"
+      },
+      {
+        "target": "Certara Inc",
+        "acquirer": "Arsenal Capital Management LP",
+        "date": "2022-11-07",
+        "deal_value_M": 449.3,
+        "industry": "Software"
+      },
+      {
+        "target": "SoftWriters Holdings Inc",
+        "acquirer": "Managed Health Care Associates Inc",
+        "date": "2015-02-05",
+        "deal_value_M": 450.0,
+        "industry": "Software"
+      }
+    ],
+    "TENB": [
+      {
+        "target": "Fleetmatics Group PLC",
+        "acquirer": "Verizon Business International Holdings BV",
+        "date": "2016-08-01",
+        "deal_value_M": 2369.0,
+        "industry": "Software"
+      },
+      {
+        "target": "WaveDivision Holdings LLC",
+        "acquirer": "RCN Corp",
+        "date": "2017-05-22",
+        "deal_value_M": 2365.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Glu Mobile Inc",
+        "acquirer": "Electronic Arts Inc",
+        "date": "2021-02-08",
+        "deal_value_M": 2377.6,
+        "industry": "Software"
+      }
+    ],
+    "BILL": [
+      {
+        "target": "Anthropic PBC",
+        "acquirer": "Amazon.com Inc",
+        "date": "2024-11-22",
+        "deal_value_M": 4000.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Honey Science Corp",
+        "acquirer": "PayPal Holdings Inc",
+        "date": "2019-11-20",
+        "deal_value_M": 4000.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Apparate USA LLC",
+        "acquirer": "Aurora Innovation Inc",
+        "date": "2020-12-07",
+        "deal_value_M": 4000.0,
+        "industry": "Software"
+      }
+    ],
+    "PHR": [
+      {
+        "target": "S1 Corp",
+        "acquirer": "ACI Worldwide Inc",
+        "date": "2011-07-26",
+        "deal_value_M": 555.7,
+        "industry": "Software"
+      },
+      {
+        "target": "Fast Radius Inc",
+        "acquirer": "ECP Environmental Growth Opportunities Corp",
+        "date": "2021-07-19",
+        "deal_value_M": 555.8,
+        "industry": "IT Consulting & Services"
+      },
+      {
+        "target": "ABILITY Network Inc",
+        "acquirer": "Summit Partners LP",
+        "date": "2014-04-07",
+        "deal_value_M": 550.0,
+        "industry": "IT Consulting & Services"
+      }
+    ],
+    "PCOR": [
+      {
+        "target": "Better Holdco Inc",
+        "acquirer": "Aurora Acquisition Corp",
+        "date": "2021-05-11",
+        "deal_value_M": 6900.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Credit Karma Inc",
+        "acquirer": "Intuit Inc",
+        "date": "2020-02-24",
+        "deal_value_M": 7100.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Blue Yonder Group Inc",
+        "acquirer": "Panasonic Corp",
+        "date": "2021-04-23",
+        "deal_value_M": 7100.0,
+        "industry": "Software"
+      }
+    ],
+    "NCNO": [
+      {
+        "target": "Cvent Inc",
+        "acquirer": "Vista Equity Partners Management LLC",
+        "date": "2016-04-18",
+        "deal_value_M": 1624.1,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "EMC Corp-Enterprise Content Division",
+        "acquirer": "Open Text Corp",
+        "date": "2016-09-12",
+        "deal_value_M": 1620.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Digital Insight Corp",
+        "acquirer": "NCR Corp",
+        "date": "2013-12-02",
+        "deal_value_M": 1650.0,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "ESTC": [
+      {
+        "target": "Interactive Data Corp",
+        "acquirer": "Intercontinental Exchange Inc",
+        "date": "2015-10-26",
+        "deal_value_M": 5267.2,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Cloudera Inc",
+        "acquirer": "Cloudera Inc SPV",
+        "date": "2021-06-01",
+        "deal_value_M": 5287.9,
+        "industry": "Software"
+      },
+      {
+        "target": "Informatica Corp",
+        "acquirer": "Informatica Corp SPV",
+        "date": "2015-04-07",
+        "deal_value_M": 5173.3,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "MANH": [
+      {
+        "target": "McAfee Inc",
+        "acquirer": "Jefferson Acquisition Corp",
+        "date": "2010-08-19",
+        "deal_value_M": 7690.6,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Uber Technologies Inc",
+        "acquirer": "Investor Group",
+        "date": "2018-01-18",
+        "deal_value_M": 7670.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Aspen Technology Inc",
+        "acquirer": "Emerson Electric Co",
+        "date": "2024-11-05",
+        "deal_value_M": 7944.6,
+        "industry": "Software"
+      }
+    ],
+    "ZS": [
+      {
+        "target": "Splunk Inc",
+        "acquirer": "Cisco Systems Inc",
+        "date": "2023-09-21",
+        "deal_value_M": 28133.1,
+        "industry": "Software"
+      },
+      {
+        "target": "Slack Technologies Inc",
+        "acquirer": "Salesforce.com Inc",
+        "date": "2020-12-01",
+        "deal_value_M": 28418.8,
+        "industry": "Software"
+      },
+      {
+        "target": "WhatsApp Inc",
+        "acquirer": "Facebook Inc",
+        "date": "2014-02-19",
+        "deal_value_M": 19467.7,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "NOW": [
+      {
+        "target": "Activision Blizzard Inc",
+        "acquirer": "Microsoft Corp",
+        "date": "2022-01-18",
+        "deal_value_M": 75621.3,
+        "industry": "Software"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Broadcom Inc",
+        "date": "2022-05-26",
+        "deal_value_M": 68066.1,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Shareholders",
+        "date": "2020-07-15",
+        "deal_value_M": 51259.5,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "OKTA": [
+      {
+        "target": "Citrix Systems Inc",
+        "acquirer": "Picard Parent Inc",
+        "date": "2022-01-31",
+        "deal_value_M": 13632.8,
+        "industry": "Software"
+      },
+      {
+        "target": "Juniper Networks Inc",
+        "acquirer": "Hewlett Packard Enterprise Co",
+        "date": "2024-01-09",
+        "deal_value_M": 13577.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Nuance Communications Inc",
+        "acquirer": "Microsoft Corp",
+        "date": "2021-04-12",
+        "deal_value_M": 16351.5,
+        "industry": "Software"
+      }
+    ],
+    "ALKT": [
+      {
+        "target": "MINDBODY Inc",
+        "acquirer": "Vista Equity Partners Management LLC",
+        "date": "2018-12-24",
+        "deal_value_M": 1815.3,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Everbridge Inc",
+        "acquirer": "Project Emerson Parent LLC",
+        "date": "2024-02-05",
+        "deal_value_M": 1811.5,
+        "industry": "Software"
+      },
+      {
+        "target": "Appriss Insights LLC",
+        "acquirer": "Equifax Inc",
+        "date": "2021-08-10",
+        "deal_value_M": 1825.0,
+        "industry": "Software"
+      }
+    ],
+    "BRZE": [
+      {
+        "target": "Fleetmatics Group PLC",
+        "acquirer": "Verizon Business International Holdings BV",
+        "date": "2016-08-01",
+        "deal_value_M": 2369.0,
+        "industry": "Software"
+      },
+      {
+        "target": "WaveDivision Holdings LLC",
+        "acquirer": "RCN Corp",
+        "date": "2017-05-22",
+        "deal_value_M": 2365.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Glu Mobile Inc",
+        "acquirer": "Electronic Arts Inc",
+        "date": "2021-02-08",
+        "deal_value_M": 2377.6,
+        "industry": "Software"
+      }
+    ],
+    "CRM": [
+      {
+        "target": "Activision Blizzard Inc",
+        "acquirer": "Microsoft Corp",
+        "date": "2022-01-18",
+        "deal_value_M": 75621.3,
+        "industry": "Software"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Broadcom Inc",
+        "date": "2022-05-26",
+        "deal_value_M": 68066.1,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Shareholders",
+        "date": "2020-07-15",
+        "deal_value_M": 51259.5,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "ZM": [
+      {
+        "target": "Slack Technologies Inc",
+        "acquirer": "Salesforce.com Inc",
+        "date": "2020-12-01",
+        "deal_value_M": 28418.8,
+        "industry": "Software"
+      },
+      {
+        "target": "Splunk Inc",
+        "acquirer": "Cisco Systems Inc",
+        "date": "2023-09-21",
+        "deal_value_M": 28133.1,
+        "industry": "Software"
+      },
+      {
+        "target": "ANSYS Inc",
+        "acquirer": "Synopsys Inc",
+        "date": "2024-01-16",
+        "deal_value_M": 32466.1,
+        "industry": "Software"
+      }
+    ],
+    "RELY": [
+      {
+        "target": "SolarWinds Inc",
+        "acquirer": "SolarWinds Inc SPV",
+        "date": "2015-10-21",
+        "deal_value_M": 4546.2,
+        "industry": "Software"
+      },
+      {
+        "target": "Ariba Inc",
+        "acquirer": "SAP America Inc",
+        "date": "2012-05-22",
+        "deal_value_M": 4520.5,
+        "industry": "Software"
+      },
+      {
+        "target": "R1 RCM Inc",
+        "acquirer": "Raven Acquisition Holdings LLC",
+        "date": "2024-07-05",
+        "deal_value_M": 4555.4,
+        "industry": "Software"
+      }
+    ],
+    "NET": [
+      {
+        "target": "Activision Blizzard Inc",
+        "acquirer": "Microsoft Corp",
+        "date": "2022-01-18",
+        "deal_value_M": 75621.3,
+        "industry": "Software"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Broadcom Inc",
+        "date": "2022-05-26",
+        "deal_value_M": 68066.1,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Shareholders",
+        "date": "2020-07-15",
+        "deal_value_M": 51259.5,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "RPD": [
+      {
+        "target": "Renaissance Learning Inc",
+        "acquirer": "Raphael Acquisition Corp",
+        "date": "2011-08-16",
+        "deal_value_M": 436.1,
+        "industry": "Software"
+      },
+      {
+        "target": "StarBlue Inc",
+        "acquirer": "Sangoma Technologies Corp",
+        "date": "2021-01-29",
+        "deal_value_M": 436.9,
+        "industry": "Software"
+      },
+      {
+        "target": "Wurl Inc",
+        "acquirer": "AppLovin Corp",
+        "date": "2022-02-28",
+        "deal_value_M": 430.0,
+        "industry": "Software"
+      }
+    ],
+    "DDOG": [
+      {
+        "target": "Activision Blizzard Inc",
+        "acquirer": "Microsoft Corp",
+        "date": "2022-01-18",
+        "deal_value_M": 75621.3,
+        "industry": "Software"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Broadcom Inc",
+        "date": "2022-05-26",
+        "deal_value_M": 68066.1,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Shareholders",
+        "date": "2020-07-15",
+        "deal_value_M": 51259.5,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "DOCN": [
+      {
+        "target": "Nuance Communications Inc",
+        "acquirer": "Microsoft Corp",
+        "date": "2021-04-12",
+        "deal_value_M": 16351.5,
+        "industry": "Software"
+      },
+      {
+        "target": "Athenahealth Inc",
+        "acquirer": "Athenahealth Inc SPV",
+        "date": "2021-11-22",
+        "deal_value_M": 17000.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Tableau Software Inc",
+        "acquirer": "Salesforce.com Inc",
+        "date": "2019-06-10",
+        "deal_value_M": 17013.5,
+        "industry": "Software"
+      }
+    ],
+    "PCTY": [
+      {
+        "target": "Activision Blizzard Inc",
+        "acquirer": "Activision Blizzard Inc",
+        "date": "2013-07-26",
+        "deal_value_M": 5834.4,
+        "industry": "Software"
+      },
+      {
+        "target": "Medidata Solutions Inc",
+        "acquirer": "Dassault Systemes SE",
+        "date": "2019-06-12",
+        "deal_value_M": 5902.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Mandiant Inc",
+        "acquirer": "Google LLC",
+        "date": "2022-03-08",
+        "deal_value_M": 5914.6,
+        "industry": "Software"
+      }
+    ],
+    "TTD": [
+      {
+        "target": "RealPage Inc",
+        "acquirer": "Thoma Bravo LP",
+        "date": "2020-12-21",
+        "deal_value_M": 10200.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Zendesk Inc",
+        "acquirer": "Zendesk Inc SPV",
+        "date": "2022-06-24",
+        "deal_value_M": 9633.8,
+        "industry": "Software"
+      },
+      {
+        "target": "GlobalLogic Worldwide Holdings Inc",
+        "acquirer": "Hitachi Global Digital Holdings Corp",
+        "date": "2021-03-31",
+        "deal_value_M": 9600.0,
+        "industry": "Software"
+      }
+    ],
+    "MDB": [
+      {
+        "target": "Splunk Inc",
+        "acquirer": "Cisco Systems Inc",
+        "date": "2023-09-21",
+        "deal_value_M": 28133.1,
+        "industry": "Software"
+      },
+      {
+        "target": "Slack Technologies Inc",
+        "acquirer": "Salesforce.com Inc",
+        "date": "2020-12-01",
+        "deal_value_M": 28418.8,
+        "industry": "Software"
+      },
+      {
+        "target": "WhatsApp Inc",
+        "acquirer": "Facebook Inc",
+        "date": "2014-02-19",
+        "deal_value_M": 19467.7,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "S": [
+      {
+        "target": "Activision Blizzard Inc",
+        "acquirer": "Activision Blizzard Inc",
+        "date": "2013-07-26",
+        "deal_value_M": 5834.4,
+        "industry": "Software"
+      },
+      {
+        "target": "Medidata Solutions Inc",
+        "acquirer": "Dassault Systemes SE",
+        "date": "2019-06-12",
+        "deal_value_M": 5902.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Mandiant Inc",
+        "acquirer": "Google LLC",
+        "date": "2022-03-08",
+        "deal_value_M": 5914.6,
+        "industry": "Software"
+      }
+    ],
+    "STEP": [
+      {
+        "target": "Better Holdco Inc",
+        "acquirer": "Aurora Acquisition Corp",
+        "date": "2021-05-11",
+        "deal_value_M": 6900.0,
+        "industry": "Software"
+      },
+      {
+        "target": "MuleSoft Inc",
+        "acquirer": "Salesforce.com Inc",
+        "date": "2018-03-20",
+        "deal_value_M": 6744.1,
+        "industry": "Software"
+      },
+      {
+        "target": "BMC Software Inc",
+        "acquirer": "BMC Software Inc SPV",
+        "date": "2013-05-06",
+        "deal_value_M": 6710.1,
+        "industry": "Software"
+      }
+    ],
+    "HUBS": [
+      {
+        "target": "RealPage Inc",
+        "acquirer": "Thoma Bravo LP",
+        "date": "2020-12-21",
+        "deal_value_M": 10200.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Anaplan Inc",
+        "acquirer": "Alpine Parent LLC",
+        "date": "2022-03-20",
+        "deal_value_M": 10335.5,
+        "industry": "Software"
+      },
+      {
+        "target": "Zendesk Inc",
+        "acquirer": "Zendesk Inc SPV",
+        "date": "2022-06-24",
+        "deal_value_M": 9633.8,
+        "industry": "Software"
+      }
+    ],
+    "PANW": [
+      {
+        "target": "Activision Blizzard Inc",
+        "acquirer": "Microsoft Corp",
+        "date": "2022-01-18",
+        "deal_value_M": 75621.3,
+        "industry": "Software"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Broadcom Inc",
+        "date": "2022-05-26",
+        "deal_value_M": 68066.1,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Shareholders",
+        "date": "2020-07-15",
+        "deal_value_M": 51259.5,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "BMBL": [
+      {
+        "target": "Allurion Technologies Inc",
+        "acquirer": "Compute Health Acquisition Corp",
+        "date": "2023-02-09",
+        "deal_value_M": 481.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Alchemy Systems LP",
+        "acquirer": "Intertek Group PLC",
+        "date": "2018-08-03",
+        "deal_value_M": 480.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Ticketfly Inc",
+        "acquirer": "Pandora Media Inc",
+        "date": "2015-10-07",
+        "deal_value_M": 479.9,
+        "industry": "Software"
+      }
+    ],
+    "HCAT": [
+      {
+        "target": "Calm.com Inc",
+        "acquirer": "Investor Group",
+        "date": "2019-02-06",
+        "deal_value_M": 88.0,
+        "industry": "Software"
+      },
+      {
+        "target": "ForgeRock Inc",
+        "acquirer": "Investor Group",
+        "date": "2017-09-05",
+        "deal_value_M": 88.0,
+        "industry": "Software"
+      },
+      {
+        "target": "HealthLine Systems Inc",
+        "acquirer": "HealthStream Inc",
+        "date": "2015-02-13",
+        "deal_value_M": 88.0,
+        "industry": "Software"
+      }
+    ],
+    "CSGP": [
+      {
+        "target": "Juniper Networks Inc",
+        "acquirer": "Hewlett Packard Enterprise Co",
+        "date": "2024-01-09",
+        "deal_value_M": 13577.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Citrix Systems Inc",
+        "acquirer": "Picard Parent Inc",
+        "date": "2022-01-31",
+        "deal_value_M": 13632.8,
+        "industry": "Software"
+      },
+      {
+        "target": "Zynga Inc",
+        "acquirer": "Take-Two Interactive Software Inc",
+        "date": "2022-01-10",
+        "deal_value_M": 12382.2,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "RXST": [
+      {
+        "target": "CJ America Inc",
+        "acquirer": "Heungkuk Us High Class Professional Private Equity Investment Trust No. 1",
+        "date": "2019-12-09",
+        "deal_value_M": 253.2,
+        "industry": "Software"
+      },
+      {
+        "target": "E2open Inc",
+        "acquirer": "Insight Venture Partners LLC",
+        "date": "2015-02-05",
+        "deal_value_M": 252.1,
+        "industry": "Software"
+      },
+      {
+        "target": "Spigot Inc",
+        "acquirer": "Genimous Investment Co Ltd",
+        "date": "2015-09-23",
+        "deal_value_M": 251.7,
+        "industry": "Software"
+      }
+    ],
+    "PUBM": [
+      {
+        "target": "Unica Corp",
+        "acquirer": "International Business Machines Corp",
+        "date": "2010-08-13",
+        "deal_value_M": 451.8,
+        "industry": "Software"
+      },
+      {
+        "target": "Innovation Associates Inc",
+        "acquirer": "Walgreens Boots Alliance Inc",
+        "date": "2020-12-29",
+        "deal_value_M": 451.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Lancope Inc",
+        "acquirer": "Cisco Systems Inc",
+        "date": "2015-10-27",
+        "deal_value_M": 452.5,
+        "industry": "Software"
+      }
+    ],
+    "AXON": [
+      {
+        "target": "ANSYS Inc",
+        "acquirer": "Synopsys Inc",
+        "date": "2024-01-16",
+        "deal_value_M": 32466.1,
+        "industry": "Software"
+      },
+      {
+        "target": "Red Hat Inc",
+        "acquirer": "International Business Machines Corp",
+        "date": "2018-10-28",
+        "deal_value_M": 33555.4,
+        "industry": "Software"
+      },
+      {
+        "target": "Slack Technologies Inc",
+        "acquirer": "Salesforce.com Inc",
+        "date": "2020-12-01",
+        "deal_value_M": 28418.8,
+        "industry": "Software"
+      }
+    ],
+    "FIVN": [
+      {
+        "target": "Acima Credit LLC",
+        "acquirer": "Rent-A-Center Inc",
+        "date": "2020-12-20",
+        "deal_value_M": 1653.4,
+        "industry": "Software"
+      },
+      {
+        "target": "Marketo Inc",
+        "acquirer": "Vista Equity Partners Management LLC",
+        "date": "2016-05-31",
+        "deal_value_M": 1652.4,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Digital Insight Corp",
+        "acquirer": "NCR Corp",
+        "date": "2013-12-02",
+        "deal_value_M": 1650.0,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "CRWD": [
+      {
+        "target": "Activision Blizzard Inc",
+        "acquirer": "Microsoft Corp",
+        "date": "2022-01-18",
+        "deal_value_M": 75621.3,
+        "industry": "Software"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Broadcom Inc",
+        "date": "2022-05-26",
+        "deal_value_M": 68066.1,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Shareholders",
+        "date": "2020-07-15",
+        "deal_value_M": 51259.5,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "AMSF": [
+      {
+        "target": "AffectLayer Inc",
+        "acquirer": "ZoomInfo Technologies Inc",
+        "date": "2021-07-13",
+        "deal_value_M": 575.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Allscripts-Misys Healthcare Solutions Inc",
+        "acquirer": "Allscripts-Misys Healthcare Solutions Inc",
+        "date": "2010-06-09",
+        "deal_value_M": 576.6,
+        "industry": "IT Consulting & Services"
+      },
+      {
+        "target": "Opower Inc",
+        "acquirer": "Oracle Corp",
+        "date": "2016-05-02",
+        "deal_value_M": 573.5,
+        "industry": "Software"
+      }
+    ],
+    "TASK": [
+      {
+        "target": "Gracenote Inc",
+        "acquirer": "Nielsen NV",
+        "date": "2016-12-20",
+        "deal_value_M": 560.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "S1 Corp",
+        "acquirer": "ACI Worldwide Inc",
+        "date": "2011-07-26",
+        "deal_value_M": 555.7,
+        "industry": "Software"
+      },
+      {
+        "target": "Black Duck Software Inc",
+        "acquirer": "Synopsys Inc",
+        "date": "2017-11-02",
+        "deal_value_M": 565.0,
+        "industry": "Software"
+      }
+    ],
+    "APPS": [
+      {
+        "target": "Angie's List Inc",
+        "acquirer": "HomeAdvisor Inc",
+        "date": "2017-05-01",
+        "deal_value_M": 505.1,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Entrata Inc",
+        "acquirer": "Investor Group",
+        "date": "2021-07-07",
+        "deal_value_M": 507.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Attunity Ltd",
+        "acquirer": "Qlik Technologies Inc",
+        "date": "2019-02-21",
+        "deal_value_M": 502.5,
+        "industry": "Software"
+      }
+    ],
+    "SHOP": [
+      {
+        "target": "Activision Blizzard Inc",
+        "acquirer": "Microsoft Corp",
+        "date": "2022-01-18",
+        "deal_value_M": 75621.3,
+        "industry": "Software"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Broadcom Inc",
+        "date": "2022-05-26",
+        "deal_value_M": 68066.1,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Shareholders",
+        "date": "2020-07-15",
+        "deal_value_M": 51259.5,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "OMCL": [
+      {
+        "target": "Mount Sinai Genomics Inc",
+        "acquirer": "CM Life Sciences Inc",
+        "date": "2021-02-10",
+        "deal_value_M": 2027.0,
+        "industry": "Software"
+      },
+      {
+        "target": "Instructure Inc",
+        "acquirer": "PIV Purchaser LLC",
+        "date": "2019-12-04",
+        "deal_value_M": 2018.6,
+        "industry": "Software"
+      },
+      {
+        "target": "DivvyPay Inc",
+        "acquirer": "Bill.com Holdings Inc",
+        "date": "2021-05-06",
+        "deal_value_M": 2045.5,
+        "industry": "Software"
+      }
+    ],
+    "WDAY": [
+      {
+        "target": "ANSYS Inc",
+        "acquirer": "Synopsys Inc",
+        "date": "2024-01-16",
+        "deal_value_M": 32466.1,
+        "industry": "Software"
+      },
+      {
+        "target": "Red Hat Inc",
+        "acquirer": "International Business Machines Corp",
+        "date": "2018-10-28",
+        "deal_value_M": 33555.4,
+        "industry": "Software"
+      },
+      {
+        "target": "Slack Technologies Inc",
+        "acquirer": "Salesforce.com Inc",
+        "date": "2020-12-01",
+        "deal_value_M": 28418.8,
+        "industry": "Software"
+      }
+    ],
+    "SNOW": [
+      {
+        "target": "VMware Inc",
+        "acquirer": "Shareholders",
+        "date": "2020-07-15",
+        "deal_value_M": 51259.5,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "VMware Inc",
+        "acquirer": "Broadcom Inc",
+        "date": "2022-05-26",
+        "deal_value_M": 68066.1,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Microsoft Corp",
+        "acquirer": "Microsoft Corp",
+        "date": "2013-09-17",
+        "deal_value_M": 40000.0,
+        "industry": "Software"
+      }
+    ],
+    "FOUR": [
+      {
+        "target": "Nextdoor Inc",
+        "acquirer": "Khosla Ventures Acquisition Co II",
+        "date": "2021-07-06",
+        "deal_value_M": 4142.0,
+        "industry": "Software"
+      },
+      {
+        "target": "KnowBe4 Inc",
+        "acquirer": "Vista Equity Partners Management LLC",
+        "date": "2022-09-19",
+        "deal_value_M": 4139.8,
+        "industry": "Software"
+      },
+      {
+        "target": "Cloudmed LLC",
+        "acquirer": "Project Roadrunner Parent Inc",
+        "date": "2022-01-10",
+        "deal_value_M": 4088.7,
+        "industry": "Software"
+      }
+    ],
+    "TWLO": [
+      {
+        "target": "Slack Technologies Inc",
+        "acquirer": "Salesforce.com Inc",
+        "date": "2020-12-01",
+        "deal_value_M": 28418.8,
+        "industry": "Software"
+      },
+      {
+        "target": "Splunk Inc",
+        "acquirer": "Cisco Systems Inc",
+        "date": "2023-09-21",
+        "deal_value_M": 28133.1,
+        "industry": "Software"
+      },
+      {
+        "target": "ANSYS Inc",
+        "acquirer": "Synopsys Inc",
+        "date": "2024-01-16",
+        "deal_value_M": 32466.1,
+        "industry": "Software"
+      }
+    ],
+    "TOST": [
+      {
+        "target": "Juniper Networks Inc",
+        "acquirer": "Hewlett Packard Enterprise Co",
+        "date": "2024-01-09",
+        "deal_value_M": 13577.0,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "Citrix Systems Inc",
+        "acquirer": "Picard Parent Inc",
+        "date": "2022-01-31",
+        "deal_value_M": 13632.8,
+        "industry": "Software"
+      },
+      {
+        "target": "Zynga Inc",
+        "acquirer": "Take-Two Interactive Software Inc",
+        "date": "2022-01-10",
+        "deal_value_M": 12382.2,
+        "industry": "Internet Software & Services"
+      }
+    ],
+    "EVH": [
+      {
+        "target": "Wag Labs Inc",
+        "acquirer": "CHW Acquisition Corp",
+        "date": "2022-02-03",
+        "deal_value_M": 446.9,
+        "industry": "Software"
+      },
+      {
+        "target": "Convergys Corp-Global Information Management Business",
+        "acquirer": "NEC Corp",
+        "date": "2012-03-22",
+        "deal_value_M": 449.0,
+        "industry": "IT Consulting & Services"
+      },
+      {
+        "target": "Certara Inc",
+        "acquirer": "Arsenal Capital Management LP",
+        "date": "2022-11-07",
+        "deal_value_M": 449.3,
+        "industry": "Software"
+      }
+    ],
+    "TNET": [
+      {
+        "target": "JDA Software Group Inc",
+        "acquirer": "RedPrairie Corp",
+        "date": "2012-11-01",
+        "deal_value_M": 1935.1,
+        "industry": "Software"
+      },
+      {
+        "target": "Grindr LLC",
+        "acquirer": "Tiga Acquisition Corp",
+        "date": "2022-05-09",
+        "deal_value_M": 1965.9,
+        "industry": "Internet Software & Services"
+      },
+      {
+        "target": "SendGrid Inc",
+        "acquirer": "Twilio Inc",
+        "date": "2018-10-15",
+        "deal_value_M": 1970.8,
+        "industry": "Software"
+      }
+    ]
+  }
+}

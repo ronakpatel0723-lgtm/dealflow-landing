@@ -162,6 +162,7 @@ export default function Company() {
   const { ticker } = useParams();
   const [company, setCompany]     = useState(null);
   const [allCompanies, setAll]    = useState([]);
+  const [comps, setComps]         = useState([]);
   const [loading, setLoading]     = useState(true);
 
   useEffect(() => {
@@ -176,6 +177,14 @@ export default function Company() {
       })
       .catch(() => {})
       .finally(() => setLoading(false));
+
+    fetch("/comparable_transactions.json")
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        const t = ticker?.toUpperCase();
+        setComps(data?.companies?.[t] ?? []);
+      })
+      .catch(() => {});
   }, [ticker]);
 
   const subScoreLabels = { revenue:"Revenue", margins:"Margins", growth:"Growth", valuation:"Valuation" };
@@ -301,6 +310,41 @@ export default function Company() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        )}
+
+        {/* Comparable Transactions */}
+        {comps.length > 0 && (
+          <div style={{ marginBottom:32 }}>
+            <div style={{ fontFamily:mono, fontSize:10, color:C.muted, letterSpacing:1.5,
+              textTransform:"uppercase", marginBottom:6 }}>Historical Comparables</div>
+            <div style={{ fontFamily:disp, fontSize:13, color:C.muted, marginBottom:16 }}>
+              Recent acquisitions of similar software companies — sourced from LSEG SDC
+            </div>
+            <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:12 }}>
+              {comps.slice(0,3).map((c, i) => {
+                const year = c.date ? new Date(c.date).getFullYear() : "—";
+                const dealVal = c.deal_value_M >= 1000
+                  ? `$${(c.deal_value_M / 1000).toFixed(1)}B`
+                  : c.deal_value_M > 0 ? `$${Math.round(c.deal_value_M)}M` : "Undisclosed";
+                return (
+                  <div key={i} style={{ background:C.panel, border:`1px solid ${C.line}`,
+                    borderRadius:10, padding:"18px 20px" }}>
+                    <div style={{ fontFamily:mono, fontSize:9.5, color:C.muted, letterSpacing:1,
+                      textTransform:"uppercase", marginBottom:10 }}>{c.industry || "Software"}</div>
+                    <div style={{ fontFamily:disp, fontSize:14, fontWeight:600, color:C.text,
+                      marginBottom:4, lineHeight:1.3 }}>{c.target}</div>
+                    <div style={{ fontFamily:disp, fontSize:13, color:C.sub, marginBottom:12 }}>
+                      acq. by {c.acquirer}
+                    </div>
+                    <div style={{ display:"flex", justifyContent:"space-between", alignItems:"baseline" }}>
+                      <span style={{ fontFamily:mono, fontSize:15, fontWeight:600, color:C.green }}>{dealVal}</span>
+                      <span style={{ fontFamily:mono, fontSize:12, color:C.muted }}>{year}</span>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         )}
