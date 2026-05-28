@@ -74,14 +74,20 @@ function fmtRev(revM) {
   return `$${revM}M`;
 }
 
+const MA_EV_REV_BENCHMARK = 4.5; // historical software M&A median EV/Revenue
+
 function whyScoresHigh(company, allCompanies) {
   if (!company) return [];
-  const peers = allCompanies.filter(c => c.sector === company.sector && c.ticker !== company.ticker);
+  const sectorPeers = allCompanies.filter(c => c.sector === company.sector && c.ticker !== company.ticker);
+  // Fall back to all companies if fewer than 5 sector peers
+  const peers = sectorPeers.length >= 5 ? sectorPeers
+    : allCompanies.filter(c => c.ticker !== company.ticker);
 
   const medGm   = median(peers.map(c => c.gm   ?? 0));
   const medR40  = median(peers.map(c => c.r40  ?? 0));
   const medGrow = median(peers.map(c => c.growth ?? 0));
   const medEv   = median(peers.filter(c => (c.evRev ?? 0) > 0).map(c => c.evRev));
+  const peerLabel = sectorPeers.length >= 5 ? company.sector : "sector";
 
   const revM = company.revenue ?? 0;
   const inSweet = revM >= 200 && revM <= 2000;
@@ -89,15 +95,15 @@ function whyScoresHigh(company, allCompanies) {
 
   const factors = [];
 
-  // Gross margin strength
-  const gmDelta = (company.gm ?? 0) - medGm;
-  if (gmDelta > 3) {
-    factors.push({
-      score: gmDelta,
-      label: "Margin quality",
-      value: `${company.gm?.toFixed(1) ?? "—"}% gross margin`,
-      detail: `${gmDelta.toFixed(1)}pp above ${company.sector} median (${medGm.toFixed(1)}%)`,
-    });
+  // Gross margin: above peer median OR premium absolute (>75%)
+  const gm = company.gm ?? 0;
+  const gmDelta = gm - medGm;
+  if (gmDelta > 1 || gm > 75) {
+    const score = gmDelta > 1 ? gmDelta : (gm - 75) * 0.5;
+    const detail = gmDelta > 1
+      ? `${gmDelta.toFixed(1)}pp above ${peerLabel} median (${medGm.toFixed(1)}%)`
+      : `premium SaaS economics — ${gm.toFixed(1)}% exceeds the 75% benchmark for efficient software`;
+    factors.push({ score, label: "Margin quality", value: `${gm.toFixed(1)}% gross margin`, detail });
   }
 
   // Revenue scale sweet spot
@@ -118,18 +124,21 @@ function whyScoresHigh(company, allCompanies) {
       score: r40Delta * 0.8,
       label: "Rule of 40",
       value: `${company.r40?.toFixed(1) ?? "—"} Rule of 40`,
-      detail: `${r40Delta.toFixed(1)}pts above ${company.sector} median (${medR40.toFixed(1)})`,
+      detail: `${r40Delta.toFixed(1)}pts above ${peerLabel} median (${medR40.toFixed(1)})`,
     });
   }
 
-  // Compressed valuation
-  if (medEv > 0 && (company.evRev ?? 99) < medEv - 1) {
-    const discount = medEv - (company.evRev ?? medEv);
+  // Compressed valuation: below sector median OR below software M&A benchmark
+  const ev = company.evRev ?? 99;
+  if ((medEv > 0 && ev < medEv - 1) || ev < MA_EV_REV_BENCHMARK) {
+    const discount = medEv > 0 && ev < medEv - 1
+      ? { label: `${(medEv - ev).toFixed(1)}× discount to ${peerLabel} median (${medEv.toFixed(1)}×)`, score: (medEv - ev) * 3 }
+      : { label: `trading below the ${MA_EV_REV_BENCHMARK}× software M&A median — attractive entry multiple`, score: (MA_EV_REV_BENCHMARK - ev) * 3 };
     factors.push({
-      score: discount * 3,
+      score: discount.score,
       label: "Valuation",
-      value: `${company.evRev?.toFixed(1) ?? "—"}× EV/Revenue`,
-      detail: `${discount.toFixed(1)}× discount to ${company.sector} median (${medEv.toFixed(1)}×) — attractive entry`,
+      value: `${ev.toFixed(1)}× EV/Revenue`,
+      detail: discount.label,
     });
   }
 
