@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-05-28T18:53:47Z",
+    "last_updated": "2026-05-28T19:40:52Z",
     "model_version": "logistic-v2-form4",
     "score_methodology": "Hybrid: 36/65 companies scored with logistic regression (Form 4 + financials); remainder scored with rule-based attractiveness model only",
-    "last_model_trained": "2026-05-28T18:39:14Z",
-    "positive_count": 145,
+    "last_model_trained": "2026-05-28T19:40:41Z",
+    "positive_count": 164,
     "total_count": 100,
     "tiers": {
       "High": 10,
@@ -62,7 +62,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 46.4. ideal size band at $0.645B. premium SaaS margins at 89.1%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.5041,
+          "direction": "positive",
+          "explanation": "$0.64B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3952,
+          "direction": "positive",
+          "explanation": "89.1% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2143,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 1
     },
@@ -89,7 +109,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 43.3. ideal size band at $0.67B. premium SaaS margins at 82.8%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.7646,
+          "direction": "positive",
+          "explanation": "$0.67B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2143,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.192,
+          "direction": "positive",
+          "explanation": "82.8% margin \u2014 above sector median 72.1%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 1
     },
@@ -116,7 +156,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 60.8. ideal size band at $0.73B. solid margins at 67.3%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.208,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.1711,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.0827,
+          "direction": "positive",
+          "explanation": "67.3% margin \u2014 below sector median 72.1%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 1
     },
@@ -143,7 +203,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 32.5. ideal size band at $0.476B. premium SaaS margins at 84.2%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.778,
+          "direction": "positive",
+          "explanation": "$0.48B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.4614,
+          "direction": "positive",
+          "explanation": "84.2% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Operating Margin",
+          "shap_value": 0.2419,
+          "direction": "positive",
+          "explanation": "14.0% margin \u2014 above sector median 3.2%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 2
     },
@@ -170,7 +250,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 47.6. near-ideal size at $0.978B. premium SaaS margins at 80.8%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.4106,
+          "direction": "positive",
+          "explanation": "80.8% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.2879,
+          "direction": "positive",
+          "explanation": "$0.98B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2143,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 1
     },
@@ -197,7 +297,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 51.8. near-ideal size at $1.04B. strong margins at 72.2%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.4544,
+          "direction": "positive",
+          "explanation": "72.2% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Operating Margin",
+          "shap_value": 0.2301,
+          "direction": "positive",
+          "explanation": "13.1% margin \u2014 above sector median 3.2%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2143,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 2
     },
@@ -224,7 +344,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 40.1. ideal size band at $0.738B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.202,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.0657,
+          "direction": "positive",
+          "explanation": "Data unavailable"
+        },
+        {
+          "feature": "Operating Margin",
+          "shap_value": 0.0544,
+          "direction": "positive",
+          "explanation": "Data unavailable"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 2
     },
@@ -251,7 +391,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 63.5. borderline size at $2.35B. strong margins at 73.8%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.7059,
+          "direction": "positive",
+          "explanation": "73.8% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.202,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.1676,
+          "direction": "positive",
+          "explanation": "$2.35B revenue \u2014 above sector median $1.03B"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 2
     },
@@ -278,7 +438,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 42.9. ideal size band at $0.615B. solid margins at 64.1%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6778,
+          "direction": "positive",
+          "explanation": "$0.61B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Operating Margin",
+          "shap_value": 0.2534,
+          "direction": "positive",
+          "explanation": "15.0% margin \u2014 above sector median 3.2%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2143,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 3
     },
@@ -305,7 +485,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 18.8. ideal size band at $0.788B. premium SaaS margins at 77.8%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6494,
+          "direction": "positive",
+          "explanation": "$0.79B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3215,
+          "direction": "positive",
+          "explanation": "77.8% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1977,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 4
     },
@@ -332,7 +532,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 13.6. ideal size band at $0.302B. premium SaaS margins at 80.7%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.7355,
+          "direction": "positive",
+          "explanation": "$0.30B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3041,
+          "direction": "positive",
+          "explanation": "80.7% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.259,
+          "direction": "positive",
+          "explanation": "9.8% growth \u2014 below sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 5
     },
@@ -359,7 +579,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 12.9. ideal size band at $0.7B. premium SaaS margins at 75.2%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6634,
+          "direction": "positive",
+          "explanation": "$0.70B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3227,
+          "direction": "positive",
+          "explanation": "75.2% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2132,
+          "direction": "positive",
+          "explanation": "7.2% growth \u2014 below sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 6
     },
@@ -386,7 +626,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 12.6. ideal size band at $0.44B. premium SaaS margins at 80.5%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.779,
+          "direction": "positive",
+          "explanation": "$0.44B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.2533,
+          "direction": "positive",
+          "explanation": "80.5% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2313,
+          "direction": "positive",
+          "explanation": "17.7% growth \u2014 above sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 7
     },
@@ -413,7 +673,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 11.6. ideal size band at $0.8B. premium SaaS margins at 92.8%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.7257,
+          "direction": "positive",
+          "explanation": "$0.80B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.1948,
+          "direction": "positive",
+          "explanation": "0.6% growth \u2014 below sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1851,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 3
     },
@@ -440,7 +720,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 33.5. ideal size band at $0.75B. solid margins at 69.2%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2143,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2006,
+          "direction": "positive",
+          "explanation": "17.8% growth \u2014 above sector median 15.5%"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.1711,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 8
     },
@@ -467,7 +767,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.6. near-ideal size at $1.23B. premium SaaS margins at 89.2%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.7073,
+          "direction": "positive",
+          "explanation": "$1.23B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3922,
+          "direction": "positive",
+          "explanation": "89.2% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1974,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 9
     },
@@ -494,7 +814,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 17.9. ideal size band at $0.727B. strong margins at 72.5%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3008,
+          "direction": "positive",
+          "explanation": "72.5% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1974,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.1949,
+          "direction": "positive",
+          "explanation": "17.8% growth \u2014 above sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 10
     },
@@ -521,7 +861,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 7.2. ideal size band at $0.532B. premium SaaS margins at 76.8%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.7112,
+          "direction": "positive",
+          "explanation": "$0.53B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3377,
+          "direction": "positive",
+          "explanation": "76.8% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2176,
+          "direction": "positive",
+          "explanation": "24.1% growth \u2014 above sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 3
     },
@@ -548,7 +908,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 29.8. ideal size band at $0.62B. solid margins at 61.4%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6153,
+          "direction": "positive",
+          "explanation": "$0.62B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2356,
+          "direction": "positive",
+          "explanation": "26.6% growth \u2014 above sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.202,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 3
     },
@@ -575,7 +955,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 29.4. ideal size band at $0.319B. solid margins at 62.6%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6321,
+          "direction": "positive",
+          "explanation": "$0.32B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Operating Margin",
+          "shap_value": 0.2235,
+          "direction": "positive",
+          "explanation": "13.6% margin \u2014 above sector median 3.2%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2083,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 11
     },
@@ -602,7 +1002,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 36.5. borderline size at $2.05B. premium SaaS margins at 83.2%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6292,
+          "direction": "positive",
+          "explanation": "$2.05B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3118,
+          "direction": "positive",
+          "explanation": "83.2% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2143,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 12
     },
@@ -629,7 +1049,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 18.4. near-ideal size at $0.96B. premium SaaS margins at 87.4%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.7391,
+          "direction": "positive",
+          "explanation": "$0.96B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3922,
+          "direction": "positive",
+          "explanation": "87.4% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1974,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 13
     },
@@ -656,7 +1096,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 18.0. near-ideal size at $0.84B. premium SaaS margins at 85.0%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.7935,
+          "direction": "positive",
+          "explanation": "$0.84B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3772,
+          "direction": "positive",
+          "explanation": "85.0% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1974,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 14
     },
@@ -683,7 +1143,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 24.5. ideal size band at $0.75B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Operating Margin",
+          "shap_value": 0.2354,
+          "direction": "positive",
+          "explanation": "10.6% margin \u2014 above sector median 3.2%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.184,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.0941,
+          "direction": "positive",
+          "explanation": "13.9% growth \u2014 below sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 15
     },
@@ -710,7 +1190,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -15.8. ideal size band at $0.79B. premium SaaS margins at 89.0%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.8114,
+          "direction": "positive",
+          "explanation": "$0.79B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3735,
+          "direction": "positive",
+          "explanation": "89.0% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Rule of 40",
+          "shap_value": 0.3402,
+          "direction": "positive",
+          "explanation": "Rule of 40 = -15.7 \u2014 below sector median 18.5"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 16
     },
@@ -737,7 +1237,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -10.3. ideal size band at $0.62B. premium SaaS margins at 78.8%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6812,
+          "direction": "positive",
+          "explanation": "$0.62B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3189,
+          "direction": "positive",
+          "explanation": "78.8% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Rule of 40",
+          "shap_value": 0.3112,
+          "direction": "positive",
+          "explanation": "Rule of 40 = -10.3 \u2014 below sector median 18.5"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 4
     },
@@ -764,7 +1284,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.1. near-ideal size at $1.23B. strong margins at 74.7%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.5855,
+          "direction": "positive",
+          "explanation": "$1.23B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3536,
+          "direction": "positive",
+          "explanation": "74.7% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1974,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 17
     },
@@ -791,7 +1331,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 31.9. borderline size at $2.02B. premium SaaS margins at 81.6%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.7632,
+          "direction": "positive",
+          "explanation": "$2.02B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3268,
+          "direction": "positive",
+          "explanation": "81.6% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Operating Margin",
+          "shap_value": 0.2235,
+          "direction": "positive",
+          "explanation": "13.1% margin \u2014 above sector median 3.2%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 5
     },
@@ -818,7 +1378,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 14.9. near-ideal size at $0.885B. premium SaaS margins at 78.5%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.7113,
+          "direction": "positive",
+          "explanation": "$0.88B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3377,
+          "direction": "positive",
+          "explanation": "78.5% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2173,
+          "direction": "positive",
+          "explanation": "19.8% growth \u2014 above sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 18
     },
@@ -845,7 +1425,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 15.1. near-ideal size at $1.18B. premium SaaS margins at 79.2%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6795,
+          "direction": "positive",
+          "explanation": "$1.18B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3227,
+          "direction": "positive",
+          "explanation": "79.2% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.1992,
+          "direction": "positive",
+          "explanation": "8.0% growth \u2014 below sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 19
     },
@@ -872,7 +1472,27 @@
         "marketPosition": 70.0
       },
       "rationale": "micro-cap at $0.01B limits acquirer pool. premium SaaS margins at 100.0%. [skipped: Rule of 40, Growth]",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.3568,
+          "direction": "positive",
+          "explanation": "Data unavailable"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1721,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Insider Buying (3mo)",
+          "shap_value": -0.0077,
+          "direction": "negative",
+          "explanation": "Binary indicator \u2014 below average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 20
     },
@@ -899,7 +1519,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 35.8. near-ideal size at $0.951B. solid margins at 63.7%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.615,
+          "direction": "positive",
+          "explanation": "$0.95B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2143,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2083,
+          "direction": "positive",
+          "explanation": "19.7% growth \u2014 above sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 21
     },
@@ -926,7 +1566,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 44.9. mega-cap at $6.80B limits acquirer pool. premium SaaS margins at 80.5%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.2479,
+          "direction": "positive",
+          "explanation": "80.5% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2083,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.0477,
+          "direction": "positive",
+          "explanation": "14.2% growth \u2014 below sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 6
     },
@@ -953,7 +1613,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 45.0. mega-cap at $3.20B limits acquirer pool. premium SaaS margins at 75.5%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.2643,
+          "direction": "positive",
+          "explanation": "75.5% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2143,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.1643,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 4
     },
@@ -980,7 +1660,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 4.2. ideal size band at $0.24B. strong margins at 72.1%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.692,
+          "direction": "positive",
+          "explanation": "$0.24B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3035,
+          "direction": "positive",
+          "explanation": "72.1% margin \u2014 below sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2137,
+          "direction": "positive",
+          "explanation": "17.0% growth \u2014 above sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 22
     },
@@ -1007,7 +1707,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 10.1. near-ideal size at $1B. premium SaaS margins at 78.1%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.7113,
+          "direction": "positive",
+          "explanation": "$1.00B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3227,
+          "direction": "positive",
+          "explanation": "78.1% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2209,
+          "direction": "positive",
+          "explanation": "11.0% growth \u2014 below sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 7
     },
@@ -1034,7 +1754,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.3. borderline size at $1.62B. premium SaaS margins at 76.7%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.5816,
+          "direction": "positive",
+          "explanation": "$1.62B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3551,
+          "direction": "positive",
+          "explanation": "76.7% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1914,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 23
     },
@@ -1061,7 +1801,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 24.9. borderline size at $2.54B. premium SaaS margins at 86.8%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3823,
+          "direction": "positive",
+          "explanation": "86.8% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2173,
+          "direction": "positive",
+          "explanation": "18.1% growth \u2014 above sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1974,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 24
     },
@@ -1088,7 +1848,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 7.9. near-ideal size at $1.46B. premium SaaS margins at 81.4%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.7617,
+          "direction": "positive",
+          "explanation": "$1.46B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.2405,
+          "direction": "positive",
+          "explanation": "81.4% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2209,
+          "direction": "positive",
+          "explanation": "13.4% growth \u2014 below sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 4
     },
@@ -1115,7 +1895,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 13.8. ideal size band at $0.419B. solid margins at 61.5%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6756,
+          "direction": "positive",
+          "explanation": "$0.42B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2344,
+          "direction": "positive",
+          "explanation": "8.8% growth \u2014 below sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1849,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 5
     },
@@ -1142,7 +1942,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 13.1. ideal size band at $0.48B. solid margins at 67.9%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6321,
+          "direction": "positive",
+          "explanation": "$0.48B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1788,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.1442,
+          "direction": "positive",
+          "explanation": "14.5% growth \u2014 below sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 6
     },
@@ -1169,7 +1989,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 16.1. ideal size band at $0.365B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6321,
+          "direction": "positive",
+          "explanation": "$0.37B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1914,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.1225,
+          "direction": "positive",
+          "explanation": "16.1% growth \u2014 above sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 5
     },
@@ -1196,7 +2036,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 5.4. near-ideal size at $1.32B. premium SaaS margins at 79.5%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6795,
+          "direction": "positive",
+          "explanation": "$1.32B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3227,
+          "direction": "positive",
+          "explanation": "79.5% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1849,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 6
     },
@@ -1223,7 +2083,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 10.6. ideal size band at $0.59B. solid margins at 60.6%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6422,
+          "direction": "positive",
+          "explanation": "$0.59B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2344,
+          "direction": "positive",
+          "explanation": "10.0% growth \u2014 below sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1849,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 25
     },
@@ -1250,7 +2130,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 13.3. near-ideal size at $1.48B. strong margins at 74.4%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6795,
+          "direction": "positive",
+          "explanation": "$1.48B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3377,
+          "direction": "positive",
+          "explanation": "74.4% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.239,
+          "direction": "positive",
+          "explanation": "17.0% growth \u2014 above sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 8
     },
@@ -1277,7 +2177,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 29.6. near-ideal size at $1.08B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.512,
+          "direction": "positive",
+          "explanation": "$1.08B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.3908,
+          "direction": "positive",
+          "explanation": "3.7% growth \u2014 below sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2006,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 26
     },
@@ -1304,7 +2224,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 18.5. borderline size at $2.67B. premium SaaS margins at 76.9%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3278,
+          "direction": "positive",
+          "explanation": "76.9% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1974,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.1643,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 9
     },
@@ -1331,7 +2271,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 34.6. mega-cap at $13.28B limits acquirer pool. premium SaaS margins at 77.5%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3991,
+          "direction": "positive",
+          "explanation": "77.5% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2143,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2125,
+          "direction": "positive",
+          "explanation": "20.9% growth \u2014 above sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 27
     },
@@ -1358,7 +2318,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 16.9. borderline size at $2.92B. premium SaaS margins at 77.4%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3128,
+          "direction": "positive",
+          "explanation": "77.4% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.1992,
+          "direction": "positive",
+          "explanation": "11.8% growth \u2014 below sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1974,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 10
     },
@@ -1385,7 +2365,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 16.2. borderline size at $1.61B. premium SaaS margins at 83.2%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.7617,
+          "direction": "positive",
+          "explanation": "$1.61B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.2405,
+          "direction": "positive",
+          "explanation": "83.2% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.1992,
+          "direction": "positive",
+          "explanation": "12.7% growth \u2014 below sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 28
     },
@@ -1412,7 +2412,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 22.0. ideal size band at $0.44B. below-average margins at 57.8%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6239,
+          "direction": "positive",
+          "explanation": "$0.44B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1974,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.1711,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 7
     },
@@ -1439,7 +2459,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 4.8. ideal size band at $0.74B. solid margins at 67.1%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2134,
+          "direction": "positive",
+          "explanation": "24.4% growth \u2014 above sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1849,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.1711,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 29
     },
@@ -1466,7 +2506,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 20.8. near-ideal size at $1.01B. solid margins at 66.2%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6901,
+          "direction": "positive",
+          "explanation": "$1.01B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Operating Margin",
+          "shap_value": 0.2676,
+          "direction": "positive",
+          "explanation": "13.2% margin \u2014 above sector median 3.2%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2204,
+          "direction": "positive",
+          "explanation": "7.6% growth \u2014 below sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 30
     },
@@ -1493,7 +2553,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 29.7. mega-cap at $41.52B limits acquirer pool. premium SaaS margins at 77.7%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3255,
+          "direction": "positive",
+          "explanation": "77.7% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2143,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.1944,
+          "direction": "positive",
+          "explanation": "9.6% growth \u2014 below sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 31
     },
@@ -1520,7 +2600,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 27.5. mega-cap at $4.87B limits acquirer pool. premium SaaS margins at 77.0%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3913,
+          "direction": "positive",
+          "explanation": "77.0% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.216,
+          "direction": "positive",
+          "explanation": "4.4% growth \u2014 below sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2083,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 32
     },
@@ -1547,7 +2647,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 34.1. borderline size at $1.64B. solid margins at 60.2%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.5037,
+          "direction": "positive",
+          "explanation": "$1.64B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.202,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.1548,
+          "direction": "positive",
+          "explanation": "29.4% growth \u2014 above sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 8
     },
@@ -1574,7 +2694,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 20.2. borderline size at $2.17B. strong margins at 74.5%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6833,
+          "direction": "positive",
+          "explanation": "$2.17B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3551,
+          "direction": "positive",
+          "explanation": "74.5% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1974,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 11
     },
@@ -1601,7 +2741,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 3.2. near-ideal size at $0.86B. strong margins at 70.3%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6901,
+          "direction": "positive",
+          "explanation": "$0.86B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.2006,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1849,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 12
     },
@@ -1628,7 +2788,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.2. borderline size at $2.52B. premium SaaS margins at 80.1%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.2434,
+          "direction": "positive",
+          "explanation": "80.1% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2037,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.1939,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 33
     },
@@ -1655,7 +2835,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -58.1. ideal size band at $0.389B. solid margins at 60.6%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.7154,
+          "direction": "positive",
+          "explanation": "$0.39B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Rule of 40",
+          "shap_value": 0.5927,
+          "direction": "positive",
+          "explanation": "Rule of 40 = -58.1 \u2014 below sector median 18.5"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1925,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 34
     },
@@ -1682,7 +2882,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.4. mega-cap at $3.43B limits acquirer pool. premium SaaS margins at 80.0%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3278,
+          "direction": "positive",
+          "explanation": "80.0% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1974,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.1643,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 13
     },
@@ -1709,7 +2929,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 32.9. near-ideal size at $0.9B. below-average margins at 59.9%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.5428,
+          "direction": "positive",
+          "explanation": "$0.90B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2083,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.1254,
+          "direction": "positive",
+          "explanation": "15.5% growth \u2014 below sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 35
     },
@@ -1736,7 +2976,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 32.8. borderline size at $1.60B. solid margins at 68.8%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.5831,
+          "direction": "positive",
+          "explanation": "$1.60B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2156,
+          "direction": "positive",
+          "explanation": "13.7% growth \u2014 below sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2143,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 36
     },
@@ -1763,7 +3023,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 38.8. borderline size at $2.90B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2256,
+          "direction": "positive",
+          "explanation": "18.5% growth \u2014 above sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1946,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Insider Buying (3mo)",
+          "shap_value": -0.0077,
+          "direction": "negative",
+          "explanation": "Binary indicator \u2014 below average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 37
     },
@@ -1790,7 +3070,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 17.2. borderline size at $2.46B. strong margins at 71.7%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.2909,
+          "direction": "positive",
+          "explanation": "71.7% margin \u2014 below sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1974,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.1643,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 38
     },
@@ -1817,7 +3117,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -10.2. near-ideal size at $1B. strong margins at 74.1%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6747,
+          "direction": "positive",
+          "explanation": "$1.00B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3339,
+          "direction": "positive",
+          "explanation": "74.1% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Rule of 40",
+          "shap_value": 0.2611,
+          "direction": "positive",
+          "explanation": "Rule of 40 = -10.2 \u2014 below sector median 18.5"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 14
     },
@@ -1844,7 +3164,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 42.4. near-ideal size at $1.17B. weak margins at 49.3%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.2383,
+          "direction": "positive",
+          "explanation": "$1.17B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Operating Margin",
+          "shap_value": 0.213,
+          "direction": "positive",
+          "explanation": "-22.7% margin \u2014 below sector median 3.2%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1938,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 9
     },
@@ -1871,7 +3211,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 19.4. mega-cap at $3.13B limits acquirer pool. premium SaaS margins at 83.8%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3823,
+          "direction": "positive",
+          "explanation": "83.8% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2173,
+          "direction": "positive",
+          "explanation": "19.2% growth \u2014 above sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1974,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 39
     },
@@ -1898,7 +3258,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 11.6. near-ideal size at $0.909B. strong margins at 71.3%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6678,
+          "direction": "positive",
+          "explanation": "$0.91B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.31,
+          "direction": "positive",
+          "explanation": "71.3% margin \u2014 below sector median 72.1%"
+        },
+        {
+          "feature": "Operating Margin",
+          "shap_value": 0.2274,
+          "direction": "positive",
+          "explanation": "11.7% margin \u2014 above sector median 3.2%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 15
     },
@@ -1925,7 +3305,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 28.4. mega-cap at $9.22B limits acquirer pool. strong margins at 73.4%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3807,
+          "direction": "positive",
+          "explanation": "73.4% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2083,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.1148,
+          "direction": "positive",
+          "explanation": "14.9% growth \u2014 below sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 16
     },
@@ -1952,7 +3352,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 15.0. near-ideal size at $0.97B. strong margins at 70.8%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.4328,
+          "direction": "positive",
+          "explanation": "$0.97B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3898,
+          "direction": "positive",
+          "explanation": "70.8% margin \u2014 below sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1977,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 40
     },
@@ -1979,7 +3399,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -50.2. ideal size band at $0.31B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Rule of 40",
+          "shap_value": 0.5098,
+          "direction": "positive",
+          "explanation": "Rule of 40 = -50.2 \u2014 below sector median 18.5"
+        },
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.4956,
+          "direction": "positive",
+          "explanation": "$0.31B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1729,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 41
     },
@@ -2006,7 +3446,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 16.5. mega-cap at $3.25B limits acquirer pool. premium SaaS margins at 78.9%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3935,
+          "direction": "positive",
+          "explanation": "78.9% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.263,
+          "direction": "positive",
+          "explanation": "18.7% growth \u2014 above sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1914,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 42
     },
@@ -2033,7 +3493,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 9.6. borderline size at $2.52B. strong margins at 71.2%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3012,
+          "direction": "positive",
+          "explanation": "71.2% margin \u2014 below sector median 72.1%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2315,
+          "direction": "positive",
+          "explanation": "4.8% growth \u2014 below sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1788,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 43
     },
@@ -2060,7 +3540,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -39.7. near-ideal size at $0.13B. premium SaaS margins at 76.6%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.4077,
+          "direction": "positive",
+          "explanation": "76.6% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Rule of 40",
+          "shap_value": 0.3682,
+          "direction": "positive",
+          "explanation": "Rule of 40 = -39.7 \u2014 below sector median 18.5"
+        },
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.3621,
+          "direction": "positive",
+          "explanation": "$0.13B revenue \u2014 below sector median $1.03B"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 7
     },
@@ -2087,7 +3587,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 22.4. near-ideal size at $1B. below-average margins at 56.8%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.618,
+          "direction": "positive",
+          "explanation": "$1.00B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2589,
+          "direction": "positive",
+          "explanation": "20.3% growth \u2014 above sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1914,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 44
     },
@@ -2114,7 +3634,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 35.3. near-ideal size at $0.962B. weak margins at 45.3%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.4686,
+          "direction": "positive",
+          "explanation": "$0.96B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1998,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.1711,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 45
     },
@@ -2141,7 +3681,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -4.7. ideal size band at $0.345B. below-average margins at 51.7%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6034,
+          "direction": "positive",
+          "explanation": "$0.34B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2873,
+          "direction": "positive",
+          "explanation": "5.2% growth \u2014 below sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1788,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 10
     },
@@ -2168,7 +3728,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -9.0. ideal size band at $0.28B. solid margins at 63.6%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6499,
+          "direction": "positive",
+          "explanation": "$0.28B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Rule of 40",
+          "shap_value": 0.2731,
+          "direction": "positive",
+          "explanation": "Rule of 40 = -9.0 \u2014 below sector median 18.5"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1788,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 46
     },
@@ -2195,7 +3775,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 31.3. borderline size at $2.78B. below-average margins at 59.7%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.202,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Insider Buying (3mo)",
+          "shap_value": -0.0081,
+          "direction": "negative",
+          "explanation": "Binary indicator \u2014 below average"
+        },
+        {
+          "feature": "Gross Margin Imputed",
+          "shap_value": -0.012,
+          "direction": "negative",
+          "explanation": "Binary indicator \u2014 below average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 47
     },
@@ -2222,7 +3822,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -23.9. borderline size at $1.85B. strong margins at 74.2%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6067,
+          "direction": "positive",
+          "explanation": "$1.85B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3178,
+          "direction": "positive",
+          "explanation": "74.2% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Operating Margin",
+          "shap_value": 0.2316,
+          "direction": "positive",
+          "explanation": "-25.9% margin \u2014 below sector median 3.2%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 48
     },
@@ -2249,7 +3869,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 12.8. near-ideal size at $1.15B. below-average margins at 55.1%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.5861,
+          "direction": "positive",
+          "explanation": "$1.15B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2421,
+          "direction": "positive",
+          "explanation": "10.3% growth \u2014 below sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1788,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 49
     },
@@ -2276,7 +3916,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 15.6. mega-cap at $4.81B limits acquirer pool. strong margins at 74.7%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Gross Margin",
+          "shap_value": 0.3278,
+          "direction": "positive",
+          "explanation": "74.7% margin \u2014 above sector median 72.1%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1974,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.1643,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 17
     },
@@ -2303,7 +3963,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 21.0. ideal size band at $0.32B. non-SaaS margins at 28.7%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.5033,
+          "direction": "positive",
+          "explanation": "$0.32B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1894,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.0174,
+          "direction": "positive",
+          "explanation": "2.6% growth \u2014 below sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 8
     },
@@ -2330,7 +4010,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.2. borderline size at $2.66B. below-average margins at 58.6%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1977,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.0418,
+          "direction": "positive",
+          "explanation": "1.2% growth \u2014 below sector median 15.5%"
+        },
+        {
+          "feature": "Insider Buying (3mo)",
+          "shap_value": -0.0077,
+          "direction": "negative",
+          "explanation": "Binary indicator \u2014 below average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 11
     },
@@ -2357,7 +4057,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 30.9. near-ideal size at $1.18B. non-SaaS margins at 37.8%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.5045,
+          "direction": "positive",
+          "explanation": "$1.18B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Operating Margin",
+          "shap_value": 0.2245,
+          "direction": "positive",
+          "explanation": "11.9% margin \u2014 above sector median 3.2%"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2154,
+          "direction": "positive",
+          "explanation": "19.0% growth \u2014 above sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 50
     },
@@ -2384,7 +4104,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 0.9. near-ideal size at $0.821B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6467,
+          "direction": "positive",
+          "explanation": "$0.82B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1788,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.149,
+          "direction": "positive",
+          "explanation": "13.9% growth \u2014 below sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 12
     },
@@ -2411,7 +4151,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 14.6. near-ideal size at $1.13B. below-average margins at 58.8%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.6111,
+          "direction": "positive",
+          "explanation": "$1.13B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2037,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.2006,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 51
     },
@@ -2438,7 +4198,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -20.9. ideal size band at $0.49B. below-average margins at 52.0%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.4046,
+          "direction": "positive",
+          "explanation": "$0.49B revenue \u2014 below sector median $1.03B"
+        },
+        {
+          "feature": "Rule of 40",
+          "shap_value": 0.2731,
+          "direction": "positive",
+          "explanation": "Rule of 40 = -20.9 \u2014 below sector median 18.5"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1788,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 52
     },
@@ -2465,7 +4245,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 42.8. mega-cap at $11.56B limits acquirer pool. weak margins at 48.1%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.2061,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.1711,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.1161,
+          "direction": "positive",
+          "explanation": "30.1% growth \u2014 above sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 53
     },
@@ -2492,7 +4292,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 6.9. near-ideal size at $1.18B. weak margins at 42.5%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.5045,
+          "direction": "positive",
+          "explanation": "$1.18B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2949,
+          "direction": "positive",
+          "explanation": "6.5% growth \u2014 below sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1706,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 9
     },
@@ -2519,7 +4339,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -1.2. ideal size band at $0.754B. non-SaaS margins at 39.1%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.2006,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1766,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Operating Margin",
+          "shap_value": 0.073,
+          "direction": "positive",
+          "explanation": "-1.9% margin \u2014 below sector median 3.2%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 54
     },
@@ -2546,7 +4386,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 1.9. near-ideal size at $1.23B. weak margins at 42.9%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.5479,
+          "direction": "positive",
+          "explanation": "$1.23B revenue \u2014 above sector median $1.03B"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1766,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.1711,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 13
     },
@@ -2573,7 +4433,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 20.6. mega-cap at $9.55B limits acquirer pool. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.1919,
+          "direction": "positive",
+          "explanation": "13.1% growth \u2014 below sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1778,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Insider Buying (3mo)",
+          "shap_value": -0.0077,
+          "direction": "negative",
+          "explanation": "Binary indicator \u2014 below average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 55
     },
@@ -2600,7 +4480,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -1.4. mega-cap at $4.68B limits acquirer pool. solid margins at 67.2%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1925,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.1711,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.1326,
+          "direction": "positive",
+          "explanation": "29.2% growth \u2014 above sector median 15.5%"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 56
     },
@@ -2627,7 +4527,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 33.9. mega-cap at $4.18B limits acquirer pool. non-SaaS margins at 6.7%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1884,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.1438,
+          "direction": "positive",
+          "explanation": "25.5% growth \u2014 above sector median 15.5%"
+        },
+        {
+          "feature": "Insider Buying (3mo)",
+          "shap_value": -0.0081,
+          "direction": "negative",
+          "explanation": "Binary indicator \u2014 below average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 57
     },
@@ -2654,7 +4574,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 16.8. mega-cap at $5.07B limits acquirer pool. weak margins at 48.9%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2275,
+          "direction": "positive",
+          "explanation": "13.7% growth \u2014 below sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1892,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Sector Bucket",
+          "shap_value": 0.1711,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 58
     },
@@ -2681,7 +4621,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 28.8. mega-cap at $6.15B limits acquirer pool. non-SaaS margins at 25.9%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1938,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.1164,
+          "direction": "positive",
+          "explanation": "24.1% growth \u2014 above sector median 15.5%"
+        },
+        {
+          "feature": "Insider Buying (3mo)",
+          "shap_value": -0.0081,
+          "direction": "negative",
+          "explanation": "Binary indicator \u2014 below average"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 59
     },
@@ -2708,7 +4668,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -27.7. borderline size at $1.88B. non-SaaS margins at 21.3%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Rule of 40",
+          "shap_value": 0.2705,
+          "direction": "positive",
+          "explanation": "Rule of 40 = -27.6 \u2014 below sector median 18.5"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1652,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Revenue Scale",
+          "shap_value": 0.0424,
+          "direction": "positive",
+          "explanation": "$1.88B revenue \u2014 above sector median $1.03B"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 10
     },
@@ -2735,7 +4715,27 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 4.5. mega-cap at $5.01B limits acquirer pool. non-SaaS margins at 17.7%",
-      "last_updated": "2026-05-28T18:53:47Z",
+      "shap_factors": [
+        {
+          "feature": "Revenue Growth",
+          "shap_value": 0.2735,
+          "direction": "positive",
+          "explanation": "-0.9% growth \u2014 below sector median 15.5%"
+        },
+        {
+          "feature": "Has Insider Signal",
+          "shap_value": 0.1652,
+          "direction": "positive",
+          "explanation": "Binary indicator \u2014 above average"
+        },
+        {
+          "feature": "Rule of 40",
+          "shap_value": 0.0287,
+          "direction": "positive",
+          "explanation": "Rule of 40 = 4.6 \u2014 below sector median 18.5"
+        }
+      ],
+      "last_updated": "2026-05-28T19:40:52Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 60
     }
