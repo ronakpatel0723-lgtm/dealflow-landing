@@ -214,6 +214,7 @@ export default function Company() {
   const [thesisModal, setThesisModal] = useState(false);
   const [thesis, setThesis]         = useState(null);
   const [thesisLoading, setThesisLoading] = useState(false);
+  const [scoreHistory, setScoreHistory] = useState([]);
 
   useEffect(() => {
     fetch("/scores.json")
@@ -249,6 +250,15 @@ export default function Company() {
       .then(text => setThesis(text))
       .catch(() => setThesis(null))
       .finally(() => setThesisLoading(false));
+  }, [ticker]);
+
+  useEffect(() => {
+    const t = ticker?.toUpperCase();
+    if (!t) return;
+    fetch("/score_history.json")
+      .then(r => r.ok ? r.json() : null)
+      .then(data => { if (data?.[t]) setScoreHistory(data[t].slice(-8)); })
+      .catch(() => {});
   }, [ticker]);
 
   useEffect(() => {
@@ -373,7 +383,30 @@ export default function Company() {
               )}
             </div>
           </div>
-          <ScoreRing score={company.score} size={110} />
+          <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:8 }}>
+            <ScoreRing score={company.score} size={110} />
+            {scoreHistory.length >= 2 && (() => {
+              const scores = scoreHistory.map(h => h.score);
+              const minS = Math.min(...scores), maxS = Math.max(...scores);
+              const range = maxS - minS || 1;
+              const pts = scores.map((s, i) => ({
+                x: (i / (scores.length - 1)) * 80,
+                y: 24 - ((s - minS) / range) * 20 - 2,
+              }));
+              const d = pts.map((p, i) => `${i===0?"M":"L"}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(" ");
+              const trending = scores[scores.length-1] > scores[0];
+              return (
+                <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:4 }}>
+                  <svg width="80" height="24" viewBox="0 0 80 24">
+                    <path d={d} stroke={C.blue} strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                    <circle cx={pts[pts.length-1].x} cy={pts[pts.length-1].y} r="2.5"
+                      fill={trending ? C.green : C.red} />
+                  </svg>
+                  <span style={{ fontFamily:mono, fontSize:9, color:C.muted }}>8-run trend</span>
+                </div>
+              );
+            })()}
+          </div>
         </div>
 
         {/* Score breakdown */}

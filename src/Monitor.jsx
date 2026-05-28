@@ -31,6 +31,7 @@ export default function Monitor() {
   const [companies, setCompanies] = useState([]);
   const [changes, setChanges] = useState(null);
   const [history, setHistory] = useState([]);
+  const [medianHistory, setMedianHistory] = useState([]);
 
   useEffect(() => {
     fetch("/scores.json")
@@ -53,6 +54,27 @@ export default function Monitor() {
         if (!text) return;
         const rows = text.trim().split("\n").slice(1).map(r => r.split(","));
         setHistory(rows.slice(-10).reverse());
+      })
+      .catch(() => {});
+
+    fetch("/score_history.json")
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        if (!data) return;
+        // Compute median score per run date across all tickers
+        const byDate = {};
+        Object.values(data).forEach(runs => {
+          runs.forEach(r => {
+            if (!byDate[r.date]) byDate[r.date] = [];
+            byDate[r.date].push(r.score);
+          });
+        });
+        const sorted = Object.entries(byDate).sort(([a],[b]) => a.localeCompare(b)).slice(-8);
+        const medians = sorted.map(([date, scores]) => {
+          const s = [...scores].sort((a,b)=>a-b);
+          return { date: date.slice(0,10), median: s[Math.floor(s.length/2)] };
+        });
+        setMedianHistory(medians);
       })
       .catch(() => {});
   }, []);
@@ -181,6 +203,37 @@ export default function Monitor() {
             </div>
           </>
         )}
+
+        {/* Median score sparkline */}
+        {medianHistory.length >= 2 && (() => {
+          const scores = medianHistory.map(r => r.median);
+          const minS = Math.min(...scores), maxS = Math.max(...scores);
+          const range = maxS - minS || 1;
+          const W = 400, H = 60;
+          const pts = scores.map((s, i) => ({
+            x: (i / (scores.length - 1)) * (W - 20) + 10,
+            y: H - 10 - ((s - minS) / range) * (H - 20),
+          }));
+          const d = pts.map((p,i) => `${i===0?"M":"L"}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(" ");
+          return (
+            <>
+              <div style={{ fontFamily:mono, fontSize:10, color:C.muted, letterSpacing:1.5,
+                textTransform:"uppercase", marginBottom:12 }}>Universe Median Score — Last 8 Runs</div>
+              <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:10,
+                padding:"20px 24px", marginBottom:32 }}>
+                <svg width="100%" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none">
+                  <path d={d} stroke={C.blue} strokeWidth="2" fill="none" strokeLinecap="round"/>
+                  {pts.map((p,i) => <circle key={i} cx={p.x} cy={p.y} r="3" fill={C.blue} />)}
+                </svg>
+                <div style={{ display:"flex", justifyContent:"space-between", marginTop:8 }}>
+                  <span style={{ fontFamily:mono, fontSize:10, color:C.muted }}>{medianHistory[0].date}</span>
+                  <span style={{ fontFamily:mono, fontSize:12, color:C.text }}>median {scores[scores.length-1].toFixed(1)}</span>
+                  <span style={{ fontFamily:mono, fontSize:10, color:C.muted }}>{medianHistory[medianHistory.length-1].date}</span>
+                </div>
+              </div>
+            </>
+          );
+        })()}
 
         {!meta && (
           <p style={{ fontFamily:mono, fontSize:13, color:C.muted }}>Loading scores.json…</p>
