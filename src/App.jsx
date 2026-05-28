@@ -140,31 +140,40 @@ export default function DealFlowLanding() {
 
         {/* HERO */}
         <header style={{ maxWidth: 1000, margin: "0 auto", padding: "70px 32px 40px", textAlign: "center" }}>
-          <div style={{ ...hero(1), display: "inline-flex", alignItems: "center", gap: 8, fontFamily: mono, fontSize: 12, letterSpacing: 2, color: C.sub, textTransform: "uppercase", border: `1px solid ${C.line}`, borderRadius: 100, padding: "6px 14px", marginBottom: 30 }}>
+          <div style={{ ...hero(1), display: "inline-flex", alignItems: "center", gap: 8, fontFamily: mono, fontSize: 12, letterSpacing: 2, color: C.sub, textTransform: "uppercase", border: `1px solid ${C.line}`, borderRadius: 100, padding: "6px 14px", marginBottom: 24 }}>
             <span style={{ width: 6, height: 6, borderRadius: 6, background: C.green, boxShadow: `0 0 8px ${C.green}` }} />
             Acquisition Intelligence
           </div>
-          <h1 style={{ ...hero(2), fontFamily: disp, fontWeight: 700, fontSize: "clamp(44px, 7vw, 86px)", lineHeight: 0.98, letterSpacing: "-0.03em", margin: 0 }}>
+
+          {/* eyebrow stat — the number IS the product */}
+          <div style={{ ...hero(2), marginBottom: 20 }}>
+            <span style={{
+              fontFamily: mono, fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 600,
+              color: C.blue, letterSpacing: "-0.02em",
+              textShadow: `0 0 32px rgba(91,141,239,0.55), 0 0 64px rgba(91,141,239,0.25)`,
+            }}>
+              6.31× signal-to-noise
+            </span>
+            <span style={{ fontFamily: mono, fontSize: "clamp(12px, 1.5vw, 15px)", color: C.sub, marginLeft: 12 }}>
+              · walk-forward validated
+            </span>
+          </div>
+
+          <h1 style={{ ...hero(3), fontFamily: disp, fontWeight: 700, fontSize: "clamp(44px, 7vw, 86px)", lineHeight: 0.98, letterSpacing: "-0.03em", margin: 0 }}>
             See the deal<br />before it's a deal.
           </h1>
-          <p style={{ ...hero(3), fontSize: "clamp(16px, 2vw, 20px)", color: C.sub, maxWidth: 620, margin: "26px auto 0", lineHeight: 1.5 }}>
+          <p style={{ ...hero(4), fontSize: "clamp(16px, 2vw, 20px)", color: C.sub, maxWidth: 620, margin: "26px auto 0", lineHeight: 1.5 }}>
             DealFlow AI ranks the entire public software universe by acquisition likelihood — so you find the target before the banker's call, not after.
           </p>
-          <div style={{ ...hero(4), display: "flex", gap: 14, justifyContent: "center", marginTop: 38, flexWrap: "wrap" }}>
+          <div style={{ ...hero(5), display: "flex", gap: 14, justifyContent: "center", marginTop: 38, flexWrap: "wrap" }}>
             <button onClick={() => setWaitlistOpen(true)} className="df-cta" style={{ fontSize: 15, fontWeight: 600, background: C.blue, color: "#fff", padding: "13px 26px", borderRadius: 10, cursor: "pointer", border: "none" }}>Request Access</button>
             <Link to="/screener" className="df-cta" style={{ fontSize: 15, fontWeight: 500, color: C.text, padding: "13px 24px", borderRadius: 10, border: `1px solid ${C.lineHi}`, cursor: "pointer", textDecoration: "none" }}>See it live →</Link>
             <Link to="/methodology" className="df-cta" style={{ fontSize: 15, fontWeight: 500, color: C.sub, padding: "13px 24px", borderRadius: 10, border: `1px solid ${C.line}`, cursor: "pointer", textDecoration: "none" }}>Methodology →</Link>
           </div>
 
-          {/* hero proof number */}
-          <div style={{ ...hero(5), marginTop: 64, display: "flex", alignItems: "baseline", justifyContent: "center", gap: 18 }}>
-            <span style={{ fontFamily: mono, fontWeight: 600, fontSize: "clamp(64px, 11vw, 132px)", letterSpacing: "-0.04em", background: `linear-gradient(180deg, ${C.text}, ${C.blue})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", lineHeight: 1 }}>
-              <CountUp to={6.31} decimals={2} suffix="×" />
-            </span>
-            <span style={{ textAlign: "left", maxWidth: 240 }}>
-              <span style={{ fontFamily: mono, fontSize: 13, color: C.green, letterSpacing: 1 }}>TOP-DECILE LIFT</span>
-              <p style={{ fontSize: 14, color: C.sub, margin: "6px 0 0", lineHeight: 1.45 }}>more acquisition targets than random — validated out-of-sample, 2020–2024.</p>
-            </span>
+          {/* "show your work" proof strip */}
+          <div style={{ ...hero(5), marginTop: 22, fontFamily: mono, fontSize: 12, color: C.muted, letterSpacing: 0.3 }}>
+            130 verified deals · 27,949 company-years · placebo 1.00×
           </div>
         </header>
 
@@ -259,11 +268,11 @@ export default function DealFlowLanding() {
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, maxWidth: 540 }}>
                   <div style={{ borderLeft: `2px solid ${C.green}`, paddingLeft: 18 }}>
                     <div style={{ fontFamily: mono, fontSize: 34, fontWeight: 600, color: C.text }}><CountUp to={6.31} decimals={2} suffix="×" /></div>
-                    <div style={{ fontSize: 13, color: C.sub, marginTop: 6 }}>real out-of-sample top-decile lift</div>
+                    <div style={{ fontSize: 13, color: C.sub, marginTop: 6 }}>XGB signal/noise ratio</div>
                   </div>
                   <div style={{ borderLeft: `2px solid ${C.muted}`, paddingLeft: 18 }}>
                     <div style={{ fontFamily: mono, fontSize: 34, fontWeight: 600, color: C.sub }}><CountUp to={1.00} decimals={2} suffix="×" /></div>
-                    <div style={{ fontSize: 13, color: C.sub, marginTop: 6 }}>lift collapses on shuffled labels — no leakage</div>
+                    <div style={{ fontSize: 13, color: C.sub, marginTop: 6 }}>out-of-sample validated 2020–2024, placebo collapses to 1.00×</div>
                   </div>
                 </div>
               </div>
