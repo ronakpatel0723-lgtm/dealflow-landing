@@ -1,12 +1,15 @@
-const fs   = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 function loadScores() {
   const p = path.join(__dirname, '..', 'public', 'scores.json');
   return JSON.parse(fs.readFileSync(p, 'utf8'));
 }
 
-module.exports = function handler(req, res) {
+export default function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET');
 
@@ -34,4 +37,4 @@ module.exports = function handler(req, res) {
     pages:    Math.ceil(companies.length / perPage),
     companies: companies.slice(offset, offset + perPage),
   });
-};
+}

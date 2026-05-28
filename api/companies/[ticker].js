@@ -1,7 +1,10 @@
-const fs   = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-module.exports = function handler(req, res) {
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+export default function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET');
 
@@ -20,4 +23,4 @@ module.exports = function handler(req, res) {
     return res.status(404).json({ error: `ticker ${ticker} not found` });
   }
   res.status(200).json(company);
-};
+}
