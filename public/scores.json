@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-05-28T23:03:28Z",
+    "last_updated": "2026-05-28T23:06:08Z",
     "model_version": "logistic-v2-form4",
     "score_methodology": "Hybrid: 36/65 companies scored with logistic regression (Form 4 + financials); remainder scored with rule-based attractiveness model only",
     "last_model_trained": "2026-05-28T19:40:41Z",
-    "positive_count": 168,
+    "positive_count": 169,
     "total_count": 100,
     "tiers": {
       "High": 10,
@@ -61,7 +61,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 46.4. ideal size band at $0.645B. premium SaaS margins at 89.1%",
+      "rationale": "Doximity's 89.1% gross margin on $644.9M in trailing revenue, combined with a Rule of 40 score of 46.4, signals a highly capital-efficient business generating durable, scalable cash flows that would be accretive to an acquirer's portfolio with minimal margin restructuring required. A large strategic acquirer in health system software or pharmaceutical marketing \u2014 such as a Veeva Systems or an Epic-adjacent platform \u2014 would be the most natural buyer, seeking to embed Doximity's physician network of over 80% of U.S. doctors as a proprietary distribution channel for clinical tools, data products, or drug commercialization workflows.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -82,10 +82,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 1,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "QLYS",
@@ -109,7 +109,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 43.3. ideal size band at $0.67B. premium SaaS margins at 82.8%",
+      "rationale": "Qualys presents a compelling financial profile with $670.0M in trailing revenue, 82.8% gross margins, and a Rule of 40 score of 43.3, reflecting a rare combination of capital-efficient growth and deep profitability that trades at a reasonable 4.76x EV/Revenue relative to its quality. A strategic acquirer \u2014 most likely a large enterprise platform vendor such as Palo Alto Networks or Microsoft \u2014 would be the natural buyer, seeking to absorb Qualys' cloud-native vulnerability management and compliance capabilities to close gaps in their unified security platforms and accelerate cross-sell into their existing enterprise customer bases.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -130,12 +130,10 @@
           "explanation": "82.8% margin \u2014 above sector median 72.1%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 1,
-      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
-      "has_thesis": true,
-      "thesis_preview": "Qualys generates $670M in TTM revenue at an 82.8% gross margin with a Rule of 40 score of 43.3, reflecting a capital-efficient, high-quality SaaS busi..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "CWAN",
@@ -159,7 +157,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 60.8. ideal size band at $0.73B. solid margins at 67.3%",
+      "rationale": "Clearwater Analytics generates $730.0M in trailing revenue at a 67.3% gross margin with a Rule of 40 score of 60.8, reflecting a rare combination of capital-efficient growth and durable unit economics that supports an EV/Revenue multiple of 10.96x without obvious overvaluation relative to its profitability profile. A strategic acquirer \u2014 most likely a large financial data and analytics platform such as SS&C Technologies or Broadridge Financial Solutions \u2014 would target Clearwater to absorb its cloud-native investment accounting infrastructure and displace legacy on-premise competitors across institutional asset managers and insurance portfolios.",
       "shap_factors": [
         {
           "feature": "Has Insider Signal",
@@ -180,10 +178,10 @@
           "explanation": "67.3% margin \u2014 below sector median 72.1%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 1,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "CLBT",
@@ -207,7 +205,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 32.5. ideal size band at $0.476B. premium SaaS margins at 84.2%",
+      "rationale": "Cellebrite's 84.2% gross margin on $475.7M in trailing revenue, paired with a Rule of 40 score of 32.5, signals a capital-efficient, high-retention SaaS model that generates durable cash flow at scale without sacrificing growth. A strategic acquirer in the law enforcement technology or digital intelligence space \u2014 such as Axon Enterprise or a large defense-oriented software platform like Palantir \u2014 would likely target Cellebrite to vertically integrate its device extraction and investigation workflows directly into broader public safety or intelligence ecosystems, deepening switching costs and expanding per-agency contract value.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -228,10 +226,10 @@
           "explanation": "14.0% margin \u2014 above sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 2,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "PRGS",
@@ -255,7 +253,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 47.6. near-ideal size at $0.978B. premium SaaS margins at 80.8%",
+      "rationale": "Progress Software's 80.8% gross margin on $977.8M in trailing revenue, combined with a Rule of 40 score of 47.6, signals a capital-efficient, scaled SaaS business generating durable cash flow well above the threshold that typically justifies premium acquisition multiples. A large strategic acquirer in the application infrastructure or DevOps space \u2014 such as a Broadcom-style platform consolidator or a Salesforce-tier enterprise software vendor \u2014 would likely pursue PRGS to absorb its recurring revenue base and cross-sell its tooling across an existing enterprise customer network, accelerating organic growth without building comparable distribution from scratch.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -276,10 +274,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 1,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "DUOL",
@@ -303,7 +301,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 51.8. near-ideal size at $1.04B. strong margins at 72.2%",
+      "rationale": "Duolingo's 72.2% gross margin on $1.04B in trailing revenue, combined with a Rule of 40 score of 51.8, signals a rare combination of capital efficiency and accelerating growth that justifies a premium well above its current 3.91x EV/Revenue multiple. A strategic acquirer \u2014 most likely a large edtech platform such as Chegg or a consumer internet conglomerate such as Alphabet \u2014 would pursue this asset to immediately acquire a scaled, sticky consumer subscription base with global brand recognition in language learning, a category that has proven difficult to build organically.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -324,10 +322,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 2,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "LMND",
@@ -351,7 +349,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 40.1. ideal size band at $0.738B. [skipped: Gross Margin]",
+      "rationale": "Lemonade's $737.9M in trailing revenue and Rule of 40 score of 40.1 at a 5.63x EV/Revenue multiple reflect a capital-efficient growth profile that offers an acquirer meaningful scale at a reasonable entry price relative to peers. A large incumbent insurer such as Allstate or a diversified fintech platform like Block would be the most likely strategic acquirers, seeking to absorb Lemonade's AI-native underwriting infrastructure and digitally engaged customer base to accelerate their own direct-to-consumer distribution at a cost below building organically.",
       "shap_factors": [
         {
           "feature": "Has Insider Signal",
@@ -372,10 +370,10 @@
           "explanation": "Data unavailable"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 2,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "HIMS",
@@ -399,7 +397,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 63.5. borderline size at $2.35B. strong margins at 73.8%",
+      "rationale": "Hims & Hers Health presents a compelling financial profile for acquirers, generating $2,350M in trailing revenue at a 73.8% gross margin while posting a Rule of 40 score of 63.5 \u2014 indicating that the business is simultaneously scaling and profitable at a rate that commands premium valuation attention, yet its 2.5x EV/Revenue multiple suggests the market has not fully priced in that efficiency. A large-cap strategic acquirer \u2014 most likely a diversified healthcare conglomerate such as a CVS Health or a UnitedHealth Group subsidiary \u2014 would be the natural buyer, seeking to absorb Hims & Hers' direct-to-consumer telehealth distribution infrastructure and proprietary patient data asset to accelerate their own digital care delivery without building cold from scratch.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -420,10 +418,10 @@
           "explanation": "$2.35B revenue \u2014 above sector median $1.03B"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 2,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "OPRA",
@@ -447,7 +445,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 42.9. ideal size band at $0.615B. solid margins at 64.1%",
+      "rationale": "Opera Limited's 64.1% gross margin on $614.8M in trailing revenue, combined with a Rule of 40 score of 42.9, signals a capital-efficient business generating durable returns well above the threshold that institutional buyers use to screen for quality software assets. A strategic acquirer such as a large browser or digital advertising platform (e.g., a Microsoft or a Google-adjacent ad-tech consolidator) would be the most likely pursuer, seeking to absorb Opera's monetized user base and ad delivery infrastructure to extend reach in emerging markets where Opera maintains outsized distribution.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -468,10 +466,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 3,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "UPWK",
@@ -495,7 +493,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 18.8. ideal size band at $0.788B. premium SaaS margins at 77.8%",
+      "rationale": "Upwork's 77.8% gross margin on $787.8M in trailing revenue, combined with a Rule of 40 score of 18.8, signals a capital-efficient marketplace business trading at a deeply discounted 1.1x EV/Revenue multiple that leaves meaningful value creation on the table for an acquirer. A strategic acquirer such as a large HR technology platform (e.g., SAP SuccessFactors or Workday) or a staffing-focused PE firm would be the most natural buyers, seeking to absorb Upwork's freelance marketplace liquidity and enterprise client base to accelerate the shift from traditional headcount models to on-demand talent deployment.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -516,10 +514,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 4,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "RDWR",
@@ -543,7 +541,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 13.6. ideal size band at $0.302B. premium SaaS margins at 80.7%",
+      "rationale": "Radware's 80.7% gross margin on $301.9M in trailing revenue signals a capital-efficient software model, though its Rule of 40 score of 13.6 reflects a growth-profitability profile that leaves meaningful operational upside for an acquirer willing to restructure go-to-market spend. A strategic acquirer in the network security or cloud infrastructure space \u2014 such as a Cisco or Akamai \u2014 would be the most logical buyer, seeking to fold Radware's application delivery and DDoS mitigation capabilities into a broader platform to cross-sell into an existing enterprise customer base and eliminate redundant overhead.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -564,10 +562,10 @@
           "explanation": "9.8% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 5,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "BL",
@@ -591,7 +589,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 12.9. ideal size band at $0.7B. premium SaaS margins at 75.2%",
+      "rationale": "BlackLine's 75.2% gross margin and $700.4M in trailing revenue demonstrate a capital-efficient SaaS model, though its Rule of 40 score of 12.9 signals that growth and profitability together leave room for operational improvement under new ownership. A strategic acquirer \u2014 most likely a large ERP or financial close platform such as SAP or Oracle \u2014 would be the primary pursuer, seeking to embed BlackLine's account-to-report automation directly into existing CFO suite offerings and displace point-solution competitors across their installed enterprise customer base.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -612,10 +610,10 @@
           "explanation": "7.2% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 6,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "SEMR",
@@ -639,7 +637,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 12.6. ideal size band at $0.44B. premium SaaS margins at 80.5%",
+      "rationale": "SEMrush's 80.5% gross margin on $440.0M in trailing revenue signals a capital-efficient SaaS model, though its Rule of 40 score of 12.6 reflects a growth-profitability balance that leaves meaningful operational leverage on the table for an acquirer to unlock. A strategic buyer \u2014 most likely a large marketing technology platform such as HubSpot or Salesforce \u2014 would be the natural acquirer, seeking to embed SEMrush's search intelligence and competitive analytics directly into existing CRM and campaign workflows to drive cross-sell expansion across their installed customer base.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -660,12 +658,10 @@
           "explanation": "17.7% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 7,
-      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
-      "has_thesis": true,
-      "thesis_preview": "SEMrush generates $440M in TTM revenue at 80.5% gross margins with a Rule of 40 of 12.6, reflecting 17.7% growth and a business where the unit economi..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "GDRX",
@@ -689,7 +685,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 11.6. ideal size band at $0.8B. premium SaaS margins at 92.8%",
+      "rationale": "GoodRx generates $800M in trailing revenue at a 92.8% gross margin with a Rule of 40 of 11.6, and at just 1.51x EV/Revenue the valuation implies a rare opportunity to acquire a high-margin healthcare consumer platform at a price that already reflects growth deceleration. A large strategic acquirer \u2014 most likely a pharmacy benefits manager such as CVS Health or a health insurer such as UnitedHealth Group \u2014 would be the natural buyer, seeking to absorb GoodRx's prescription pricing infrastructure and 25M+ consumer relationships to reduce drug cost leakage and capture the uninsured and underinsured patient segment at scale.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -710,10 +706,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 3,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "SPSC",
@@ -737,7 +733,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 33.5. ideal size band at $0.75B. solid margins at 69.2%",
+      "rationale": "SPS Commerce generates $750.0M in trailing revenue at a 69.2% gross margin with a Rule of 40 score of 33.6, offering an acquirer a capital-efficient, high-retention SaaS asset at a relatively compressed 2.3x EV/Revenue multiple that leaves room for value creation through scale. A strategic acquirer \u2014 most likely a supply chain platform vendor such as Manhattan Associates or a large ERP provider such as SAP \u2014 would target SPS Commerce to capture its embedded EDI and supplier network effects, converting existing customer relationships into cross-sell surface area across procurement and logistics workflows.",
       "shap_factors": [
         {
           "feature": "Has Insider Signal",
@@ -758,12 +754,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 8,
-      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
-      "has_thesis": true,
-      "thesis_preview": "SPS Commerce presents a compelling acquisition target at $750M TTM revenue growing at 17.8% YoY, with 69.2% gross margins and a Rule of 40 score of 33..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "MNDY",
@@ -787,7 +781,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 26.6. near-ideal size at $1.23B. premium SaaS margins at 89.2%",
+      "rationale": "monday.com's 89.2% gross margin on $1,232M in trailing revenue signals a highly efficient, scalable SaaS model, and while its Rule of 40 score of 26.6 reflects a growth-profitability balance that falls below top-tier thresholds, its 2.14x EV/Revenue multiple represents a materially discounted entry point relative to historical SaaS deal comps. A strategic acquirer \u2014 most likely a large enterprise software platform such as Salesforce or SAP \u2014 would be the probable buyer, seeking to absorb monday.com's work management installed base and workflow automation layer to deepen suite stickiness and cross-sell into existing mid-market and enterprise accounts.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -808,10 +802,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 9,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "APPN",
@@ -835,7 +829,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 17.9. ideal size band at $0.727B. strong margins at 72.5%",
+      "rationale": "Appian's 72.5% gross margin on $726.9M in trailing revenue signals a capital-efficient software model, though its Rule of 40 score of 17.9 reflects a growth-profitability balance that leaves meaningful operational upside for an acquirer willing to restructure go-to-market spend. A large strategic acquirer \u2014 most likely a platform software consolidator such as SAP or Salesforce, or a process-automation-focused PE firm in the mold of Vista Equity Partners \u2014 would target Appian to absorb its low-code process automation capabilities directly into an existing enterprise workflow suite, accelerating cross-sell into an established customer base while rationalizing Appian's standalone sales and R&D overhead to unlock margin expansion.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -856,10 +850,10 @@
           "explanation": "17.8% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 10,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "FROG",
@@ -883,7 +877,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 7.2. ideal size band at $0.532B. premium SaaS margins at 76.8%",
+      "rationale": "JFrog's 76.8% gross margin on $531.8M in trailing revenue signals a capital-efficient software model, though its Rule of 40 score of 7.2 reflects slower combined growth and profitability momentum that would require an acquirer to unlock additional scale. A large strategic acquirer \u2014 most likely a platform DevSecOps or cloud infrastructure vendor such as a hyperscaler or an established DevOps suite provider \u2014 would be the natural buyer, targeting JFrog's binary management and software supply chain security capabilities to close gaps in end-to-end developer toolchain offerings and compete directly with consolidating rivals.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -904,10 +898,10 @@
           "explanation": "24.1% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 3,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "FLYW",
@@ -931,7 +925,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 29.8. ideal size band at $0.62B. solid margins at 61.4%",
+      "rationale": "Flywire's $620.0M in trailing revenue, 61.4% gross margins, and Rule of 40 score of 29.8 reflect a capital-efficient payments business generating durable unit economics at scale, currently available at a modest 2.67x EV/Revenue entry multiple. A strategic acquirer \u2014 most likely a large payments network such as Visa or Mastercard, or a global treasury and payments platform like Corpay \u2014 would be the natural buyer, targeting Flywire's vertical-specific payment rails in education and healthcare to accelerate cross-border monetization within existing enterprise client bases.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -952,10 +946,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 3,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "AGYS",
@@ -979,7 +973,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 29.4. ideal size band at $0.319B. solid margins at 62.6%",
+      "rationale": "Agilysys presents a financially attractive profile with $319.3M in trailing revenue, a 62.6% gross margin reflecting deep software monetization efficiency, and a Rule of 40 score of 29.4 that signals a balanced growth-and-profitability trajectory at a 6.68x EV/Revenue multiple that leaves room for value creation. A strategic acquirer \u2014 most likely a larger hospitality technology platform such as Oracle Hospitality or a payments infrastructure company like Shift4 Payments \u2014 would be the most probable pursuer, seeking to absorb Agilysys's vertically embedded POS and property management software to cross-sell into its existing hotel and resort customer base and accelerate recurring SaaS revenue attach rates.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -1000,10 +994,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 11,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "PAYC",
@@ -1027,7 +1021,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 36.5. borderline size at $2.05B. premium SaaS margins at 83.2%",
+      "rationale": "Paycom's 83.2% gross margin on $2,050M in trailing revenue signals a highly efficient, scalable SaaS model, and while its Rule of 40 score of 36.6 falls below the 40-point threshold, the margin profile alone justifies serious acquirer interest at a relatively modest 3.39x EV/Revenue multiple. A strategic acquirer such as a large HCM platform (e.g., SAP or Ceridian) or a PE firm specializing in SaaS consolidation (e.g., Thoma Bravo, given their 2021 acquisition of Medallia at $6.3B) would be the most likely buyers, targeting Paycom's entrenched SMB and mid-market payroll customer base as a means to cross-sell broader workforce management or financial software suites.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -1048,11 +1042,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 12,
-      "has_thesis": true,
-      "thesis_preview": "Paycom generates $2.05B in TTM revenue at 83.2% gross margins with a Rule of 40 score of 36.6, reflecting a business that has moderated growth to 8.9%..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "GTLB",
@@ -1076,7 +1069,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 18.4. near-ideal size at $0.96B. premium SaaS margins at 87.4%",
+      "rationale": "GitLab's 87.4% gross margin on $960M in trailing revenue signals a highly efficient, scalable software business, though a Rule of 40 score of 18.4 reflects a growth-profitability balance that leaves room for operational leverage under new ownership. A large strategic acquirer in the DevSecOps or cloud infrastructure space \u2014 most likely a hyperscaler such as Microsoft or Google, or a platform security vendor such as Palo Alto Networks \u2014 would be the natural buyer, seeking to absorb GitLab's end-to-end CI/CD and source control platform to deepen developer ecosystem lock-in and bundle it across existing enterprise contracts.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -1097,11 +1090,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 13,
-      "has_thesis": true,
-      "thesis_preview": "GitLab's $960M TTM revenue base, 87.4% gross margin, and 25.8% YoY growth combine for a Rule of 40 score of 18.4, which signals a company still priori..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "FRSH",
@@ -1125,7 +1117,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 18.0. near-ideal size at $0.84B. premium SaaS margins at 85.0%",
+      "rationale": "Freshworks offers an acquirer $840M in trailing revenue at an 85% gross margin, though its Rule of 40 score of 18 reflects a growth-profitability balance that leaves meaningful operational upside on the table at a relatively modest 2.07x EV/Revenue entry multiple. A strategic acquirer \u2014 most likely a larger CRM or IT service management platform such as Salesforce or ServiceNow \u2014 would be the probable pursuer, seeking to absorb Freshworks' SMB and mid-market customer base to expand addressable reach and cross-sell into an existing enterprise motion without building that distribution from scratch.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -1146,12 +1138,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 14,
-      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
-      "has_thesis": true,
-      "thesis_preview": "Freshworks presents an attractive financial profile with $840M in TTM revenue growing at 16.4% YoY, 85% gross margins that are best-in-class for SMB-f..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "DV",
@@ -1175,7 +1165,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 24.5. ideal size band at $0.75B. [skipped: Gross Margin]",
+      "rationale": "DoubleVerify's $750M revenue base and Rule of 40 score of 24.5 reflect a business generating durable top-line scale, though the compressed multiple of 3.61x EV/Revenue signals that the market is pricing in execution risk or slowing growth, creating a potential entry opportunity for an acquirer at a reasonable valuation. A strategic acquirer \u2014 most likely a large ad-tech platform such as The Trade Desk or a diversified data and measurement company such as Nielsen \u2014 would be the most probable buyer, seeking to vertically integrate brand safety and media verification capabilities directly into their core ad-buying or audience measurement stack to reduce reliance on third-party verification vendors.",
       "shap_factors": [
         {
           "feature": "Operating Margin",
@@ -1196,10 +1186,10 @@
           "explanation": "13.9% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 15,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "ASAN",
@@ -1223,7 +1213,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at -15.8. ideal size band at $0.79B. premium SaaS margins at 89.0%",
+      "rationale": "Asana's 89.0% gross margin on $790.0M in trailing revenue signals a highly efficient software business despite a Rule of 40 of -15.7 that reflects ongoing investment in growth, creating a potential margin expansion story that a disciplined acquirer could unlock through cost rationalization. A large strategic acquirer in the collaboration or productivity space\u2014such as a Salesforce or SAP\u2014would be the most likely pursuer, seeking to embed Asana's work management workflows directly into existing CRM or ERP platforms to deepen seat-level retention and cross-sell into their installed enterprise base, while the 1.63x EV/Revenue entry multiple offers meaningful valuation room relative to the $1.5B comparable transaction range observed in recent SaaS deals.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -1244,11 +1234,10 @@
           "explanation": "Rule of 40 = -15.7 \u2014 below sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 16,
-      "has_thesis": true,
-      "thesis_preview": "Asana generates $790M in TTM revenue at an 89% gross margin, but its Rule of 40 of -15.7 signals that growth (9.2% YoY) has decelerated sharply while ..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "VRNS",
@@ -1272,7 +1261,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at -10.3. ideal size band at $0.62B. premium SaaS margins at 78.8%",
+      "rationale": "Varonis presents a compelling financial profile anchored by 78.8% gross margins and $620.0M in trailing revenue, though its Rule of 40 of -10.3 signals that growth and profitability are not yet working in tandem, creating potential for margin expansion under new ownership. A private equity acquirer such as Thoma Bravo \u2014 which has demonstrated appetite for cybersecurity software assets at comparable valuations \u2014 would be the most likely pursuer, given the opportunity to rationalize operating costs against that high-margin revenue base and accelerate the transition to a more profitable SaaS model at the current 5.29x EV/Revenue entry point.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -1293,12 +1282,10 @@
           "explanation": "Rule of 40 = -10.3 \u2014 below sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 4,
-      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
-      "has_thesis": true,
-      "thesis_preview": "Varonis Systems presents an attractive acquisition profile with $620M in TTM revenue growing at 13.2% YoY and 78.8% gross margins, though the Rule of ..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "KVYO",
@@ -1322,7 +1309,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 26.1. near-ideal size at $1.23B. strong margins at 74.7%",
+      "rationale": "Klaviyo's $1,230M revenue base, 74.7% gross margin, and Rule of 40 score of 26.1 reflect a profitable, capital-efficient SaaS business available at a modest 2.78x EV/Revenue \u2014 a rare combination of scale and unit economics at a discount to typical software acquisition multiples. A strategic acquirer such as Salesforce or HubSpot would be the most likely pursuer, seeking to absorb Klaviyo's owned-channel marketing automation and first-party data infrastructure directly into their CRM and commerce stacks to compete more directly with enterprise marketing clouds.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -1343,10 +1330,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 17,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "DT",
@@ -1370,7 +1357,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 31.9. borderline size at $2.02B. premium SaaS margins at 81.6%",
+      "rationale": "Dynatrace's 81.6% gross margin on $2.0B in trailing revenue, combined with a Rule of 40 score of 31.9, signals a capital-efficient SaaS model with durable unit economics that justify its current 5.12x EV/Revenue multiple. A strategic acquirer \u2014 most likely a large enterprise infrastructure or cloud platform vendor such as Cisco or IBM \u2014 would pursue Dynatrace to absorb its observability and AIOps capabilities directly into an existing security and monitoring stack, accelerating cross-sell into established enterprise customer bases without building comparable telemetry depth organically.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -1391,10 +1378,10 @@
           "explanation": "13.1% margin \u2014 above sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 5,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "WK",
@@ -1418,7 +1405,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 14.9. near-ideal size at $0.885B. premium SaaS margins at 78.5%",
+      "rationale": "Workiva's 78.5% gross margin on $884.6M in trailing revenue signals a high-quality SaaS business, though its Rule of 40 score of 14.9 reflects a growth-profitability balance that leaves room for operational optimization under new ownership. A strategic acquirer in the financial compliance or ERP space \u2014 most likely Oracle or SAP \u2014 would be the natural fit, given Workiva's foothold in SEC reporting and ESG disclosure workflows that would extend their existing enterprise finance suites without requiring greenfield product development.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -1439,10 +1426,10 @@
           "explanation": "19.8% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 18,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "BOX",
@@ -1466,7 +1453,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 15.1. near-ideal size at $1.18B. premium SaaS margins at 79.2%",
+      "rationale": "Box's 79.2% gross margin on $1.18B in trailing revenue signals a capital-efficient, scaled SaaS business, though its Rule of 40 of 15.1 reflects a growth-profitability profile that leaves room for operational improvement under new ownership. A large strategic acquirer \u2014 most likely a platform infrastructure vendor such as Salesforce or Microsoft \u2014 would be the natural buyer, seeking to absorb Box's entrenched enterprise content management workflows and cross-sell into existing productivity and CRM suites at a relatively modest 3.33x EV/Revenue entry multiple.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -1487,10 +1474,10 @@
           "explanation": "8.0% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 19,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "APLM",
@@ -1514,7 +1501,7 @@
         "growth": null,
         "marketPosition": 70.0
       },
-      "rationale": "micro-cap at $0.01B limits acquirer pool. premium SaaS margins at 100.0%. [skipped: Rule of 40, Growth]",
+      "rationale": "Apollomics generates $10.0M in trailing revenue at a 100.0% gross margin with no current Rule of 40 figure, making it a capital-efficient asset where every incremental dollar of revenue flows directly to gross profit, available at a relatively modest 3.33x EV/Revenue entry multiple. A strategic acquirer \u2014 such as a mid-market enterprise software consolidator or a specialty pharma-tech platform operator \u2014 would most likely pursue this asset to absorb its high-margin revenue base and layer it onto an existing distribution infrastructure, accelerating earnings contribution without proportional cost addition.",
       "shap_factors": [
         {
           "feature": "Revenue Growth",
@@ -1535,10 +1522,10 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 20,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "APPF",
@@ -1562,7 +1549,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 35.8. near-ideal size at $0.951B. solid margins at 63.7%",
+      "rationale": "AppFolio's $950.8M in trailing revenue combined with a 63.7% gross margin and a Rule of 40 score of 35.8 signal a capital-efficient, scaled SaaS business generating durable unit economics that would meaningfully lift an acquirer's blended margin profile. A strategic acquirer \u2014 most likely a property management or real estate technology platform such as RealPage's parent Thoma Bravo or a large vertical software consolidator like Yardi Systems \u2014 would be drawn to AppFolio's entrenched SMB landlord and property manager customer base as a cross-sell vehicle for adjacent financial services, maintenance, and leasing workflow products.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -1583,10 +1570,10 @@
           "explanation": "19.7% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 21,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "FTNT",
@@ -1610,7 +1597,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 44.9. mega-cap at $6.80B limits acquirer pool. premium SaaS margins at 80.5%",
+      "rationale": "Fortinet's 80.5% gross margin on $6.8B in trailing revenue, combined with a Rule of 40 score of 44.8, signals a capital-efficient, scaled cybersecurity franchise generating durable cash flows that support a meaningful premium over its current 14.03x EV/Revenue multiple. A large strategic acquirer \u2014 most likely a hyperscaler such as Microsoft or Google, or a diversified technology infrastructure player such as Broadcom \u2014 would target Fortinet to immediately embed enterprise-grade network security across an existing cloud or hardware distribution footprint, accelerating cross-sell into tens of thousands of existing enterprise relationships without building the capability organically.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -1631,10 +1618,10 @@
           "explanation": "14.2% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 6,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "VEEV",
@@ -1658,7 +1645,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 45.0. mega-cap at $3.20B limits acquirer pool. premium SaaS margins at 75.5%",
+      "rationale": "Veeva Systems generates $3.2B in trailing revenue at a 75.5% gross margin with a Rule of 40 score of 45, reflecting a capital-efficient, high-margin software business available at a relatively modest 6.1x EV/Revenue given its defensible positioning in life sciences cloud infrastructure. A large strategic acquirer \u2014 most likely a healthcare IT platform like Oracle (which absorbed Cerner for $28B in 2021) or a hyperscaler such as Salesforce seeking to deepen vertical SaaS penetration \u2014 would be the most probable pursuer, targeting Veeva's locked-in pharmaceutical and biotech customer relationships to cross-sell data, analytics, or cloud services into an otherwise difficult-to-penetrate regulated industry.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -1679,12 +1666,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 4,
-      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
-      "has_thesis": true,
-      "thesis_preview": "Veeva Systems presents a compelling acquisition profile with $3.2B in TTM revenue growing at 16.3% YoY, 75.5% gross margins, and a Rule of 40 score of..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "WEAV",
@@ -1708,7 +1693,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 4.2. ideal size band at $0.24B. strong margins at 72.1%",
+      "rationale": "Weave Communications offers an acquirer $240.0M in recurring revenue at a 72.1% gross margin, though its Rule of 40 score of 4.2 signals that growth and profitability efficiency remain underdeveloped relative to peer SaaS benchmarks, keeping its EV/Revenue at a modest 1.81x entry point. A strategic acquirer \u2014 most likely a dental or medical practice management platform such as Henry Schein or a vertical SaaS consolidator \u2014 would be the most probable buyer, targeting Weave's patient communication and engagement layer to bundle with existing practice workflows and extract cross-sell revenue from an installed base of small healthcare practices.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -1729,11 +1714,10 @@
           "explanation": "17.0% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 22,
-      "has_thesis": true,
-      "thesis_preview": "Weave Communications presents an attractive entry point with $240M in TTM revenue growing at 17% YoY, a 72.1% gross margin that signals durable unit e..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "TENB",
@@ -1757,7 +1741,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 10.1. near-ideal size at $1B. premium SaaS margins at 78.1%",
+      "rationale": "Tenable's $1.0B revenue base and 78.1% gross margin reflect a capital-efficient software model, though a Rule of 40 of 10.1 signals that growth and profitability together leave room for operational improvement under new ownership. A large strategic acquirer in the broader security platform space \u2014 such as a Palo Alto Networks or Microsoft \u2014 would be the most natural buyer, seeking to absorb Tenable's vulnerability management customer base and embed its exposure analytics into a wider zero-trust or SIEM product suite to reduce churn and expand deal sizes across existing enterprise accounts.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -1778,12 +1762,10 @@
           "explanation": "11.0% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 7,
-      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
-      "has_thesis": true,
-      "thesis_preview": "Tenable Holdings presents an attractive acquisition candidate at $1.0B in TTM revenue with 78.1% gross margins and a Rule of 40 of 10.1, where the mar..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "IOT",
@@ -1807,7 +1789,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 26.3. borderline size at $1.62B. premium SaaS margins at 76.7%",
+      "rationale": "Samsara's $1.6B revenue base, 76.7% gross margin, and Rule of 40 score of 26.3 reflect a capital-efficient fleet and operations intelligence platform with durable unit economics that support a 10.1x EV/Revenue entry multiple. A strategic acquirer\u2014most likely a large industrial software consolidator such as Trimble or a hyperscaler like Google Cloud seeking to embed IoT telematics into logistics and infrastructure offerings\u2014would be drawn to Samsara's sticky, sensor-to-cloud data network as a means of expanding real-time operational intelligence across physical asset-intensive industries.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -1828,10 +1810,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 23,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "NTNX",
@@ -1855,7 +1837,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 24.9. borderline size at $2.54B. premium SaaS margins at 86.8%",
+      "rationale": "Nutanix's 86.8% gross margin on $2.5B in trailing revenue signals a capital-efficient, subscription-anchored model, and while its Rule of 40 score of 24.9 reflects a growth-profitability balance that trails pure hypergrowth peers, the underlying unit economics remain attractive at a 4.74x EV/Revenue entry multiple. A strategic acquirer \u2014 most likely a large infrastructure or cloud platform vendor such as Cisco or IBM \u2014 would target Nutanix to accelerate hybrid cloud and HCI portfolio expansion, gaining an established enterprise customer base and a high-retention SaaS revenue stream that would be difficult and costly to replicate organically.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -1876,10 +1858,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 24,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "BILL",
@@ -1903,7 +1885,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 7.9. near-ideal size at $1.46B. premium SaaS margins at 81.4%",
+      "rationale": "BILL Holdings generates $1,460M in trailing revenue at an 81.4% gross margin, though its Rule of 40 score of 7.9 reflects slowing growth that, combined with a compressed 2.53x EV/Revenue multiple, creates an attractively priced entry point for an acquirer relative to the underlying cash generation profile. A large payments network or financial infrastructure player \u2014 such as a Visa, Mastercard, or an established bank technology acquirer \u2014 would be the most logical strategic buyer, seeking to absorb BILL's SMB accounts payable/receivable workflow penetration and cross-sell it across an existing merchant or commercial banking customer base.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -1924,10 +1906,10 @@
           "explanation": "13.4% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 4,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "CERT",
@@ -1951,7 +1933,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 13.8. ideal size band at $0.419B. solid margins at 61.5%",
+      "rationale": "Certara's 61.5% gross margin on $418.8M in trailing revenue signals a capital-efficient, software-driven business model, though its Rule of 40 score of 13.8 reflects a growth-profitability profile that leaves meaningful operational upside for an acquirer willing to rationalize costs or accelerate top-line expansion. A strategic acquirer in life sciences software \u2014 such as a Veeva Systems or Dassault Syst\u00e8mes \u2014 would be the most likely buyer, drawn by Certara's embedded position in biosimulation and regulatory workflows where switching costs are high and cross-sell opportunities into existing pharma client bases are immediate and defensible.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -1972,10 +1954,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 5,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "PHR",
@@ -1999,7 +1981,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 13.1. ideal size band at $0.48B. solid margins at 67.9%",
+      "rationale": "Phreesia's 67.9% gross margin on $480.0M in trailing revenue signals a capital-efficient, scalable software model, though its Rule of 40 of 13.1 reflects a growth-profitability tradeoff that an acquirer would need to underwrite carefully at a relatively modest 1.19x EV/Revenue entry multiple. A large health system IT consolidator such as Oracle Health or a healthcare-focused PE firm like Veritas Capital would be the most natural buyers, seeking to embed Phreesia's patient intake and payment infrastructure into a broader ambulatory or revenue cycle management platform to drive cross-sell and reduce provider workflow fragmentation.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -2020,10 +2002,10 @@
           "explanation": "14.5% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 6,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "GSHD",
@@ -2047,7 +2029,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 16.1. ideal size band at $0.365B. [skipped: Gross Margin]",
+      "rationale": "Goosehead Insurance's $365.3M in trailing revenue and a Rule of 40 score of 16.1 at a 3.17x EV/Revenue multiple suggest a capital-efficient distribution platform available at a discount to higher-growth fintech peers, making it a financially accessible target for acquirers seeking scale in independent insurance distribution. A strategic acquirer such as a large personal lines carrier (e.g., Travelers or Allstate) or a PE-backed insurance distribution consolidator would most likely pursue this asset to capture Goosehead's franchise agent network and technology-enabled placement infrastructure, converting its distributed revenue base into a proprietary distribution channel at below-market entry cost.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -2068,10 +2050,10 @@
           "explanation": "16.1% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 5,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "PCOR",
@@ -2095,7 +2077,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 5.4. near-ideal size at $1.32B. premium SaaS margins at 79.5%",
+      "rationale": "Procore Technologies generates $1,320.0M in trailing revenue at a 79.5% gross margin, though its Rule of 40 score of 5.4 signals that growth and profitability together are underperforming relative to software peers, making valuation at 4.91x EV/Revenue a reasonable entry point for a buyer willing to drive operational efficiency. A strategic acquirer \u2014 most likely a large enterprise software platform such as Autodesk or Oracle \u2014 would be the most probable buyer, seeking to embed Procore's construction management workflows into broader project lifecycle or ERP suites to cross-sell into an established contractor and owner-operator customer base.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -2116,12 +2098,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 6,
-      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
-      "has_thesis": true,
-      "thesis_preview": "Procore Technologies generates $1,320M in TTM revenue at a 79.5% gross margin, yet its Rule of 40 score of just 5.4 signals that growth (14.8% YoY) an..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "NCNO",
@@ -2145,7 +2125,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 10.6. ideal size band at $0.59B. solid margins at 60.6%",
+      "rationale": "nCino's $590.0M revenue base and 60.6% gross margins reflect a capital-efficient SaaS model, though its Rule of 40 of 10.6 signals that growth and profitability together leave room for operational improvement that an acquirer could unlock. A strategic acquirer such as a core banking platform vendor (e.g., FIS or Fiserv) or a vertical SaaS consolidator would be the most natural buyers, drawn by nCino's embedded position in financial institution workflows and the opportunity to cross-sell into an existing bank and credit union customer base at a 3.22x EV/Revenue entry point that is modest relative to comparable SaaS transactions in the $1.6B\u2013$1.7B range seen with Digital Insight and Cvent.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -2166,11 +2146,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 25,
-      "has_thesis": true,
-      "thesis_preview": "nCino presents an attractive acquisition profile with $590M in TTM revenue growing at 10% annually, 60.6% gross margins, and a Rule of 40 of 10.6 \u2014 a ..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "ESTC",
@@ -2194,7 +2173,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 13.3. near-ideal size at $1.48B. strong margins at 74.4%",
+      "rationale": "Elastic N.V. generates $1,480M in trailing revenue at a 74.4% gross margin, and while its Rule of 40 score of 13.3 reflects a growth-profitability tradeoff still being resolved, its 3.09x EV/Revenue multiple offers an acquirer entry into a scaled search and observability platform at a materially lower cost than recent sector precedents averaging ~$5.2B in deal value. A strategic acquirer \u2014 most likely a large cloud infrastructure provider such as Google Cloud or Microsoft Azure, or a cybersecurity platform consolidator such as Palo Alto Networks \u2014 would be drawn to Elastic's embedded search and SIEM capabilities as a means of deepening data observability and threat detection natively within their existing enterprise stacks, reducing customer reliance on third-party tooling.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -2215,11 +2194,10 @@
           "explanation": "17.0% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 8,
-      "has_thesis": true,
-      "thesis_preview": "Elastic N.V."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "MANH",
@@ -2243,7 +2221,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 29.6. near-ideal size at $1.08B. [skipped: Gross Margin]",
+      "rationale": "Manhattan Associates generates $1,080M in trailing revenue with a Rule of 40 score of 29.6 and trades at 7.03x EV/Revenue, offering an acquirer a scaled supply chain software platform at a valuation that reflects moderate but not excessive growth-profitability balance. A strategic acquirer \u2014 most likely a large enterprise software consolidator such as SAP or Oracle \u2014 would be the natural buyer, seeking to absorb Manhattan's supply chain execution capabilities into a broader ERP ecosystem to cross-sell into existing manufacturing and retail customer bases and reduce competitive overlap in warehouse and transportation management.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -2264,10 +2242,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 26,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "ZS",
@@ -2291,7 +2269,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 18.5. borderline size at $2.67B. premium SaaS margins at 76.9%",
+      "rationale": "Zscaler's 76.9% gross margin and $2,670M in trailing twelve-month revenue signal a highly efficient, scaled SaaS business, though its Rule of 40 score of 18.5 reflects growth momentum that has moderated and warrants scrutiny on combined profitability. A strategic acquirer \u2014 most likely a legacy network infrastructure vendor such as Cisco or Palo Alto Networks \u2014 would be the natural buyer, seeking to absorb Zscaler's zero-trust cloud architecture to accelerate their own platform consolidation and displace on-premise firewall revenue with a cloud-native alternative.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -2312,10 +2290,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 9,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "NOW",
@@ -2339,7 +2317,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 34.6. mega-cap at $13.28B limits acquirer pool. premium SaaS margins at 77.5%",
+      "rationale": "ServiceNow's 77.5% gross margin on $13.3B in trailing revenue signals a highly efficient, scalable software business, and while its Rule of 40 score of 34.6 falls below the 40-threshold, the margin profile alone justifies premium consideration at 7.18x EV/Revenue. A large-scale strategic acquirer \u2014 most plausibly a hyperscaler like Microsoft or Oracle, or an enterprise infrastructure consolidator in the mold of Broadcom \u2014 would target ServiceNow to absorb its entrenched IT workflow automation platform and cross-sell into existing enterprise relationships, replicating the integration playbooks seen in the VMware ($68B) and Activision ($75.6B) deals.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -2360,10 +2338,10 @@
           "explanation": "20.9% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 27,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "OKTA",
@@ -2387,7 +2365,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 16.9. borderline size at $2.92B. premium SaaS margins at 77.4%",
+      "rationale": "Okta's $2.92B revenue base, 77.4% gross margin, and Rule of 40 of 16.9 reflect a scaled identity security platform generating durable cash flow, though the below-40 growth-profitability composite and 4.3x EV/Revenue multiple suggest the market is pricing in execution risk that a buyer could arbitrage. A strategic acquirer \u2014 most likely a large enterprise infrastructure vendor such as Cisco or IBM \u2014 would be the natural buyer, seeking to embed Okta's identity and access management capabilities directly into existing security or hybrid cloud stacks to cross-sell into large enterprise accounts and reduce reliance on point-solution vendors.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -2408,11 +2386,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 10,
-      "has_thesis": true,
-      "thesis_preview": "Okta generates $2.92B in TTM revenue at a 77.4% gross margin with a Rule of 40 score of 16.9, reflecting a business where growth has decelerated to 11..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "PATH",
@@ -2436,7 +2413,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 16.2. borderline size at $1.61B. premium SaaS margins at 83.2%",
+      "rationale": "UiPath's 83.2% gross margin on $1,610.6M in trailing revenue signals a highly capital-efficient software model, though its Rule of 40 of 16.2 reflects a growth-profitability tradeoff that moderates valuation urgency at a current 2.77x EV/Revenue entry point. A strategic acquirer \u2014 most likely a large enterprise software platform such as SAP or ServiceNow \u2014 would be the natural buyer, seeking to embed UiPath's process automation layer directly into ERP or workflow orchestration suites to reduce customer churn and expand automation attach rates across existing enterprise contracts.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -2457,10 +2434,10 @@
           "explanation": "12.7% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 28,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "ALKT",
@@ -2484,7 +2461,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 22.0. ideal size band at $0.44B. below-average margins at 57.8%",
+      "rationale": "Alkami's $440M revenue base, 57.8% gross margins, and Rule of 40 score of 21.9 indicate a scaled fintech platform with solid unit economics and measured but positive growth-profitability balance that reduces integration risk for an acquirer. A strategic acquirer such as a core banking platform provider (e.g., Fiserv or Jack Henry) or a large-cap payments infrastructure company would likely pursue Alkami to absorb its digital banking customer base and accelerate displacement of legacy credit union and community bank technology without building natively.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -2505,12 +2482,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 7,
-      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
-      "has_thesis": true,
-      "thesis_preview": "Alkami Technology presents an attractive acquisition profile with $440M in TTM revenue growing at 32.9% year-over-year, a 57.8% gross margin, and a Ru..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "BRZE",
@@ -2534,7 +2509,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 4.8. ideal size band at $0.74B. solid margins at 67.1%",
+      "rationale": "Braze's $740.0M in trailing revenue and 67.1% gross margin reflect a capital-efficient SaaS model, though a Rule of 40 of 4.8 signals that growth and profitability have yet to combine into a compelling efficiency profile, making it a value-priced asset at 2.76x EV/Revenue relative to peers. A strategic acquirer \u2014 most likely a large marketing cloud or CRM platform such as Salesforce or Adobe \u2014 would be the natural buyer, seeking to absorb Braze's customer engagement infrastructure and cross-channel messaging capabilities to close gaps in their existing lifecycle marketing stacks and reduce churn among enterprise clients.",
       "shap_factors": [
         {
           "feature": "Revenue Growth",
@@ -2555,10 +2530,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 29,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "ALRM",
@@ -2582,7 +2557,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 20.8. near-ideal size at $1.01B. solid margins at 66.2%",
+      "rationale": "Alarm.com generates $1.01B in trailing revenue at a 66.2% gross margin with a Rule of 40 score of 20.8, offering an acquirer a capital-efficient, recurring-revenue base at a compelling 2.26x EV/Revenue entry multiple relative to the underlying unit economics. A strategic acquirer such as a large security hardware manufacturer (e.g., Resideo or Johnson Controls) or a telecom/home services platform would be the most logical buyer, seeking to vertically integrate Alarm.com's software layer to capture recurring SaaS economics atop existing hardware distribution and reduce dependence on third-party monitoring platforms.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -2603,10 +2578,10 @@
           "explanation": "7.6% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 30,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "CRM",
@@ -2630,7 +2605,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 29.7. mega-cap at $41.52B limits acquirer pool. premium SaaS margins at 77.7%",
+      "rationale": "Salesforce's 77.7% gross margin on $41.5B in trailing revenue signals a highly efficient, scaled SaaS business, though its Rule of 40 score of 29.6 reflects a growth-profitability balance that leaves room for operational improvement under new ownership. A large-scale strategic acquirer \u2014 most likely a hyperscaler such as Oracle or a diversified enterprise tech conglomerate \u2014 would target Salesforce to absorb its dominant CRM customer base and cross-sell infrastructure, data, or AI services across an installed base that would be prohibitively expensive to replicate organically.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -2651,10 +2626,10 @@
           "explanation": "9.6% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 31,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "ZM",
@@ -2678,7 +2653,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 27.5. mega-cap at $4.87B limits acquirer pool. premium SaaS margins at 77.0%",
+      "rationale": "Zoom's 77.0% gross margin on $4,870M in trailing revenue signals a capital-efficient, scalable business, though its Rule of 40 score of 27.4 reflects growth deceleration that tempers overall attractiveness and contributes to a moderate 4.47x EV/Revenue entry multiple. A large strategic acquirer\u2014most likely a enterprise software platform like Salesforce or Microsoft\u2014would be the primary candidate, seeking to bundle Zoom's entrenched video and communications infrastructure into a broader productivity or CRM suite to defend against consolidation already demonstrated by deals like Salesforce's $28.4B Slack acquisition.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -2699,10 +2674,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 32,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "RELY",
@@ -2726,7 +2701,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 34.1. borderline size at $1.64B. solid margins at 60.2%",
+      "rationale": "Remitly's $1.64B in trailing revenue, 60.2% gross margin, and Rule of 40 score of 34.1 reflect a capital-efficient growth profile that generates meaningful unit economics in a high-volume, recurring-transaction business. A strategic acquirer \u2014 most likely a global payments incumbent such as Western Union or a large-cap fintech like PayPal \u2014 would be the probable buyer, seeking to absorb Remitly's digital-native remittance infrastructure and immigrant consumer base to defend against corridor erosion and accelerate cross-border payment volume at scale.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -2747,10 +2722,10 @@
           "explanation": "29.4% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 8,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "NET",
@@ -2774,7 +2749,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 20.2. borderline size at $2.17B. strong margins at 74.5%",
+      "rationale": "Cloudflare's 74.5% gross margin on $2,170M in trailing revenue signals a highly scalable software model, though its Rule of 40 score of 20.3 reflects a growth-profitability balance that falls below the 40-point threshold investors typically prize, making it a moderately attractive but not urgent acquisition target at a steep 34.95x EV/Revenue multiple. A large strategic acquirer \u2014 most likely a hyperscaler such as Microsoft or Google, or a broad security platform vendor such as Palo Alto Networks \u2014 would pursue Cloudflare to absorb its globally distributed edge network and Zero Trust architecture, instantly extending their existing security and cloud infrastructure stacks into a market where network-layer control is becoming a decisive competitive differentiator.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -2795,10 +2770,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 11,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "RPD",
@@ -2822,7 +2797,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 3.2. near-ideal size at $0.86B. strong margins at 70.3%",
+      "rationale": "Rapid7's $860M revenue base and 70.3% gross margin indicate a capital-efficient software model, though the Rule of 40 score of 3.2 reflects meaningful pressure on the growth-profitability balance that likely keeps the public market valuation subdued at 0.85x EV/Revenue. A large strategic acquirer in adjacent security infrastructure \u2014 such as a Palo Alto Networks or a Cisco \u2014 would be the most natural buyer, using Rapid7's vulnerability management and detection capabilities to consolidate a broader platform and immediately absorb accretive recurring revenue at a below-market multiple.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -2843,12 +2818,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 12,
-      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
-      "has_thesis": true,
-      "thesis_preview": "Rapid7 generates $860M in TTM revenue at a 70.3% gross margin, yet trades at just 0.85x EV/Revenue with a Rule of 40 of only 3.2, reflecting a busines..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "DBX",
@@ -2872,7 +2845,7 @@
         "growth": 28.9,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 26.2. borderline size at $2.52B. premium SaaS margins at 80.1%",
+      "rationale": "Dropbox's 80.1% gross margin on $2,521M in trailing revenue signals a highly efficient, scaled SaaS business, though its Rule of 40 score of 26.2 reflects slowing growth that keeps overall momentum below the threshold top-tier acquirers typically prize. A PE firm such as Thoma Bravo or Francisco Partners would be the most probable acquirer archetype, targeting Dropbox to extract margin expansion through cost rationalization and cross-sell its entrenched SMB and prosumer file-sync base into a broader productivity or security platform at a still-reasonable 3.48x EV/Revenue entry multiple.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -2893,10 +2866,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 33,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "AI",
@@ -2920,7 +2893,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at -58.1. ideal size band at $0.389B. solid margins at 60.6%",
+      "rationale": "C3.ai's $389.1M revenue base and 60.6% gross margin offer an acquirer a capital-efficient AI software foundation, though the Rule of 40 of -58.1 signals deep operational losses that will require meaningful restructuring or growth acceleration to justify a deal at the current 2.14x EV/Revenue. A strategic acquirer \u2014 most likely a large enterprise cloud platform such as a hyperscaler (Microsoft, Google) or an established ERP vendor (SAP, Oracle) \u2014 would be the most probable buyer, seeking to bolt on C3.ai's pre-built industry AI applications and existing enterprise customer relationships to accelerate their own AI portfolio without building vertical-specific models from scratch.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -2941,10 +2914,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 34,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "DDOG",
@@ -2968,7 +2941,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 26.4. mega-cap at $3.43B limits acquirer pool. premium SaaS margins at 80.0%",
+      "rationale": "Datadog's 80.0% gross margin on $3,430M in trailing revenue signals a highly efficient, scalable SaaS model, though its Rule of 40 score of 26.4 reflects a growth-profitability balance that leaves room for operational leverage under new ownership. A large-scale strategic acquirer \u2014 most likely a hyperscaler such as Microsoft or Google, or a broad enterprise infrastructure player like Cisco \u2014 would pursue Datadog to immediately embed best-in-class observability and monitoring capabilities into their existing cloud and security stacks, accelerating cross-sell into their installed customer bases rather than building comparable telemetry infrastructure organically.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -2989,10 +2962,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 13,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "DOCN",
@@ -3016,7 +2989,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 32.9. near-ideal size at $0.9B. below-average margins at 59.9%",
+      "rationale": "DigitalOcean's $900M revenue base, 59.9% gross margin, and Rule of 40 score of 32.9 reflect a capital-efficient cloud infrastructure business generating durable unit economics at scale. A strategic acquirer \u2014 most likely a larger cloud platform such as Akamai or IBM \u2014 would be the natural buyer, seeking to absorb DigitalOcean's developer-focused SMB and startup customer base as a low-cost entry point into cloud infrastructure that complements enterprise-grade offerings they already operate.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -3037,11 +3010,10 @@
           "explanation": "15.5% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 35,
-      "has_thesis": true,
-      "thesis_preview": "DigitalOcean's TTM revenue of $900M growing at 15.5% YoY, paired with 59.9% gross margins and a Rule of 40 score of 32.9, positions it as a profitable..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "PCTY",
@@ -3065,7 +3037,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 32.8. borderline size at $1.60B. solid margins at 68.8%",
+      "rationale": "Paylocity's 68.8% gross margin on $1.6B in trailing revenue, combined with a Rule of 40 score of 32.8, signals a profitable, scalable SaaS business generating durable cash flows at a relatively accessible 3.49x EV/Revenue entry multiple. A large HR technology consolidator such as Ceridian or UKG, or alternatively a private equity firm pursuing a buy-and-build payroll platform strategy, would likely target Paylocity to absorb its mid-market employer base and cross-sell workforce management or benefits administration products at scale.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -3086,10 +3058,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 36,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "TTD",
@@ -3113,7 +3085,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 38.8. borderline size at $2.90B. [skipped: Gross Margin]",
+      "rationale": "With $2,900M in trailing revenue and a Rule of 40 score of 38.8, The Trade Desk presents a scaled programmatic advertising platform trading at a modest 3.09x EV/Revenue \u2014 a valuation that implies meaningful upside for an acquirer able to accelerate monetization or reduce standalone operating costs. A large strategic acquirer such as a major cloud or data infrastructure provider (e.g., a hyperscaler like Amazon or Google-parent Alphabet) or a legacy media conglomerate would be the most likely buyer, targeting TTD's independent DSP positioning and first-party data connectivity to vertically integrate programmatic buying capabilities and defend against walled-garden ad ecosystem consolidation.",
       "shap_factors": [
         {
           "feature": "Revenue Growth",
@@ -3134,10 +3106,10 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 37,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "MDB",
@@ -3161,7 +3133,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 17.2. borderline size at $2.46B. strong margins at 71.7%",
+      "rationale": "MongoDB's 71.7% gross margin on $2,460M in trailing revenue signals a capital-efficient, scalable software business, though its Rule of 40 score of 17.2 reflects a current growth-profitability balance that leaves meaningful operational upside for an acquirer to unlock. A large strategic cloud platform provider \u2014 most likely a hyperscaler such as Google Cloud or Microsoft Azure \u2014 would be the natural acquirer, seeking to absorb MongoDB's developer-native document database footprint and Atlas cloud service to deepen data layer lock-in against AWS's competing database portfolio.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -3182,10 +3154,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 38,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "S",
@@ -3209,7 +3181,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at -10.2. near-ideal size at $1B. strong margins at 74.1%",
+      "rationale": "SentinelOne's $1.0B in trailing revenue and 74.1% gross margin signal a high-quality software asset, though its Rule of 40 of -10.2 reflects ongoing investment in growth that suppresses near-term profitability, making it attractively priced at 5.12x EV/Revenue for an acquirer willing to absorb the burn. A large strategic acquirer \u2014 most likely a broad security platform player such as Palo Alto Networks or a hyperscaler like Microsoft seeking to deepen endpoint detection and response capabilities \u2014 would be the natural buyer, targeting SentinelOne's AI-native architecture to consolidate threat intelligence and displace legacy AV vendors across enterprise accounts.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -3230,11 +3202,10 @@
           "explanation": "Rule of 40 = -10.2 \u2014 below sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 14,
-      "has_thesis": true,
-      "thesis_preview": "SentinelOne presents an asymmetric entry point with $1.0B in TTM revenue growing at 21.9% YoY, 74.1% gross margins that signal genuine software econom..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "STEP",
@@ -3258,7 +3229,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 42.4. near-ideal size at $1.17B. weak margins at 49.3%",
+      "rationale": "StepStone Group's $1.17B in trailing revenue, 49.3% gross margins, and Rule of 40 score of 42.4 reflect a capital-efficient business generating durable cash flow at scale, while the 4.96x EV/Revenue multiple suggests the market has not fully priced in the earnings power embedded in those margins. A strategic acquirer \u2014 most likely a large asset management platform such as BlackRock or Franklin Templeton, or a financial data and technology firm like Broadridge \u2014 would be the natural buyer, seeking to absorb StepStone's private markets distribution infrastructure and client relationships to accelerate their own alternatives expansion without building the capability organically.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -3279,10 +3250,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 9,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "HUBS",
@@ -3306,7 +3277,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 19.4. mega-cap at $3.13B limits acquirer pool. premium SaaS margins at 83.8%",
+      "rationale": "HubSpot's 83.8% gross margin on $3,130M in trailing revenue signals a highly capital-efficient model, though its Rule of 40 score of 19.4 reflects a growth-profitability balance that leaves meaningful room for operational leverage under new ownership. A large strategic acquirer \u2014 most likely a enterprise software platform such as Salesforce or Microsoft \u2014 would be the primary candidate, seeking to absorb HubSpot's entrenched SMB and mid-market CRM customer base as a direct counter to competitive pressure in the CRM and marketing automation stack, at a relatively accessible 2.78x EV/Revenue entry multiple compared to the $9,600M\u2013$10,300M range seen in comparable SaaS take-privates like Zendesk and Anaplan.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -3327,10 +3298,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 39,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "VRNT",
@@ -3354,7 +3325,7 @@
         "growth": 29.9,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 11.6. near-ideal size at $0.909B. strong margins at 71.3%",
+      "rationale": "Verint's 71.3% gross margin on $909.2M in trailing revenue signals a high-quality, recurring software business, though its Rule of 40 score of 11.6 reflects a growth-profitability tradeoff that keeps valuation accessible at 2.15x EV/Revenue. A large strategic acquirer in the customer engagement or enterprise software space \u2014 such as a Salesforce or Genesys-type platform \u2014 would be the most likely buyer, seeking to absorb Verint's AI-driven analytics capabilities to deepen workflow integration and reduce churn across their existing customer bases.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -3375,10 +3346,10 @@
           "explanation": "11.7% margin \u2014 above sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 15,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "PANW",
@@ -3402,7 +3373,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 28.4. mega-cap at $9.22B limits acquirer pool. strong margins at 73.4%",
+      "rationale": "Palo Alto Networks generates $9.2B in trailing revenue at a 73.4% gross margin, though its Rule of 40 score of 28.4 reflects slowing growth that tempers its otherwise high-quality unit economics, resulting in a mid-tier attractiveness score of 52.1 at a premium 22.6x EV/Revenue multiple. A large strategic acquirer \u2014 most likely a hyperscaler such as Microsoft or Google, or a diversified technology infrastructure player such as Broadcom \u2014 would be the natural buyer, seeking to fold PANW's platform-native security capabilities into cloud or enterprise infrastructure stacks to capture cross-sell revenue across an existing enterprise customer base.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -3423,10 +3394,10 @@
           "explanation": "14.9% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 16,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "BMBL",
@@ -3450,7 +3421,7 @@
         "growth": 20.1,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 15.0. near-ideal size at $0.97B. strong margins at 70.8%",
+      "rationale": "Bumble's 70.8% gross margin on $970.0M in trailing revenue signals a capital-efficient monetization engine, though its Rule of 40 of 15.0 reflects slowing growth that has compressed the EV/Revenue multiple to a highly accessible 0.91x \u2014 a rare entry point for a scaled consumer platform. A strategic acquirer such as Match Group or a large social platform operator (e.g., Meta) would be the most logical buyer, seeking to absorb Bumble's differentiated female-first brand and paying subscriber base to defend market share in online dating and expand cross-platform engagement without building from scratch.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -3471,10 +3442,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 40,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "HCAT",
@@ -3498,7 +3469,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at -50.2. ideal size band at $0.31B. [skipped: Gross Margin]",
+      "rationale": "Health Catalyst presents a distressed-value opportunity with $310.0M in trailing revenue trading at just 0.48x EV/Revenue, though its Rule of 40 of -50.2 signals deep operational losses that would require substantial cost restructuring before any value realization. A PE-backed healthcare IT consolidator or a strategic acquirer such as a large EHR vendor (e.g., Oracle Health or Veeva Systems) would most likely pursue this asset to absorb its data analytics client base and proprietary platform at a steep discount, using their existing infrastructure to eliminate redundant overhead and reach profitability.",
       "shap_factors": [
         {
           "feature": "Rule of 40",
@@ -3519,10 +3490,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 41,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "CSGP",
@@ -3546,7 +3517,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 16.5. mega-cap at $3.25B limits acquirer pool. premium SaaS margins at 78.9%",
+      "rationale": "CoStar Group's 78.9% gross margin on $3,250M in trailing revenue signals a highly efficient, scalable platform, though its Rule of 40 score of 16.5 reflects a growth-profitability balance that leaves room for operational leverage under new ownership. A strategic acquirer \u2014 most likely a large commercial real estate data conglomerate or a diversified financial data platform such as a Bloomberg or Verisk-type operator \u2014 would target CoStar to consolidate proprietary property intelligence and expand cross-sell opportunities across adjacent data verticals, given the defensible margin structure and entrenched customer relationships.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -3567,10 +3538,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 42,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "RNG",
@@ -3594,7 +3565,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 9.6. borderline size at $2.52B. strong margins at 71.2%",
+      "rationale": "RingCentral's $2.5B revenue base and 71.2% gross margin signal a mature, capital-efficient SaaS business, though a Rule of 40 of 9.6 reflects a growth-profitability trade-off that would require operational discipline post-close. A strategic acquirer \u2014 most likely a large unified communications or enterprise software incumbent such as Cisco or Microsoft \u2014 would be the probable buyer, targeting RingCentral's installed customer base and UCaaS infrastructure to consolidate market share and eliminate a direct competitor in the cloud communications space.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -3615,10 +3586,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 43,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "RXST",
@@ -3642,7 +3613,7 @@
         "growth": 26.1,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at -39.7. near-ideal size at $0.13B. premium SaaS margins at 76.6%",
+      "rationale": "RxSight's 76.6% gross margin on $130.0M in trailing revenue signals a high-quality, capital-efficient business model, though the Rule of 40 score of -39.7 reveals that growth and profitability together remain deeply negative, creating a value acquisition opportunity at just 0.33x EV/Revenue. A strategic acquirer such as a large ophthalmic device company (e.g., Alcon or Johnson & Johnson MedTech) would be the most logical buyer, seeking to fold RxSight's light-adjustable lens technology and recurring consumable revenue stream into an existing surgical eye care commercial infrastructure to accelerate penetration without building the category from scratch.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -3663,10 +3634,10 @@
           "explanation": "$0.13B revenue \u2014 below sector median $1.03B"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 7,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "CALX",
@@ -3690,7 +3661,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 22.4. near-ideal size at $1B. below-average margins at 56.8%",
+      "rationale": "Calix generates $1,000M in trailing revenue at a 56.8% gross margin with a Rule of 40 score of 22.4, offering an acquirer a capital-efficient, high-margin infrastructure software business at a modest 2.39x EV/Revenue entry multiple. A strategic acquirer such as a large networking or broadband infrastructure player (e.g., Ciena or Nokia) would be the most likely buyer, seeking to bundle Calix's cloud and software platform for rural broadband operators into their existing hardware portfolios to capture recurring software revenue and deepen operator relationships.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -3711,10 +3682,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 44,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "GLBE",
@@ -3738,7 +3709,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 35.3. near-ideal size at $0.962B. weak margins at 45.3%",
+      "rationale": "Global-E Online Ltd. generates $962.2M in trailing revenue at a 45.3% gross margin with a Rule of 40 score of 35.3, reflecting a capital-efficient SaaS business trading at a relatively modest 4.58x EV/Revenue that leaves room for an acquirer to extract margin expansion. A strategic acquirer such as a large enterprise commerce platform (e.g., Shopify or SAP) would be the most likely pursuer, given Global-E's cross-border enablement infrastructure could immediately extend their merchant base into international markets without rebuilding localization and compliance capabilities from scratch.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -3759,10 +3730,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 45,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "RSKD",
@@ -3786,7 +3757,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at -4.7. ideal size band at $0.345B. below-average margins at 51.7%",
+      "rationale": "Riskified's $344.6M in trailing revenue and 51.7% gross margin offer a financially sound foundation for an acquirer, though the Rule of 40 of -4.7 signals that growth and profitability have not yet reached equilibrium, tempering valuation urgency despite the attractive 1.21x EV/Revenue entry point. A strategic acquirer \u2014 most likely a large payments network such as Visa or Mastercard, or an e-commerce platform provider such as Shopify \u2014 would be the most probable buyer, seeking to embed Riskified's chargeback guarantee and fraud decisioning capabilities directly into their existing merchant rails to reduce friction and expand take rate without building the machine learning infrastructure from scratch.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -3807,10 +3778,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 10,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "PUBM",
@@ -3834,7 +3805,7 @@
         "growth": 27.1,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at -9.0. ideal size band at $0.28B. solid margins at 63.6%",
+      "rationale": "PubMatic's 63.6% gross margin and $280.0M in trailing revenue offer an acquirer a profitable infrastructure layer in programmatic advertising, though the Rule of 40 score of -9.0 signals that growth and profitability are not yet working in tandem, which pressures the valuation case despite a modest 1.23x EV/Revenue entry point. A large strategic acquirer \u2014 most likely a data or media conglomerate such as a Trade Desk competitor or a telco-adjacent digital advertising platform \u2014 would be the most credible buyer, seeking to absorb PubMatic's sell-side infrastructure and publisher relationships to vertically integrate supply path optimization capabilities and reduce dependence on third-party SSPs.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -3855,11 +3826,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 46,
-      "has_thesis": true,
-      "thesis_preview": "PubMatic's $280M TTM revenue base at a 63.6% gross margin trades at just 1.23x EV/Revenue, a distressed valuation for a programmatic ad-tech infrastru..."
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "AXON",
@@ -3883,7 +3853,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 31.3. borderline size at $2.78B. below-average margins at 59.7%",
+      "rationale": "Axon Enterprise generates $2,780M in trailing revenue at a 59.7% gross margin with a Rule of 40 score of 31.2, reflecting a business that carries attractive unit economics even as growth moderates, though its 11.76x EV/Revenue multiple prices in considerable future execution and limits near-term return profiles for acquirers. A large strategic acquirer \u2014 most likely a defense-adjacent technology conglomerate such as L3Harris or a public safety platform consolidator \u2014 would be the natural buyer, seeking to fold Axon's SaaS-enabled hardware ecosystem and recurring evidence management revenues into a broader government and law enforcement technology stack.",
       "shap_factors": [
         {
           "feature": "Has Insider Signal",
@@ -3904,10 +3874,10 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 47,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "U",
@@ -3931,7 +3901,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at -23.9. borderline size at $1.85B. strong margins at 74.2%",
+      "rationale": "Unity Software's 74.2% gross margin on $1,849.6M in trailing revenue signals a high-quality software business with durable unit economics, though its Rule of 40 of -23.9 reflects deep operational losses that suppress near-term standalone appeal and explain the 47.8/100 attractiveness score. A strategic acquirer \u2014 most likely a large gaming platform such as Take-Two Interactive or an enterprise 3D/simulation infrastructure player like Autodesk \u2014 would be the probable pursuer, targeting Unity's engine distribution dominance and developer ecosystem to vertically integrate real-time rendering capabilities and cross-sell into their existing content or industrial design workflows.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -3952,10 +3922,10 @@
           "explanation": "-25.9% margin \u2014 below sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 48,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "FIVN",
@@ -3979,7 +3949,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 12.8. near-ideal size at $1.15B. below-average margins at 55.1%",
+      "rationale": "Five9's $1.15B in trailing revenue and 55.1% gross margins offer a capital-efficient base for an acquirer, though the Rule of 40 score of 12.8 reflects slowing growth-plus-profitability dynamics that temper valuation enthusiasm at a modest 1.51x EV/Revenue. A large strategic acquirer \u2014 most likely a unified communications or CRM platform such as Salesforce or Cisco \u2014 would be the probable buyer, seeking to embed Five9's cloud contact center capabilities directly into existing enterprise workflows and accelerate cross-sell into their installed customer bases.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -4000,10 +3970,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 49,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "CRWD",
@@ -4027,7 +3997,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 15.6. mega-cap at $4.81B limits acquirer pool. strong margins at 74.7%",
+      "rationale": "CrowdStrike's $4,810M in trailing revenue paired with a 74.7% gross margin offers a high-quality recurring revenue base, though its Rule of 40 score of 15.6 reflects a growth-profitability balance that falls below the threshold most acquirers associate with premium SaaS efficiency, limiting its appeal at a 30.4x EV/Revenue multiple. A large strategic acquirer \u2014 most likely a hyperscaler such as Microsoft or Google, or a diversified infrastructure platform such as Broadcom \u2014 would be the most credible buyer archetype, seeking to embed CrowdStrike's endpoint and threat-intelligence capabilities natively into cloud or enterprise security stacks to reduce customer reliance on point solutions.",
       "shap_factors": [
         {
           "feature": "Gross Margin",
@@ -4048,10 +4018,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 17,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "AMSF",
@@ -4075,7 +4045,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 21.0. ideal size band at $0.32B. non-SaaS margins at 28.7%",
+      "rationale": "AMERISAFE's $320.0M revenue base, 28.7% gross margins, and Rule of 40 score of 21.1 reflect a capital-efficient specialty insurer with moderate growth-profitability balance that could appeal to acquirers seeking stable cash flow at a reasonable 1.63x EV/Revenue entry multiple. A strategic acquirer such as a large workers' compensation carrier or a healthcare technology platform consolidator would be the most likely buyer, drawn by the opportunity to bolt on AMERISAFE's niche hazardous-industry underwriting expertise and expand cross-sell capabilities across an existing distribution network.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -4096,10 +4066,10 @@
           "explanation": "2.6% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 8,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "WEX",
@@ -4123,7 +4093,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 26.2. borderline size at $2.66B. below-average margins at 58.6%",
+      "rationale": "WEX generates $2,660.8M in trailing revenue at a 58.6% gross margin with a Rule of 40 score of 26.2, and at 1.8x EV/Revenue trades at a valuation that leaves room for an acquirer to extract margin expansion in a high-gross-margin fintech business. A strategic acquirer such as a large payments network (Visa, Mastercard) or a corporate spend management platform (SAP Concur, Coupa) would be the most logical buyer, seeking to absorb WEX's fleet and benefits payment infrastructure to cross-sell into their existing enterprise client bases and accelerate B2B payments volume at scale.",
       "shap_factors": [
         {
           "feature": "Has Insider Signal",
@@ -4144,10 +4114,10 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 11,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "TASK",
@@ -4171,7 +4141,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 30.9. near-ideal size at $1.18B. non-SaaS margins at 37.8%",
+      "rationale": "TaskUs generates $1,180M in trailing revenue with a 37.8% gross margin and a Rule of 40 score of 30.9, offering an acquirer meaningful scale at a discounted 0.81x EV/Revenue entry point that leaves room for margin expansion under tighter cost discipline. A strategic acquirer such as a large BPO operator (e.g., Teleperformance or Concentrix) or a PE firm specializing in tech-enabled services would be the most likely pursuer, seeking to absorb TaskUs's digital outsourcing capabilities and AI-assisted customer experience workflows to cross-sell into existing enterprise client bases and extract operational leverage at scale.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -4192,10 +4162,10 @@
           "explanation": "19.0% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 50,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "PAYO",
@@ -4219,7 +4189,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 0.9. near-ideal size at $0.821B. [skipped: Gross Margin]",
+      "rationale": "Payoneer's $821.2M in trailing revenue at a 1.72x EV/Revenue multiple presents a discounted entry point for an acquirer, though the Rule of 40 score of 0.9 signals limited combined growth and profitability momentum that constrains its near-term financial appeal. A strategic acquirer \u2014 most likely a large payments network such as Visa or Mastercard, or a cross-border commerce platform like Shopify \u2014 would be the most probable buyer, targeting Payoneer's embedded SMB and marketplace payout infrastructure to accelerate international merchant money movement without building that distribution from scratch.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -4240,10 +4210,10 @@
           "explanation": "13.9% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 12,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "BLKB",
@@ -4267,7 +4237,7 @@
         "growth": 27.7,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 14.6. near-ideal size at $1.13B. below-average margins at 58.8%",
+      "rationale": "Blackbaud generates $1,128.4M in trailing revenue at a 58.8% gross margin, though its Rule of 40 score of 14.6 and 2.23x EV/Revenue multiple reflect a business trading at a modest valuation relative to peers, offering an acquirer a large-scale nonprofit and social sector SaaS platform at a price that leaves room for operational improvement. A strategic acquirer \u2014 most likely a larger vertical SaaS consolidator such as Salesforce or a mission-driven enterprise software platform \u2014 would be drawn to Blackbaud's entrenched customer relationships across higher education, healthcare philanthropy, and nonprofits as a means of cross-selling fund management, CRM, and payment processing capabilities into a sticky, mission-critical user base.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -4288,10 +4258,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 51,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "APPS",
@@ -4315,7 +4285,7 @@
         "growth": 20.1,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at -20.9. ideal size band at $0.49B. below-average margins at 52.0%",
+      "rationale": "Digital Turbine's $490.0M in trailing revenue and 52.0% gross margin offer a capital-efficient revenue base at a discounted 1.69x EV/Revenue entry point, though the Rule of 40 score of -20.9 reflects meaningful growth and profitability headwinds that compress standalone valuation. A strategic acquirer \u2014 most likely a mobile advertising platform such as AppLovin or a carrier-focused technology aggregator \u2014 would be the probable buyer, targeting Digital Turbine's on-device software distribution infrastructure and carrier relationships to vertically integrate app delivery and programmatic monetization at scale.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -4336,10 +4306,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 52,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "SHOP",
@@ -4363,7 +4333,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 42.8. mega-cap at $11.56B limits acquirer pool. weak margins at 48.1%",
+      "rationale": "Shopify's $11.6B in trailing revenue, 48.1% gross margins, and Rule of 40 score of 42.8 reflect a scaled, capital-efficient commerce platform that generates durable cash flow at enterprise scale. A large strategic acquirer \u2014 most likely a payments network such as Stripe or a hyperscaler like Amazon \u2014 would be the natural buyer, seeking to vertically integrate Shopify's merchant ecosystem and checkout infrastructure to capture transaction economics across its existing customer base.",
       "shap_factors": [
         {
           "feature": "Has Insider Signal",
@@ -4384,10 +4354,10 @@
           "explanation": "30.1% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 53,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "OMCL",
@@ -4411,7 +4381,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 6.9. near-ideal size at $1.18B. weak margins at 42.5%",
+      "rationale": "Omnicell generates $1,180M in trailing revenue with a 42.5% gross margin, though its Rule of 40 score of 7.0 and 1.67x EV/Revenue multiple reflect a business trading at a discount that suggests compressed growth or profitability headwinds rather than a premium setup. A strategic acquirer \u2014 most likely a large healthcare IT platform such as a McKesson or Becton Dickinson \u2014 would be the probable pursuer, seeking to fold Omnicell's pharmacy automation infrastructure into a broader medication management or supply chain portfolio to capture cross-sell leverage across existing hospital and health system relationships.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -4432,10 +4402,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 9,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "BAND",
@@ -4459,7 +4429,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at -1.2. ideal size band at $0.754B. non-SaaS margins at 39.1%",
+      "rationale": "Bandwidth Inc. generates $753.8M in trailing revenue with a 39.1% gross margin, though its Rule of 40 score of -1.2 signals that growth and profitability are not yet offsetting each other, making the current 2.88x EV/Revenue multiple a potential entry point for an acquirer willing to absorb near-term inefficiency. A strategic acquirer \u2014 most likely a large cloud communications platform such as Twilio or a telecom infrastructure operator like Lumen Technologies \u2014 would be the natural buyer, seeking to internalize Bandwidth's carrier-grade network assets and CPaaS API layer to reduce wholesale costs and eliminate a direct competitor in enterprise voice and messaging.",
       "shap_factors": [
         {
           "feature": "Sector Bucket",
@@ -4480,10 +4450,10 @@
           "explanation": "-1.9% margin \u2014 below sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 54,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "LSPD",
@@ -4507,7 +4477,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 1.9. near-ideal size at $1.23B. weak margins at 42.9%",
+      "rationale": "Lightspeed Commerce offers an acquirer $1,227M in trailing revenue at a 42.9% gross margin, though its Rule of 40 score of just 1.9 signals that growth and profitability have not yet converged, making the 0.64x EV/Revenue multiple a reflection of execution risk rather than a valuation gift. A strategic acquirer \u2014 most likely a payments network such as Fiserv or a commerce platform such as Shopify \u2014 would be the natural buyer, targeting Lightspeed's merchant point-of-sale infrastructure and embedded payments stack to accelerate omnichannel distribution and cross-sell financial services to an existing SMB customer base.",
       "shap_factors": [
         {
           "feature": "Revenue Scale",
@@ -4528,10 +4498,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 13,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "WDAY",
@@ -4555,7 +4525,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 20.6. mega-cap at $9.55B limits acquirer pool. [skipped: Gross Margin]",
+      "rationale": "Workday generates $9,550M in trailing revenue with a Rule of 40 score of 20.6 and trades at a modest 3.19x EV/Revenue, offering an acquirer a large-scale enterprise SaaS asset at a valuation well below the multiples seen in comparable deals such as the $33,555M Red Hat and $28,419M Slack transactions. A large strategic acquirer \u2014 most likely a cloud platform consolidator such as SAP or Oracle, or a hyperscaler like Microsoft \u2014 would be the natural buyer, seeking to absorb Workday's dominant HCM and financial management customer base to cross-sell adjacent infrastructure, ERP, and AI services across the enterprise stack.",
       "shap_factors": [
         {
           "feature": "Revenue Growth",
@@ -4576,10 +4546,10 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 55,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "SNOW",
@@ -4603,7 +4573,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at -1.4. mega-cap at $4.68B limits acquirer pool. solid margins at 67.2%",
+      "rationale": "Snowflake's $4,680M in trailing revenue and 67.2% gross margin reflect a scaled cloud data platform with healthy unit economics, though a Rule of 40 score of -1.5 signals that growth and profitability are not yet combining to justify the 11.33x EV/Revenue multiple without a clear path to margin expansion. A large strategic acquirer \u2014 most likely a hyperscaler such as Google or a data infrastructure incumbent such as Salesforce \u2014 would be the natural buyer, targeting Snowflake to vertically integrate a neutral, multi-cloud data warehousing layer and capture the high-margin data workloads currently flowing outside their native ecosystems.",
       "shap_factors": [
         {
           "feature": "Has Insider Signal",
@@ -4624,10 +4594,10 @@
           "explanation": "29.2% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 56,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "FOUR",
@@ -4651,7 +4621,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 33.9. mega-cap at $4.18B limits acquirer pool. non-SaaS margins at 6.7%",
+      "rationale": "Shift4 Payments generates $4,180M in trailing twelve-month revenue with a Rule of 40 score of 33.9, though its 6.7% gross margin reflects the capital-intensive nature of payment processing and limits the earnings leverage that acquirers typically prize. A large strategic acquirer such as a global payments network (e.g., Fiserv or Global Payments) would be the most probable buyer, seeking to absorb Shift4's merchant volume and vertical-specific integrations\u2014particularly in hospitality and gaming\u2014to defend market share rather than pay for margin expansion.",
       "shap_factors": [
         {
           "feature": "Has Insider Signal",
@@ -4672,10 +4642,10 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 57,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "TWLO",
@@ -4699,7 +4669,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 16.8. mega-cap at $5.07B limits acquirer pool. weak margins at 48.9%",
+      "rationale": "Twilio's $5.07B in trailing revenue provides meaningful scale, though its 48.9% gross margin and Rule of 40 score of 16.8 fall below the thresholds typically demanded by acquirers willing to pay a premium, making the current 5.69x EV/Revenue multiple a potential entry point rather than a reflection of operational excellence. A large strategic acquirer \u2014 most plausibly a cloud hyperscaler such as Google or a CRM incumbent such as Salesforce \u2014 would be the most credible buyer, seeking to fold Twilio's programmable communications infrastructure directly into existing cloud or customer engagement platforms to eliminate a integration layer their enterprise clients currently pay for separately.",
       "shap_factors": [
         {
           "feature": "Revenue Growth",
@@ -4720,10 +4690,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 58,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "TOST",
@@ -4747,7 +4717,7 @@
         "growth": 70.0,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 28.8. mega-cap at $6.15B limits acquirer pool. non-SaaS margins at 25.9%",
+      "rationale": "Toast's $6.15B in trailing revenue paired with a 25.9% gross margin and Rule of 40 score of 28.8 suggest a scaled payments and software platform generating measurable operating leverage, available at a relatively modest 1.89x EV/Revenue entry multiple. A strategic acquirer \u2014 most likely a large payments network such as Fiserv or a restaurant/hospitality technology consolidator \u2014 would be drawn to Toast's embedded point-of-sale infrastructure and captive merchant base as a distribution channel to cross-sell adjacent financial services and deepen vertical SaaS penetration in food service.",
       "shap_factors": [
         {
           "feature": "Has Insider Signal",
@@ -4768,10 +4738,10 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 59,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "EVH",
@@ -4795,7 +4765,7 @@
         "growth": 3.4,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at -27.7. borderline size at $1.88B. non-SaaS margins at 21.3%",
+      "rationale": "Evolent Health's $1.88B in trailing revenue offers scale at a deeply discounted 0.69x EV/Revenue multiple, though a 21.3% gross margin and a Rule of 40 of -27.6 signal meaningful profitability challenges that temper the valuation appeal. A large strategic acquirer \u2014 most likely a managed care organization such as UnitedHealth Group or a health system operator \u2014 would be the most probable buyer, seeking to internalize Evolent's value-based care infrastructure and specialty benefit management capabilities to reduce medical cost ratios across their existing member populations.",
       "shap_factors": [
         {
           "feature": "Rule of 40",
@@ -4816,10 +4786,10 @@
           "explanation": "$1.88B revenue \u2014 above sector median $1.03B"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 10,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     },
     {
       "ticker": "TNET",
@@ -4843,7 +4813,7 @@
         "growth": 29.1,
         "marketPosition": 70.0
       },
-      "rationale": "Rule of 40 at 4.5. mega-cap at $5.01B limits acquirer pool. non-SaaS margins at 17.7%",
+      "rationale": "TriNet's $5.0B in trailing revenue offers meaningful scale at a deeply discounted 0.51x EV/Revenue multiple, though its 17.7% gross margin and Rule of 40 score of 4.6 reflect a capital-intensive PEO model with limited software-like economics that temper acquirer enthusiasm. A strategic acquirer in the HR technology or payroll infrastructure space \u2014 such as a large incumbent like ADP or Paychex \u2014 would be the most plausible buyer, seeking to absorb TriNet's SMB employer base and bundled benefits platform to cross-sell higher-margin payroll, compliance, and workforce management products.",
       "shap_factors": [
         {
           "feature": "Revenue Growth",
@@ -4864,10 +4834,10 @@
           "explanation": "Rule of 40 = 4.6 \u2014 below sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-28T23:03:28Z",
+      "last_updated": "2026-05-28T23:06:08Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 60,
-      "has_thesis": false
+      "rationale_generated_at": "2026-05-28T23:07:07.116939Z"
     }
   ]
 }
