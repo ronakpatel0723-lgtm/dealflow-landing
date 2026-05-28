@@ -63,52 +63,90 @@ function MetricCard({ label, value, highlight }) {
   );
 }
 
+function median(arr) {
+  if (!arr.length) return 0;
+  const s = [...arr].sort((a, b) => a - b);
+  return s[Math.floor(s.length / 2)];
+}
+
+function fmtRev(revM) {
+  if (revM >= 1000) return `$${(revM / 1000).toFixed(1)}B`;
+  return `$${revM}M`;
+}
+
 function whyScoresHigh(company, allCompanies) {
-  if (!company.scores) return [];
+  if (!company) return [];
+  const peers = allCompanies.filter(c => c.sector === company.sector && c.ticker !== company.ticker);
 
-  const medians = {};
-  const keys = Object.keys(company.scores);
-  keys.forEach(k => {
-    const vals = allCompanies.map(c => c.scores?.[k] ?? 50).sort((a,b)=>a-b);
-    medians[k] = vals[Math.floor(vals.length / 2)];
-  });
+  const medGm   = median(peers.map(c => c.gm   ?? 0));
+  const medR40  = median(peers.map(c => c.r40  ?? 0));
+  const medGrow = median(peers.map(c => c.growth ?? 0));
+  const medEv   = median(peers.filter(c => (c.evRev ?? 0) > 0).map(c => c.evRev));
 
-  const LABELS = {
-    revenue:   { label:"Revenue scale",     unit: "score", high:"in acquisition sweet spot ($0.3B–$2B ARR)" },
-    margins:   { label:"Margin quality",    unit: "score", high:"gross margin above sector median" },
-    growth:    { label:"Revenue growth",    unit: "score", high:"growing faster than sector median" },
-    valuation: { label:"Valuation",         unit: "score", high:"compressed EV/Revenue — attractive entry point" },
-  };
+  const revM = company.revenue ?? 0;
+  const inSweet = revM >= 200 && revM <= 2000;
+  const revLabel = fmtRev(revM);
 
-  const factors = keys
-    .map(k => ({ key:k, score: company.scores[k], delta: company.scores[k] - medians[k] }))
-    .sort((a,b) => b.delta - a.delta)
-    .slice(0, 3)
-    .filter(f => f.delta > 0);
+  const factors = [];
 
-  const raw = {
-    revenue: `$${company.revenue >= 1000 ? (company.revenue/1000).toFixed(1)+"B" : company.revenue+"M"} revenue`,
-    margins: `${company.gm?.toFixed(1) ?? "—"}% gross margin`,
-    growth:  `${company.growth?.toFixed(1) ?? "—"}% revenue growth`,
-    valuation: `${company.evRev?.toFixed(1) ?? "—"}× EV/Revenue`,
-  };
+  // Gross margin strength
+  const gmDelta = (company.gm ?? 0) - medGm;
+  if (gmDelta > 3) {
+    factors.push({
+      score: gmDelta,
+      label: "Margin quality",
+      value: `${company.gm?.toFixed(1) ?? "—"}% gross margin`,
+      detail: `${gmDelta.toFixed(1)}pp above ${company.sector} median (${medGm.toFixed(1)}%)`,
+    });
+  }
 
-  const sectorComp = allCompanies.filter(c => c.sector === company.sector);
-  const sectorMedians = {};
-  keys.forEach(k => {
-    const vals = sectorComp.map(c => c.scores?.[k] ?? 50).sort((a,b)=>a-b);
-    sectorMedians[k] = vals[Math.floor(vals.length / 2)] || 50;
-  });
+  // Revenue scale sweet spot
+  if (inSweet) {
+    const sweetScore = 20 - Math.abs(revM - 750) / 100;
+    factors.push({
+      score: sweetScore,
+      label: "Revenue scale",
+      value: `${revLabel} ARR`,
+      detail: `within the $200M–$2B range where acquirers most often transact`,
+    });
+  }
 
-  return factors.map(f => {
-    const info = LABELS[f.key] || { label: f.key, high:"above median" };
-    const sectorMed = sectorMedians[f.key];
-    return {
-      label: info.label,
-      value: raw[f.key],
-      detail: `${info.high} (score ${f.score} vs ${sectorMed} sector median)`,
-    };
-  });
+  // Rule of 40 above peers
+  const r40Delta = (company.r40 ?? 0) - medR40;
+  if (r40Delta > 5) {
+    factors.push({
+      score: r40Delta * 0.8,
+      label: "Rule of 40",
+      value: `${company.r40?.toFixed(1) ?? "—"} Rule of 40`,
+      detail: `${r40Delta.toFixed(1)}pts above ${company.sector} median (${medR40.toFixed(1)})`,
+    });
+  }
+
+  // Compressed valuation
+  if (medEv > 0 && (company.evRev ?? 99) < medEv - 1) {
+    const discount = medEv - (company.evRev ?? medEv);
+    factors.push({
+      score: discount * 3,
+      label: "Valuation",
+      value: `${company.evRev?.toFixed(1) ?? "—"}× EV/Revenue`,
+      detail: `${discount.toFixed(1)}× discount to ${company.sector} median (${medEv.toFixed(1)}×) — attractive entry`,
+    });
+  }
+
+  // Revenue growth above peers
+  const growDelta = (company.growth ?? 0) - medGrow;
+  if (growDelta > 3) {
+    factors.push({
+      score: growDelta * 0.6,
+      label: "Revenue growth",
+      value: `${company.growth?.toFixed(1) ?? "—"}% YoY growth`,
+      detail: `${growDelta.toFixed(1)}pp above ${company.sector} median (${medGrow.toFixed(1)}%)`,
+    });
+  }
+
+  return factors
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3);
 }
 
 export default function Company() {
