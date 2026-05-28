@@ -1,15 +1,41 @@
 {
   "metadata": {
-    "last_updated": "2026-05-28T18:31:57Z",
+    "last_updated": "2026-05-28T18:36:39Z",
     "model_version": "logistic-v2-form4",
     "score_methodology": "Hybrid: 36/65 companies scored with logistic regression (Form 4 + financials); remainder scored with rule-based attractiveness model only",
     "last_model_trained": "2026-05-28T02:08:36Z",
-    "positive_count": 130,
+    "positive_count": 137,
     "total_count": 100,
     "tiers": {
       "High": 10,
       "Medium": 67,
       "Low": 23
+    }
+  },
+  "sector_context": {
+    "cybersecurity": {
+      "median_ev_revenue": 5.3,
+      "median_gross_margin": 76.9,
+      "deal_count": 2996,
+      "company_count": 17
+    },
+    "fintech": {
+      "median_ev_revenue": 2.7,
+      "median_gross_margin": 59.4,
+      "deal_count": 2996,
+      "company_count": 13
+    },
+    "healthcare_tech": {
+      "median_ev_revenue": 1.6,
+      "median_gross_margin": 70.8,
+      "deal_count": 3374,
+      "company_count": 10
+    },
+    "saas": {
+      "median_ev_revenue": 2.9,
+      "median_gross_margin": 70.0,
+      "deal_count": 2996,
+      "company_count": 60
     }
   },
   "companies": [
@@ -23,6 +49,8 @@
       "gross_margin": 89.1,
       "rule_of_40": 46.4,
       "ev_revenue": 4.6,
+      "revenue_growth_yoy": 13.1,
+      "analyst_target_upside": 0.1908,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -34,8 +62,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 46.4. ideal size band at $0.645B. premium SaaS margins at 89.1%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 1
     },
     {
       "ticker": "QLYS",
@@ -47,6 +76,8 @@
       "gross_margin": 82.8,
       "rule_of_40": 43.3,
       "ev_revenue": 4.76,
+      "revenue_growth_yoy": 10.1,
+      "analyst_target_upside": 0.0702,
       "ml_score": 0.8196,
       "ml_rank": 54,
       "score_source": "hybrid",
@@ -58,8 +89,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 43.3. ideal size band at $0.67B. premium SaaS margins at 82.8%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 1
     },
     {
       "ticker": "CWAN",
@@ -71,6 +103,8 @@
       "gross_margin": 67.3,
       "rule_of_40": 60.8,
       "ev_revenue": 10.96,
+      "revenue_growth_yoy": 61.9,
+      "analyst_target_upside": 0.0044,
       "ml_score": 0.5081,
       "ml_rank": 307,
       "score_source": "hybrid",
@@ -82,8 +116,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 60.8. ideal size band at $0.73B. solid margins at 67.3%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 1
     },
     {
       "ticker": "CLBT",
@@ -95,6 +130,8 @@
       "gross_margin": 84.2,
       "rule_of_40": 32.5,
       "ev_revenue": 5.73,
+      "revenue_growth_yoy": 18.6,
+      "analyst_target_upside": 0.5666,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -106,8 +143,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 32.5. ideal size band at $0.476B. premium SaaS margins at 84.2%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 2
     },
     {
       "ticker": "PRGS",
@@ -119,6 +157,8 @@
       "gross_margin": 80.8,
       "rule_of_40": 47.6,
       "ev_revenue": 2.57,
+      "revenue_growth_yoy": 29.8,
+      "analyst_target_upside": 0.6656,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -130,8 +170,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 47.6. near-ideal size at $0.978B. premium SaaS margins at 80.8%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 1
     },
     {
       "ticker": "DUOL",
@@ -143,6 +184,8 @@
       "gross_margin": 72.2,
       "rule_of_40": 51.8,
       "ev_revenue": 3.91,
+      "revenue_growth_yoy": 38.7,
+      "analyst_target_upside": -0.0386,
       "ml_score": 0.4793,
       "ml_rank": 336,
       "score_source": "hybrid",
@@ -154,8 +197,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 51.8. near-ideal size at $1.04B. strong margins at 72.2%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 2
     },
     {
       "ticker": "LMND",
@@ -167,6 +211,8 @@
       "gross_margin": null,
       "rule_of_40": 40.1,
       "ev_revenue": 5.63,
+      "revenue_growth_yoy": 40.1,
+      "analyst_target_upside": 0.0161,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -178,8 +224,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 40.1. ideal size band at $0.738B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 2
     },
     {
       "ticker": "HIMS",
@@ -191,6 +238,8 @@
       "gross_margin": 73.8,
       "rule_of_40": 63.5,
       "ev_revenue": 2.5,
+      "revenue_growth_yoy": 59.0,
+      "analyst_target_upside": 0.0325,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -202,8 +251,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 63.5. borderline size at $2.35B. strong margins at 73.8%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 2
     },
     {
       "ticker": "OPRA",
@@ -215,6 +265,8 @@
       "gross_margin": 64.1,
       "rule_of_40": 42.9,
       "ev_revenue": 2.46,
+      "revenue_growth_yoy": 27.9,
+      "analyst_target_upside": 0.4301,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -226,8 +278,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 42.9. ideal size band at $0.615B. solid margins at 64.1%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 3
     },
     {
       "ticker": "UPWK",
@@ -239,6 +292,8 @@
       "gross_margin": 77.8,
       "rule_of_40": 18.8,
       "ev_revenue": 1.1,
+      "revenue_growth_yoy": 2.4,
+      "analyst_target_upside": 0.4041,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -250,8 +305,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 18.8. ideal size band at $0.788B. premium SaaS margins at 77.8%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 4
     },
     {
       "ticker": "RDWR",
@@ -263,6 +319,8 @@
       "gross_margin": 80.7,
       "rule_of_40": 13.6,
       "ev_revenue": 3.47,
+      "revenue_growth_yoy": 9.8,
+      "analyst_target_upside": 0.0494,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -274,8 +332,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 13.6. ideal size band at $0.302B. premium SaaS margins at 80.7%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 5
     },
     {
       "ticker": "BL",
@@ -287,6 +346,8 @@
       "gross_margin": 75.2,
       "rule_of_40": 12.9,
       "ev_revenue": 2.52,
+      "revenue_growth_yoy": 7.2,
+      "analyst_target_upside": 0.5618,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -298,8 +359,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 12.9. ideal size band at $0.7B. premium SaaS margins at 75.2%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 6
     },
     {
       "ticker": "SEMR",
@@ -311,6 +373,8 @@
       "gross_margin": 80.5,
       "rule_of_40": 12.6,
       "ev_revenue": 3.49,
+      "revenue_growth_yoy": 17.7,
+      "analyst_target_upside": 0.0,
       "ml_score": 0.7995,
       "ml_rank": 71,
       "score_source": "hybrid",
@@ -322,8 +386,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 12.6. ideal size band at $0.44B. premium SaaS margins at 80.5%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 7
     },
     {
       "ticker": "GDRX",
@@ -335,6 +400,8 @@
       "gross_margin": 92.8,
       "rule_of_40": 11.6,
       "ev_revenue": 1.51,
+      "revenue_growth_yoy": 0.6,
+      "analyst_target_upside": 0.0801,
       "ml_score": 0.3898,
       "ml_rank": 404,
       "score_source": "hybrid",
@@ -346,8 +413,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 11.6. ideal size band at $0.8B. premium SaaS margins at 92.8%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 3
     },
     {
       "ticker": "SPSC",
@@ -359,6 +427,8 @@
       "gross_margin": 69.2,
       "rule_of_40": 33.6,
       "ev_revenue": 2.3,
+      "revenue_growth_yoy": 17.8,
+      "analyst_target_upside": 0.2549,
       "ml_score": 0.8131,
       "ml_rank": 61,
       "score_source": "hybrid",
@@ -370,8 +440,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 33.5. ideal size band at $0.75B. solid margins at 69.2%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 8
     },
     {
       "ticker": "MNDY",
@@ -383,6 +454,8 @@
       "gross_margin": 89.2,
       "rule_of_40": 26.6,
       "ev_revenue": 2.14,
+      "revenue_growth_yoy": 26.8,
+      "analyst_target_upside": 0.4522,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -394,8 +467,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.6. near-ideal size at $1.23B. premium SaaS margins at 89.2%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 9
     },
     {
       "ticker": "APPN",
@@ -407,6 +481,8 @@
       "gross_margin": 72.5,
       "rule_of_40": 17.9,
       "ev_revenue": 2.31,
+      "revenue_growth_yoy": 17.8,
+      "analyst_target_upside": 0.1915,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -418,8 +494,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 17.9. ideal size band at $0.727B. strong margins at 72.5%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 10
     },
     {
       "ticker": "FROG",
@@ -431,6 +508,8 @@
       "gross_margin": 76.8,
       "rule_of_40": 7.2,
       "ev_revenue": 14.89,
+      "revenue_growth_yoy": 24.1,
+      "analyst_target_upside": 0.0833,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -442,8 +521,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 7.2. ideal size band at $0.532B. premium SaaS margins at 76.8%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 3
     },
     {
       "ticker": "FLYW",
@@ -455,6 +535,8 @@
       "gross_margin": 61.4,
       "rule_of_40": 29.8,
       "ev_revenue": 2.67,
+      "revenue_growth_yoy": 26.6,
+      "analyst_target_upside": 0.1984,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -466,8 +548,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 29.8. ideal size band at $0.62B. solid margins at 61.4%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 3
     },
     {
       "ticker": "AGYS",
@@ -479,6 +562,8 @@
       "gross_margin": 62.6,
       "rule_of_40": 29.4,
       "ev_revenue": 6.68,
+      "revenue_growth_yoy": 15.8,
+      "analyst_target_upside": 0.5799,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -490,8 +575,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 29.4. ideal size band at $0.319B. solid margins at 62.6%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 11
     },
     {
       "ticker": "PAYC",
@@ -503,6 +589,8 @@
       "gross_margin": 83.2,
       "rule_of_40": 36.6,
       "ev_revenue": 3.39,
+      "revenue_growth_yoy": 8.9,
+      "analyst_target_upside": 0.0991,
       "ml_score": 0.6103,
       "ml_rank": 221,
       "score_source": "hybrid",
@@ -514,8 +602,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 36.5. borderline size at $2.05B. premium SaaS margins at 83.2%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 12
     },
     {
       "ticker": "GTLB",
@@ -527,6 +616,8 @@
       "gross_margin": 87.4,
       "rule_of_40": 18.4,
       "ev_revenue": 2.94,
+      "revenue_growth_yoy": 25.8,
+      "analyst_target_upside": 0.0637,
       "ml_score": 0.7116,
       "ml_rank": 150,
       "score_source": "hybrid",
@@ -538,8 +629,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 18.4. near-ideal size at $0.96B. premium SaaS margins at 87.4%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 13
     },
     {
       "ticker": "FRSH",
@@ -551,6 +643,8 @@
       "gross_margin": 85.0,
       "rule_of_40": 18.0,
       "ev_revenue": 2.07,
+      "revenue_growth_yoy": 16.4,
+      "analyst_target_upside": 0.2933,
       "ml_score": 0.86,
       "ml_rank": 20,
       "score_source": "hybrid",
@@ -562,8 +656,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 18.0. near-ideal size at $0.84B. premium SaaS margins at 85.0%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 14
     },
     {
       "ticker": "DV",
@@ -575,6 +670,8 @@
       "gross_margin": 0.0,
       "rule_of_40": 24.5,
       "ev_revenue": 3.61,
+      "revenue_growth_yoy": 13.9,
+      "analyst_target_upside": 0.3478,
       "ml_score": 0.5287,
       "ml_rank": 288,
       "score_source": "hybrid",
@@ -586,8 +683,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 24.5. ideal size band at $0.75B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 15
     },
     {
       "ticker": "ASAN",
@@ -599,6 +697,8 @@
       "gross_margin": 89.0,
       "rule_of_40": -15.7,
       "ev_revenue": 1.63,
+      "revenue_growth_yoy": 9.2,
+      "analyst_target_upside": 0.4061,
       "ml_score": 0.711,
       "ml_rank": 151,
       "score_source": "hybrid",
@@ -610,8 +710,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -15.8. ideal size band at $0.79B. premium SaaS margins at 89.0%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 16
     },
     {
       "ticker": "VRNS",
@@ -623,6 +724,8 @@
       "gross_margin": 78.8,
       "rule_of_40": -10.3,
       "ev_revenue": 5.29,
+      "revenue_growth_yoy": 13.2,
+      "analyst_target_upside": 0.1286,
       "ml_score": 0.8168,
       "ml_rank": 58,
       "score_source": "hybrid",
@@ -634,8 +737,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -10.3. ideal size band at $0.62B. premium SaaS margins at 78.8%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 4
     },
     {
       "ticker": "KVYO",
@@ -647,6 +751,8 @@
       "gross_margin": 74.7,
       "rule_of_40": 26.1,
       "ev_revenue": 2.78,
+      "revenue_growth_yoy": 31.6,
+      "analyst_target_upside": 0.9649,
       "ml_score": 0.5525,
       "ml_rank": 268,
       "score_source": "hybrid",
@@ -658,8 +764,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.1. near-ideal size at $1.23B. strong margins at 74.7%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 17
     },
     {
       "ticker": "DT",
@@ -671,6 +778,8 @@
       "gross_margin": 81.6,
       "rule_of_40": 31.9,
       "ev_revenue": 5.12,
+      "revenue_growth_yoy": 18.8,
+      "analyst_target_upside": 0.0808,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -682,8 +791,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 31.9. borderline size at $2.02B. premium SaaS margins at 81.6%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 5
     },
     {
       "ticker": "WK",
@@ -695,6 +805,8 @@
       "gross_margin": 78.5,
       "rule_of_40": 14.9,
       "ev_revenue": 2.94,
+      "revenue_growth_yoy": 19.8,
+      "analyst_target_upside": 0.6677,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -706,8 +818,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 14.9. near-ideal size at $0.885B. premium SaaS margins at 78.5%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 18
     },
     {
       "ticker": "BOX",
@@ -719,6 +832,8 @@
       "gross_margin": 79.2,
       "rule_of_40": 15.1,
       "ev_revenue": 3.33,
+      "revenue_growth_yoy": 8.0,
+      "analyst_target_upside": 0.2737,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -730,8 +845,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 15.1. near-ideal size at $1.18B. premium SaaS margins at 79.2%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 19
     },
     {
       "ticker": "APLM",
@@ -743,6 +859,8 @@
       "gross_margin": 100.0,
       "rule_of_40": null,
       "ev_revenue": 3.33,
+      "revenue_growth_yoy": null,
+      "analyst_target_upside": null,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -754,8 +872,9 @@
         "marketPosition": 70.0
       },
       "rationale": "micro-cap at $0.01B limits acquirer pool. premium SaaS margins at 100.0%. [skipped: Rule of 40, Growth]",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 20
     },
     {
       "ticker": "APPF",
@@ -767,6 +886,8 @@
       "gross_margin": 63.7,
       "rule_of_40": 35.8,
       "ev_revenue": 5.94,
+      "revenue_growth_yoy": 19.7,
+      "analyst_target_upside": 0.4267,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -778,8 +899,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 35.8. near-ideal size at $0.951B. solid margins at 63.7%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 21
     },
     {
       "ticker": "FTNT",
@@ -791,6 +913,8 @@
       "gross_margin": 80.5,
       "rule_of_40": 44.8,
       "ev_revenue": 14.03,
+      "revenue_growth_yoy": 14.2,
+      "analyst_target_upside": -0.169,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -802,8 +926,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 44.9. mega-cap at $6.80B limits acquirer pool. premium SaaS margins at 80.5%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 6
     },
     {
       "ticker": "VEEV",
@@ -815,6 +940,8 @@
       "gross_margin": 75.5,
       "rule_of_40": 45.0,
       "ev_revenue": 6.1,
+      "revenue_growth_yoy": 16.3,
+      "analyst_target_upside": 0.5959,
       "ml_score": 0.8311,
       "ml_rank": 43,
       "score_source": "hybrid",
@@ -826,8 +953,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 45.0. mega-cap at $3.20B limits acquirer pool. premium SaaS margins at 75.5%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 4
     },
     {
       "ticker": "WEAV",
@@ -839,6 +967,8 @@
       "gross_margin": 72.1,
       "rule_of_40": 4.2,
       "ev_revenue": 1.81,
+      "revenue_growth_yoy": 17.0,
+      "analyst_target_upside": 0.5364,
       "ml_score": 0.7381,
       "ml_rank": 132,
       "score_source": "hybrid",
@@ -850,8 +980,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 4.2. ideal size band at $0.24B. strong margins at 72.1%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 22
     },
     {
       "ticker": "TENB",
@@ -863,6 +994,8 @@
       "gross_margin": 78.1,
       "rule_of_40": 10.1,
       "ev_revenue": 2.43,
+      "revenue_growth_yoy": 11.0,
+      "analyst_target_upside": 0.1113,
       "ml_score": 0.8466,
       "ml_rank": 32,
       "score_source": "hybrid",
@@ -874,8 +1007,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 10.1. near-ideal size at $1B. premium SaaS margins at 78.1%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 7
     },
     {
       "ticker": "IOT",
@@ -887,6 +1021,8 @@
       "gross_margin": 76.7,
       "rule_of_40": 26.3,
       "ev_revenue": 10.1,
+      "revenue_growth_yoy": 29.6,
+      "analyst_target_upside": 0.367,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -898,8 +1034,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.3. borderline size at $1.62B. premium SaaS margins at 76.7%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 23
     },
     {
       "ticker": "NTNX",
@@ -911,6 +1048,8 @@
       "gross_margin": 86.8,
       "rule_of_40": 24.9,
       "ev_revenue": 4.74,
+      "revenue_growth_yoy": 18.1,
+      "analyst_target_upside": 0.0997,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -922,8 +1061,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 24.9. borderline size at $2.54B. premium SaaS margins at 86.8%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 24
     },
     {
       "ticker": "BILL",
@@ -935,6 +1075,8 @@
       "gross_margin": 81.4,
       "rule_of_40": 7.9,
       "ev_revenue": 2.53,
+      "revenue_growth_yoy": 13.4,
+      "analyst_target_upside": 0.5769,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -946,8 +1088,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 7.9. near-ideal size at $1.46B. premium SaaS margins at 81.4%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 4
     },
     {
       "ticker": "CERT",
@@ -959,6 +1102,8 @@
       "gross_margin": 61.5,
       "rule_of_40": 13.8,
       "ev_revenue": 2.36,
+      "revenue_growth_yoy": 8.8,
+      "analyst_target_upside": 0.3472,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -970,8 +1115,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 13.8. ideal size band at $0.419B. solid margins at 61.5%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 5
     },
     {
       "ticker": "PHR",
@@ -983,6 +1129,8 @@
       "gross_margin": 67.9,
       "rule_of_40": 13.1,
       "ev_revenue": 1.19,
+      "revenue_growth_yoy": 14.5,
+      "analyst_target_upside": 0.6,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -994,8 +1142,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 13.1. ideal size band at $0.48B. solid margins at 67.9%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 6
     },
     {
       "ticker": "GSHD",
@@ -1007,6 +1156,8 @@
       "gross_margin": null,
       "rule_of_40": 16.1,
       "ev_revenue": 3.17,
+      "revenue_growth_yoy": 16.1,
+      "analyst_target_upside": 0.9559,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1018,8 +1169,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 16.1. ideal size band at $0.365B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 5
     },
     {
       "ticker": "PCOR",
@@ -1031,6 +1183,8 @@
       "gross_margin": 79.5,
       "rule_of_40": 5.4,
       "ev_revenue": 4.91,
+      "revenue_growth_yoy": 14.8,
+      "analyst_target_upside": 0.455,
       "ml_score": 0.8143,
       "ml_rank": 59,
       "score_source": "hybrid",
@@ -1042,8 +1196,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 5.4. near-ideal size at $1.32B. premium SaaS margins at 79.5%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 6
     },
     {
       "ticker": "NCNO",
@@ -1055,6 +1210,8 @@
       "gross_margin": 60.6,
       "rule_of_40": 10.6,
       "ev_revenue": 3.22,
+      "revenue_growth_yoy": 10.0,
+      "analyst_target_upside": 0.4596,
       "ml_score": 0.6679,
       "ml_rank": 181,
       "score_source": "hybrid",
@@ -1066,8 +1223,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 10.6. ideal size band at $0.59B. solid margins at 60.6%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 25
     },
     {
       "ticker": "ESTC",
@@ -1079,6 +1237,8 @@
       "gross_margin": 74.4,
       "rule_of_40": 13.3,
       "ev_revenue": 3.09,
+      "revenue_growth_yoy": 17.0,
+      "analyst_target_upside": 0.3367,
       "ml_score": 0.564,
       "ml_rank": 259,
       "score_source": "hybrid",
@@ -1090,8 +1250,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 13.3. near-ideal size at $1.48B. strong margins at 74.4%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 8
     },
     {
       "ticker": "MANH",
@@ -1103,6 +1264,8 @@
       "gross_margin": 0.0,
       "rule_of_40": 29.6,
       "ev_revenue": 7.03,
+      "revenue_growth_yoy": 3.7,
+      "analyst_target_upside": 0.3028,
       "ml_score": 0.2986,
       "ml_rank": 448,
       "score_source": "hybrid",
@@ -1114,8 +1277,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 29.6. near-ideal size at $1.08B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 26
     },
     {
       "ticker": "ZS",
@@ -1127,6 +1291,8 @@
       "gross_margin": 76.9,
       "rule_of_40": 18.5,
       "ev_revenue": 9.07,
+      "revenue_growth_yoy": 23.3,
+      "analyst_target_upside": 0.6635,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1138,8 +1304,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 18.5. borderline size at $2.67B. premium SaaS margins at 76.9%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 9
     },
     {
       "ticker": "NOW",
@@ -1151,6 +1318,8 @@
       "gross_margin": 77.5,
       "rule_of_40": 34.6,
       "ev_revenue": 7.18,
+      "revenue_growth_yoy": 20.9,
+      "analyst_target_upside": 0.3018,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1162,8 +1331,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 34.6. mega-cap at $13.28B limits acquirer pool. premium SaaS margins at 77.5%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 27
     },
     {
       "ticker": "OKTA",
@@ -1175,6 +1345,8 @@
       "gross_margin": 77.4,
       "rule_of_40": 16.9,
       "ev_revenue": 4.3,
+      "revenue_growth_yoy": 11.8,
+      "analyst_target_upside": 0.0593,
       "ml_score": 0.5595,
       "ml_rank": 263,
       "score_source": "hybrid",
@@ -1186,8 +1358,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 16.9. borderline size at $2.92B. premium SaaS margins at 77.4%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 10
     },
     {
       "ticker": "PATH",
@@ -1199,6 +1372,8 @@
       "gross_margin": 83.2,
       "rule_of_40": 16.2,
       "ev_revenue": 2.77,
+      "revenue_growth_yoy": 12.7,
+      "analyst_target_upside": 0.126,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1210,8 +1385,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 16.2. borderline size at $1.61B. premium SaaS margins at 83.2%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 28
     },
     {
       "ticker": "ALKT",
@@ -1223,6 +1399,8 @@
       "gross_margin": 57.8,
       "rule_of_40": 21.9,
       "ev_revenue": 4.69,
+      "revenue_growth_yoy": 32.9,
+      "analyst_target_upside": 0.2481,
       "ml_score": 0.8006,
       "ml_rank": 69,
       "score_source": "hybrid",
@@ -1234,8 +1412,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 22.0. ideal size band at $0.44B. below-average margins at 57.8%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 7
     },
     {
       "ticker": "BRZE",
@@ -1247,6 +1426,8 @@
       "gross_margin": 67.1,
       "rule_of_40": 4.8,
       "ev_revenue": 2.76,
+      "revenue_growth_yoy": 24.4,
+      "analyst_target_upside": 0.5272,
       "ml_score": 0.4209,
       "ml_rank": 378,
       "score_source": "hybrid",
@@ -1258,8 +1439,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 4.8. ideal size band at $0.74B. solid margins at 67.1%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 29
     },
     {
       "ticker": "ALRM",
@@ -1271,6 +1453,8 @@
       "gross_margin": 66.2,
       "rule_of_40": 20.8,
       "ev_revenue": 2.26,
+      "revenue_growth_yoy": 7.6,
+      "analyst_target_upside": 0.3348,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1282,8 +1466,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 20.8. near-ideal size at $1.01B. solid margins at 66.2%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 30
     },
     {
       "ticker": "CRM",
@@ -1295,6 +1480,8 @@
       "gross_margin": 77.7,
       "rule_of_40": 29.6,
       "ev_revenue": 4.05,
+      "revenue_growth_yoy": 9.6,
+      "analyst_target_upside": 0.4784,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1306,8 +1493,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 29.7. mega-cap at $41.52B limits acquirer pool. premium SaaS margins at 77.7%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 31
     },
     {
       "ticker": "ZM",
@@ -1319,6 +1507,8 @@
       "gross_margin": 77.0,
       "rule_of_40": 27.4,
       "ev_revenue": 4.47,
+      "revenue_growth_yoy": 4.4,
+      "analyst_target_upside": 0.1029,
       "ml_score": 0.4773,
       "ml_rank": 339,
       "score_source": "hybrid",
@@ -1330,8 +1520,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 27.5. mega-cap at $4.87B limits acquirer pool. premium SaaS margins at 77.0%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 32
     },
     {
       "ticker": "RELY",
@@ -1343,6 +1534,8 @@
       "gross_margin": 60.2,
       "rule_of_40": 34.1,
       "ev_revenue": 2.41,
+      "revenue_growth_yoy": 29.4,
+      "analyst_target_upside": 0.4314,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1354,8 +1547,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 34.1. borderline size at $1.64B. solid margins at 60.2%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 8
     },
     {
       "ticker": "NET",
@@ -1367,6 +1561,8 @@
       "gross_margin": 74.5,
       "rule_of_40": 20.3,
       "ev_revenue": 34.95,
+      "revenue_growth_yoy": 29.8,
+      "analyst_target_upside": 0.0337,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1378,8 +1574,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 20.2. borderline size at $2.17B. strong margins at 74.5%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 11
     },
     {
       "ticker": "RPD",
@@ -1391,6 +1588,8 @@
       "gross_margin": 70.3,
       "rule_of_40": 3.2,
       "ev_revenue": 0.85,
+      "revenue_growth_yoy": 1.9,
+      "analyst_target_upside": -0.0287,
       "ml_score": 0.8519,
       "ml_rank": 27,
       "score_source": "hybrid",
@@ -1402,8 +1601,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 3.2. near-ideal size at $0.86B. strong margins at 70.3%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 12
     },
     {
       "ticker": "DBX",
@@ -1415,6 +1615,8 @@
       "gross_margin": 80.1,
       "rule_of_40": 26.2,
       "ev_revenue": 3.48,
+      "revenue_growth_yoy": -1.1,
+      "analyst_target_upside": -0.0026,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1426,8 +1628,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.2. borderline size at $2.52B. premium SaaS margins at 80.1%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 33
     },
     {
       "ticker": "AI",
@@ -1439,6 +1642,8 @@
       "gross_margin": 60.6,
       "rule_of_40": -58.1,
       "ev_revenue": 2.14,
+      "revenue_growth_yoy": 25.3,
+      "analyst_target_upside": -0.134,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1450,8 +1655,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -58.1. ideal size band at $0.389B. solid margins at 60.6%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 34
     },
     {
       "ticker": "DDOG",
@@ -1463,6 +1669,8 @@
       "gross_margin": 80.0,
       "rule_of_40": 26.4,
       "ev_revenue": 20.59,
+      "revenue_growth_yoy": 27.7,
+      "analyst_target_upside": -0.0233,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1474,8 +1682,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.4. mega-cap at $3.43B limits acquirer pool. premium SaaS margins at 80.0%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 13
     },
     {
       "ticker": "DOCN",
@@ -1487,6 +1696,8 @@
       "gross_margin": 59.9,
       "rule_of_40": 32.9,
       "ev_revenue": 18.78,
+      "revenue_growth_yoy": 15.5,
+      "analyst_target_upside": 0.152,
       "ml_score": 0.6162,
       "ml_rank": 216,
       "score_source": "hybrid",
@@ -1498,8 +1709,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 32.9. near-ideal size at $0.9B. below-average margins at 59.9%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 35
     },
     {
       "ticker": "PCTY",
@@ -1511,6 +1723,8 @@
       "gross_margin": 68.8,
       "rule_of_40": 32.8,
       "ev_revenue": 3.49,
+      "revenue_growth_yoy": 13.7,
+      "analyst_target_upside": 0.3762,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1522,8 +1736,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 32.8. borderline size at $1.60B. solid margins at 68.8%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 36
     },
     {
       "ticker": "TTD",
@@ -1535,6 +1750,8 @@
       "gross_margin": 0.0,
       "rule_of_40": 38.8,
       "ev_revenue": 3.09,
+      "revenue_growth_yoy": 18.5,
+      "analyst_target_upside": 0.2119,
       "ml_score": 0.455,
       "ml_rank": 356,
       "score_source": "hybrid",
@@ -1546,8 +1763,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 38.8. borderline size at $2.90B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 37
     },
     {
       "ticker": "MDB",
@@ -1559,6 +1777,8 @@
       "gross_margin": 71.7,
       "rule_of_40": 17.2,
       "ev_revenue": 9.24,
+      "revenue_growth_yoy": 22.8,
+      "analyst_target_upside": 0.098,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1570,8 +1790,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 17.2. borderline size at $2.46B. strong margins at 71.7%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 38
     },
     {
       "ticker": "S",
@@ -1583,6 +1804,8 @@
       "gross_margin": 74.1,
       "rule_of_40": -10.2,
       "ev_revenue": 5.12,
+      "revenue_growth_yoy": 21.9,
+      "analyst_target_upside": 0.0475,
       "ml_score": 0.7385,
       "ml_rank": 130,
       "score_source": "hybrid",
@@ -1594,8 +1817,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -10.2. near-ideal size at $1B. strong margins at 74.1%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 14
     },
     {
       "ticker": "STEP",
@@ -1607,6 +1831,8 @@
       "gross_margin": 49.3,
       "rule_of_40": 42.4,
       "ev_revenue": 4.96,
+      "revenue_growth_yoy": 65.1,
+      "analyst_target_upside": 0.449,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1618,8 +1844,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 42.4. near-ideal size at $1.17B. weak margins at 49.3%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 9
     },
     {
       "ticker": "HUBS",
@@ -1631,6 +1858,8 @@
       "gross_margin": 83.8,
       "rule_of_40": 19.4,
       "ev_revenue": 2.78,
+      "revenue_growth_yoy": 19.2,
+      "analyst_target_upside": 0.3938,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1642,8 +1871,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 19.4. mega-cap at $3.13B limits acquirer pool. premium SaaS margins at 83.8%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 39
     },
     {
       "ticker": "VRNT",
@@ -1655,6 +1885,8 @@
       "gross_margin": 71.3,
       "rule_of_40": 11.6,
       "ev_revenue": 2.15,
+      "revenue_growth_yoy": -0.1,
+      "analyst_target_upside": -0.0005,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1666,8 +1898,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 11.6. near-ideal size at $0.909B. strong margins at 71.3%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 15
     },
     {
       "ticker": "PANW",
@@ -1679,6 +1912,8 @@
       "gross_margin": 73.4,
       "rule_of_40": 28.4,
       "ev_revenue": 22.62,
+      "revenue_growth_yoy": 14.9,
+      "analyst_target_upside": -0.1222,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1690,8 +1925,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 28.4. mega-cap at $9.22B limits acquirer pool. strong margins at 73.4%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 16
     },
     {
       "ticker": "BMBL",
@@ -1703,6 +1939,8 @@
       "gross_margin": 70.8,
       "rule_of_40": 15.0,
       "ev_revenue": 0.91,
+      "revenue_growth_yoy": -9.9,
+      "analyst_target_upside": 0.3421,
       "ml_score": 0.3895,
       "ml_rank": 405,
       "score_source": "hybrid",
@@ -1714,8 +1952,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 15.0. near-ideal size at $0.97B. strong margins at 70.8%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 40
     },
     {
       "ticker": "HCAT",
@@ -1727,6 +1966,8 @@
       "gross_margin": 0.0,
       "rule_of_40": -50.2,
       "ev_revenue": 0.48,
+      "revenue_growth_yoy": 1.5,
+      "analyst_target_upside": 0.2111,
       "ml_score": 0.4748,
       "ml_rank": 342,
       "score_source": "hybrid",
@@ -1738,8 +1979,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -50.2. ideal size band at $0.31B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 41
     },
     {
       "ticker": "CSGP",
@@ -1751,6 +1993,8 @@
       "gross_margin": 78.9,
       "rule_of_40": 16.5,
       "ev_revenue": 4.1,
+      "revenue_growth_yoy": 18.7,
+      "analyst_target_upside": 0.5238,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1762,8 +2006,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 16.5. mega-cap at $3.25B limits acquirer pool. premium SaaS margins at 78.9%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 42
     },
     {
       "ticker": "RNG",
@@ -1775,6 +2020,8 @@
       "gross_margin": 71.2,
       "rule_of_40": 9.6,
       "ev_revenue": 1.92,
+      "revenue_growth_yoy": 4.8,
+      "analyst_target_upside": 0.0738,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1786,8 +2033,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 9.6. borderline size at $2.52B. strong margins at 71.2%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 43
     },
     {
       "ticker": "RXST",
@@ -1799,6 +2047,8 @@
       "gross_margin": 76.6,
       "rule_of_40": -39.7,
       "ev_revenue": 0.33,
+      "revenue_growth_yoy": -3.9,
+      "analyst_target_upside": 0.5717,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1810,8 +2060,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -39.7. near-ideal size at $0.13B. premium SaaS margins at 76.6%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 7
     },
     {
       "ticker": "CALX",
@@ -1823,6 +2074,8 @@
       "gross_margin": 56.8,
       "rule_of_40": 22.4,
       "ev_revenue": 2.39,
+      "revenue_growth_yoy": 20.3,
+      "analyst_target_upside": 0.6438,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1834,8 +2087,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 22.4. near-ideal size at $1B. below-average margins at 56.8%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 44
     },
     {
       "ticker": "GLBE",
@@ -1847,6 +2101,8 @@
       "gross_margin": 45.3,
       "rule_of_40": 35.3,
       "ev_revenue": 4.58,
+      "revenue_growth_yoy": 27.8,
+      "analyst_target_upside": 0.5318,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1858,8 +2114,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 35.3. near-ideal size at $0.962B. weak margins at 45.3%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 45
     },
     {
       "ticker": "RSKD",
@@ -1871,6 +2128,8 @@
       "gross_margin": 51.7,
       "rule_of_40": -4.7,
       "ev_revenue": 1.21,
+      "revenue_growth_yoy": 5.2,
+      "analyst_target_upside": 0.1684,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1882,8 +2141,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -4.7. ideal size band at $0.345B. below-average margins at 51.7%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 10
     },
     {
       "ticker": "PUBM",
@@ -1895,6 +2155,8 @@
       "gross_margin": 63.6,
       "rule_of_40": -9.0,
       "ev_revenue": 1.23,
+      "revenue_growth_yoy": -2.9,
+      "analyst_target_upside": 0.1301,
       "ml_score": 0.7503,
       "ml_rank": 118,
       "score_source": "hybrid",
@@ -1906,8 +2168,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -9.0. ideal size band at $0.28B. solid margins at 63.6%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 46
     },
     {
       "ticker": "AXON",
@@ -1919,6 +2182,8 @@
       "gross_margin": 59.7,
       "rule_of_40": 31.2,
       "ev_revenue": 11.76,
+      "revenue_growth_yoy": 33.5,
+      "analyst_target_upside": 0.4872,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1930,8 +2195,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 31.3. borderline size at $2.78B. below-average margins at 59.7%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 47
     },
     {
       "ticker": "U",
@@ -1943,6 +2209,8 @@
       "gross_margin": 74.2,
       "rule_of_40": -23.9,
       "ev_revenue": 6.79,
+      "revenue_growth_yoy": 2.0,
+      "analyst_target_upside": 0.177,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -1954,8 +2222,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -23.9. borderline size at $1.85B. strong margins at 74.2%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 48
     },
     {
       "ticker": "FIVN",
@@ -1967,6 +2236,8 @@
       "gross_margin": 55.1,
       "rule_of_40": 12.8,
       "ev_revenue": 1.51,
+      "revenue_growth_yoy": 10.3,
+      "analyst_target_upside": 0.2002,
       "ml_score": 0.513,
       "ml_rank": 304,
       "score_source": "hybrid",
@@ -1978,8 +2249,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 12.8. near-ideal size at $1.15B. below-average margins at 55.1%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 49
     },
     {
       "ticker": "CRWD",
@@ -1991,6 +2263,8 @@
       "gross_margin": 74.7,
       "rule_of_40": 15.6,
       "ev_revenue": 30.4,
+      "revenue_growth_yoy": 21.7,
+      "analyst_target_upside": -0.2039,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -2002,8 +2276,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 15.6. mega-cap at $4.81B limits acquirer pool. strong margins at 74.7%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 17
     },
     {
       "ticker": "AMSF",
@@ -2015,6 +2290,8 @@
       "gross_margin": 28.7,
       "rule_of_40": 21.1,
       "ev_revenue": 1.63,
+      "revenue_growth_yoy": 2.6,
+      "analyst_target_upside": 0.2034,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -2026,8 +2303,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 21.0. ideal size band at $0.32B. non-SaaS margins at 28.7%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 8
     },
     {
       "ticker": "WEX",
@@ -2039,6 +2317,8 @@
       "gross_margin": 58.6,
       "rule_of_40": 26.2,
       "ev_revenue": 1.8,
+      "revenue_growth_yoy": 1.2,
+      "analyst_target_upside": 0.2487,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -2050,8 +2330,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.2. borderline size at $2.66B. below-average margins at 58.6%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 11
     },
     {
       "ticker": "TASK",
@@ -2063,6 +2344,8 @@
       "gross_margin": 37.8,
       "rule_of_40": 30.9,
       "ev_revenue": 0.81,
+      "revenue_growth_yoy": 19.0,
+      "analyst_target_upside": 0.5224,
       "ml_score": 0.3877,
       "ml_rank": 408,
       "score_source": "hybrid",
@@ -2074,8 +2357,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 30.9. near-ideal size at $1.18B. non-SaaS margins at 37.8%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 50
     },
     {
       "ticker": "PAYO",
@@ -2087,6 +2371,8 @@
       "gross_margin": null,
       "rule_of_40": 0.9,
       "ev_revenue": 1.72,
+      "revenue_growth_yoy": 13.9,
+      "analyst_target_upside": 0.556,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -2098,8 +2384,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 0.9. near-ideal size at $0.821B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 12
     },
     {
       "ticker": "BLKB",
@@ -2111,6 +2398,8 @@
       "gross_margin": 58.8,
       "rule_of_40": 14.6,
       "ev_revenue": 2.23,
+      "revenue_growth_yoy": -2.3,
+      "analyst_target_upside": 0.6907,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -2122,8 +2411,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 14.6. near-ideal size at $1.13B. below-average margins at 58.8%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 51
     },
     {
       "ticker": "APPS",
@@ -2135,6 +2425,8 @@
       "gross_margin": 52.0,
       "rule_of_40": -20.9,
       "ev_revenue": 1.69,
+      "revenue_growth_yoy": -9.9,
+      "analyst_target_upside": 0.0523,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -2146,8 +2438,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -20.9. ideal size band at $0.49B. below-average margins at 52.0%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 52
     },
     {
       "ticker": "SHOP",
@@ -2159,6 +2452,8 @@
       "gross_margin": 48.1,
       "rule_of_40": 42.8,
       "ev_revenue": 10.78,
+      "revenue_growth_yoy": 30.1,
+      "analyst_target_upside": 0.3303,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -2170,8 +2465,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 42.8. mega-cap at $11.56B limits acquirer pool. weak margins at 48.1%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 53
     },
     {
       "ticker": "OMCL",
@@ -2183,6 +2479,8 @@
       "gross_margin": 42.5,
       "rule_of_40": 7.0,
       "ev_revenue": 1.67,
+      "revenue_growth_yoy": 6.5,
+      "analyst_target_upside": 0.3881,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -2194,8 +2492,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 6.9. near-ideal size at $1.18B. weak margins at 42.5%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 9
     },
     {
       "ticker": "BAND",
@@ -2207,6 +2506,8 @@
       "gross_margin": 39.1,
       "rule_of_40": -1.2,
       "ev_revenue": 2.88,
+      "revenue_growth_yoy": 0.7,
+      "analyst_target_upside": -0.0323,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -2218,8 +2519,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -1.2. ideal size band at $0.754B. non-SaaS margins at 39.1%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 54
     },
     {
       "ticker": "LSPD",
@@ -2231,6 +2533,8 @@
       "gross_margin": 42.9,
       "rule_of_40": 1.9,
       "ev_revenue": 0.64,
+      "revenue_growth_yoy": 13.9,
+      "analyst_target_upside": 0.1767,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -2242,8 +2546,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 1.9. near-ideal size at $1.23B. weak margins at 42.9%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 13
     },
     {
       "ticker": "WDAY",
@@ -2255,6 +2560,8 @@
       "gross_margin": 0.0,
       "rule_of_40": 20.6,
       "ev_revenue": 3.19,
+      "revenue_growth_yoy": 13.1,
+      "analyst_target_upside": 0.3431,
       "ml_score": 0.4154,
       "ml_rank": 383,
       "score_source": "hybrid",
@@ -2266,8 +2573,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 20.6. mega-cap at $9.55B limits acquirer pool. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 55
     },
     {
       "ticker": "SNOW",
@@ -2279,6 +2587,8 @@
       "gross_margin": 67.2,
       "rule_of_40": -1.5,
       "ev_revenue": 11.33,
+      "revenue_growth_yoy": 29.2,
+      "analyst_target_upside": -0.0631,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -2290,8 +2600,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -1.4. mega-cap at $4.68B limits acquirer pool. solid margins at 67.2%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 56
     },
     {
       "ticker": "FOUR",
@@ -2303,6 +2614,8 @@
       "gross_margin": 6.7,
       "rule_of_40": 33.9,
       "ev_revenue": 2.05,
+      "revenue_growth_yoy": 25.5,
+      "analyst_target_upside": 0.3901,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -2314,8 +2627,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 33.9. mega-cap at $4.18B limits acquirer pool. non-SaaS margins at 6.7%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 57
     },
     {
       "ticker": "TWLO",
@@ -2327,6 +2641,8 @@
       "gross_margin": 48.9,
       "rule_of_40": 16.8,
       "ev_revenue": 5.69,
+      "revenue_growth_yoy": 13.7,
+      "analyst_target_upside": 0.0454,
       "ml_score": 0.5039,
       "ml_rank": 312,
       "score_source": "hybrid",
@@ -2338,8 +2654,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 16.8. mega-cap at $5.07B limits acquirer pool. weak margins at 48.9%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 58
     },
     {
       "ticker": "TOST",
@@ -2351,6 +2668,8 @@
       "gross_margin": 25.9,
       "rule_of_40": 28.8,
       "ev_revenue": 1.89,
+      "revenue_growth_yoy": 24.1,
+      "analyst_target_upside": 0.3522,
       "ml_score": 0.2046,
       "ml_rank": 531,
       "score_source": "hybrid",
@@ -2362,8 +2681,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 28.8. mega-cap at $6.15B limits acquirer pool. non-SaaS margins at 25.9%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 59
     },
     {
       "ticker": "EVH",
@@ -2375,6 +2695,8 @@
       "gross_margin": 21.3,
       "rule_of_40": -27.6,
       "ev_revenue": 0.69,
+      "revenue_growth_yoy": -26.6,
+      "analyst_target_upside": 0.4612,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -2386,8 +2708,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -27.7. borderline size at $1.88B. non-SaaS margins at 21.3%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 10
     },
     {
       "ticker": "TNET",
@@ -2399,6 +2722,8 @@
       "gross_margin": 17.7,
       "rule_of_40": 4.6,
       "ev_revenue": 0.51,
+      "revenue_growth_yoy": -0.9,
+      "analyst_target_upside": 0.1111,
       "ml_score": null,
       "ml_rank": null,
       "score_source": "rule_based",
@@ -2410,8 +2735,9 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 4.5. mega-cap at $5.01B limits acquirer pool. non-SaaS margins at 17.7%",
-      "last_updated": "2026-05-28T18:31:57Z",
-      "model_version": "logistic-v2-form4"
+      "last_updated": "2026-05-28T18:36:39Z",
+      "model_version": "logistic-v2-form4",
+      "sector_rank": 60
     }
   ]
 }
