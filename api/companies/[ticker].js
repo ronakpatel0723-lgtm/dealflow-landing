@@ -7,7 +7,7 @@ module.exports = function handler(req, res) {
 
   let data;
   try {
-    const p = path.join(process.cwd(), 'public', 'scores.json');
+    const p = path.join(__dirname, '..', '..', 'public', 'scores.json');
     data = JSON.parse(fs.readFileSync(p, 'utf8'));
   } catch (e) {
     return res.status(503).json({ error: 'scores.json unavailable', detail: e.message });

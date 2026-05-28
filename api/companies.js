@@ -2,7 +2,7 @@ const fs   = require('fs');
 const path = require('path');
 
 function loadScores() {
-  const p = path.join(process.cwd(), 'public', 'scores.json');
+  const p = path.join(__dirname, '..', 'public', 'scores.json');
   return JSON.parse(fs.readFileSync(p, 'utf8'));
 }
 

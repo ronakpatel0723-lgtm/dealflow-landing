@@ -6,7 +6,7 @@ module.exports = function handler(req, res) {
   res.setHeader('Access-Control-Allow-Methods', 'GET');
 
   try {
-    const p = path.join(process.cwd(), 'public', 'score_changes.json');
+    const p = path.join(__dirname, '..', 'public', 'score_changes.json');
     const data = JSON.parse(fs.readFileSync(p, 'utf8'));
     res.status(200).json(data);
   } catch (e) {
