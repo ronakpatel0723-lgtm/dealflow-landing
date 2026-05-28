@@ -79,6 +79,7 @@ export default function Pricing() {
         a{text-decoration:none;color:inherit}
         .df-tier-btn{transition:all 0.2s ease}
         .df-tier-btn:hover{transform:translateY(-1px);box-shadow:0 8px 28px rgba(91,141,239,0.3)}
+        @media(max-width:700px){.df-tier-grid{grid-template-columns:1fr!important}}
       `}</style>
 
       {/* Nav */}
@@ -131,7 +132,7 @@ export default function Pricing() {
         </div>
 
         {/* Tier cards */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20, alignItems: "start" }}>
+        <div className="df-tier-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20, alignItems: "start" }}>
           {TIERS.map((tier) => (
             <div
               key={tier.name}

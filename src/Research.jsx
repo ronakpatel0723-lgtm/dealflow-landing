@@ -26,7 +26,7 @@ const PullQuote = ({ children }) => (
 );
 
 const StatStrip = ({ stats }) => (
-  <div style={{
+  <div className="df-stat-strip" style={{
     display: "flex", gap: 0, background: C.panel,
     border: `1px solid ${C.line}`, borderRadius: 10, overflow: "hidden", margin: "28px 0",
   }}>
@@ -79,6 +79,7 @@ export default function Research() {
         @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
         *{box-sizing:border-box;margin:0;padding:0}
         a{text-decoration:none;color:inherit}
+        @media(max-width:540px){.df-stat-strip{flex-wrap:wrap!important}.df-stat-strip>div{flex:1 1 40%!important;border-right:none!important;border-bottom:1px solid rgba(255,255,255,0.08)}}
       `}</style>
 
       {/* Nav */}

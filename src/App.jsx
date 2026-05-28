@@ -118,6 +118,7 @@ export default function DealFlowLanding() {
         @keyframes scan{0%{transform:translateY(-100%)}100%{transform:translateY(2000%)}}
         .df-cta{transition:all 0.2s ease}
         .df-cta:hover{transform:translateY(-1px);box-shadow:0 8px 30px rgba(91,141,239,0.35)}
+        @media(max-width:480px){header{padding:48px 20px 28px!important}.df-eyebrow span:last-child{display:none}}
         .df-card{transition:all 0.3s cubic-bezier(0.22,1,0.36,1)}
         .df-card:hover{transform:translateY(-4px);border-color:rgba(91,141,239,0.4)!important;background:${C.panelHi}!important}
         ::selection{background:rgba(91,141,239,0.3)}
@@ -154,7 +155,7 @@ export default function DealFlowLanding() {
           </div>
 
           {/* eyebrow stat — the number IS the product */}
-          <div style={{ ...hero(2), marginBottom: 20 }}>
+          <div className="df-eyebrow" style={{ ...hero(2), marginBottom: 20 }}>
             <span style={{
               fontFamily: mono, fontSize: "clamp(28px, 4vw, 36px)", fontWeight: 600,
               color: C.blue, letterSpacing: "-0.02em",
