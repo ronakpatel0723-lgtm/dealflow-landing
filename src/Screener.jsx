@@ -34,6 +34,33 @@ const C = {
 const disp = "'Bricolage Grotesque', -apple-system, sans-serif";
 const mono = "'IBM Plex Mono', ui-monospace, Menlo, monospace";
 
+const SECTOR_LABELS = {
+  saas: "SaaS",
+  cybersecurity: "Cyber",
+  fintech: "Fintech",
+  healthcare_tech: "HealthTech",
+};
+
+function normCompany(raw, i) {
+  return {
+    ...raw,
+    rank: i + 1,
+    name: raw.company || raw.name || raw.ticker,
+    score: Math.round(raw.total_score ?? raw.score ?? 0),
+    revenue: raw.revenue_M ?? raw.revenue ?? 0,
+    gm: raw.gross_margin ?? raw.gm ?? 0,
+    r40: raw.rule_of_40 ?? raw.r40 ?? 0,
+    evRev: raw.ev_revenue ?? raw.evRev ?? 0,
+    growth: raw.revenue_growth_yoy ?? raw.growth ?? 0,
+    scores: raw.subScores ?? raw.scores ?? {},
+    rationale: raw.rationale || "",
+    spark: raw.spark || Array(7).fill(Math.round(raw.total_score ?? 50)),
+    sectorRank: raw.sector_rank ?? null,
+    analystUpside: raw.analyst_target_upside ?? null,
+    shap_factors: raw.shap_factors ?? null,
+  };
+}
+
 // ─── Sample data (replace with scores.json import) ──────────────────────────
 const SAMPLE_COMPANIES = [
   { rank:1,  name:"Qualys",               ticker:"QLYS",  sector:"Cybersecurity",   score:80, tier:"High",   revenue:478,  gm:82.8, r40:43.3, evRev:5.9,  growth:11.5, scores:{revenue:78,margins:88,growth:62,valuation:71}, rationale:"Strong margin profile with compressed EV/Revenue. Acquisition pattern matches Palo Alto Networks' tuck-in strategy for pure-play security platforms. 82% gross margin signals high recurring-revenue quality.",           spark:[74,76,76,78,77,79,80] },
@@ -176,6 +203,25 @@ function DetailPanel({ company, onClose, watchlist, onWatch }) {
             ))}
           </div>
 
+          {/* SHAP mini hint */}
+          {(company.shap_factors?.top_positive?.[0] || company.scores) && (() => {
+            let topSignal = null;
+            if (company.shap_factors?.top_positive?.[0]) {
+              const f = company.shap_factors.top_positive[0];
+              const SHAP_DISP = { gross_margin_pct:"Gross Margin", gross_margin:"Gross Margin", revenue_M:"Revenue Scale", rule_of_40:"Rule of 40", ev_revenue:"EV/Revenue", revenue_growth_yoy:"Revenue Growth", operating_margin_pct:"Operating Margin", insider_net_buy_ratio:"Insider Activity", sector_bucket:"Sector" };
+              topSignal = SHAP_DISP[f.feature] || f.feature.replace(/_/g," ").replace(/\b\w/g,l=>l.toUpperCase());
+            } else if (company.scores && Object.keys(company.scores).length > 0) {
+              const top = Object.entries(company.scores).sort((a,b)=>b[1]-a[1])[0];
+              const SCORE_DISP = { margins:"Margins", growth:"Growth", revenue:"Revenue", valuation:"Valuation", marketPosition:"Market Position", ruleOf40:"Rule of 40", sizeFit:"Size Fit" };
+              topSignal = SCORE_DISP[top[0]] || top[0];
+            }
+            return topSignal ? (
+              <div style={{ fontFamily:mono, fontSize:11, color:C.blue, marginBottom:14, letterSpacing:0.3 }}>
+                Top signal: {topSignal}
+              </div>
+            ) : null;
+          })()}
+
           {/* AI rationale */}
           <div style={{ background: "rgba(91,141,239,0.06)", border: `1px solid rgba(91,141,239,0.2)`, borderRadius: 10, padding: "16px 18px", marginBottom: 22 }}>
             <div style={{ fontFamily: mono, fontSize: 10, color: C.blue, letterSpacing: 1, textTransform: "uppercase", marginBottom: 10 }}>AI Rationale</div>
@@ -256,7 +302,12 @@ export default function Screener() {
   useEffect(() => {
     fetch("/scores.json")
       .then(r => r.ok ? r.json() : null)
-      .then(data => { if (data?.companies?.length) setCompanies(data.companies); })
+      .then(data => {
+        if (data?.companies?.length) {
+          const sorted = [...data.companies].sort((a, b) => (b.total_score ?? 0) - (a.total_score ?? 0));
+          setCompanies(sorted.map(normCompany));
+        }
+      })
       .catch(() => {})
       .finally(() => setLoading(false));
   }, []);
@@ -268,7 +319,8 @@ export default function Screener() {
       .catch(() => {});
   }, []);
 
-  const sectors = ["All", ...Array.from(new Set(companies.map(c => c.sector))).sort()];
+  const sectorKeys = Array.from(new Set(companies.map(c => c.sector))).sort();
+  const sectors = ["All", ...sectorKeys];
   const tiers   = ["All", "High", "Medium", "Low"];
 
   const SORT_KEYS = { "#": "rank", "Score": "score", "Revenue": "revenue", "GM%": "gm", "R40": "r40" };
@@ -326,7 +378,7 @@ export default function Screener() {
         ::-webkit-scrollbar-thumb{background:${C.line};border-radius:2px}
         ::selection{background:rgba(91,141,239,0.3)}
         a{color:inherit;text-decoration:none}
-        .df-table-grid{display:grid;grid-template-columns:44px 1.8fr 60px 120px 70px 90px 72px 72px 56px 32px;gap:0}
+        .df-table-grid{display:grid;grid-template-columns:44px 1.8fr 60px 110px 70px 80px 86px 72px 72px 56px 32px;gap:0}
         @media(max-width:640px){
           .df-table-grid{grid-template-columns:44px 1fr 60px 70px 32px}
           .df-hide-mobile{display:none!important}
@@ -462,7 +514,7 @@ export default function Screener() {
               <select value={sector} onChange={e => setSector(e.target.value)} style={{
                 background:C.panel, border:`1px solid ${C.lineHi}`, borderRadius:9, padding:"9px 34px 9px 14px",
                 color:C.text, fontFamily:disp, fontSize:13.5, cursor:"pointer" }}>
-                {sectors.map(s => <option key={s} value={s}>{s === "All" ? "All Sectors" : s}</option>)}
+                {sectors.map(s => <option key={s} value={s}>{s === "All" ? "All Sectors" : (SECTOR_LABELS[s] || s)}</option>)}
               </select>
               <svg style={{ position:"absolute", right:10, top:"50%", transform:"translateY(-50%)", pointerEvents:"none" }} width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M3 5l3 3 3-3" stroke={C.muted} strokeWidth="1.4" strokeLinecap="round"/>
@@ -477,20 +529,20 @@ export default function Screener() {
           <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:14, overflow:"hidden", marginBottom:40 }}>
             {/* header row */}
             <div className="df-table-grid" style={{ padding:"10px 20px", borderBottom:`1px solid ${C.lineHi}`, background:C.panelHi }}>
-              {["#","Company","Score","","Tier","Revenue","GM%","R40","7d",""].map((h, i) => {
+              {["#","Company","Score","","Tier","Sector","Revenue","GM%","R40","7d",""].map((h, i) => {
                 const sortKey = SORT_KEYS[h];
                 const isActive = sortKey && sort.col === sortKey;
                 return (
                   <span key={i}
-                    className={[3,5,6,7,8].includes(i) ? "df-hide-mobile" : ""}
+                    className={[3,5,6,7,8,9].includes(i) ? "df-hide-mobile" : ""}
                     onClick={() => handleSort(h)}
                     style={{ fontFamily:mono, fontSize:9.5, letterSpacing:1,
                       color: isActive ? C.blue : C.muted,
-                      textTransform:"uppercase", textAlign: i >= 5 ? "right" : "left",
+                      textTransform:"uppercase", textAlign: i >= 6 ? "right" : "left",
                       cursor: sortKey ? "pointer" : "default",
                       userSelect: "none",
                       display:"inline-flex", alignItems:"center",
-                      gap:3, justifyContent: i >= 5 ? "flex-end" : "flex-start" }}>
+                      gap:3, justifyContent: i >= 6 ? "flex-end" : "flex-start" }}>
                     {h}{isActive && <span style={{ fontSize:10 }}>{sort.dir === "desc" ? " ↓" : " ↑"}</span>}
                   </span>
                 );
@@ -532,6 +584,9 @@ export default function Screener() {
                   <span style={{ fontFamily:disp, fontSize:10, fontWeight:600, color:tc,
                     border:`1px solid ${tc}38`, borderRadius:4, padding:"2px 7px", textTransform:"uppercase",
                     whiteSpace:"nowrap" }}>{c.tier}</span>
+                  <span className="df-hide-mobile" style={{ fontFamily:mono, fontSize:11, color:C.muted, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis" }}>
+                    {SECTOR_LABELS[c.sector] || c.sector}
+                  </span>
                   <span className="df-hide-mobile" style={{ fontFamily:mono, fontSize:12.5, textAlign:"right" }}>
                     ${c.revenue >= 1000 ? (c.revenue/1000).toFixed(1)+"B" : c.revenue+"M"}
                   </span>
