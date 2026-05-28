@@ -257,9 +257,10 @@ export default function Company() {
     </div>
   );
 
-  // SHAP factors (top 3 positive, top 2 negative)
-  const shapPositive = (company.shap_factors?.top_positive || []).slice(0, 3);
-  const shapNegative = (company.shap_factors?.top_negative || []).slice(0, 2);
+  // SHAP factors — flat array [{feature, shap_value, direction, explanation}]
+  const allShap = Array.isArray(company.shap_factors) ? company.shap_factors : [];
+  const shapPositive = allShap.filter(f => f.direction === 'positive').slice(0, 3);
+  const shapNegative = allShap.filter(f => f.direction === 'negative').slice(0, 2);
   const maxShapPos = Math.max(...shapPositive.map(f => Math.abs(f.shap_value || 0)), 0.1);
   const maxShapNeg = Math.max(...shapNegative.map(f => Math.abs(f.shap_value || 0)), 0.1);
   const useShap = shapPositive.length > 0;
@@ -443,6 +444,14 @@ export default function Company() {
                   ))
               }
             </div>
+          </div>
+        )}
+
+        {/* Model attribution */}
+        {useShap && (
+          <div style={{ fontFamily:mono, fontSize:10, color:C.muted, textAlign:"right",
+            marginTop:-16, marginBottom:24 }}>
+            Factors from XGBoost SHAP analysis · model {company.model_version || "logistic-v2-form4"}
           </div>
         )}
 
