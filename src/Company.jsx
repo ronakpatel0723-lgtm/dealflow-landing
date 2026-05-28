@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import WaitlistModal from "./WaitlistModal.jsx";
 
 const C = {
   bg:"#04060D", panel:"#0A0E1A", panelHi:"#0E1424",
@@ -9,6 +10,13 @@ const C = {
 };
 const disp = "'Bricolage Grotesque', -apple-system, sans-serif";
 const mono = "'IBM Plex Mono', ui-monospace, Menlo, monospace";
+
+const SECTOR_LABELS = {
+  saas: "SaaS",
+  cybersecurity: "Cybersecurity",
+  fintech: "Fintech",
+  healthcare_tech: "Healthcare Tech",
+};
 
 function scoreColor(s) {
   if (s >= 70) return C.green;
@@ -54,11 +62,21 @@ function SubScoreBar({ label, val }) {
   );
 }
 
-function MetricCard({ label, value, highlight }) {
+function MetricCard({ label, value, sub, highlight }) {
   return (
     <div style={{ background:C.panelHi, border:`1px solid ${C.line}`, borderRadius:10, padding:"16px 20px" }}>
       <div style={{ fontFamily:mono, fontSize:9.5, color:C.muted, letterSpacing:1, textTransform:"uppercase", marginBottom:8 }}>{label}</div>
       <div style={{ fontFamily:mono, fontSize:20, fontWeight:700, color: highlight || C.text }}>{value}</div>
+      {sub && <div style={{ fontFamily:disp, fontSize:11, color:C.muted, marginTop:4, lineHeight:1.3 }}>{sub}</div>}
+    </div>
+  );
+}
+
+function ShapBar({ absValue, maxValue, color }) {
+  const width = maxValue > 0 ? Math.min(100, (absValue / maxValue) * 100) : 0;
+  return (
+    <div style={{ height:3, background:"rgba(255,255,255,0.07)", borderRadius:2, marginTop:6 }}>
+      <div style={{ height:"100%", width:`${width}%`, background:color, borderRadius:2 }} />
     </div>
   );
 }
@@ -74,12 +92,11 @@ function fmtRev(revM) {
   return `$${revM}M`;
 }
 
-const MA_EV_REV_BENCHMARK = 4.5; // historical software M&A median EV/Revenue
+const MA_EV_REV_BENCHMARK = 4.5;
 
 function whyScoresHigh(company, allCompanies) {
   if (!company) return [];
   const sectorPeers = allCompanies.filter(c => c.sector === company.sector && c.ticker !== company.ticker);
-  // Fall back to all companies if fewer than 5 sector peers
   const peers = sectorPeers.length >= 5 ? sectorPeers
     : allCompanies.filter(c => c.ticker !== company.ticker);
 
@@ -87,37 +104,33 @@ function whyScoresHigh(company, allCompanies) {
   const medR40  = median(peers.map(c => c.r40  ?? 0));
   const medGrow = median(peers.map(c => c.growth ?? 0));
   const medEv   = median(peers.filter(c => (c.evRev ?? 0) > 0).map(c => c.evRev));
-  const peerLabel = sectorPeers.length >= 5 ? company.sector : "sector";
+  const peerLabel = sectorPeers.length >= 5 ? (SECTOR_LABELS[company.sector] || company.sector) : "sector";
 
   const revM = company.revenue ?? 0;
   const inSweet = revM >= 200 && revM <= 2000;
-  const revLabel = fmtRev(revM);
 
   const factors = [];
 
-  // Gross margin: above peer median OR premium absolute (>75%)
   const gm = company.gm ?? 0;
   const gmDelta = gm - medGm;
   if (gmDelta > 1 || gm > 75) {
     const score = gmDelta > 1 ? gmDelta : (gm - 75) * 0.5;
     const detail = gmDelta > 1
       ? `${gmDelta.toFixed(1)}pp above ${peerLabel} median (${medGm.toFixed(1)}%)`
-      : `premium SaaS economics — ${gm.toFixed(1)}% exceeds the 75% benchmark for efficient software`;
+      : `premium SaaS economics — ${gm.toFixed(1)}% exceeds the 75% benchmark`;
     factors.push({ score, label: "Margin quality", value: `${gm.toFixed(1)}% gross margin`, detail });
   }
 
-  // Revenue scale sweet spot
   if (inSweet) {
     const sweetScore = 20 - Math.abs(revM - 750) / 100;
     factors.push({
       score: sweetScore,
       label: "Revenue scale",
-      value: `${revLabel} ARR`,
+      value: `${fmtRev(revM)} ARR`,
       detail: `within the $200M–$2B range where acquirers most often transact`,
     });
   }
 
-  // Rule of 40 above peers
   const r40Delta = (company.r40 ?? 0) - medR40;
   if (r40Delta > 5) {
     factors.push({
@@ -128,7 +141,6 @@ function whyScoresHigh(company, allCompanies) {
     });
   }
 
-  // Compressed valuation: below sector median OR below software M&A benchmark
   const ev = company.evRev ?? 99;
   if ((medEv > 0 && ev < medEv - 1) || ev < MA_EV_REV_BENCHMARK) {
     const discount = medEv > 0 && ev < medEv - 1
@@ -142,20 +154,52 @@ function whyScoresHigh(company, allCompanies) {
     });
   }
 
-  // Revenue growth above peers
   const growDelta = (company.growth ?? 0) - medGrow;
   if (growDelta > 3) {
     factors.push({
       score: growDelta * 0.6,
       label: "Revenue growth",
       value: `${company.growth?.toFixed(1) ?? "—"}% YoY growth`,
-      detail: `${growDelta.toFixed(1)}pp above ${company.sector} median (${medGrow.toFixed(1)}%)`,
+      detail: `${growDelta.toFixed(1)}pp above ${SECTOR_LABELS[company.sector] || company.sector} median (${medGrow.toFixed(1)}%)`,
     });
   }
 
-  return factors
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 3);
+  return factors.sort((a, b) => b.score - a.score).slice(0, 3);
+}
+
+const SHAP_DISPLAY = {
+  gross_margin_pct: "Gross Margin",
+  gross_margin: "Gross Margin",
+  revenue_M: "Revenue Scale",
+  rule_of_40: "Rule of 40",
+  ev_revenue: "EV / Revenue",
+  revenue_growth_yoy: "Revenue Growth",
+  operating_margin_pct: "Operating Margin",
+  insider_net_buy_ratio: "Insider Activity",
+  insider_buy_volume: "Insider Purchases",
+  sector_bucket: "Sector",
+  log_revenue: "Revenue Scale",
+};
+
+function getShapName(feature) {
+  return SHAP_DISPLAY[feature] || feature.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+}
+
+function norm(raw) {
+  return {
+    ...raw,
+    name: raw.company || raw.name || raw.ticker,
+    score: Math.round(raw.total_score ?? raw.score ?? 0),
+    revenue: raw.revenue_M ?? raw.revenue ?? 0,
+    gm: raw.gross_margin ?? raw.gm ?? 0,
+    r40: raw.rule_of_40 ?? raw.r40 ?? 0,
+    evRev: raw.ev_revenue ?? raw.evRev ?? 0,
+    growth: raw.revenue_growth_yoy ?? raw.growth ?? 0,
+    scores: raw.subScores ?? raw.scores ?? {},
+    sectorRank: raw.sector_rank ?? null,
+    analystUpside: raw.analyst_target_upside ?? null,
+    shap_factors: raw.shap_factors ?? null,
+  };
 }
 
 export default function Company() {
@@ -163,16 +207,20 @@ export default function Company() {
   const [company, setCompany]     = useState(null);
   const [allCompanies, setAll]    = useState([]);
   const [comps, setComps]         = useState([]);
+  const [sectorContext, setSectorContext] = useState({});
   const [loading, setLoading]     = useState(true);
+  const [thesisModal, setThesisModal] = useState(false);
 
   useEffect(() => {
     fetch("/scores.json")
       .then(r => r.ok ? r.json() : null)
       .then(data => {
         if (data?.companies) {
-          setAll(data.companies);
-          const found = data.companies.find(c => c.ticker === ticker?.toUpperCase());
+          const normalized = data.companies.map(norm);
+          setAll(normalized);
+          const found = normalized.find(c => c.ticker === ticker?.toUpperCase());
           setCompany(found || null);
+          setSectorContext(data.sector_context || {});
         }
       })
       .catch(() => {})
@@ -191,7 +239,10 @@ export default function Company() {
     if (company) document.title = `${company.ticker} — DealFlow AI`;
   }, [company]);
 
-  const subScoreLabels = { revenue:"Revenue", margins:"Margins", growth:"Growth", valuation:"Valuation" };
+  const subScoreLabels = {
+    revenue:"Revenue", margins:"Margins", growth:"Growth", valuation:"Valuation",
+    marketPosition:"Market Position", ruleOf40:"Rule of 40", sizeFit:"Size Fit",
+  };
 
   if (loading) return (
     <div style={{ background:C.bg, minHeight:"100vh", display:"flex", alignItems:"center", justifyContent:"center" }}>
@@ -206,12 +257,48 @@ export default function Company() {
     </div>
   );
 
+  // SHAP factors (top 3 positive, top 2 negative)
+  const shapPositive = (company.shap_factors?.top_positive || []).slice(0, 3);
+  const shapNegative = (company.shap_factors?.top_negative || []).slice(0, 2);
+  const maxShapPos = Math.max(...shapPositive.map(f => Math.abs(f.shap_value || 0)), 0.1);
+  const maxShapNeg = Math.max(...shapNegative.map(f => Math.abs(f.shap_value || 0)), 0.1);
+  const useShap = shapPositive.length > 0;
+
+  // Heuristic fallback
+  const heuristicFactors = !useShap ? whyScoresHigh(company, allCompanies) : [];
+  const maxHeurScore = Math.max(...heuristicFactors.map(f => f.score), 0.1);
+
+  // Sector context
+  const sectorMeta = sectorContext[company.sector] || {};
+  const sectorLabel = SECTOR_LABELS[company.sector] || company.sector;
+  const sectorRankColor = company.sectorRank
+    ? (company.sectorRank <= 3 ? C.green : company.sectorRank > 5 ? C.amber : C.text)
+    : C.muted;
+
+  // EV/Revenue vs sector median
+  const evRevSub = sectorMeta.median_ev_revenue
+    ? `vs ${sectorMeta.median_ev_revenue}× ${sectorLabel} median`
+    : null;
+  const evRevHighlight = sectorMeta.median_ev_revenue
+    ? ((company.evRev ?? 0) < sectorMeta.median_ev_revenue ? C.green : C.amber)
+    : (company.evRev <= 4 ? C.green : undefined);
+
+  // Analyst upside
+  const upside = company.analystUpside;
+  const upsideFmt = upside != null
+    ? `${upside > 0 ? "+" : ""}${(upside * 100).toFixed(1)}%`
+    : "—";
+  const upsideColor = upside > 0.02 ? C.green : upside < -0.02 ? C.red : C.sub;
+  const upsideSub = upside != null ? "consensus analyst target vs current price" : null;
+
   const col = scoreColor(company.score);
   const tc  = tierColor(company.tier);
-  const whyFactors = whyScoresHigh(company, allCompanies);
   const revDisplay = company.revenue >= 1000
     ? `$${(company.revenue/1000).toFixed(1)}B`
     : `$${company.revenue}M`;
+  const opMargin = company.r40 != null && company.growth != null
+    ? (company.r40 - company.growth).toFixed(1)
+    : "—";
 
   return (
     <div style={{ background:C.bg, color:C.text, minHeight:"100vh", fontFamily:disp }}>
@@ -219,6 +306,11 @@ export default function Company() {
         @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
         *{box-sizing:border-box;margin:0;padding:0}
         a{text-decoration:none;color:inherit}
+        @media(max-width:640px){
+          .co-metrics{grid-template-columns:1fr 1fr!important}
+          .co-comps{grid-template-columns:1fr!important}
+          .co-why{gap:10px!important}
+        }
       `}</style>
 
       {/* Nav */}
@@ -248,41 +340,54 @@ export default function Company() {
           marginBottom:40, flexWrap:"wrap", gap:24 }}>
           <div>
             <div style={{ fontFamily:mono, fontSize:11, color:C.muted, letterSpacing:2,
-              textTransform:"uppercase", marginBottom:8 }}>{company.sector}</div>
-            <h1 style={{ fontFamily:disp, fontSize:"clamp(32px,5vw,52px)", fontWeight:800,
+              textTransform:"uppercase", marginBottom:8 }}>{sectorLabel}</div>
+            <h1 style={{ fontFamily:disp, fontSize:"clamp(28px,5vw,52px)", fontWeight:800,
               letterSpacing:"-0.03em", lineHeight:1 }}>{company.name}</h1>
-            <div style={{ display:"flex", alignItems:"center", gap:12, marginTop:12 }}>
+            <div style={{ display:"flex", alignItems:"center", gap:10, marginTop:12, flexWrap:"wrap" }}>
               <span style={{ fontFamily:mono, fontSize:16, color:C.sub }}>{company.ticker}</span>
               <span style={{ fontFamily:disp, fontSize:12, fontWeight:600, color:tc,
                 border:`1px solid ${tc}40`, borderRadius:5, padding:"3px 10px",
                 textTransform:"uppercase" }}>{company.tier} Tier</span>
+              {company.sectorRank && (
+                <span style={{ fontFamily:mono, fontSize:11, color:sectorRankColor,
+                  border:`1px solid ${sectorRankColor}40`, borderRadius:5, padding:"3px 10px" }}>
+                  #{company.sectorRank} in {sectorLabel} {sectorMeta.company_count ? `(${sectorMeta.company_count})` : ""}
+                </span>
+              )}
             </div>
           </div>
           <ScoreRing score={company.score} size={110} />
         </div>
 
         {/* Score breakdown */}
-        <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:14,
-          padding:"28px 32px", marginBottom:24 }}>
-          <div style={{ fontFamily:mono, fontSize:10, color:C.muted, letterSpacing:1.5,
-            textTransform:"uppercase", marginBottom:20 }}>Score Breakdown</div>
-          {company.scores && Object.entries(company.scores).map(([k, v]) => (
-            <SubScoreBar key={k} label={subScoreLabels[k] || k} val={v} />
-          ))}
-        </div>
+        {Object.keys(company.scores).length > 0 && (
+          <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:14,
+            padding:"28px 32px", marginBottom:24 }}>
+            <div style={{ fontFamily:mono, fontSize:10, color:C.muted, letterSpacing:1.5,
+              textTransform:"uppercase", marginBottom:20 }}>Score Breakdown</div>
+            {Object.entries(company.scores).map(([k, v]) => (
+              <SubScoreBar key={k} label={subScoreLabels[k] || k} val={v} />
+            ))}
+          </div>
+        )}
 
         {/* Key metrics grid */}
-        <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:12, marginBottom:24 }}>
-          <MetricCard label="Revenue (TTM)"    value={revDisplay} />
-          <MetricCard label="Gross Margin"     value={`${company.gm?.toFixed(1) ?? "—"}%`}
-            highlight={company.gm >= 70 ? C.green : undefined} />
-          <MetricCard label="Operating Margin" value={`${company.r40 != null ? (company.r40 - (company.growth ?? 0)).toFixed(1) : "—"}%`} />
-          <MetricCard label="Rule of 40"       value={company.r40?.toFixed(1) ?? "—"}
+        <div className="co-metrics" style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:12, marginBottom:24 }}>
+          <MetricCard label="Revenue (TTM)" value={revDisplay} />
+          <MetricCard label="Gross Margin" value={`${company.gm?.toFixed(1) ?? "—"}%`}
+            highlight={company.gm >= 70 ? C.green : undefined}
+            sub={sectorMeta.median_gross_margin ? `vs ${sectorMeta.median_gross_margin}% ${sectorLabel} median` : null} />
+          <MetricCard label="Operating Margin" value={`${opMargin}%`} />
+          <MetricCard label="Rule of 40" value={company.r40?.toFixed(1) ?? "—"}
             highlight={company.r40 >= 40 ? C.green : company.r40 >= 20 ? C.amber : C.red} />
-          <MetricCard label="Revenue Growth"   value={`${company.growth?.toFixed(1) ?? "—"}%`}
+          <MetricCard label="Revenue Growth" value={`${company.growth?.toFixed(1) ?? "—"}%`}
             highlight={company.growth >= 20 ? C.green : undefined} />
-          <MetricCard label="EV / Revenue"     value={`${company.evRev?.toFixed(1) ?? "—"}×`}
-            highlight={company.evRev <= 4 ? C.green : undefined} />
+          <MetricCard label="EV / Revenue" value={`${company.evRev?.toFixed(1) ?? "—"}×`}
+            highlight={evRevHighlight} sub={evRevSub} />
+          {upside != null && (
+            <MetricCard label="Analyst Upside" value={upsideFmt}
+              highlight={upsideColor} sub={upsideSub} />
+          )}
         </div>
 
         {/* AI Rationale */}
@@ -293,27 +398,79 @@ export default function Company() {
           <p style={{ fontSize:15, color:C.sub, lineHeight:1.7 }}>{company.rationale}</p>
         </div>
 
-        {/* Why it scores high */}
-        {whyFactors.length > 0 && (
-          <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:14, padding:"28px 32px", marginBottom:32 }}>
+        {/* Why it scores high — SHAP if available, else heuristic */}
+        {(useShap ? shapPositive.length > 0 : heuristicFactors.length > 0) && (
+          <div className="co-why" style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:14, padding:"28px 32px", marginBottom:24 }}>
             <div style={{ fontFamily:mono, fontSize:10, color:C.green, letterSpacing:1.5,
               textTransform:"uppercase", marginBottom:20 }}>Why it scores high</div>
             <div style={{ display:"grid", gap:14 }}>
-              {whyFactors.map((f, i) => (
-                <div key={i} style={{ display:"flex", gap:16, alignItems:"flex-start",
-                  padding:"14px 16px", background:C.panelHi, borderRadius:10,
-                  border:`1px solid ${C.line}` }}>
-                  <span style={{ fontFamily:mono, fontSize:18, color:C.green, flexShrink:0 }}>
-                    {["①","②","③"][i]}
-                  </span>
-                  <div>
-                    <div style={{ fontFamily:disp, fontSize:14, fontWeight:600, marginBottom:4 }}>
-                      {f.label} — <span style={{ color:C.green }}>{f.value}</span>
+              {useShap
+                ? shapPositive.map((f, i) => {
+                    const explanation = f.explanation
+                      || `This company's ${getShapName(f.feature)} is ${f.value != null ? f.value.toFixed(1) : "—"}${f.sector_median != null ? ` vs ${f.sector_median.toFixed(1)} sector median` : ""}`;
+                    return (
+                      <div key={i} style={{ display:"flex", gap:16, alignItems:"flex-start",
+                        padding:"14px 16px", background:C.panelHi, borderRadius:10, border:`1px solid ${C.line}` }}>
+                        <span style={{ fontFamily:mono, fontSize:18, color:C.green, flexShrink:0 }}>
+                          {["①","②","③"][i]}
+                        </span>
+                        <div style={{ flex:1 }}>
+                          <div style={{ fontFamily:disp, fontSize:14, fontWeight:600, marginBottom:4 }}>
+                            {getShapName(f.feature)} — <span style={{ color:C.green }}>
+                              {f.value != null ? `${f.value.toFixed(1)}${f.unit || ""}` : "positive signal"}
+                            </span>
+                          </div>
+                          <div style={{ fontFamily:disp, fontSize:13, color:C.sub }}>{explanation}</div>
+                          <ShapBar absValue={Math.abs(f.shap_value || 0)} maxValue={maxShapPos} color={C.green} />
+                        </div>
+                      </div>
+                    );
+                  })
+                : heuristicFactors.map((f, i) => (
+                    <div key={i} style={{ display:"flex", gap:16, alignItems:"flex-start",
+                      padding:"14px 16px", background:C.panelHi, borderRadius:10, border:`1px solid ${C.line}` }}>
+                      <span style={{ fontFamily:mono, fontSize:18, color:C.green, flexShrink:0 }}>
+                        {["①","②","③"][i]}
+                      </span>
+                      <div style={{ flex:1 }}>
+                        <div style={{ fontFamily:disp, fontSize:14, fontWeight:600, marginBottom:4 }}>
+                          {f.label} — <span style={{ color:C.green }}>{f.value}</span>
+                        </div>
+                        <div style={{ fontFamily:disp, fontSize:13, color:C.sub }}>{f.detail}</div>
+                        <ShapBar absValue={f.score} maxValue={maxHeurScore} color={C.green} />
+                      </div>
                     </div>
-                    <div style={{ fontFamily:disp, fontSize:13, color:C.sub }}>{f.detail}</div>
+                  ))
+              }
+            </div>
+          </div>
+        )}
+
+        {/* What's working against it — negative SHAP only */}
+        {shapNegative.length > 0 && (
+          <div style={{ background:C.panel, border:`1px solid rgba(245,194,75,0.2)`, borderRadius:14, padding:"28px 32px", marginBottom:24 }}>
+            <div style={{ fontFamily:mono, fontSize:10, color:C.amber, letterSpacing:1.5,
+              textTransform:"uppercase", marginBottom:20 }}>What's working against it</div>
+            <div style={{ display:"grid", gap:14 }}>
+              {shapNegative.map((f, i) => {
+                const explanation = f.explanation
+                  || `This company's ${getShapName(f.feature)} is ${f.value != null ? f.value.toFixed(1) : "—"}${f.sector_median != null ? ` vs ${f.sector_median.toFixed(1)} sector median` : ""}`;
+                return (
+                  <div key={i} style={{ display:"flex", gap:16, alignItems:"flex-start",
+                    padding:"14px 16px", background:C.panelHi, borderRadius:10, border:`1px solid ${C.line}` }}>
+                    <span style={{ fontFamily:mono, fontSize:18, color:C.amber, flexShrink:0 }}>↓</span>
+                    <div style={{ flex:1 }}>
+                      <div style={{ fontFamily:disp, fontSize:14, fontWeight:600, marginBottom:4 }}>
+                        {getShapName(f.feature)} — <span style={{ color:C.amber }}>
+                          {f.value != null ? `${f.value.toFixed(1)}${f.unit || ""}` : "negative signal"}
+                        </span>
+                      </div>
+                      <div style={{ fontFamily:disp, fontSize:13, color:C.sub }}>{explanation}</div>
+                      <ShapBar absValue={Math.abs(f.shap_value || 0)} maxValue={maxShapNeg} color={C.amber} />
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         )}
@@ -326,7 +483,7 @@ export default function Company() {
             <div style={{ fontFamily:disp, fontSize:13, color:C.muted, marginBottom:16 }}>
               Recent acquisitions of similar software companies — sourced from LSEG SDC
             </div>
-            <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:12 }}>
+            <div className="co-comps" style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:12 }}>
               {comps.slice(0,3).map((c, i) => {
                 const year = c.date ? new Date(c.date).getFullYear() : "—";
                 const dealVal = c.deal_value_M >= 1000
@@ -353,8 +510,26 @@ export default function Company() {
           </div>
         )}
 
+        {/* Acquisition Thesis */}
+        <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:14,
+          padding:"28px 32px", marginBottom:32 }}>
+          <div style={{ fontFamily:mono, fontSize:10, color:C.blue, letterSpacing:1.5,
+            textTransform:"uppercase", marginBottom:12 }}>Acquisition Thesis</div>
+          <p style={{ fontFamily:disp, fontSize:14, color:C.muted, lineHeight:1.7, marginBottom:20 }}>
+            Deep-dive acquisition thesis available to Team plan subscribers — sector positioning,
+            likely acquirers, deal structure analysis, and full probability driver breakdown.
+          </p>
+          <button onClick={() => setThesisModal(true)} style={{
+            fontFamily:disp, fontSize:13, fontWeight:600, color:C.blue,
+            background:"rgba(91,141,239,0.1)", border:`1px solid rgba(91,141,239,0.25)`,
+            borderRadius:8, padding:"10px 20px", cursor:"pointer",
+          }}>
+            Get full analysis →
+          </button>
+        </div>
+
         {/* Footer CTA */}
-        <div style={{ display:"flex", gap:12 }}>
+        <div style={{ display:"flex", gap:12, flexWrap:"wrap" }}>
           <Link to="/screener" style={{ display:"inline-flex", alignItems:"center", gap:8,
             padding:"12px 24px", background:"none", border:`1px solid ${C.lineHi}`,
             borderRadius:8, fontFamily:disp, fontSize:14, color:C.sub }}>
@@ -367,6 +542,8 @@ export default function Company() {
           </Link>
         </div>
       </div>
+
+      <WaitlistModal open={thesisModal} onClose={() => setThesisModal(false)} tier="Team" />
     </div>
   );
 }
