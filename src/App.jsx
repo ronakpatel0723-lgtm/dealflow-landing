@@ -157,11 +157,11 @@ export default function DealFlowLanding() {
           {/* hero proof number */}
           <div style={{ ...hero(5), marginTop: 64, display: "flex", alignItems: "baseline", justifyContent: "center", gap: 18 }}>
             <span style={{ fontFamily: mono, fontWeight: 600, fontSize: "clamp(64px, 11vw, 132px)", letterSpacing: "-0.04em", background: `linear-gradient(180deg, ${C.text}, ${C.blue})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", lineHeight: 1 }}>
-              <CountUp to={3.08} decimals={2} suffix="×" />
+              <CountUp to={6.31} decimals={2} suffix="×" />
             </span>
             <span style={{ textAlign: "left", maxWidth: 240 }}>
               <span style={{ fontFamily: mono, fontSize: 13, color: C.green, letterSpacing: 1 }}>TOP-DECILE LIFT</span>
-              <p style={{ fontSize: 14, color: C.sub, margin: "6px 0 0", lineHeight: 1.45 }}>more acquisition targets than random — validated out-of-sample, 2020–2023.</p>
+              <p style={{ fontSize: 14, color: C.sub, margin: "6px 0 0", lineHeight: 1.45 }}>more acquisition targets than random — validated out-of-sample, 2020–2024.</p>
             </span>
           </div>
         </header>
@@ -206,7 +206,7 @@ export default function DealFlowLanding() {
             {[
               { n: 1166, d: 0, s: "", l: "Companies in the universe", sub: "survivorship-bias-free, incl. delisted" },
               { n: 100, d: 0, s: "", l: "Hand-verified acquisitions", sub: "every label checked against SEC filings" },
-              { n: 0.86, d: 2, s: "×", l: "Placebo lift on shuffled labels", sub: "proof the signal is real, not leakage" },
+              { n: 1.00, d: 2, s: "×", l: "Placebo lift on shuffled labels", sub: "proof the signal is real, not leakage" },
             ].map((m, i) => (
               <Reveal key={m.l} delay={i * 90}>
                 <div style={{ background: C.panel, padding: "34px 26px" }}>
@@ -230,7 +230,7 @@ export default function DealFlowLanding() {
             {[
               { i: "M", t: "Ingest the universe", d: "Every public software company that's filed with the SEC since 2010 — including the 500+ that were acquired and delisted. No survivorship bias." },
               { i: "Σ", t: "Score the signal", d: "A point-in-time model weighs revenue scale, margin quality, Rule of 40, and insider activity against a decade of verified acquisitions." },
-              { i: "↗", t: "Rank what matters", d: "Sort your universe by likelihood. The top decile carries 3.1× the acquisition rate — your week's worth of targets, in seconds." },
+              { i: "↗", t: "Rank what matters", d: "Sort your universe by likelihood. The top decile carries 6.31× the acquisition rate — your week's worth of targets, in seconds." },
             ].map((card, i) => (
               <Reveal key={card.t} delay={i * 90}>
                 <div className="df-card" style={{ background: C.panel, border: `1px solid ${C.line}`, borderRadius: 14, padding: "28px 24px", height: "100%" }}>
@@ -256,11 +256,11 @@ export default function DealFlowLanding() {
                 </p>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, maxWidth: 540 }}>
                   <div style={{ borderLeft: `2px solid ${C.green}`, paddingLeft: 18 }}>
-                    <div style={{ fontFamily: mono, fontSize: 34, fontWeight: 600, color: C.text }}><CountUp to={3.08} decimals={2} suffix="×" /></div>
+                    <div style={{ fontFamily: mono, fontSize: 34, fontWeight: 600, color: C.text }}><CountUp to={6.31} decimals={2} suffix="×" /></div>
                     <div style={{ fontSize: 13, color: C.sub, marginTop: 6 }}>real out-of-sample top-decile lift</div>
                   </div>
                   <div style={{ borderLeft: `2px solid ${C.muted}`, paddingLeft: 18 }}>
-                    <div style={{ fontFamily: mono, fontSize: 34, fontWeight: 600, color: C.sub }}><CountUp to={0.86} decimals={2} suffix="×" /></div>
+                    <div style={{ fontFamily: mono, fontSize: 34, fontWeight: 600, color: C.sub }}><CountUp to={1.00} decimals={2} suffix="×" /></div>
                     <div style={{ fontSize: 13, color: C.sub, marginTop: 6 }}>lift collapses on shuffled labels — no leakage</div>
                   </div>
                 </div>
