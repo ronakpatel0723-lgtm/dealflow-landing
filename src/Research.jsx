@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const C = {
@@ -44,6 +44,34 @@ const StatStrip = ({ stats }) => (
 
 export default function Research() {
   useEffect(() => { document.title = "Research — DealFlow AI"; }, []);
+
+  const [topTargets, setTopTargets] = useState([]);
+  const [topPick, setTopPick] = useState("VRNS");
+
+  useEffect(() => {
+    fetch("/scores.json")
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        if (data?.companies) {
+          const high = data.companies
+            .filter(c => c.tier === "High")
+            .sort((a, b) => (b.total_score ?? 0) - (a.total_score ?? 0))
+            .slice(0, 5)
+            .map(c => ({
+              ticker: c.ticker,
+              name: c.company || c.ticker,
+              score: Math.round(c.total_score ?? 0),
+              topFactor: c.shap_factors?.top_positive?.[0]?.display
+                || (c.subScores ? Object.entries(c.subScores).sort((a,b)=>b[1]-a[1])[0]?.[0] : null)
+                || c.rationale?.split(".")[0]?.slice(0, 50)
+                || "—",
+            }));
+          setTopTargets(high);
+          if (high.length > 0) setTopPick(high[0].ticker);
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   return (
     <div style={{ background: C.bg, minHeight: "100vh", color: C.text }}>
@@ -201,6 +229,74 @@ export default function Research() {
             rate, not a rate suppressed by survivorship. When the model scores a company highly, it has learned
             that pattern from a dataset that includes the full consequence of that pattern — including the companies
             that were taken private precisely because of it.
+          </P>
+        </section>
+
+        {/* ── SECTION 4: Current High-Conviction Targets ── */}
+        {topTargets.length > 0 && (
+          <section style={{ borderTop: `1px solid ${C.line}`, paddingTop: 48, marginBottom: 56 }}>
+            <div style={{ fontFamily: mono, fontSize: 11, color: C.blue, letterSpacing: 2, textTransform: "uppercase", marginBottom: 14 }}>
+              Section 4 · Current Rankings
+            </div>
+            <h2 style={{ fontFamily: disp, fontSize: 26, fontWeight: 700, letterSpacing: "-0.02em", marginBottom: 24 }}>
+              High-conviction targets — live
+            </h2>
+            <P>
+              The five companies currently ranked highest by the model. Scores reflect the most recent quarterly
+              XBRL data. Updated weekly.
+            </P>
+            <div style={{ display: "flex", flexDirection: "column", gap: 0, background: C.panel, border: `1px solid ${C.line}`, borderRadius: 12, overflow: "hidden", marginBottom: 24 }}>
+              {topTargets.map((t, i) => (
+                <Link key={t.ticker} to={`/company/${t.ticker}`} style={{
+                  display: "grid", gridTemplateColumns: "32px 1fr auto auto",
+                  alignItems: "center", gap: 16, padding: "16px 24px",
+                  borderBottom: i < topTargets.length - 1 ? `1px solid ${C.line}` : "none",
+                  textDecoration: "none",
+                  transition: "background 0.15s",
+                }} onMouseEnter={e => e.currentTarget.style.background = C.panelHi}
+                   onMouseLeave={e => e.currentTarget.style.background = "transparent"}>
+                  <span style={{ fontFamily: mono, fontSize: 11, color: C.muted }}>{String(i + 1).padStart(2, "0")}</span>
+                  <div>
+                    <span style={{ fontFamily: disp, fontSize: 15, fontWeight: 600 }}>{t.name}</span>
+                    <span style={{ fontFamily: mono, fontSize: 11, color: C.sub, marginLeft: 8 }}>{t.ticker}</span>
+                    <div style={{ fontFamily: mono, fontSize: 10, color: C.muted, marginTop: 2 }}>Top signal: {t.topFactor}</div>
+                  </div>
+                  <span style={{ fontFamily: mono, fontSize: 18, fontWeight: 700, color: C.green }}>{t.score}</span>
+                  <span style={{ fontFamily: mono, fontSize: 10, color: C.blue }}>→</span>
+                </Link>
+              ))}
+            </div>
+            <P style={{ fontSize: 13, color: C.muted }}>
+              Click any row to see the full company profile with SHAP factor breakdown.
+            </P>
+          </section>
+        )}
+
+        {/* ── SECTION 5: Why This Matters for Corp Dev ── */}
+        <section style={{ borderTop: `1px solid ${C.line}`, paddingTop: 48, marginBottom: 56 }}>
+          <div style={{ fontFamily: mono, fontSize: 11, color: C.blue, letterSpacing: 2, textTransform: "uppercase", marginBottom: 14 }}>
+            Section 5 · For Corp Dev
+          </div>
+          <h2 style={{ fontFamily: disp, fontSize: 26, fontWeight: 700, letterSpacing: "-0.02em", marginBottom: 24 }}>
+            Why this matters for corporate development teams
+          </h2>
+          <P>
+            M&A intelligence has historically been available only to teams with access to a Bloomberg terminal
+            and an army of analysts running screens against stale data. The first call from a banker is rarely
+            the first time a target becomes attractive — it's the first time your competitor's banker noticed.
+            DealFlow AI moves that moment earlier.
+          </P>
+          <P>
+            The 5.81× signal-to-noise ratio means that if you review the top 10 companies in the DealFlow ranking
+            each quarter, you're looking at a pool that historically contains roughly <strong style={{ color: C.text }}>
+            5–6× more acquisitions than a random selection of 10 companies</strong> from the same universe.
+            That's not a prediction — it's a prioritization filter that dramatically compresses the diligence funnel.
+          </P>
+          <P>
+            This isn't a prediction. It's a prioritization engine. The question isn't
+            whether <strong style={{ color: C.text }}>{topPick}</strong> will be acquired — it's whether your team
+            should spend 2 hours on it before the banker calls. If the model says yes and your competitor's
+            analyst is already in their data room, you've already lost the timing advantage.
           </P>
         </section>
 
