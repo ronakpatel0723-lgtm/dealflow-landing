@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import Screener from "./Screener.jsx";
 import Methodology from "./Methodology.jsx";
 import Company from "./Company.jsx";
+import Pricing from "./Pricing.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<App />} />
         <Route path="/screener" element={<Screener />} />
         <Route path="/methodology" element={<Methodology />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/company/:ticker" element={<Company />} />
       </Routes>
     </BrowserRouter>
