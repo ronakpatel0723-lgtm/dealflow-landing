@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import WaitlistModal from "./WaitlistModal.jsx";
 
 /* DealFlow AI — Landing. Dark cinematic, high-contrast.
    Display: Bricolage Grotesque · Numerals: IBM Plex Mono */
@@ -90,6 +91,7 @@ function ScrollProgress() {
 
 export default function DealFlowLanding() {
   const [load, setLoad] = useState(false);
+  const [waitlistOpen, setWaitlistOpen] = useState(false);
   useEffect(() => { const t = setTimeout(() => setLoad(true), 60); return () => clearTimeout(t); }, []);
   const today = new Date().toLocaleDateString("en-US", { month: "short", day: "numeric" });
 
@@ -131,8 +133,8 @@ export default function DealFlowLanding() {
           <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
             <Link to="/screener" style={{ fontSize: 14, color: C.sub }}>Product</Link>
             <Link to="/methodology" style={{ fontSize: 14, color: C.sub }}>Methodology</Link>
-            <span style={{ fontSize: 14, color: C.sub, cursor: "pointer" }}>Pricing</span>
-            <span className="df-cta" style={{ fontSize: 14, fontWeight: 600, background: C.text, color: C.bg, padding: "9px 16px", borderRadius: 8, cursor: "pointer" }}>Request Access</span>
+            <Link to="/pricing" style={{ fontSize: 14, color: C.sub }}>Pricing</Link>
+            <button onClick={() => setWaitlistOpen(true)} className="df-cta" style={{ fontSize: 14, fontWeight: 600, background: C.text, color: C.bg, padding: "9px 16px", borderRadius: 8, cursor: "pointer", border: "none" }}>Request Access</button>
           </div>
         </nav>
 
@@ -149,7 +151,7 @@ export default function DealFlowLanding() {
             DealFlow AI ranks the entire public software universe by acquisition likelihood — so you find the target before the banker's call, not after.
           </p>
           <div style={{ ...hero(4), display: "flex", gap: 14, justifyContent: "center", marginTop: 38, flexWrap: "wrap" }}>
-            <span className="df-cta" style={{ fontSize: 15, fontWeight: 600, background: C.blue, color: "#fff", padding: "13px 26px", borderRadius: 10, cursor: "pointer" }}>Request Access</span>
+            <button onClick={() => setWaitlistOpen(true)} className="df-cta" style={{ fontSize: 15, fontWeight: 600, background: C.blue, color: "#fff", padding: "13px 26px", borderRadius: 10, cursor: "pointer", border: "none" }}>Request Access</button>
             <Link to="/screener" className="df-cta" style={{ fontSize: 15, fontWeight: 500, color: C.text, padding: "13px 24px", borderRadius: 10, border: `1px solid ${C.lineHi}`, cursor: "pointer", textDecoration: "none" }}>See it live →</Link>
             <Link to="/methodology" className="df-cta" style={{ fontSize: 15, fontWeight: 500, color: C.sub, padding: "13px 24px", borderRadius: 10, border: `1px solid ${C.line}`, cursor: "pointer", textDecoration: "none" }}>Methodology →</Link>
           </div>
@@ -277,7 +279,7 @@ export default function DealFlowLanding() {
             </h2>
             <p style={{ fontSize: 17, color: C.sub, margin: "22px auto 0", maxWidth: 480, lineHeight: 1.5 }}>Built for the corp-dev teams and funds priced out of a $20K terminal.</p>
             <div style={{ marginTop: 34, display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
-              <span className="df-cta" style={{ fontSize: 15, fontWeight: 600, background: C.blue, color: "#fff", padding: "14px 30px", borderRadius: 10, cursor: "pointer" }}>Request Access</span>
+              <button onClick={() => setWaitlistOpen(true)} className="df-cta" style={{ fontSize: 15, fontWeight: 600, background: C.blue, color: "#fff", padding: "14px 30px", borderRadius: 10, cursor: "pointer", border: "none" }}>Request Access</button>
               <Link to="/screener" className="df-cta" style={{ fontSize: 15, fontWeight: 500, color: C.text, padding: "14px 28px", borderRadius: 10, border: `1px solid ${C.lineHi}`, cursor: "pointer", textDecoration: "none" }}>Try the demo →</Link>
             </div>
             <div style={{ fontFamily: mono, fontSize: 12, color: C.muted, marginTop: 18 }}>from $149/mo · no terminal, no procurement</div>
@@ -302,6 +304,7 @@ export default function DealFlowLanding() {
           </div>
         </footer>
       </div>
+      <WaitlistModal open={waitlistOpen} onClose={() => setWaitlistOpen(false)} />
     </div>
   );
 }
