@@ -18,9 +18,10 @@ const TIERS = [
     period: "/mo",
     tag: "For solo practitioners",
     features: [
-      "65 public SaaS companies ranked",
-      "Full ML acquisition score + sub-scores",
-      "Company detail pages with rationale",
+      "Full 100-company universe ranked",
+      "ML acquisition score + SHAP breakdown",
+      "AI acquisition rationale per company",
+      "Historical comparable transactions",
       "Weekly score refresh",
       "CSV export",
     ],
@@ -34,11 +35,11 @@ const TIERS = [
     tag: "Most popular",
     features: [
       "Everything in Analyst",
-      "300+ company universe",
-      "Form 4 insider signal layer",
-      "Score-change email alerts",
+      "Full acquisition thesis (top 20 companies)",
+      "REST API access",
+      "Webhook tier-change alerts",
+      "Score history + trend sparklines",
       "5 seats",
-      "Slack integration",
     ],
     cta: "Request Access",
     highlight: true,
@@ -51,7 +52,6 @@ const TIERS = [
     features: [
       "Everything in Team",
       "Custom universe (any public software co.)",
-      "API access",
       "CRM / workflow integrations",
       "White-label option",
       "Dedicated onboarding",
@@ -59,6 +59,21 @@ const TIERS = [
     cta: "Talk to us",
     highlight: false,
   },
+];
+
+const COMPARISON = [
+  { feature:"Company screener",        free:"Top 20", analyst:"All 100", team:"All 100" },
+  { feature:"Score rankings",          free:"✓", analyst:"✓", team:"✓" },
+  { feature:"Company deep-dives",      free:"✓", analyst:"✓", team:"✓" },
+  { feature:"AI acquisition rationale",free:"✓", analyst:"✓", team:"✓" },
+  { feature:"SHAP factor breakdown",   free:"—", analyst:"✓", team:"✓" },
+  { feature:"Historical comparables",  free:"—", analyst:"✓", team:"✓" },
+  { feature:"CSV export",              free:"—", analyst:"✓", team:"✓" },
+  { feature:"Acquisition thesis",      free:"—", analyst:"Preview", team:"Full" },
+  { feature:"Score history + trends",  free:"—", analyst:"—", team:"✓" },
+  { feature:"REST API access",         free:"—", analyst:"—", team:"✓" },
+  { feature:"Webhook alerts",          free:"—", analyst:"—", team:"✓" },
+  { feature:"Custom universe",         free:"—", analyst:"—", team:"Enterprise" },
 ];
 
 export default function Pricing() {
@@ -205,6 +220,50 @@ export default function Pricing() {
           </p>
         </div>
 
+        {/* Comparison table */}
+        <div style={{ marginTop: 80 }}>
+          <div style={{ fontFamily: mono, fontSize: 11, color: C.blue, letterSpacing: 2, textTransform: "uppercase", marginBottom: 24, textAlign: "center" }}>
+            Feature Comparison
+          </div>
+          <div style={{ background: C.panel, border: `1px solid ${C.line}`, borderRadius: 14, overflow: "hidden" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "1.8fr 1fr 1fr 1fr", padding: "12px 20px", background: C.panelHi, borderBottom: `1px solid ${C.line}` }}>
+              {["Feature", "Free", "Analyst", "Team"].map((h, i) => (
+                <span key={h} style={{ fontFamily: mono, fontSize: 10, color: i > 0 ? C.blue : C.muted, letterSpacing: 1, textTransform: "uppercase", textAlign: i > 0 ? "center" : "left" }}>{h}</span>
+              ))}
+            </div>
+            {COMPARISON.map((row, i) => (
+              <div key={row.feature} style={{ display: "grid", gridTemplateColumns: "1.8fr 1fr 1fr 1fr", padding: "11px 20px", borderBottom: i < COMPARISON.length - 1 ? `1px solid ${C.line}` : "none", background: i % 2 ? "rgba(255,255,255,0.012)" : "transparent" }}>
+                <span style={{ fontFamily: disp, fontSize: 13, color: C.sub }}>{row.feature}</span>
+                {[row.free, row.analyst, row.team].map((v, j) => (
+                  <span key={j} style={{ fontFamily: mono, fontSize: 12, textAlign: "center", color: v === "✓" || v === "Full" ? C.green : v === "Preview" || v === "Top 20" || v === "All 100" ? C.amber : v === "Enterprise" ? C.blue : C.muted }}>
+                    {v}
+                  </span>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Social proof */}
+        <div style={{ marginTop: 80 }}>
+          <div style={{ fontFamily: mono, fontSize: 11, color: C.blue, letterSpacing: 2, textTransform: "uppercase", marginBottom: 24, textAlign: "center" }}>
+            Validated against institutional data
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 16 }}>
+            {[
+              { icon: "📋", title: "SEC EDGAR verified", desc: "Every deal confirmed via 8-K Item 2.01 filing — announcement date, acquirer, deal type." },
+              { icon: "🏦", title: "LSEG SDC corroborated", desc: "58.6% of our gold set independently confirmed against LSEG SDC Platinum, the industry benchmark." },
+              { icon: "📊", title: "Walk-forward validated", desc: "Model trained only on the past, tested on deals it never saw. Gold standard for time-series finance." },
+            ].map(({ icon, title, desc }) => (
+              <div key={title} style={{ background: C.panel, border: `1px solid ${C.line}`, borderRadius: 12, padding: "20px 20px" }}>
+                <div style={{ fontSize: 22, marginBottom: 10 }}>{icon}</div>
+                <div style={{ fontFamily: disp, fontSize: 14, fontWeight: 600, color: C.text, marginBottom: 6 }}>{title}</div>
+                <div style={{ fontFamily: disp, fontSize: 13, color: C.muted, lineHeight: 1.55 }}>{desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* FAQ */}
         <div style={{ marginTop: 80 }}>
           <div style={{ fontFamily: mono, fontSize: 11, color: C.blue, letterSpacing: 2, textTransform: "uppercase", marginBottom: 32, textAlign: "center" }}>
@@ -212,10 +271,10 @@ export default function Pricing() {
           </div>
           <div style={{ display: "grid", gap: 0, maxWidth: 680, margin: "0 auto" }}>
             {[
-              ["What does 'private beta' mean?", "We're onboarding users manually to ensure quality. You'll hear from us within 24 hours of requesting access."],
-              ["How is DealFlow AI different from CapIQ or Refinitiv?", "DealFlow AI doesn't sell raw data — it sells a ranked signal. The acquisition likelihood score is the product. No terminal license required."],
-              ["How often are scores updated?", "Weekly on the Analyst plan. Real-time score-change alerts on Team and above."],
-              ["What's the methodology behind the score?", "Walk-forward XGBoost model trained on 27,949 company-year observations, 264 verified acquisitions. See the full breakdown on our Methodology page."],
+              ["How is this different from PitchBook or CapIQ?", "PitchBook tells you who got acquired. DealFlow tells you who's next — ranked by the same financial signature that preceded 169 historical deals."],
+              ["What's your accuracy?", "We don't predict individual acquisitions. We rank. The top 10% of our ranking contains 5.22× more acquisition targets than random selection — validated on 4 years of out-of-sample data."],
+              ["Can I try before I buy?", "Yes. Free tier gives you the top 20 ranked companies, company profiles, and the methodology. No credit card required."],
+              ["How fresh is the data?", "Scores update weekly. New 8-K filings are monitored daily. Financial data refreshes when new 10-Ks and 10-Qs are filed."],
             ].map(([q, a]) => (
               <div key={q} style={{ padding: "20px 0", borderBottom: `1px solid ${C.line}` }}>
                 <div style={{ fontFamily: disp, fontSize: 15, fontWeight: 600, color: C.text, marginBottom: 8 }}>{q}</div>
