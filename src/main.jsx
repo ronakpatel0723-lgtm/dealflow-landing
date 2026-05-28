@@ -10,6 +10,7 @@ const Company     = lazy(() => import("./Company.jsx"));
 const Pricing     = lazy(() => import("./Pricing.jsx"));
 const Research    = lazy(() => import("./Research.jsx"));
 const Monitor     = lazy(() => import("./Monitor.jsx"));
+const ApiDocs     = lazy(() => import("./ApiDocs.jsx"));
 
 const Fallback = () => (
   <div style={{ background: "#04060D", minHeight: "100vh" }} />
@@ -28,6 +29,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Route path="/research" element={<Research />} />
             <Route path="/company/:ticker" element={<Company />} />
             <Route path="/monitor" element={<Monitor />} />
+          <Route path="/api-docs" element={<ApiDocs />} />
           </Routes>
         </Suspense>
       </BrowserRouter>
