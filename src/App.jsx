@@ -96,6 +96,9 @@ export default function DealFlowLanding() {
   const [waitlistOpen, setWaitlistOpen] = useState(false);
   const [loginOpen, setLoginOpen] = useState(false);
   const [heroSN, setHeroSN] = useState("5.81");
+  const [signalBanner, setSignalBanner] = useState(false);
+  const [signalEmail, setSignalEmail] = useState("");
+  const [signalDone, setSignalDone] = useState(false);
   const { isLoggedIn, userTier, userEmail, logout } = useAuth();
   useEffect(() => { document.title = "DealFlow AI — Acquisition Intelligence"; }, []);
   useEffect(() => { const t = setTimeout(() => setLoad(true), 60); return () => clearTimeout(t); }, []);
@@ -104,6 +107,15 @@ export default function DealFlowLanding() {
       .then(r => r.ok ? r.json() : null)
       .then(d => { if (d?.metadata?.signal_to_noise) setHeroSN(String(d.metadata.signal_to_noise)); })
       .catch(() => {});
+  }, []);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      if (pct > 0.8) setSignalBanner(true);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
   const today = new Date().toLocaleDateString("en-US", { month: "short", day: "numeric" });
 
@@ -191,8 +203,8 @@ export default function DealFlowLanding() {
           </p>
           <div style={{ ...hero(5), display: "flex", gap: 14, justifyContent: "center", marginTop: 38, flexWrap: "wrap" }}>
             <button onClick={() => setWaitlistOpen(true)} className="df-cta" style={{ fontSize: 15, fontWeight: 600, background: C.blue, color: "#fff", padding: "13px 26px", borderRadius: 10, cursor: "pointer", border: "none" }}>Request Access</button>
-            <Link to="/screener" className="df-cta" style={{ fontSize: 15, fontWeight: 500, color: C.text, padding: "13px 24px", borderRadius: 10, border: `1px solid ${C.lineHi}`, cursor: "pointer", textDecoration: "none" }}>See it live →</Link>
-            <Link to="/methodology" className="df-cta" style={{ fontSize: 15, fontWeight: 500, color: C.sub, padding: "13px 24px", borderRadius: 10, border: `1px solid ${C.line}`, cursor: "pointer", textDecoration: "none" }}>Methodology →</Link>
+            <Link to="/demo" className="df-cta" style={{ fontSize: 15, fontWeight: 600, color: C.text, padding: "13px 24px", borderRadius: 10, border: `1px solid ${C.lineHi}`, cursor: "pointer", textDecoration: "none" }}>Book a Demo →</Link>
+            <Link to="/screener" className="df-cta" style={{ fontSize: 15, fontWeight: 500, color: C.sub, padding: "13px 24px", borderRadius: 10, border: `1px solid ${C.line}`, cursor: "pointer", textDecoration: "none" }}>See it live →</Link>
           </div>
 
           {/* "show your work" proof strip */}
@@ -347,7 +359,7 @@ export default function DealFlowLanding() {
             <p style={{ fontSize: 17, color: C.sub, margin: "22px auto 0", maxWidth: 480, lineHeight: 1.5 }}>Built for the corp-dev teams and funds priced out of a $20K terminal.</p>
             <div style={{ marginTop: 34, display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
               <button onClick={() => setWaitlistOpen(true)} className="df-cta" style={{ fontSize: 15, fontWeight: 600, background: C.blue, color: "#fff", padding: "14px 30px", borderRadius: 10, cursor: "pointer", border: "none" }}>Request Access</button>
-              <Link to="/screener" className="df-cta" style={{ fontSize: 15, fontWeight: 500, color: C.text, padding: "14px 28px", borderRadius: 10, border: `1px solid ${C.lineHi}`, cursor: "pointer", textDecoration: "none" }}>Try the demo →</Link>
+              <Link to="/demo" className="df-cta" style={{ fontSize: 15, fontWeight: 600, color: C.text, padding: "14px 28px", borderRadius: 10, border: `1px solid ${C.lineHi}`, cursor: "pointer", textDecoration: "none" }}>Book a Demo →</Link>
             </div>
             <div style={{ fontFamily: mono, fontSize: 12, color: C.muted, marginTop: 18 }}>from $149/mo · no terminal, no procurement</div>
           </Reveal>
@@ -371,6 +383,52 @@ export default function DealFlowLanding() {
           </div>
         </footer>
       </div>
+      {/* Exit-intent email capture banner */}
+      {signalBanner && !signalDone && (
+        <div style={{ position:"fixed", bottom:0, left:0, right:0, zIndex:200,
+          background:C.panelHi, borderTop:`1px solid ${C.lineHi}`,
+          padding:"16px 24px", display:"flex", alignItems:"center",
+          justifyContent:"space-between", gap:16, flexWrap:"wrap",
+          boxShadow:"0 -8px 32px rgba(0,0,0,0.4)" }}>
+          <div style={{ fontFamily:disp, fontSize:14, color:C.text, maxWidth:480 }}>
+            <strong>Get the weekly DealFlow Signal</strong>
+            <span style={{ color:C.sub }}> — top acquisition targets, score changes, and one deep-dive thesis. Free.</span>
+          </div>
+          <div style={{ display:"flex", gap:8, alignItems:"center", flexShrink:0 }}>
+            <input
+              type="email" value={signalEmail}
+              onChange={e => setSignalEmail(e.target.value)}
+              placeholder="you@fund.com"
+              style={{ fontFamily:mono, fontSize:13, background:C.panel, border:`1px solid ${C.line}`,
+                borderRadius:7, padding:"9px 14px", color:C.text, outline:"none", width:200 }}
+            />
+            <button onClick={async () => {
+              if (!signalEmail) return;
+              await fetch("https://formspree.io/f/xpznkgpg", {
+                method:"POST",
+                headers:{ "Content-Type":"application/json", "Accept":"application/json" },
+                body:JSON.stringify({ email:signalEmail, subject:"Weekly Signal Signup" }),
+              }).catch(()=>{});
+              setSignalDone(true);
+            }} style={{ fontFamily:disp, fontSize:13, fontWeight:600, background:C.blue, color:"#fff",
+              border:"none", borderRadius:7, padding:"9px 16px", cursor:"pointer", whiteSpace:"nowrap" }}>
+              Subscribe →
+            </button>
+            <button onClick={() => setSignalBanner(false)}
+              style={{ background:"none", border:"none", color:C.muted, fontSize:18, cursor:"pointer", lineHeight:1 }}>×</button>
+          </div>
+        </div>
+      )}
+      {signalBanner && signalDone && (
+        <div style={{ position:"fixed", bottom:0, left:0, right:0, zIndex:200,
+          background:C.panelHi, borderTop:`1px solid rgba(54,211,153,0.3)`,
+          padding:"14px 24px", display:"flex", alignItems:"center", justifyContent:"space-between" }}>
+          <span style={{ fontFamily:mono, fontSize:13, color:C.green }}>✓ You're subscribed to the weekly signal.</span>
+          <button onClick={() => setSignalBanner(false)}
+            style={{ background:"none", border:"none", color:C.muted, fontSize:18, cursor:"pointer" }}>×</button>
+        </div>
+      )}
+
       <WaitlistModal open={waitlistOpen} onClose={() => setWaitlistOpen(false)} />
       <LoginModal open={loginOpen} onClose={() => setLoginOpen(false)} />
     </div>
