@@ -65,6 +65,8 @@ export default function Research() {
                 || (c.subScores ? Object.entries(c.subScores).sort((a,b)=>b[1]-a[1])[0]?.[0] : null)
                 || c.rationale?.split(".")[0]?.slice(0, 50)
                 || "—",
+              thesis_preview: c.thesis_preview || null,
+              has_thesis: c.has_thesis || false,
             }));
           setTopTargets(high);
           if (high.length > 0) setTopPick(high[0].ticker);
@@ -261,6 +263,12 @@ export default function Research() {
                     <span style={{ fontFamily: disp, fontSize: 15, fontWeight: 600 }}>{t.name}</span>
                     <span style={{ fontFamily: mono, fontSize: 11, color: C.sub, marginLeft: 8 }}>{t.ticker}</span>
                     <div style={{ fontFamily: mono, fontSize: 10, color: C.muted, marginTop: 2 }}>Top signal: {t.topFactor}</div>
+                    {t.thesis_preview && (
+                      <div style={{ fontFamily: mono, fontSize: 11, color: C.sub, marginTop: 6, maxWidth: 520, lineHeight: 1.5 }}>
+                        {t.thesis_preview}
+                        {t.has_thesis && <span style={{ color: C.blue, marginLeft: 6 }}>Read full thesis →</span>}
+                      </div>
+                    )}
                   </div>
                   <span style={{ fontFamily: mono, fontSize: 18, fontWeight: 700, color: C.green }}>{t.score}</span>
                   <span style={{ fontFamily: mono, fontSize: 10, color: C.blue }}>→</span>
