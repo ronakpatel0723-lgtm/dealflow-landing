@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-05-28T19:40:52Z",
+    "last_updated": "2026-05-28T19:41:55Z",
     "model_version": "logistic-v2-form4",
     "score_methodology": "Hybrid: 36/65 companies scored with logistic regression (Form 4 + financials); remainder scored with rule-based attractiveness model only",
     "last_model_trained": "2026-05-28T19:40:41Z",
-    "positive_count": 164,
+    "positive_count": 169,
     "total_count": 100,
     "tiers": {
       "High": 10,
@@ -82,7 +82,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 1
     },
@@ -129,7 +129,7 @@
           "explanation": "82.8% margin \u2014 above sector median 72.1%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 1
     },
@@ -176,7 +176,7 @@
           "explanation": "67.3% margin \u2014 below sector median 72.1%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 1
     },
@@ -223,7 +223,7 @@
           "explanation": "14.0% margin \u2014 above sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 2
     },
@@ -270,7 +270,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 1
     },
@@ -317,7 +317,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 2
     },
@@ -364,7 +364,7 @@
           "explanation": "Data unavailable"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 2
     },
@@ -411,7 +411,7 @@
           "explanation": "$2.35B revenue \u2014 above sector median $1.03B"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 2
     },
@@ -458,7 +458,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 3
     },
@@ -505,7 +505,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 4
     },
@@ -552,7 +552,7 @@
           "explanation": "9.8% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 5
     },
@@ -599,7 +599,7 @@
           "explanation": "7.2% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 6
     },
@@ -646,7 +646,7 @@
           "explanation": "17.7% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 7
     },
@@ -693,7 +693,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 3
     },
@@ -740,7 +740,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 8
     },
@@ -787,7 +787,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 9
     },
@@ -834,7 +834,7 @@
           "explanation": "17.8% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 10
     },
@@ -881,7 +881,7 @@
           "explanation": "24.1% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 3
     },
@@ -928,7 +928,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 3
     },
@@ -975,7 +975,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 11
     },
@@ -1022,7 +1022,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 12
     },
@@ -1069,7 +1069,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 13
     },
@@ -1116,7 +1116,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 14
     },
@@ -1163,7 +1163,7 @@
           "explanation": "13.9% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 15
     },
@@ -1210,7 +1210,7 @@
           "explanation": "Rule of 40 = -15.7 \u2014 below sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 16
     },
@@ -1257,7 +1257,7 @@
           "explanation": "Rule of 40 = -10.3 \u2014 below sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 4
     },
@@ -1304,7 +1304,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 17
     },
@@ -1351,7 +1351,7 @@
           "explanation": "13.1% margin \u2014 above sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 5
     },
@@ -1398,7 +1398,7 @@
           "explanation": "19.8% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 18
     },
@@ -1445,7 +1445,7 @@
           "explanation": "8.0% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 19
     },
@@ -1492,7 +1492,7 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 20
     },
@@ -1539,7 +1539,7 @@
           "explanation": "19.7% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 21
     },
@@ -1586,7 +1586,7 @@
           "explanation": "14.2% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 6
     },
@@ -1633,7 +1633,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 4
     },
@@ -1680,7 +1680,7 @@
           "explanation": "17.0% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 22
     },
@@ -1727,7 +1727,7 @@
           "explanation": "11.0% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 7
     },
@@ -1774,7 +1774,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 23
     },
@@ -1821,7 +1821,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 24
     },
@@ -1868,7 +1868,7 @@
           "explanation": "13.4% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 4
     },
@@ -1915,7 +1915,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 5
     },
@@ -1962,7 +1962,7 @@
           "explanation": "14.5% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 6
     },
@@ -2009,7 +2009,7 @@
           "explanation": "16.1% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 5
     },
@@ -2056,7 +2056,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 6
     },
@@ -2103,7 +2103,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 25
     },
@@ -2150,7 +2150,7 @@
           "explanation": "17.0% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 8
     },
@@ -2197,7 +2197,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 26
     },
@@ -2244,7 +2244,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 9
     },
@@ -2291,7 +2291,7 @@
           "explanation": "20.9% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 27
     },
@@ -2338,7 +2338,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 10
     },
@@ -2385,7 +2385,7 @@
           "explanation": "12.7% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 28
     },
@@ -2432,7 +2432,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 7
     },
@@ -2479,7 +2479,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 29
     },
@@ -2526,7 +2526,7 @@
           "explanation": "7.6% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 30
     },
@@ -2573,7 +2573,7 @@
           "explanation": "9.6% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 31
     },
@@ -2620,7 +2620,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 32
     },
@@ -2667,7 +2667,7 @@
           "explanation": "29.4% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 8
     },
@@ -2714,7 +2714,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 11
     },
@@ -2761,7 +2761,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 12
     },
@@ -2808,7 +2808,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 33
     },
@@ -2855,7 +2855,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 34
     },
@@ -2902,7 +2902,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 13
     },
@@ -2949,7 +2949,7 @@
           "explanation": "15.5% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 35
     },
@@ -2996,7 +2996,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 36
     },
@@ -3043,7 +3043,7 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 37
     },
@@ -3090,7 +3090,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 38
     },
@@ -3137,7 +3137,7 @@
           "explanation": "Rule of 40 = -10.2 \u2014 below sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 14
     },
@@ -3184,7 +3184,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 9
     },
@@ -3231,7 +3231,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 39
     },
@@ -3278,7 +3278,7 @@
           "explanation": "11.7% margin \u2014 above sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 15
     },
@@ -3325,7 +3325,7 @@
           "explanation": "14.9% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 16
     },
@@ -3372,7 +3372,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 40
     },
@@ -3419,7 +3419,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 41
     },
@@ -3466,7 +3466,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 42
     },
@@ -3513,7 +3513,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 43
     },
@@ -3560,7 +3560,7 @@
           "explanation": "$0.13B revenue \u2014 below sector median $1.03B"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 7
     },
@@ -3607,7 +3607,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 44
     },
@@ -3654,7 +3654,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 45
     },
@@ -3701,7 +3701,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 10
     },
@@ -3748,7 +3748,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 46
     },
@@ -3795,7 +3795,7 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 47
     },
@@ -3842,7 +3842,7 @@
           "explanation": "-25.9% margin \u2014 below sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 48
     },
@@ -3889,7 +3889,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 49
     },
@@ -3936,7 +3936,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 17
     },
@@ -3983,7 +3983,7 @@
           "explanation": "2.6% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 8
     },
@@ -4030,7 +4030,7 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 11
     },
@@ -4077,7 +4077,7 @@
           "explanation": "19.0% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 50
     },
@@ -4124,7 +4124,7 @@
           "explanation": "13.9% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 12
     },
@@ -4171,7 +4171,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 51
     },
@@ -4218,7 +4218,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 52
     },
@@ -4265,7 +4265,7 @@
           "explanation": "30.1% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 53
     },
@@ -4312,7 +4312,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 9
     },
@@ -4359,7 +4359,7 @@
           "explanation": "-1.9% margin \u2014 below sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 54
     },
@@ -4406,7 +4406,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 13
     },
@@ -4453,7 +4453,7 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 55
     },
@@ -4500,7 +4500,7 @@
           "explanation": "29.2% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 56
     },
@@ -4547,7 +4547,7 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 57
     },
@@ -4594,7 +4594,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 58
     },
@@ -4641,7 +4641,7 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 59
     },
@@ -4688,7 +4688,7 @@
           "explanation": "$1.88B revenue \u2014 above sector median $1.03B"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 10
     },
@@ -4735,7 +4735,7 @@
           "explanation": "Rule of 40 = 4.6 \u2014 below sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-28T19:40:52Z",
+      "last_updated": "2026-05-28T19:41:55Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 60
     }
