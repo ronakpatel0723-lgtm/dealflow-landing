@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-05-28T18:36:39Z",
+    "last_updated": "2026-05-28T18:38:16Z",
     "model_version": "logistic-v2-form4",
     "score_methodology": "Hybrid: 36/65 companies scored with logistic regression (Form 4 + financials); remainder scored with rule-based attractiveness model only",
     "last_model_trained": "2026-05-28T02:08:36Z",
-    "positive_count": 137,
+    "positive_count": 143,
     "total_count": 100,
     "tiers": {
       "High": 10,
@@ -62,7 +62,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 46.4. ideal size band at $0.645B. premium SaaS margins at 89.1%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 1,
       "shap_factors": {
@@ -137,7 +137,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 43.3. ideal size band at $0.67B. premium SaaS margins at 82.8%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 1,
       "shap_factors": {
@@ -212,7 +212,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 60.8. ideal size band at $0.73B. solid margins at 67.3%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 1,
       "shap_factors": {
@@ -287,7 +287,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 32.5. ideal size band at $0.476B. premium SaaS margins at 84.2%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 2,
       "shap_factors": {
@@ -362,7 +362,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 47.6. near-ideal size at $0.978B. premium SaaS margins at 80.8%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 1,
       "shap_factors": {
@@ -437,7 +437,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 51.8. near-ideal size at $1.04B. strong margins at 72.2%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 2,
       "shap_factors": {
@@ -512,7 +512,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 40.1. ideal size band at $0.738B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 2,
       "shap_factors": {
@@ -587,7 +587,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 63.5. borderline size at $2.35B. strong margins at 73.8%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 2,
       "shap_factors": {
@@ -662,7 +662,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 42.9. ideal size band at $0.615B. solid margins at 64.1%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 3,
       "shap_factors": {
@@ -737,7 +737,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 18.8. ideal size band at $0.788B. premium SaaS margins at 77.8%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 4,
       "shap_factors": {
@@ -812,7 +812,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 13.6. ideal size band at $0.302B. premium SaaS margins at 80.7%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 5,
       "shap_factors": {
@@ -887,7 +887,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 12.9. ideal size band at $0.7B. premium SaaS margins at 75.2%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 6,
       "shap_factors": {
@@ -962,7 +962,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 12.6. ideal size band at $0.44B. premium SaaS margins at 80.5%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 7,
       "shap_factors": {
@@ -1037,7 +1037,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 11.6. ideal size band at $0.8B. premium SaaS margins at 92.8%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 3,
       "shap_factors": {
@@ -1112,7 +1112,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 33.5. ideal size band at $0.75B. solid margins at 69.2%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 8,
       "shap_factors": {
@@ -1187,7 +1187,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.6. near-ideal size at $1.23B. premium SaaS margins at 89.2%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 9,
       "shap_factors": {
@@ -1262,7 +1262,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 17.9. ideal size band at $0.727B. strong margins at 72.5%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 10,
       "shap_factors": {
@@ -1337,7 +1337,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 7.2. ideal size band at $0.532B. premium SaaS margins at 76.8%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 3,
       "shap_factors": {
@@ -1412,7 +1412,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 29.8. ideal size band at $0.62B. solid margins at 61.4%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 3,
       "shap_factors": {
@@ -1487,7 +1487,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 29.4. ideal size band at $0.319B. solid margins at 62.6%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 11,
       "shap_factors": {
@@ -1562,7 +1562,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 36.5. borderline size at $2.05B. premium SaaS margins at 83.2%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 12,
       "shap_factors": {
@@ -1637,7 +1637,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 18.4. near-ideal size at $0.96B. premium SaaS margins at 87.4%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 13,
       "shap_factors": {
@@ -1712,7 +1712,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 18.0. near-ideal size at $0.84B. premium SaaS margins at 85.0%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 14,
       "shap_factors": {
@@ -1787,7 +1787,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 24.5. ideal size band at $0.75B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 15,
       "shap_factors": {
@@ -1862,7 +1862,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -15.8. ideal size band at $0.79B. premium SaaS margins at 89.0%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 16,
       "shap_factors": {
@@ -1937,7 +1937,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -10.3. ideal size band at $0.62B. premium SaaS margins at 78.8%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 4,
       "shap_factors": {
@@ -2012,7 +2012,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.1. near-ideal size at $1.23B. strong margins at 74.7%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 17,
       "shap_factors": {
@@ -2087,7 +2087,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 31.9. borderline size at $2.02B. premium SaaS margins at 81.6%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 5,
       "shap_factors": {
@@ -2162,7 +2162,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 14.9. near-ideal size at $0.885B. premium SaaS margins at 78.5%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 18,
       "shap_factors": {
@@ -2237,7 +2237,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 15.1. near-ideal size at $1.18B. premium SaaS margins at 79.2%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 19,
       "shap_factors": {
@@ -2312,7 +2312,7 @@
         "marketPosition": 70.0
       },
       "rationale": "micro-cap at $0.01B limits acquirer pool. premium SaaS margins at 100.0%. [skipped: Rule of 40, Growth]",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 20,
       "shap_factors": {
@@ -2387,7 +2387,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 35.8. near-ideal size at $0.951B. solid margins at 63.7%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 21,
       "shap_factors": {
@@ -2462,7 +2462,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 44.9. mega-cap at $6.80B limits acquirer pool. premium SaaS margins at 80.5%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 6,
       "shap_factors": {
@@ -2537,7 +2537,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 45.0. mega-cap at $3.20B limits acquirer pool. premium SaaS margins at 75.5%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 4,
       "shap_factors": {
@@ -2612,7 +2612,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 4.2. ideal size band at $0.24B. strong margins at 72.1%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 22,
       "shap_factors": {
@@ -2687,7 +2687,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 10.1. near-ideal size at $1B. premium SaaS margins at 78.1%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 7,
       "shap_factors": {
@@ -2762,7 +2762,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.3. borderline size at $1.62B. premium SaaS margins at 76.7%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 23,
       "shap_factors": {
@@ -2837,7 +2837,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 24.9. borderline size at $2.54B. premium SaaS margins at 86.8%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 24,
       "shap_factors": {
@@ -2912,7 +2912,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 7.9. near-ideal size at $1.46B. premium SaaS margins at 81.4%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 4,
       "shap_factors": {
@@ -2987,7 +2987,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 13.8. ideal size band at $0.419B. solid margins at 61.5%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 5,
       "shap_factors": {
@@ -3062,7 +3062,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 13.1. ideal size band at $0.48B. solid margins at 67.9%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 6,
       "shap_factors": {
@@ -3137,7 +3137,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 16.1. ideal size band at $0.365B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 5,
       "shap_factors": {
@@ -3212,7 +3212,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 5.4. near-ideal size at $1.32B. premium SaaS margins at 79.5%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 6,
       "shap_factors": {
@@ -3287,7 +3287,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 10.6. ideal size band at $0.59B. solid margins at 60.6%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 25,
       "shap_factors": {
@@ -3362,7 +3362,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 13.3. near-ideal size at $1.48B. strong margins at 74.4%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 8,
       "shap_factors": {
@@ -3437,7 +3437,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 29.6. near-ideal size at $1.08B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 26,
       "shap_factors": {
@@ -3512,7 +3512,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 18.5. borderline size at $2.67B. premium SaaS margins at 76.9%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 9,
       "shap_factors": {
@@ -3587,7 +3587,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 34.6. mega-cap at $13.28B limits acquirer pool. premium SaaS margins at 77.5%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 27,
       "shap_factors": {
@@ -3662,7 +3662,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 16.9. borderline size at $2.92B. premium SaaS margins at 77.4%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 10,
       "shap_factors": {
@@ -3737,7 +3737,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 16.2. borderline size at $1.61B. premium SaaS margins at 83.2%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 28,
       "shap_factors": {
@@ -3812,7 +3812,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 22.0. ideal size band at $0.44B. below-average margins at 57.8%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 7,
       "shap_factors": {
@@ -3887,7 +3887,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 4.8. ideal size band at $0.74B. solid margins at 67.1%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 29,
       "shap_factors": {
@@ -3962,7 +3962,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 20.8. near-ideal size at $1.01B. solid margins at 66.2%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 30,
       "shap_factors": {
@@ -4037,7 +4037,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 29.7. mega-cap at $41.52B limits acquirer pool. premium SaaS margins at 77.7%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 31,
       "shap_factors": {
@@ -4112,7 +4112,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 27.5. mega-cap at $4.87B limits acquirer pool. premium SaaS margins at 77.0%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 32,
       "shap_factors": {
@@ -4187,7 +4187,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 34.1. borderline size at $1.64B. solid margins at 60.2%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 8,
       "shap_factors": {
@@ -4262,7 +4262,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 20.2. borderline size at $2.17B. strong margins at 74.5%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 11,
       "shap_factors": {
@@ -4337,7 +4337,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 3.2. near-ideal size at $0.86B. strong margins at 70.3%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 12,
       "shap_factors": {
@@ -4412,7 +4412,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.2. borderline size at $2.52B. premium SaaS margins at 80.1%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 33,
       "shap_factors": {
@@ -4487,7 +4487,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -58.1. ideal size band at $0.389B. solid margins at 60.6%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 34,
       "shap_factors": {
@@ -4562,7 +4562,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.4. mega-cap at $3.43B limits acquirer pool. premium SaaS margins at 80.0%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 13,
       "shap_factors": {
@@ -4637,7 +4637,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 32.9. near-ideal size at $0.9B. below-average margins at 59.9%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 35,
       "shap_factors": {
@@ -4712,7 +4712,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 32.8. borderline size at $1.60B. solid margins at 68.8%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 36,
       "shap_factors": {
@@ -4787,7 +4787,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 38.8. borderline size at $2.90B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 37,
       "shap_factors": {
@@ -4862,7 +4862,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 17.2. borderline size at $2.46B. strong margins at 71.7%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 38,
       "shap_factors": {
@@ -4937,7 +4937,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -10.2. near-ideal size at $1B. strong margins at 74.1%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 14,
       "shap_factors": {
@@ -5012,7 +5012,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 42.4. near-ideal size at $1.17B. weak margins at 49.3%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 9,
       "shap_factors": {
@@ -5087,7 +5087,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 19.4. mega-cap at $3.13B limits acquirer pool. premium SaaS margins at 83.8%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 39,
       "shap_factors": {
@@ -5162,7 +5162,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 11.6. near-ideal size at $0.909B. strong margins at 71.3%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 15,
       "shap_factors": {
@@ -5237,7 +5237,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 28.4. mega-cap at $9.22B limits acquirer pool. strong margins at 73.4%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 16,
       "shap_factors": {
@@ -5312,7 +5312,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 15.0. near-ideal size at $0.97B. strong margins at 70.8%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 40,
       "shap_factors": {
@@ -5387,7 +5387,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -50.2. ideal size band at $0.31B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 41,
       "shap_factors": {
@@ -5462,7 +5462,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 16.5. mega-cap at $3.25B limits acquirer pool. premium SaaS margins at 78.9%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 42,
       "shap_factors": {
@@ -5537,7 +5537,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 9.6. borderline size at $2.52B. strong margins at 71.2%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 43,
       "shap_factors": {
@@ -5612,7 +5612,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -39.7. near-ideal size at $0.13B. premium SaaS margins at 76.6%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 7,
       "shap_factors": {
@@ -5687,7 +5687,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 22.4. near-ideal size at $1B. below-average margins at 56.8%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 44,
       "shap_factors": {
@@ -5762,7 +5762,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 35.3. near-ideal size at $0.962B. weak margins at 45.3%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 45,
       "shap_factors": {
@@ -5837,7 +5837,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -4.7. ideal size band at $0.345B. below-average margins at 51.7%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 10,
       "shap_factors": {
@@ -5912,7 +5912,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -9.0. ideal size band at $0.28B. solid margins at 63.6%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 46,
       "shap_factors": {
@@ -5987,7 +5987,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 31.3. borderline size at $2.78B. below-average margins at 59.7%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 47,
       "shap_factors": {
@@ -6062,7 +6062,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -23.9. borderline size at $1.85B. strong margins at 74.2%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 48,
       "shap_factors": {
@@ -6137,7 +6137,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 12.8. near-ideal size at $1.15B. below-average margins at 55.1%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 49,
       "shap_factors": {
@@ -6212,7 +6212,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 15.6. mega-cap at $4.81B limits acquirer pool. strong margins at 74.7%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 17,
       "shap_factors": {
@@ -6287,7 +6287,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 21.0. ideal size band at $0.32B. non-SaaS margins at 28.7%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 8,
       "shap_factors": {
@@ -6362,7 +6362,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 26.2. borderline size at $2.66B. below-average margins at 58.6%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 11,
       "shap_factors": {
@@ -6437,7 +6437,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 30.9. near-ideal size at $1.18B. non-SaaS margins at 37.8%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 50,
       "shap_factors": {
@@ -6512,7 +6512,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 0.9. near-ideal size at $0.821B. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 12,
       "shap_factors": {
@@ -6587,7 +6587,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 14.6. near-ideal size at $1.13B. below-average margins at 58.8%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 51,
       "shap_factors": {
@@ -6662,7 +6662,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -20.9. ideal size band at $0.49B. below-average margins at 52.0%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 52,
       "shap_factors": {
@@ -6737,7 +6737,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 42.8. mega-cap at $11.56B limits acquirer pool. weak margins at 48.1%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 53,
       "shap_factors": {
@@ -6812,7 +6812,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 6.9. near-ideal size at $1.18B. weak margins at 42.5%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 9,
       "shap_factors": {
@@ -6887,7 +6887,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -1.2. ideal size band at $0.754B. non-SaaS margins at 39.1%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 54,
       "shap_factors": {
@@ -6962,7 +6962,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 1.9. near-ideal size at $1.23B. weak margins at 42.9%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 13,
       "shap_factors": {
@@ -7037,7 +7037,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 20.6. mega-cap at $9.55B limits acquirer pool. [skipped: Gross Margin]",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 55,
       "shap_factors": {
@@ -7112,7 +7112,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -1.4. mega-cap at $4.68B limits acquirer pool. solid margins at 67.2%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 56,
       "shap_factors": {
@@ -7187,7 +7187,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 33.9. mega-cap at $4.18B limits acquirer pool. non-SaaS margins at 6.7%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 57,
       "shap_factors": {
@@ -7262,7 +7262,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 16.8. mega-cap at $5.07B limits acquirer pool. weak margins at 48.9%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 58,
       "shap_factors": {
@@ -7337,7 +7337,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 28.8. mega-cap at $6.15B limits acquirer pool. non-SaaS margins at 25.9%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 59,
       "shap_factors": {
@@ -7412,7 +7412,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at -27.7. borderline size at $1.88B. non-SaaS margins at 21.3%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 10,
       "shap_factors": {
@@ -7487,7 +7487,7 @@
         "marketPosition": 70.0
       },
       "rationale": "Rule of 40 at 4.5. mega-cap at $5.01B limits acquirer pool. non-SaaS margins at 17.7%",
-      "last_updated": "2026-05-28T18:36:39Z",
+      "last_updated": "2026-05-28T18:38:16Z",
       "model_version": "logistic-v2-form4",
       "sector_rank": 60,
       "shap_factors": {
