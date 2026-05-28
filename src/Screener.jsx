@@ -297,6 +297,11 @@ export default function Screener() {
         ::-webkit-scrollbar-thumb{background:${C.line};border-radius:2px}
         ::selection{background:rgba(91,141,239,0.3)}
         a{color:inherit;text-decoration:none}
+        .df-table-grid{display:grid;grid-template-columns:44px 1.8fr 60px 120px 70px 90px 72px 72px 56px 32px;gap:0}
+        @media(max-width:640px){
+          .df-table-grid{grid-template-columns:44px 1fr 60px 70px 32px}
+          .df-hide-mobile{display:none!important}
+        }
       `}</style>
 
       {/* grain overlay */}
@@ -443,11 +448,12 @@ export default function Screener() {
           {/* ── TABLE ────────────────────────────────────────────────────── */}
           <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:14, overflow:"hidden", marginBottom:40 }}>
             {/* header row */}
-            <div style={{ display:"grid", gridTemplateColumns:"44px 1.8fr 60px 120px 70px 90px 72px 72px 56px 32px", gap:0,
-              padding:"10px 20px", borderBottom:`1px solid ${C.lineHi}`, background:C.panelHi }}>
+            <div className="df-table-grid" style={{ padding:"10px 20px", borderBottom:`1px solid ${C.lineHi}`, background:C.panelHi }}>
               {["#","Company","Score","","Tier","Revenue","GM%","R40","7d",""].map((h, i) => (
-                <span key={i} style={{ fontFamily:mono, fontSize:9.5, letterSpacing:1, color:C.muted,
-                  textTransform:"uppercase", textAlign: i >= 5 ? "right" : "left" }}>{h}</span>
+                <span key={i}
+                  className={[3,5,6,7,8].includes(i) ? "df-hide-mobile" : ""}
+                  style={{ fontFamily:mono, fontSize:9.5, letterSpacing:1, color:C.muted,
+                    textTransform:"uppercase", textAlign: i >= 5 ? "right" : "left" }}>{h}</span>
               ))}
             </div>
 
@@ -465,10 +471,9 @@ export default function Screener() {
               const isSelected = selected === c.rank;
               return (
                 <RowReveal key={c.ticker} rowIndex={i}
-                  className={`df-row${isSelected ? " df-sel" : ""}`}
+                  className={`df-row df-table-grid${isSelected ? " df-sel" : ""}`}
                   onClick={() => setSelected(isSelected ? null : c.rank)}
-                  style={{ display:"grid", gridTemplateColumns:"44px 1.8fr 60px 120px 70px 90px 72px 72px 56px 32px", gap:0,
-                    alignItems:"center", padding:"13px 20px",
+                  style={{ alignItems:"center", padding:"13px 20px",
                     borderBottom: i < filtered.length - 1 ? `1px solid ${C.line}` : "none",
                     background: i % 2 ? "rgba(255,255,255,0.010)" : "transparent",
                     borderLeft: isSelected ? `2px solid ${C.blue}` : watchlist.includes(c.ticker) ? `2px solid ${C.blue}50` : "2px solid transparent" }}>
@@ -479,7 +484,7 @@ export default function Screener() {
                     <div style={{ fontFamily:mono, fontSize:10, color:C.muted, marginTop:2 }}>{c.sector}</div>
                   </div>
                   <span style={{ fontFamily:mono, fontSize:16, fontWeight:700, color:col }}>{c.score}</span>
-                  <div style={{ paddingRight:16 }}>
+                  <div className="df-hide-mobile" style={{ paddingRight:16 }}>
                     <div style={{ height:3, background:"rgba(255,255,255,0.07)", borderRadius:2 }}>
                       <div style={{ height:"100%", width:`${c.score}%`, background:col, borderRadius:2 }}/>
                     </div>
@@ -487,16 +492,16 @@ export default function Screener() {
                   <span style={{ fontFamily:disp, fontSize:10, fontWeight:600, color:tc,
                     border:`1px solid ${tc}38`, borderRadius:4, padding:"2px 7px", textTransform:"uppercase",
                     whiteSpace:"nowrap" }}>{c.tier}</span>
-                  <span style={{ fontFamily:mono, fontSize:12.5, textAlign:"right" }}>
+                  <span className="df-hide-mobile" style={{ fontFamily:mono, fontSize:12.5, textAlign:"right" }}>
                     ${c.revenue >= 1000 ? (c.revenue/1000).toFixed(1)+"B" : c.revenue+"M"}
                   </span>
-                  <span style={{ fontFamily:mono, fontSize:12.5, textAlign:"right", color: c.gm >= 75 ? C.green : C.sub }}>
+                  <span className="df-hide-mobile" style={{ fontFamily:mono, fontSize:12.5, textAlign:"right", color: c.gm >= 75 ? C.green : C.sub }}>
                     {c.gm}%
                   </span>
-                  <span style={{ fontFamily:mono, fontSize:12.5, textAlign:"right", color: c.r40 >= 40 ? C.green : c.r40 >= 20 ? C.amber : c.r40 < 0 ? C.red : C.sub }}>
+                  <span className="df-hide-mobile" style={{ fontFamily:mono, fontSize:12.5, textAlign:"right", color: c.r40 >= 40 ? C.green : c.r40 >= 20 ? C.amber : c.r40 < 0 ? C.red : C.sub }}>
                     {c.r40 > 0 ? "+" : ""}{c.r40.toFixed(1)}
                   </span>
-                  <div style={{ display:"flex", justifyContent:"flex-end" }}>
+                  <div className="df-hide-mobile" style={{ display:"flex", justifyContent:"flex-end" }}>
                     <Sparkline data={c.spark} />
                   </div>
                   <div style={{ display:"flex", justifyContent:"center", alignItems:"center" }}
