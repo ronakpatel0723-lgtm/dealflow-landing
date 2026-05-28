@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_updated": "2026-05-28T19:41:55Z",
+    "last_updated": "2026-05-28T23:03:28Z",
     "model_version": "logistic-v2-form4",
     "score_methodology": "Hybrid: 36/65 companies scored with logistic regression (Form 4 + financials); remainder scored with rule-based attractiveness model only",
     "last_model_trained": "2026-05-28T19:40:41Z",
-    "positive_count": 169,
+    "positive_count": 168,
     "total_count": 100,
     "tiers": {
       "High": 10,
@@ -82,9 +82,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 1
+      "sector_rank": 1,
+      "has_thesis": false
     },
     {
       "ticker": "QLYS",
@@ -129,9 +130,12 @@
           "explanation": "82.8% margin \u2014 above sector median 72.1%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 1
+      "sector_rank": 1,
+      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
+      "has_thesis": true,
+      "thesis_preview": "Qualys generates $670M in TTM revenue at an 82.8% gross margin with a Rule of 40 score of 43.3, reflecting a capital-efficient, high-quality SaaS busi..."
     },
     {
       "ticker": "CWAN",
@@ -176,9 +180,10 @@
           "explanation": "67.3% margin \u2014 below sector median 72.1%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 1
+      "sector_rank": 1,
+      "has_thesis": false
     },
     {
       "ticker": "CLBT",
@@ -223,9 +228,10 @@
           "explanation": "14.0% margin \u2014 above sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 2
+      "sector_rank": 2,
+      "has_thesis": false
     },
     {
       "ticker": "PRGS",
@@ -270,9 +276,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 1
+      "sector_rank": 1,
+      "has_thesis": false
     },
     {
       "ticker": "DUOL",
@@ -317,9 +324,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 2
+      "sector_rank": 2,
+      "has_thesis": false
     },
     {
       "ticker": "LMND",
@@ -364,9 +372,10 @@
           "explanation": "Data unavailable"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 2
+      "sector_rank": 2,
+      "has_thesis": false
     },
     {
       "ticker": "HIMS",
@@ -411,9 +420,10 @@
           "explanation": "$2.35B revenue \u2014 above sector median $1.03B"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 2
+      "sector_rank": 2,
+      "has_thesis": false
     },
     {
       "ticker": "OPRA",
@@ -458,9 +468,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 3
+      "sector_rank": 3,
+      "has_thesis": false
     },
     {
       "ticker": "UPWK",
@@ -505,9 +516,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 4
+      "sector_rank": 4,
+      "has_thesis": false
     },
     {
       "ticker": "RDWR",
@@ -552,9 +564,10 @@
           "explanation": "9.8% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 5
+      "sector_rank": 5,
+      "has_thesis": false
     },
     {
       "ticker": "BL",
@@ -599,9 +612,10 @@
           "explanation": "7.2% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 6
+      "sector_rank": 6,
+      "has_thesis": false
     },
     {
       "ticker": "SEMR",
@@ -646,9 +660,12 @@
           "explanation": "17.7% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 7
+      "sector_rank": 7,
+      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
+      "has_thesis": true,
+      "thesis_preview": "SEMrush generates $440M in TTM revenue at 80.5% gross margins with a Rule of 40 of 12.6, reflecting 17.7% growth and a business where the unit economi..."
     },
     {
       "ticker": "GDRX",
@@ -693,9 +710,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 3
+      "sector_rank": 3,
+      "has_thesis": false
     },
     {
       "ticker": "SPSC",
@@ -740,9 +758,12 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 8
+      "sector_rank": 8,
+      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
+      "has_thesis": true,
+      "thesis_preview": "SPS Commerce presents a compelling acquisition target at $750M TTM revenue growing at 17.8% YoY, with 69.2% gross margins and a Rule of 40 score of 33..."
     },
     {
       "ticker": "MNDY",
@@ -787,9 +808,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 9
+      "sector_rank": 9,
+      "has_thesis": false
     },
     {
       "ticker": "APPN",
@@ -834,9 +856,10 @@
           "explanation": "17.8% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 10
+      "sector_rank": 10,
+      "has_thesis": false
     },
     {
       "ticker": "FROG",
@@ -881,9 +904,10 @@
           "explanation": "24.1% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 3
+      "sector_rank": 3,
+      "has_thesis": false
     },
     {
       "ticker": "FLYW",
@@ -928,9 +952,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 3
+      "sector_rank": 3,
+      "has_thesis": false
     },
     {
       "ticker": "AGYS",
@@ -975,9 +1000,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 11
+      "sector_rank": 11,
+      "has_thesis": false
     },
     {
       "ticker": "PAYC",
@@ -1022,9 +1048,11 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 12
+      "sector_rank": 12,
+      "has_thesis": true,
+      "thesis_preview": "Paycom generates $2.05B in TTM revenue at 83.2% gross margins with a Rule of 40 score of 36.6, reflecting a business that has moderated growth to 8.9%..."
     },
     {
       "ticker": "GTLB",
@@ -1069,9 +1097,11 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 13
+      "sector_rank": 13,
+      "has_thesis": true,
+      "thesis_preview": "GitLab's $960M TTM revenue base, 87.4% gross margin, and 25.8% YoY growth combine for a Rule of 40 score of 18.4, which signals a company still priori..."
     },
     {
       "ticker": "FRSH",
@@ -1116,9 +1146,12 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 14
+      "sector_rank": 14,
+      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
+      "has_thesis": true,
+      "thesis_preview": "Freshworks presents an attractive financial profile with $840M in TTM revenue growing at 16.4% YoY, 85% gross margins that are best-in-class for SMB-f..."
     },
     {
       "ticker": "DV",
@@ -1163,9 +1196,10 @@
           "explanation": "13.9% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 15
+      "sector_rank": 15,
+      "has_thesis": false
     },
     {
       "ticker": "ASAN",
@@ -1210,9 +1244,11 @@
           "explanation": "Rule of 40 = -15.7 \u2014 below sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 16
+      "sector_rank": 16,
+      "has_thesis": true,
+      "thesis_preview": "Asana generates $790M in TTM revenue at an 89% gross margin, but its Rule of 40 of -15.7 signals that growth (9.2% YoY) has decelerated sharply while ..."
     },
     {
       "ticker": "VRNS",
@@ -1257,9 +1293,12 @@
           "explanation": "Rule of 40 = -10.3 \u2014 below sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 4
+      "sector_rank": 4,
+      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
+      "has_thesis": true,
+      "thesis_preview": "Varonis Systems presents an attractive acquisition profile with $620M in TTM revenue growing at 13.2% YoY and 78.8% gross margins, though the Rule of ..."
     },
     {
       "ticker": "KVYO",
@@ -1304,9 +1343,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 17
+      "sector_rank": 17,
+      "has_thesis": false
     },
     {
       "ticker": "DT",
@@ -1351,9 +1391,10 @@
           "explanation": "13.1% margin \u2014 above sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 5
+      "sector_rank": 5,
+      "has_thesis": false
     },
     {
       "ticker": "WK",
@@ -1398,9 +1439,10 @@
           "explanation": "19.8% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 18
+      "sector_rank": 18,
+      "has_thesis": false
     },
     {
       "ticker": "BOX",
@@ -1445,9 +1487,10 @@
           "explanation": "8.0% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 19
+      "sector_rank": 19,
+      "has_thesis": false
     },
     {
       "ticker": "APLM",
@@ -1492,9 +1535,10 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 20
+      "sector_rank": 20,
+      "has_thesis": false
     },
     {
       "ticker": "APPF",
@@ -1539,9 +1583,10 @@
           "explanation": "19.7% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 21
+      "sector_rank": 21,
+      "has_thesis": false
     },
     {
       "ticker": "FTNT",
@@ -1586,9 +1631,10 @@
           "explanation": "14.2% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 6
+      "sector_rank": 6,
+      "has_thesis": false
     },
     {
       "ticker": "VEEV",
@@ -1633,9 +1679,12 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 4
+      "sector_rank": 4,
+      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
+      "has_thesis": true,
+      "thesis_preview": "Veeva Systems presents a compelling acquisition profile with $3.2B in TTM revenue growing at 16.3% YoY, 75.5% gross margins, and a Rule of 40 score of..."
     },
     {
       "ticker": "WEAV",
@@ -1680,9 +1729,11 @@
           "explanation": "17.0% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 22
+      "sector_rank": 22,
+      "has_thesis": true,
+      "thesis_preview": "Weave Communications presents an attractive entry point with $240M in TTM revenue growing at 17% YoY, a 72.1% gross margin that signals durable unit e..."
     },
     {
       "ticker": "TENB",
@@ -1727,9 +1778,12 @@
           "explanation": "11.0% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 7
+      "sector_rank": 7,
+      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
+      "has_thesis": true,
+      "thesis_preview": "Tenable Holdings presents an attractive acquisition candidate at $1.0B in TTM revenue with 78.1% gross margins and a Rule of 40 of 10.1, where the mar..."
     },
     {
       "ticker": "IOT",
@@ -1774,9 +1828,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 23
+      "sector_rank": 23,
+      "has_thesis": false
     },
     {
       "ticker": "NTNX",
@@ -1821,9 +1876,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 24
+      "sector_rank": 24,
+      "has_thesis": false
     },
     {
       "ticker": "BILL",
@@ -1868,9 +1924,10 @@
           "explanation": "13.4% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 4
+      "sector_rank": 4,
+      "has_thesis": false
     },
     {
       "ticker": "CERT",
@@ -1915,9 +1972,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 5
+      "sector_rank": 5,
+      "has_thesis": false
     },
     {
       "ticker": "PHR",
@@ -1962,9 +2020,10 @@
           "explanation": "14.5% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 6
+      "sector_rank": 6,
+      "has_thesis": false
     },
     {
       "ticker": "GSHD",
@@ -2009,9 +2068,10 @@
           "explanation": "16.1% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 5
+      "sector_rank": 5,
+      "has_thesis": false
     },
     {
       "ticker": "PCOR",
@@ -2056,9 +2116,12 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 6
+      "sector_rank": 6,
+      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
+      "has_thesis": true,
+      "thesis_preview": "Procore Technologies generates $1,320M in TTM revenue at a 79.5% gross margin, yet its Rule of 40 score of just 5.4 signals that growth (14.8% YoY) an..."
     },
     {
       "ticker": "NCNO",
@@ -2103,9 +2166,11 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 25
+      "sector_rank": 25,
+      "has_thesis": true,
+      "thesis_preview": "nCino presents an attractive acquisition profile with $590M in TTM revenue growing at 10% annually, 60.6% gross margins, and a Rule of 40 of 10.6 \u2014 a ..."
     },
     {
       "ticker": "ESTC",
@@ -2150,9 +2215,11 @@
           "explanation": "17.0% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 8
+      "sector_rank": 8,
+      "has_thesis": true,
+      "thesis_preview": "Elastic N.V."
     },
     {
       "ticker": "MANH",
@@ -2197,9 +2264,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 26
+      "sector_rank": 26,
+      "has_thesis": false
     },
     {
       "ticker": "ZS",
@@ -2244,9 +2312,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 9
+      "sector_rank": 9,
+      "has_thesis": false
     },
     {
       "ticker": "NOW",
@@ -2291,9 +2360,10 @@
           "explanation": "20.9% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 27
+      "sector_rank": 27,
+      "has_thesis": false
     },
     {
       "ticker": "OKTA",
@@ -2338,9 +2408,11 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 10
+      "sector_rank": 10,
+      "has_thesis": true,
+      "thesis_preview": "Okta generates $2.92B in TTM revenue at a 77.4% gross margin with a Rule of 40 score of 16.9, reflecting a business where growth has decelerated to 11..."
     },
     {
       "ticker": "PATH",
@@ -2385,9 +2457,10 @@
           "explanation": "12.7% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 28
+      "sector_rank": 28,
+      "has_thesis": false
     },
     {
       "ticker": "ALKT",
@@ -2432,9 +2505,12 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 7
+      "sector_rank": 7,
+      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
+      "has_thesis": true,
+      "thesis_preview": "Alkami Technology presents an attractive acquisition profile with $440M in TTM revenue growing at 32.9% year-over-year, a 57.8% gross margin, and a Ru..."
     },
     {
       "ticker": "BRZE",
@@ -2479,9 +2555,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 29
+      "sector_rank": 29,
+      "has_thesis": false
     },
     {
       "ticker": "ALRM",
@@ -2526,9 +2603,10 @@
           "explanation": "7.6% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 30
+      "sector_rank": 30,
+      "has_thesis": false
     },
     {
       "ticker": "CRM",
@@ -2573,9 +2651,10 @@
           "explanation": "9.6% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 31
+      "sector_rank": 31,
+      "has_thesis": false
     },
     {
       "ticker": "ZM",
@@ -2620,9 +2699,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 32
+      "sector_rank": 32,
+      "has_thesis": false
     },
     {
       "ticker": "RELY",
@@ -2667,9 +2747,10 @@
           "explanation": "29.4% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 8
+      "sector_rank": 8,
+      "has_thesis": false
     },
     {
       "ticker": "NET",
@@ -2714,9 +2795,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 11
+      "sector_rank": 11,
+      "has_thesis": false
     },
     {
       "ticker": "RPD",
@@ -2761,9 +2843,12 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 12
+      "sector_rank": 12,
+      "management_signal": "Management team quality and strategic vision are key diligence items requiring direct assessment.",
+      "has_thesis": true,
+      "thesis_preview": "Rapid7 generates $860M in TTM revenue at a 70.3% gross margin, yet trades at just 0.85x EV/Revenue with a Rule of 40 of only 3.2, reflecting a busines..."
     },
     {
       "ticker": "DBX",
@@ -2808,9 +2893,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 33
+      "sector_rank": 33,
+      "has_thesis": false
     },
     {
       "ticker": "AI",
@@ -2855,9 +2941,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 34
+      "sector_rank": 34,
+      "has_thesis": false
     },
     {
       "ticker": "DDOG",
@@ -2902,9 +2989,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 13
+      "sector_rank": 13,
+      "has_thesis": false
     },
     {
       "ticker": "DOCN",
@@ -2949,9 +3037,11 @@
           "explanation": "15.5% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 35
+      "sector_rank": 35,
+      "has_thesis": true,
+      "thesis_preview": "DigitalOcean's TTM revenue of $900M growing at 15.5% YoY, paired with 59.9% gross margins and a Rule of 40 score of 32.9, positions it as a profitable..."
     },
     {
       "ticker": "PCTY",
@@ -2996,9 +3086,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 36
+      "sector_rank": 36,
+      "has_thesis": false
     },
     {
       "ticker": "TTD",
@@ -3043,9 +3134,10 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 37
+      "sector_rank": 37,
+      "has_thesis": false
     },
     {
       "ticker": "MDB",
@@ -3090,9 +3182,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 38
+      "sector_rank": 38,
+      "has_thesis": false
     },
     {
       "ticker": "S",
@@ -3137,9 +3230,11 @@
           "explanation": "Rule of 40 = -10.2 \u2014 below sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 14
+      "sector_rank": 14,
+      "has_thesis": true,
+      "thesis_preview": "SentinelOne presents an asymmetric entry point with $1.0B in TTM revenue growing at 21.9% YoY, 74.1% gross margins that signal genuine software econom..."
     },
     {
       "ticker": "STEP",
@@ -3184,9 +3279,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 9
+      "sector_rank": 9,
+      "has_thesis": false
     },
     {
       "ticker": "HUBS",
@@ -3231,9 +3327,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 39
+      "sector_rank": 39,
+      "has_thesis": false
     },
     {
       "ticker": "VRNT",
@@ -3278,9 +3375,10 @@
           "explanation": "11.7% margin \u2014 above sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 15
+      "sector_rank": 15,
+      "has_thesis": false
     },
     {
       "ticker": "PANW",
@@ -3325,9 +3423,10 @@
           "explanation": "14.9% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 16
+      "sector_rank": 16,
+      "has_thesis": false
     },
     {
       "ticker": "BMBL",
@@ -3372,9 +3471,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 40
+      "sector_rank": 40,
+      "has_thesis": false
     },
     {
       "ticker": "HCAT",
@@ -3419,9 +3519,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 41
+      "sector_rank": 41,
+      "has_thesis": false
     },
     {
       "ticker": "CSGP",
@@ -3466,9 +3567,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 42
+      "sector_rank": 42,
+      "has_thesis": false
     },
     {
       "ticker": "RNG",
@@ -3513,9 +3615,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 43
+      "sector_rank": 43,
+      "has_thesis": false
     },
     {
       "ticker": "RXST",
@@ -3560,9 +3663,10 @@
           "explanation": "$0.13B revenue \u2014 below sector median $1.03B"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 7
+      "sector_rank": 7,
+      "has_thesis": false
     },
     {
       "ticker": "CALX",
@@ -3607,9 +3711,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 44
+      "sector_rank": 44,
+      "has_thesis": false
     },
     {
       "ticker": "GLBE",
@@ -3654,9 +3759,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 45
+      "sector_rank": 45,
+      "has_thesis": false
     },
     {
       "ticker": "RSKD",
@@ -3701,9 +3807,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 10
+      "sector_rank": 10,
+      "has_thesis": false
     },
     {
       "ticker": "PUBM",
@@ -3748,9 +3855,11 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 46
+      "sector_rank": 46,
+      "has_thesis": true,
+      "thesis_preview": "PubMatic's $280M TTM revenue base at a 63.6% gross margin trades at just 1.23x EV/Revenue, a distressed valuation for a programmatic ad-tech infrastru..."
     },
     {
       "ticker": "AXON",
@@ -3795,9 +3904,10 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 47
+      "sector_rank": 47,
+      "has_thesis": false
     },
     {
       "ticker": "U",
@@ -3842,9 +3952,10 @@
           "explanation": "-25.9% margin \u2014 below sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 48
+      "sector_rank": 48,
+      "has_thesis": false
     },
     {
       "ticker": "FIVN",
@@ -3889,9 +4000,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 49
+      "sector_rank": 49,
+      "has_thesis": false
     },
     {
       "ticker": "CRWD",
@@ -3936,9 +4048,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 17
+      "sector_rank": 17,
+      "has_thesis": false
     },
     {
       "ticker": "AMSF",
@@ -3983,9 +4096,10 @@
           "explanation": "2.6% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 8
+      "sector_rank": 8,
+      "has_thesis": false
     },
     {
       "ticker": "WEX",
@@ -4030,9 +4144,10 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 11
+      "sector_rank": 11,
+      "has_thesis": false
     },
     {
       "ticker": "TASK",
@@ -4077,9 +4192,10 @@
           "explanation": "19.0% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 50
+      "sector_rank": 50,
+      "has_thesis": false
     },
     {
       "ticker": "PAYO",
@@ -4124,9 +4240,10 @@
           "explanation": "13.9% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 12
+      "sector_rank": 12,
+      "has_thesis": false
     },
     {
       "ticker": "BLKB",
@@ -4171,9 +4288,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 51
+      "sector_rank": 51,
+      "has_thesis": false
     },
     {
       "ticker": "APPS",
@@ -4218,9 +4336,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 52
+      "sector_rank": 52,
+      "has_thesis": false
     },
     {
       "ticker": "SHOP",
@@ -4265,9 +4384,10 @@
           "explanation": "30.1% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 53
+      "sector_rank": 53,
+      "has_thesis": false
     },
     {
       "ticker": "OMCL",
@@ -4312,9 +4432,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 9
+      "sector_rank": 9,
+      "has_thesis": false
     },
     {
       "ticker": "BAND",
@@ -4359,9 +4480,10 @@
           "explanation": "-1.9% margin \u2014 below sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 54
+      "sector_rank": 54,
+      "has_thesis": false
     },
     {
       "ticker": "LSPD",
@@ -4406,9 +4528,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 13
+      "sector_rank": 13,
+      "has_thesis": false
     },
     {
       "ticker": "WDAY",
@@ -4453,9 +4576,10 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 55
+      "sector_rank": 55,
+      "has_thesis": false
     },
     {
       "ticker": "SNOW",
@@ -4500,9 +4624,10 @@
           "explanation": "29.2% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 56
+      "sector_rank": 56,
+      "has_thesis": false
     },
     {
       "ticker": "FOUR",
@@ -4547,9 +4672,10 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 57
+      "sector_rank": 57,
+      "has_thesis": false
     },
     {
       "ticker": "TWLO",
@@ -4594,9 +4720,10 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 58
+      "sector_rank": 58,
+      "has_thesis": false
     },
     {
       "ticker": "TOST",
@@ -4641,9 +4768,10 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 59
+      "sector_rank": 59,
+      "has_thesis": false
     },
     {
       "ticker": "EVH",
@@ -4688,9 +4816,10 @@
           "explanation": "$1.88B revenue \u2014 above sector median $1.03B"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 10
+      "sector_rank": 10,
+      "has_thesis": false
     },
     {
       "ticker": "TNET",
@@ -4735,9 +4864,10 @@
           "explanation": "Rule of 40 = 4.6 \u2014 below sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-28T19:41:55Z",
+      "last_updated": "2026-05-28T23:03:28Z",
       "model_version": "logistic-v2-form4",
-      "sector_rank": 60
+      "sector_rank": 60,
+      "has_thesis": false
     }
   ]
 }
