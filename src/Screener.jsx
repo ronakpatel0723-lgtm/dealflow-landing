@@ -307,6 +307,7 @@ export default function Screener() {
   const [exportUnlocked, setExportUnlocked] = useState(false);
   const [exportModal, setExportModal] = useState(false);
   const [loginOpen, setLoginOpen] = useState(false);
+  const [compositeAlerts, setCompositeAlerts] = useState([]);
   const FREE_TIER_LIMIT = 20;
 
   const toggleWatch = (ticker, e) => {
@@ -333,6 +334,13 @@ export default function Screener() {
     fetch("/score_changes.json")
       .then(r => r.ok ? r.json() : null)
       .then(data => { if (data?.tier_changes?.length) setChanges(data); })
+      .catch(() => {});
+  }, []);
+
+  useEffect(() => {
+    fetch("/composite_alerts.json")
+      .then(r => r.ok ? r.json() : null)
+      .then(data => { if (data?.alerts?.length) setCompositeAlerts(data.alerts); })
       .catch(() => {});
   }, []);
 
@@ -440,6 +448,15 @@ export default function Screener() {
                   {label}
                 </Link>
               ))}
+              <Link to="/alerts"
+                style={{ fontFamily:disp, fontSize:13, color:C.sub, padding:"6px 12px", borderRadius:7,
+                  background:"none", borderBottom:"2px solid transparent",
+                  display:"flex", alignItems:"center", gap:5 }}>
+                Alerts
+                {compositeAlerts.length > 0 && (
+                  <span style={{ width:7, height:7, borderRadius:"50%", background:C.red, display:"inline-block" }} />
+                )}
+              </Link>
               <button onClick={() => setViewMode(v => v === "watchlist" ? "all" : "watchlist")}
                 style={{ fontFamily:disp, fontSize:13, cursor:"pointer", border:"none",
                   fontWeight: viewMode === "watchlist" ? 600 : 400,
@@ -479,6 +496,16 @@ export default function Screener() {
         </nav>
 
         {/* ── ALERT BANNER ─────────────────────────────────────────────────── */}
+        {compositeAlerts.some(a => a.conviction_score >= 7) && (() => {
+          const top = compositeAlerts.find(a => a.conviction_score >= 7);
+          return (
+            <Link to="/alerts" style={{ display:"block", background:"rgba(247,114,114,0.1)", borderBottom:`1px solid rgba(247,114,114,0.3)`,
+              padding:"10px 32px", color:C.red, fontFamily:disp, fontSize:13 }}>
+              ⚡ High-Conviction: {top.ticker} shows {top.signal_count} aligned acquisition signals this week — {top.signal_count}+ independent indicators.{" "}
+              <span style={{ textDecoration:"underline" }}>View Alerts →</span>
+            </Link>
+          );
+        })()}
         {changes && !changesDismissed && (
           <div style={{ background:"rgba(245,194,75,0.1)", borderBottom:`1px solid rgba(245,194,75,0.25)`,
             padding:"10px 32px", display:"flex", alignItems:"center", justifyContent:"space-between" }}>
