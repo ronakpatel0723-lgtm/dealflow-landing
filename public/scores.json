@@ -98,7 +98,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "EverQuote's $692.5M revenue base with exceptional 97.2% gross margins and Rule of 40 score of 48.1\u2014driven by 38.5% YoY growth\u2014creates a rare profitabl...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 98.7,
+          "rule_of_40": 97.3,
+          "revenue_growth_yoy": 97.3,
+          "ev_revenue_acquirer": 94.7,
+          "overall_score": 100.0
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "DOCS",
@@ -178,7 +203,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Doximity's $644.9M revenue base with 89.1% gross margins and a Rule of 40 score of 46.4 (driven by 13.1% YoY growth) positions it as a profitable, cas...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "healthcare_tech",
+        "peer_count": 15,
+        "sector_medians": {
+          "gross_margin": 70.6,
+          "rule_of_40": 13.1,
+          "revenue_growth_yoy": 8.8,
+          "ev_revenue": 2.4,
+          "total_score": 60.2
+        },
+        "percentiles": {
+          "gross_margin": 93.3,
+          "rule_of_40": 93.3,
+          "revenue_growth_yoy": 60.0,
+          "ev_revenue_acquirer": 26.7,
+          "overall_score": 100.0
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "QLYS",
@@ -252,7 +302,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Qualys presents an attractive acquisition profile with $670M TTM revenue, 82.8% gross margins, and a Rule of 40 score of 43.3, benefiting from 10.1% Y...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 90.5,
+          "rule_of_40": 90.5,
+          "revenue_growth_yoy": 23.8,
+          "ev_revenue_acquirer": 57.1,
+          "overall_score": 100.0
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "CWAN",
@@ -332,7 +407,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Clearwater Analytics presents an attractive acquisition candidate with $730.0M in TTM revenue growing at 61.9% YoY, a 67.3% gross margin, and a Rule o...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": 61.5,
+          "rule_of_40": 89.5,
+          "revenue_growth_yoy": 89.5,
+          "ev_revenue_acquirer": 5.3,
+          "overall_score": 100.0
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "CLBT",
@@ -406,7 +506,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Cellebrite DI represents an attractive acquisition target with $475.7M in TTM revenue, an 84.2% gross margin, and a Rule of 40 score of 32.5, position...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 95.2,
+          "rule_of_40": 81.0,
+          "revenue_growth_yoy": 57.1,
+          "ev_revenue_acquirer": 38.1,
+          "overall_score": 95.2
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "PRGS",
@@ -480,7 +605,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Progress Software presents an attractive acquisition target with $977.8M in TTM revenue, an 80.8% gross margin, and a Rule of 40 score of 47.6 driven ...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 81.6,
+          "rule_of_40": 96.0,
+          "revenue_growth_yoy": 92.0,
+          "ev_revenue_acquirer": 59.2,
+          "overall_score": 98.7
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "PLTR",
@@ -535,7 +685,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Palantir's $4.5B TTM revenue, 82.4% gross margin, and exceptional Rule of 40 score of 87.8 (driven by 56.2% YoY growth) create a rare combination of s...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 82.9,
+          "rule_of_40": 100.0,
+          "revenue_growth_yoy": 100.0,
+          "ev_revenue_acquirer": 0.0,
+          "overall_score": 97.4
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "HOOD",
@@ -590,7 +765,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Robinhood's $4.5B TTM revenue base with 83.3% gross margins and a Rule of 40 score of 98.4\u2014driven by 51.6% YoY growth\u2014positions it as a rare fintech p...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": 92.3,
+          "rule_of_40": 100.0,
+          "revenue_growth_yoy": 84.2,
+          "ev_revenue_acquirer": 0.0,
+          "overall_score": 94.7
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "UPST",
@@ -645,7 +845,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Upstart's $1,024M revenue base with 62.8% YoY growth and Rule of 40 score of 62.8 demonstrates profitable scaling that commands premium valuation, tho...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": null,
+          "rule_of_40": 94.7,
+          "revenue_growth_yoy": 94.7,
+          "ev_revenue_acquirer": 47.4,
+          "overall_score": 89.5
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "DUOL",
@@ -725,7 +950,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Duolingo's $1.04B revenue base with 72.2% gross margins and a Rule of 40 score of 51.8 reflects a maturing SaaS business delivering 38.7% YoY growth w...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 52.6,
+          "rule_of_40": 98.7,
+          "revenue_growth_yoy": 98.7,
+          "ev_revenue_acquirer": 28.9,
+          "overall_score": 96.1
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "AVPT",
@@ -780,7 +1030,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "AvePoint's $419.5M revenue base with 74.1% gross margins and 26.9% YoY growth delivers a Rule of 40 score of 34.8, positioning it in the upper quartil...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 56.6,
+          "rule_of_40": 84.0,
+          "revenue_growth_yoy": 85.3,
+          "ev_revenue_acquirer": 25.0,
+          "overall_score": 94.7
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "DCBO",
@@ -835,7 +1110,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Docebo's $242.7M revenue base with 80.3% gross margins and an 11.9% YoY growth rate deliver a Rule of 40 score of 22.0, positioning it as a profitable...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 77.6,
+          "rule_of_40": 52.0,
+          "revenue_growth_yoy": 37.3,
+          "ev_revenue_acquirer": 76.3,
+          "overall_score": 93.4
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "LMND",
@@ -909,7 +1209,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Lemonade's $737.9M revenue base growing at 40.1% YoY with a Rule of 40 score of 40.1 represents an efficiently scaled growth profile that commands a 5...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": null,
+          "rule_of_40": 73.7,
+          "revenue_growth_yoy": 78.9,
+          "ev_revenue_acquirer": 15.8,
+          "overall_score": 84.2
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "HIMS",
@@ -983,7 +1308,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Hims & Hers trades at 2.5x EV/Revenue with $2.35B in TTM revenue, 73.8% gross margins, and a Rule of 40 score of 63.5\u2014combining 59% YoY growth with su...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "healthcare_tech",
+        "peer_count": 15,
+        "sector_medians": {
+          "gross_margin": 70.6,
+          "rule_of_40": 13.1,
+          "revenue_growth_yoy": 8.8,
+          "ev_revenue": 2.4,
+          "total_score": 60.2
+        },
+        "percentiles": {
+          "gross_margin": 60.0,
+          "rule_of_40": 100.0,
+          "revenue_growth_yoy": 100.0,
+          "ev_revenue_acquirer": 40.0,
+          "overall_score": 93.3
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "GEN",
@@ -1044,7 +1394,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Gen Digital represents an attractive acquisition target with $5.0B in TTM revenue, 78.5% gross margins, and a Rule of 40 score of 70.2 driven by 27.1%...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 57.1,
+          "rule_of_40": 100.0,
+          "revenue_growth_yoy": 85.7,
+          "ev_revenue_acquirer": 66.7,
+          "overall_score": 90.5
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "OPRA",
@@ -1118,7 +1493,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Opera Limited presents a compelling acquisition target with $614.8M in TTM revenue, 64.1% gross margins, and a Rule of 40 score of 42.9 supported by 2...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 39.5,
+          "rule_of_40": 93.3,
+          "revenue_growth_yoy": 88.0,
+          "ev_revenue_acquirer": 61.8,
+          "overall_score": 92.1
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "UPWK",
@@ -1192,7 +1592,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Upwork's $787.8M revenue base with 77.8% gross margins and a Rule of 40 score of 18.8 positions it as a profitable, cash-generative platform despite m...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 69.7,
+          "rule_of_40": 45.3,
+          "revenue_growth_yoy": 13.3,
+          "ev_revenue_acquirer": 88.2,
+          "overall_score": 90.8
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "RDWR",
@@ -1266,7 +1691,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Radware's $301.9M revenue base with 80.7% gross margins and 9.8% YoY growth presents a mature, profitable asset, though the Rule of 40 score of 13.6 s...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 80.3,
+          "rule_of_40": 28.0,
+          "revenue_growth_yoy": 33.3,
+          "ev_revenue_acquirer": 36.8,
+          "overall_score": 89.5
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "BL",
@@ -1346,7 +1796,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "BlackLine's $700.4M revenue base with 75.2% gross margins and a Rule of 40 score of 7.2% revenue growth represents a mature, profitable SaaS platform ...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 60.5,
+          "rule_of_40": 26.7,
+          "revenue_growth_yoy": 22.7,
+          "ev_revenue_acquirer": 60.5,
+          "overall_score": 88.2
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "NRDS",
@@ -1407,7 +1882,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "NerdWallet's $836.6M revenue base with 92.4% gross margins and 21.7% YoY growth delivers a Rule of 40 score of 29.5, positioning it as a cash-generati...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": 100.0,
+          "rule_of_40": 52.6,
+          "revenue_growth_yoy": 42.1,
+          "ev_revenue_acquirer": 94.7,
+          "overall_score": 78.9
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "SEMR",
@@ -1481,7 +1981,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "SEMrush's $440M revenue base with 80.5% gross margins and 17.7% YoY growth deliver a Rule of 40 score of 12.6, creating a profitable, cash-generative ...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 78.9,
+          "rule_of_40": 24.0,
+          "revenue_growth_yoy": 58.7,
+          "ev_revenue_acquirer": 32.9,
+          "overall_score": 86.8
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "GDRX",
@@ -1555,7 +2080,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "GoodRx's $800M revenue base with 92.8% gross margins presents an attractive platform for consolidation, though the 0.6% YoY growth and Rule of 40 scor...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "healthcare_tech",
+        "peer_count": 15,
+        "sector_medians": {
+          "gross_margin": 70.6,
+          "rule_of_40": 13.1,
+          "revenue_growth_yoy": 8.8,
+          "ev_revenue": 2.4,
+          "total_score": 60.2
+        },
+        "percentiles": {
+          "gross_margin": 100.0,
+          "rule_of_40": 46.7,
+          "revenue_growth_yoy": 26.7,
+          "ev_revenue_acquirer": 66.7,
+          "overall_score": 86.7
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "SPSC",
@@ -1629,7 +2179,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "SPS Commerce generates $750.0M in TTM revenue with a 69.2% gross margin and a Rule of 40 score of 33.6, positioning it as a mature, cash-generative Sa...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 46.1,
+          "rule_of_40": 80.0,
+          "revenue_growth_yoy": 61.3,
+          "ev_revenue_acquirer": 65.8,
+          "overall_score": 85.5
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "MNDY",
@@ -1703,7 +2278,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "monday.com represents an attractive acquisition target with $1.23B in TTM revenue, 89.2% gross margins, and a Rule of 40 score of 26.6 that reflects t...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 96.1,
+          "rule_of_40": 64.0,
+          "revenue_growth_yoy": 84.0,
+          "ev_revenue_acquirer": 71.1,
+          "overall_score": 84.2
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "IRTC",
@@ -1758,7 +2358,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "iRhythm's $747.1M revenue base with 70.6% gross margins and 26.2% YoY growth delivers a Rule of 40 score of 19.2, positioning it as a profitable healt...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "healthcare_tech",
+        "peer_count": 15,
+        "sector_medians": {
+          "gross_margin": 70.6,
+          "rule_of_40": 13.1,
+          "revenue_growth_yoy": 8.8,
+          "ev_revenue": 2.4,
+          "total_score": 60.2
+        },
+        "percentiles": {
+          "gross_margin": 53.3,
+          "rule_of_40": 66.7,
+          "revenue_growth_yoy": 86.7,
+          "ev_revenue_acquirer": 20.0,
+          "overall_score": 80.0
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "APPN",
@@ -1838,7 +2463,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Appian's $726.9M revenue base with 72.5% gross margins and 17.8% YoY growth presents an attractive entry point for strategic buyers seeking establishe...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 53.9,
+          "rule_of_40": 41.3,
+          "revenue_growth_yoy": 61.3,
+          "ev_revenue_acquirer": 64.5,
+          "overall_score": 82.9
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "FROG",
@@ -1918,7 +2568,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "JFrog's $531.8M revenue base with 76.8% gross margins and 24.1% YoY growth represents an established cybersecurity platform with scale, though the Rul...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 38.1,
+          "rule_of_40": 19.0,
+          "revenue_growth_yoy": 81.0,
+          "ev_revenue_acquirer": 19.0,
+          "overall_score": 85.7
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "PD",
@@ -1973,7 +2648,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "PagerDuty's $492.5M revenue base with 85% gross margins and profitable operations (Rule of 40: 6.5) presents an attractive acquisition target at a mod...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 89.5,
+          "rule_of_40": 20.0,
+          "revenue_growth_yoy": 18.7,
+          "ev_revenue_acquirer": 86.8,
+          "overall_score": 81.6
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "FLYW",
@@ -2047,7 +2747,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Flywire's $620M TTM revenue with 61.4% gross margins and a Rule of 40 score of 29.8 (driven by 26.6% YoY growth) positions it as a profitable-yet-grow...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": 53.8,
+          "rule_of_40": 57.9,
+          "revenue_growth_yoy": 47.4,
+          "ev_revenue_acquirer": 57.9,
+          "overall_score": 73.7
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "AGYS",
@@ -2121,7 +2846,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Agilysys presents an attractive acquisition target with $319.3M in TTM revenue, 62.6% gross margins, and a Rule of 40 score of 29.4, delivering 15.8% ...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 34.2,
+          "rule_of_40": 68.0,
+          "revenue_growth_yoy": 52.0,
+          "ev_revenue_acquirer": 17.1,
+          "overall_score": 80.3
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "RBRK",
@@ -2176,7 +2926,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Rubrik's $1.3B revenue base with 80.1% gross margins and 48.5% YoY growth delivers a Rule of 40 score of 22.2, positioning it as a high-margin, fast-g...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 76.2,
+          "rule_of_40": 61.9,
+          "revenue_growth_yoy": 100.0,
+          "ev_revenue_acquirer": 28.6,
+          "overall_score": 81.0
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "CHKP",
@@ -2237,7 +3012,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Check Point's $2.7B revenue base with an 86.7% gross margin and Rule of 40 score of 36.7 represents a mature, cash-generative cybersecurity platform t...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 100.0,
+          "rule_of_40": 85.7,
+          "revenue_growth_yoy": 19.0,
+          "ev_revenue_acquirer": 61.9,
+          "overall_score": 76.2
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "SPT",
@@ -2292,7 +3092,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Sprout Social represents an attractive acquisition candidate with $457.5M in TTM revenue, 77.6% gross margins, and a Rule of 40 score of 3.2, though t...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 67.1,
+          "rule_of_40": 14.7,
+          "revenue_growth_yoy": 40.0,
+          "ev_revenue_acquirer": 93.4,
+          "overall_score": 78.9
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "PAYC",
@@ -2366,7 +3191,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Paycom's $2.05B in TTM revenue with 83.2% gross margins and a Rule of 40 score of 36.6 reflects a mature, high-margin SaaS business generating substan...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 85.5,
+          "rule_of_40": 88.0,
+          "revenue_growth_yoy": 28.0,
+          "ev_revenue_acquirer": 38.2,
+          "overall_score": 78.9
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "GTLB",
@@ -2446,7 +3296,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "GitLab's $960M TTM revenue with 87.4% gross margins and 25.8% YoY growth presents a compelling acquisition target, though its Rule of 40 score of 18.4...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 93.4,
+          "rule_of_40": 44.0,
+          "revenue_growth_yoy": 82.7,
+          "ev_revenue_acquirer": 48.7,
+          "overall_score": 76.3
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "FRSH",
@@ -2520,7 +3395,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Freshworks presents an attractive acquisition target with $840M in TTM revenue, an 85% gross margin that matches tier-one SaaS benchmarks, and a Rule ...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 89.5,
+          "rule_of_40": 42.7,
+          "revenue_growth_yoy": 53.3,
+          "ev_revenue_acquirer": 73.7,
+          "overall_score": 75.0
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "NTCT",
@@ -2581,7 +3481,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "NetScout's $859.5M revenue base with 79.4% gross margins and $3.2B enterprise value positions it as a mid-market cybersecurity asset with meaningful c...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 66.7,
+          "rule_of_40": 47.6,
+          "revenue_growth_yoy": 14.3,
+          "ev_revenue_acquirer": 81.0,
+          "overall_score": 71.4
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "DV",
@@ -2655,7 +3580,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "DoubleVerify's $750M revenue base with 13.9% YoY growth and a Rule of 40 score of 24.5 positions it as a profitable, cash-generative SaaS asset, thoug...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 6.6,
+          "rule_of_40": 54.7,
+          "revenue_growth_yoy": 45.3,
+          "ev_revenue_acquirer": 31.6,
+          "overall_score": 73.7
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "ASAN",
@@ -2735,7 +3685,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Asana's $790M revenue base with 89% gross margins presents an attractive acquisition platform, though the -15.7 Rule of 40 score reveals a profitabili...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 94.7,
+          "rule_of_40": 6.7,
+          "revenue_growth_yoy": 30.7,
+          "ev_revenue_acquirer": 82.9,
+          "overall_score": 72.4
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "VRNS",
@@ -2809,7 +3784,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Varonis represents an attractive acquisition target with $620M in TTM revenue, a market-leading 78.8% gross margin, though its Rule of 40 score of -10...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 61.9,
+          "rule_of_40": 4.8,
+          "revenue_growth_yoy": 38.1,
+          "ev_revenue_acquirer": 42.9,
+          "overall_score": 66.7
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "KVYO",
@@ -2889,7 +3889,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Klaviyo presents an attractive acquisition target with $1,230M in TTM revenue growing at 31.6% YoY, paired with a 74.7% gross margin and Rule of 40 sc...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 59.2,
+          "rule_of_40": 60.0,
+          "revenue_growth_yoy": 94.7,
+          "ev_revenue_acquirer": 52.6,
+          "overall_score": 71.1
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "PEGA",
@@ -2950,7 +3975,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Pegasystems presents an attractive acquisition profile with $1.75B in TTM revenue, 75.9% gross margins, and a Rule of 40 score of 32.9, delivering the...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 61.8,
+          "rule_of_40": 78.7,
+          "revenue_growth_yoy": 54.7,
+          "ev_revenue_acquirer": 47.4,
+          "overall_score": 71.1
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "DT",
@@ -3024,7 +4074,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Dynatrace presents an attractive acquisition target with $2.0B in TTM revenue, an 81.6% gross margin, and a Rule of 40 score of 31.9, demonstrating ba...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 85.7,
+          "rule_of_40": 76.2,
+          "revenue_growth_yoy": 61.9,
+          "ev_revenue_acquirer": 47.6,
+          "overall_score": 61.9
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "WK",
@@ -3098,7 +4173,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Workiva's $884.6M revenue base with 78.5% gross margins and 19.8% YoY growth delivers a Rule of 40 score of 14.9, positioning it as a profitable SaaS ...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 71.1,
+          "rule_of_40": 30.7,
+          "revenue_growth_yoy": 70.7,
+          "ev_revenue_acquirer": 48.7,
+          "overall_score": 68.4
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "BOX",
@@ -3178,7 +4278,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Box's $1.18B revenue base with 79.2% gross margins and a Rule of 40 score of 15.1 demonstrates a profitable, cash-generative SaaS platform that trades...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 73.7,
+          "rule_of_40": 33.3,
+          "revenue_growth_yoy": 25.3,
+          "ev_revenue_acquirer": 39.5,
+          "overall_score": 68.4
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "APLM",
@@ -3252,7 +4377,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Apollomics trades at 3.33x EV/Revenue on $10.0M TTM revenue with a pristine 100% gross margin, though the absence of meaningful revenue growth and Rul...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 100.0,
+          "rule_of_40": null,
+          "revenue_growth_yoy": null,
+          "ev_revenue_acquirer": 39.5,
+          "overall_score": 65.8
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "MGNI",
@@ -3313,7 +4463,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Magnite's $714M revenue base with 62.7% gross margins and a Rule of 40 score of 20.5 presents an attractive acquisition target, though the 6.8% YoY gr...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 35.5,
+          "rule_of_40": 48.0,
+          "revenue_growth_yoy": 21.3,
+          "ev_revenue_acquirer": 42.1,
+          "overall_score": 64.5
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "APPF",
@@ -3387,7 +4562,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "AppFolio's $950.8M revenue base with 63.7% gross margins and Rule of 40 score of 35.8 (driven by 19.7% growth) positions it as a mature, profitable Sa...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 38.2,
+          "rule_of_40": 86.7,
+          "revenue_growth_yoy": 69.3,
+          "ev_revenue_acquirer": 18.4,
+          "overall_score": 63.2
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "CDNS",
@@ -3448,7 +4648,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Cadence Design Systems commands a $5.3B revenue base with an 86.4% gross margin and Rule of 40 score of 45.3, delivering 14.1% YoY growth that positio...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 90.8,
+          "rule_of_40": 94.7,
+          "revenue_growth_yoy": 46.7,
+          "ev_revenue_acquirer": 1.3,
+          "overall_score": 61.8
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "VEEV",
@@ -3522,7 +4747,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Veeva's $3.2B revenue base with 75.5% gross margins and a Rule of 40 score of 45.0 (16.3% growth + 28.7% margin contribution) positions it as a profit...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "healthcare_tech",
+        "peer_count": 15,
+        "sector_medians": {
+          "gross_margin": 70.6,
+          "rule_of_40": 13.1,
+          "revenue_growth_yoy": 8.8,
+          "ev_revenue": 2.4,
+          "total_score": 60.2
+        },
+        "percentiles": {
+          "gross_margin": 73.3,
+          "rule_of_40": 86.7,
+          "revenue_growth_yoy": 80.0,
+          "ev_revenue_acquirer": 13.3,
+          "overall_score": 73.3
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "FTNT",
@@ -3596,7 +4846,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Fortinet's $6.8B revenue base with 80.5% gross margins and a Rule of 40 score of 44.8 (driven by 14.2% YoY growth) positions it as a mature, profitabl...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 81.0,
+          "rule_of_40": 95.2,
+          "revenue_growth_yoy": 42.9,
+          "ev_revenue_acquirer": 23.8,
+          "overall_score": 57.1
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "WEAV",
@@ -3670,7 +4945,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Weave Communications presents an attractive acquisition target with $240.0M in TTM revenue, 72.1% gross margins, and a Rule of 40 score of 4.2, though...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 51.3,
+          "rule_of_40": 16.0,
+          "revenue_growth_yoy": 56.0,
+          "ev_revenue_acquirer": 80.3,
+          "overall_score": 60.5
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "TENB",
@@ -3744,7 +5044,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Tenable's $1B revenue base with 78.1% gross margins and 11% YoY growth positions it as a mature, cash-generative cybersecurity platform, though the Ru...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 52.4,
+          "rule_of_40": 23.8,
+          "revenue_growth_yoy": 28.6,
+          "ev_revenue_acquirer": 85.7,
+          "overall_score": 52.4
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "IOT",
@@ -3818,7 +5143,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Samsara's $1.6B revenue base with 76.7% gross margins and a Rule of 40 score of 26.3 reflects a mature SaaS business generating substantial cash flow ...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 63.2,
+          "rule_of_40": 62.7,
+          "revenue_growth_yoy": 90.7,
+          "ev_revenue_acquirer": 7.9,
+          "overall_score": 59.2
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "ADSK",
@@ -3873,7 +5223,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Autodesk presents an attractive acquisition target with $7.2B in TTM revenue, 91% gross margins, and a Rule of 40 score of 42.4, driven by 17.5% YoY g...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 97.4,
+          "rule_of_40": 90.7,
+          "revenue_growth_yoy": 57.3,
+          "ev_revenue_acquirer": 14.5,
+          "overall_score": 57.9
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "NTNX",
@@ -3947,7 +5322,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Nutanix commands acquisition attention with $2.54B in TTM revenue, an 86.8% gross margin placing it among high-quality SaaS assets, and an 18.1% YoY g...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 92.1,
+          "rule_of_40": 56.0,
+          "revenue_growth_yoy": 62.7,
+          "ev_revenue_acquirer": 21.1,
+          "overall_score": 56.6
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "BILL",
@@ -4021,7 +5421,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "BILL Holdings commands attention as an M&A target with $1,460M in TTM revenue, an exceptional 81.4% gross margin, and 13.4% YoY growth, though the Rul...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": 84.6,
+          "rule_of_40": 26.3,
+          "revenue_growth_yoy": 15.8,
+          "ev_revenue_acquirer": 63.2,
+          "overall_score": 68.4
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "CERT",
@@ -4095,7 +5520,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Certara presents an attractive acquisition target at $418.8M in TTM revenue with a 61.5% gross margin and 8.8% YoY growth, though the Rule of 40 score...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "healthcare_tech",
+        "peer_count": 15,
+        "sector_medians": {
+          "gross_margin": 70.6,
+          "rule_of_40": 13.1,
+          "revenue_growth_yoy": 8.8,
+          "ev_revenue": 2.4,
+          "total_score": 60.2
+        },
+        "percentiles": {
+          "gross_margin": 33.3,
+          "rule_of_40": 60.0,
+          "revenue_growth_yoy": 53.3,
+          "ev_revenue_acquirer": 46.7,
+          "overall_score": 66.7
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "AMPL",
@@ -4156,7 +5606,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Amplitude's $343.2M revenue base and 74.0% gross margin position it as an attractive acquisition target at a 2.16x EV/Revenue multiple, though the Rul...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 55.3,
+          "rule_of_40": 8.0,
+          "revenue_growth_yoy": 48.0,
+          "ev_revenue_acquirer": 69.7,
+          "overall_score": 55.3
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "NVCR",
@@ -4211,7 +5686,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "NovoCure's $655.4M revenue base with 74.5% gross margins presents an attractive platform for consolidation, though the -15.2 Rule of 40 score reflects...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "healthcare_tech",
+        "peer_count": 15,
+        "sector_medians": {
+          "gross_margin": 70.6,
+          "rule_of_40": 13.1,
+          "revenue_growth_yoy": 8.8,
+          "ev_revenue": 2.4,
+          "total_score": 60.2
+        },
+        "percentiles": {
+          "gross_margin": 66.7,
+          "rule_of_40": 26.7,
+          "revenue_growth_yoy": 46.7,
+          "ev_revenue_acquirer": 33.3,
+          "overall_score": 60.0
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "PHR",
@@ -4285,7 +5785,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Phreesia's $480M revenue base with 67.9% gross margins and 14.5% YoY growth presents an attractive platform despite a Rule of 40 score of 13.1, indica...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "healthcare_tech",
+        "peer_count": 15,
+        "sector_medians": {
+          "gross_margin": 70.6,
+          "rule_of_40": 13.1,
+          "revenue_growth_yoy": 8.8,
+          "ev_revenue": 2.4,
+          "total_score": 60.2
+        },
+        "percentiles": {
+          "gross_margin": 40.0,
+          "rule_of_40": 53.3,
+          "revenue_growth_yoy": 66.7,
+          "ev_revenue_acquirer": 73.3,
+          "overall_score": 60.0
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "GSHD",
@@ -4359,7 +5884,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Goosehead Insurance's $365.3M revenue base with 16.1% YoY growth and a Rule of 40 score of 16.1 presents a mature fintech platform trading at 3.17x EV...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": null,
+          "rule_of_40": 31.6,
+          "revenue_growth_yoy": 36.8,
+          "ev_revenue_acquirer": 52.6,
+          "overall_score": 63.2
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "PCOR",
@@ -4433,7 +5983,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Procore's $1.32B revenue base with 79.5% gross margins and 14.8% YoY growth presents an attractive scale acquisition target, though the Rule of 40 sco...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": 76.9,
+          "rule_of_40": 21.1,
+          "revenue_growth_yoy": 31.6,
+          "ev_revenue_acquirer": 36.8,
+          "overall_score": 57.9
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "NCNO",
@@ -4507,7 +6082,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "nCino's $590.0M revenue base with 60.6% gross margins and 10.0% YoY growth presents an attractive acquisition target, though its Rule of 40 score of 1...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 31.6,
+          "rule_of_40": 22.7,
+          "revenue_growth_yoy": 34.7,
+          "ev_revenue_acquirer": 43.4,
+          "overall_score": 53.9
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "ESTC",
@@ -4587,7 +6187,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Elastic N.V. represents an attractive acquisition candidate with $1,480M in TTM revenue, a 74.4% gross margin, and 17% YoY growth, though its Rule of ...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 23.8,
+          "rule_of_40": 33.3,
+          "revenue_growth_yoy": 52.4,
+          "ev_revenue_acquirer": 76.2,
+          "overall_score": 47.6
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "GWRE",
@@ -4648,7 +6273,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Guidewire's $1202.5M revenue base with 62.5% gross margins and a Rule of 40 score of 26.1 (combining 22.6% YoY growth with profitability contribution)...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 32.9,
+          "rule_of_40": 60.0,
+          "revenue_growth_yoy": 74.7,
+          "ev_revenue_acquirer": 9.2,
+          "overall_score": 52.6
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "MANH",
@@ -4728,7 +6378,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Manhattan Associates' $1,080M revenue base with a 3.7% YoY growth rate and Rule of 40 score of 29.6 reflects a mature SaaS business trading at 7.03x E...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 6.6,
+          "rule_of_40": 72.0,
+          "revenue_growth_yoy": 14.7,
+          "ev_revenue_acquirer": 13.2,
+          "overall_score": 51.3
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "ZS",
@@ -4802,7 +6477,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Zscaler presents an attractive acquisition target with $2.67B in TTM revenue growing 23.3% YoY and generating 76.9% gross margins, though the Rule of ...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 42.9,
+          "rule_of_40": 52.4,
+          "revenue_growth_yoy": 76.2,
+          "ev_revenue_acquirer": 33.3,
+          "overall_score": 42.9
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "NOW",
@@ -4876,7 +6576,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "ServiceNow's $13.3B revenue base with 77.5% gross margins and a Rule of 40 score of 34.6 (reflecting 20.9% YoY growth) demonstrates a profitable SaaS ...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 65.8,
+          "rule_of_40": 82.7,
+          "revenue_growth_yoy": 73.3,
+          "ev_revenue_acquirer": 11.8,
+          "overall_score": 50.0
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "OKTA",
@@ -4956,7 +6681,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Okta represents an attractive acquisition target with $2,920M in TTM revenue, a 77.4% gross margin that ranks favorably in cybersecurity infrastructur...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 47.6,
+          "rule_of_40": 42.9,
+          "revenue_growth_yoy": 33.3,
+          "ev_revenue_acquirer": 71.4,
+          "overall_score": 38.1
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "PATH",
@@ -5030,7 +6780,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "UiPath's $1.6B revenue base with 83.2% gross margins and a Rule of 40 score of 12.7% growth plus 16.2% Rule of 40 demonstrates a profitable SaaS platf...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 85.5,
+          "rule_of_40": 34.7,
+          "revenue_growth_yoy": 40.0,
+          "ev_revenue_acquirer": 55.3,
+          "overall_score": 48.7
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "ALKT",
@@ -5104,7 +6879,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Alkami Technology presents an attractive acquisition profile with $440.0M in TTM revenue growing 32.9% YoY, paired with a 57.8% gross margin that exce...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": 30.8,
+          "rule_of_40": 36.8,
+          "revenue_growth_yoy": 63.2,
+          "ev_revenue_acquirer": 42.1,
+          "overall_score": 52.6
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "BRZE",
@@ -5184,7 +6984,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Braze represents an attractive acquisition target with $740.0M in TTM revenue, 67.1% gross margins, and a Rule of 40 score of 4.8, though the latter i...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 42.1,
+          "rule_of_40": 18.7,
+          "revenue_growth_yoy": 78.7,
+          "ev_revenue_acquirer": 56.6,
+          "overall_score": 47.4
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "ALRM",
@@ -5264,7 +7089,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Alarm.com's $1,011.2M revenue base with 66.2% gross margins and a Rule of 40 score of 20.8 presents an attractive cash-generative profile, though the ...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 40.8,
+          "rule_of_40": 50.7,
+          "revenue_growth_yoy": 24.0,
+          "ev_revenue_acquirer": 67.1,
+          "overall_score": 46.1
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "CRM",
@@ -5338,7 +7188,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Salesforce's $41.5B revenue base with 77.7% gross margins and a Rule of 40 score of 29.6 represents a mature, cash-generative platform trading at 4.05...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 68.4,
+          "rule_of_40": 72.0,
+          "revenue_growth_yoy": 32.0,
+          "ev_revenue_acquirer": 27.6,
+          "overall_score": 44.7
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "SNPS",
@@ -5393,7 +7268,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Synopsys commands acquisition interest with $7.05B in TTM revenue, a 77% gross margin that demonstrates pricing power in software-enabled design tools...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "healthcare_tech",
+        "peer_count": 15,
+        "sector_medians": {
+          "gross_margin": 70.6,
+          "rule_of_40": 13.1,
+          "revenue_growth_yoy": 8.8,
+          "ev_revenue": 2.4,
+          "total_score": 60.2
+        },
+        "percentiles": {
+          "gross_margin": 86.7,
+          "rule_of_40": 80.0,
+          "revenue_growth_yoy": 73.3,
+          "ev_revenue_acquirer": 6.7,
+          "overall_score": 46.7
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "ZM",
@@ -5473,7 +7373,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Zoom's $4.87B revenue base with 77% gross margins and a Rule of 40 score of 27.4 presents an established SaaS platform with substantial cash generatio...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 64.5,
+          "rule_of_40": 65.3,
+          "revenue_growth_yoy": 16.0,
+          "ev_revenue_acquirer": 23.7,
+          "overall_score": 43.4
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "RELY",
@@ -5547,7 +7472,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Remitly's $1.64B revenue base with 60.2% gross margins and 29.4% YoY growth delivers a Rule of 40 score of 34.1, positioning it as a mature, cash-gene...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": 46.2,
+          "rule_of_40": 63.2,
+          "revenue_growth_yoy": 57.9,
+          "ev_revenue_acquirer": 68.4,
+          "overall_score": 47.4
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "NET",
@@ -5627,7 +7577,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Cloudflare's $2.17B revenue base with 74.5% gross margins and 29.8% YoY growth delivers a Rule of 40 score of 20.3, positioning it as a mature, profit...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 28.6,
+          "rule_of_40": 57.1,
+          "revenue_growth_yoy": 95.2,
+          "ev_revenue_acquirer": 0.0,
+          "overall_score": 33.3
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "AI",
@@ -5707,7 +7682,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "C3.ai presents a $389.1M revenue SaaS platform with 60.6% gross margins and 25.3% YoY growth, though its Rule of 40 score of -58.1 reveals that profit...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 31.6,
+          "rule_of_40": 1.3,
+          "revenue_growth_yoy": 80.0,
+          "ev_revenue_acquirer": 71.1,
+          "overall_score": 42.1
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "DBX",
@@ -5787,7 +7787,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Dropbox presents a $2.5B revenue asset with 80.1% gross margins and a Rule of 40 score of 26.2, though the -1.1% revenue decline and depressed analyst...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 76.3,
+          "rule_of_40": 61.3,
+          "revenue_growth_yoy": 6.7,
+          "ev_revenue_acquirer": 35.5,
+          "overall_score": 42.1
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "RPD",
@@ -5861,7 +7886,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Rapid7's $860M revenue base with 70.3% gross margins and a Rule of 40 score of 3.2 presents an attractive defensive acquisition target, though the 1.9...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 4.8,
+          "rule_of_40": 14.3,
+          "revenue_growth_yoy": 9.5,
+          "ev_revenue_acquirer": 95.2,
+          "overall_score": 28.6
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "DOCN",
@@ -5941,7 +7991,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "DigitalOcean's $900M TTM revenue base with 59.9% gross margins and a Rule of 40 score of 32.9 (driven by 15.5% YoY growth) represents a mature, profit...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 28.9,
+          "rule_of_40": 78.7,
+          "revenue_growth_yoy": 50.7,
+          "ev_revenue_acquirer": 2.6,
+          "overall_score": 39.5
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "DDOG",
@@ -6021,7 +8096,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Datadog's $3.43B revenue base with 80% gross margins and 27.7% YoY growth positions it as a mature, profitable software platform, though its Rule of 4...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 71.4,
+          "rule_of_40": 66.7,
+          "revenue_growth_yoy": 90.5,
+          "ev_revenue_acquirer": 14.3,
+          "overall_score": 23.8
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "AFRM",
@@ -6076,7 +8176,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Affirm's $3.2B revenue base growing at 38.8% YoY with a 67.5% gross margin and Rule of 40 score of 49.3 demonstrates a mature fintech platform that ha...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": 69.2,
+          "rule_of_40": 84.2,
+          "revenue_growth_yoy": 73.7,
+          "ev_revenue_acquirer": 10.5,
+          "overall_score": 42.1
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "PCTY",
@@ -6150,7 +8275,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Paylocity's $1.6B revenue base with 68.8% gross margins and a Rule of 40 score of 32.8 reflects a mature SaaS business generating substantial cash flo...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 44.7,
+          "rule_of_40": 76.0,
+          "revenue_growth_yoy": 44.0,
+          "ev_revenue_acquirer": 32.9,
+          "overall_score": 38.2
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "TTD",
@@ -6224,7 +8374,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "The Trade Desk's $2.9B revenue base growing 18.5% YoY with a Rule of 40 score of 38.8 presents an attractive SaaS profile, though the unavailable gros...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 6.6,
+          "rule_of_40": 89.3,
+          "revenue_growth_yoy": 64.0,
+          "ev_revenue_acquirer": 46.1,
+          "overall_score": 36.8
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "MDB",
@@ -6304,7 +8479,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "MongoDB's $2.46B TTM revenue base with 71.7% gross margins and 22.8% YoY growth positions it as an attractive mid-market SaaS asset, though its Rule o...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 50.0,
+          "rule_of_40": 38.7,
+          "revenue_growth_yoy": 76.0,
+          "ev_revenue_acquirer": 10.5,
+          "overall_score": 35.5
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "S",
@@ -6378,7 +8578,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "SentinelOne commands a $5.1B enterprise value on $1.0B in TTM revenue (5.12x EV/Revenue multiple) with an exceptional 74.1% gross margin, though the R...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 19.0,
+          "rule_of_40": 9.5,
+          "revenue_growth_yoy": 71.4,
+          "ev_revenue_acquirer": 47.6,
+          "overall_score": 19.0
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "STEP",
@@ -6452,7 +8677,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "StepStone Group's $1,170M revenue base growing at 65.1% YoY with a Rule of 40 score of 42.4 and 49.3% gross margins presents an attractive fintech pla...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": 15.4,
+          "rule_of_40": 78.9,
+          "revenue_growth_yoy": 100.0,
+          "ev_revenue_acquirer": 31.6,
+          "overall_score": 36.8
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "HUBS",
@@ -6526,7 +8776,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "HubSpot's $3.13B revenue base with 83.8% gross margins and 19.2% YoY growth presents an attractive platform asset, though the Rule of 40 score of 19.4...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 86.8,
+          "rule_of_40": 46.7,
+          "revenue_growth_yoy": 68.0,
+          "ev_revenue_acquirer": 52.6,
+          "overall_score": 34.2
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "VRNT",
@@ -6600,7 +8875,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Verint's $909.2M revenue base with 71.3% gross margins presents an attractive acquisition target, though the 11.6 Rule of 40 score and -0.1% YoY reven...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 9.5,
+          "rule_of_40": 28.6,
+          "revenue_growth_yoy": 4.8,
+          "ev_revenue_acquirer": 90.5,
+          "overall_score": 14.3
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "BMBL",
@@ -6680,7 +8980,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Bumble Inc. presents an acquisition opportunity at a compressed valuation of 0.91x EV/Revenue despite maintaining a 70.8% gross margin and generating ...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 47.4,
+          "rule_of_40": 32.0,
+          "revenue_growth_yoy": 2.7,
+          "ev_revenue_acquirer": 89.5,
+          "overall_score": 32.9
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "PANW",
@@ -6754,7 +9079,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Palo Alto Networks' $9.2B revenue base with 73.4% gross margins and a Rule of 40 score of 28.4 reflects a mature, profitable cybersecurity platform ge...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 14.3,
+          "rule_of_40": 71.4,
+          "revenue_growth_yoy": 47.6,
+          "ev_revenue_acquirer": 9.5,
+          "overall_score": 9.5
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "HCAT",
@@ -6834,7 +9184,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Health Catalyst's $310.0M revenue base and 0.48x EV/Revenue multiple present an attractive entry point for consolidators, though the 1.5% YoY growth a...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 6.6,
+          "rule_of_40": 2.7,
+          "revenue_growth_yoy": 10.7,
+          "ev_revenue_acquirer": 97.4,
+          "overall_score": 31.6
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "DOCU",
@@ -6895,7 +9270,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "DocuSign's $3.2B revenue base with 79.4% gross margins and 8.2% YoY growth presents an attractive acquisition target, though the Rule of 40 score of 1...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 75.0,
+          "rule_of_40": 40.0,
+          "revenue_growth_yoy": 26.7,
+          "ev_revenue_acquirer": 57.9,
+          "overall_score": 30.3
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "RNG",
@@ -6969,7 +9369,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "RingCentral's $2.5B revenue base with 71.2% gross margins and a Rule of 40 score of 9.6 presents an attractive acquisition target, though the 4.8% YoY...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 48.7,
+          "rule_of_40": 21.3,
+          "revenue_growth_yoy": 17.3,
+          "ev_revenue_acquirer": 77.6,
+          "overall_score": 28.9
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "CSGP",
@@ -7043,7 +9468,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "CoStar's $3.25B revenue base, 78.9% gross margin, and 18.7% YoY growth create an attractive SaaS profile, though the Rule of 40 score of 16.5 indicate...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 72.4,
+          "rule_of_40": 36.0,
+          "revenue_growth_yoy": 65.3,
+          "ev_revenue_acquirer": 26.3,
+          "overall_score": 28.9
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "RXST",
@@ -7117,7 +9567,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "RxSight's $130.0M revenue base with 76.6% gross margins presents an attractive acquisition target at a depressed 0.33x EV/Revenue multiple, though the...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "healthcare_tech",
+        "peer_count": 15,
+        "sector_medians": {
+          "gross_margin": 70.6,
+          "rule_of_40": 13.1,
+          "revenue_growth_yoy": 8.8,
+          "ev_revenue": 2.4,
+          "total_score": 60.2
+        },
+        "percentiles": {
+          "gross_margin": 80.0,
+          "rule_of_40": 13.3,
+          "revenue_growth_yoy": 13.3,
+          "ev_revenue_acquirer": 93.3,
+          "overall_score": 40.0
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "CALX",
@@ -7191,7 +9666,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Calix commands acquisition interest with $1.0B in TTM revenue growing at 20.3% YoY, a 56.8% gross margin, and a Rule of 40 score of 22.4, positioning ...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 25.0,
+          "rule_of_40": 53.3,
+          "revenue_growth_yoy": 72.0,
+          "ev_revenue_acquirer": 63.2,
+          "overall_score": 26.3
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "GLBE",
@@ -7265,7 +9765,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Global-E Online represents an attractive acquisition candidate at $962.2M revenue with a 45.3% gross margin and Rule of 40 score of 35.3, combining 27...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 15.8,
+          "rule_of_40": 85.3,
+          "revenue_growth_yoy": 86.7,
+          "ev_revenue_acquirer": 22.4,
+          "overall_score": 25.0
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "RSKD",
@@ -7339,7 +9864,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Riskified commands a 51.7% gross margin on $344.6M in TTM revenue, placing it in the upper quartile for fintech software, though the Rule of 40 score ...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": 23.1,
+          "rule_of_40": 5.3,
+          "revenue_growth_yoy": 10.5,
+          "ev_revenue_acquirer": 84.2,
+          "overall_score": 31.6
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "COUR",
@@ -7400,7 +9950,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Coursera's $757.5M revenue base with 54.6% gross margins presents an attractive acquisition target at 0.15x EV/Revenue, though the Rule of 40 score of...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 22.4,
+          "rule_of_40": 12.0,
+          "revenue_growth_yoy": 29.3,
+          "ev_revenue_acquirer": 98.7,
+          "overall_score": 23.7
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "PUBM",
@@ -7474,7 +10049,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "PubMatic's $280.0M revenue base with a 63.6% gross margin presents an attractive acquisition target at 1.23x EV/Revenue, though the -2.9% revenue decl...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 36.8,
+          "rule_of_40": 9.3,
+          "revenue_growth_yoy": 4.0,
+          "ev_revenue_acquirer": 85.5,
+          "overall_score": 22.4
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "AXON",
@@ -7548,7 +10148,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Axon Enterprise's $2.78B TTM revenue base with 59.7% gross margins and a Rule of 40 score of 31.2 reflects a mature SaaS platform generating substanti...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 27.6,
+          "rule_of_40": 74.7,
+          "revenue_growth_yoy": 96.0,
+          "ev_revenue_acquirer": 3.9,
+          "overall_score": 21.1
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "U",
@@ -7622,7 +10247,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Unity Software's $1.85B revenue base with a 74.2% gross margin presents an attractive acquisition target, though the 2.0% YoY growth and deeply negati...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 57.9,
+          "rule_of_40": 4.0,
+          "revenue_growth_yoy": 12.0,
+          "ev_revenue_acquirer": 15.8,
+          "overall_score": 19.7
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "FIVN",
@@ -7702,7 +10352,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Five9's $1,150M revenue base with 55.1% gross margins and a Rule of 40 score of 12.8 presents an attractive profile for consolidation, though the 10.3...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 23.7,
+          "rule_of_40": 25.3,
+          "revenue_growth_yoy": 36.0,
+          "ev_revenue_acquirer": 84.2,
+          "overall_score": 18.4
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "CRWD",
@@ -7782,7 +10457,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "CrowdStrike's $4.81B TTM revenue base with 74.7% gross margins and 21.7% YoY growth positions it as a scaled, profitable cybersecurity platform, thoug...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "cybersecurity",
+        "peer_count": 21,
+        "sector_medians": {
+          "gross_margin": 78.1,
+          "rule_of_40": 18.5,
+          "revenue_growth_yoy": 17.0,
+          "ev_revenue": 5.1,
+          "total_score": 61.5
+        },
+        "percentiles": {
+          "gross_margin": 33.3,
+          "rule_of_40": 38.1,
+          "revenue_growth_yoy": 66.7,
+          "ev_revenue_acquirer": 4.8,
+          "overall_score": 4.8
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "AMSF",
@@ -7856,7 +10556,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "AMERISAFE's $320M revenue base with 28.7% gross margins and a Rule of 40 score of 21.1 reflects a profitable but mature business trading at 1.63x EV/R...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "healthcare_tech",
+        "peer_count": 15,
+        "sector_medians": {
+          "gross_margin": 70.6,
+          "rule_of_40": 13.1,
+          "revenue_growth_yoy": 8.8,
+          "ev_revenue": 2.4,
+          "total_score": 60.2
+        },
+        "percentiles": {
+          "gross_margin": 20.0,
+          "rule_of_40": 73.3,
+          "revenue_growth_yoy": 33.3,
+          "ev_revenue_acquirer": 60.0,
+          "overall_score": 33.3
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "WEX",
@@ -7930,7 +10655,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "WEX's $2.66B revenue base with 58.6% gross margins and Rule of 40 score of 26.2 reflects a mature, cash-generative business trading at a reasonable 1....",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": 38.5,
+          "rule_of_40": 42.1,
+          "revenue_growth_yoy": 5.3,
+          "ev_revenue_acquirer": 73.7,
+          "overall_score": 26.3
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "SOFI",
@@ -7985,7 +10735,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "SoFi's $3.6B TTM revenue base with 38.3% YoY growth and a Rule of 40 score of 38.3 creates an attractive growth profile, though the absence of disclos...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": null,
+          "rule_of_40": 68.4,
+          "revenue_growth_yoy": 68.4,
+          "ev_revenue_acquirer": 21.1,
+          "overall_score": 21.1
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "TASK",
@@ -8059,7 +10834,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "TaskUs presents an attractive acquisition target at $1.18B revenue with a 37.8% gross margin and Rule of 40 score of 30.9, trading at 0.81x EV/Revenue...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 13.2,
+          "rule_of_40": 73.3,
+          "revenue_growth_yoy": 66.7,
+          "ev_revenue_acquirer": 92.1,
+          "overall_score": 17.1
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "PAYO",
@@ -8133,7 +10933,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Payoneer Global's $821.2M TTM revenue base with 13.9% YoY growth presents an attractive acquisition platform in fintech, though the Rule of 40 score o...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": null,
+          "rule_of_40": 10.5,
+          "revenue_growth_yoy": 26.3,
+          "ev_revenue_acquirer": 78.9,
+          "overall_score": 15.8
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "BLKB",
@@ -8207,7 +11032,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Blackbaud's $1.1B revenue base with 58.8% gross margins and a Rule of 40 score of 14.6 presents an attractive acquisition candidate given its substant...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 26.3,
+          "rule_of_40": 29.3,
+          "revenue_growth_yoy": 5.3,
+          "ev_revenue_acquirer": 68.4,
+          "overall_score": 15.8
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "APPS",
@@ -8287,7 +11137,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Digital Turbine's $490.0M revenue base with 52.0% gross margins represents a mature SaaS asset, though the -9.9% YoY revenue decline and deeply negati...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 21.1,
+          "rule_of_40": 5.3,
+          "revenue_growth_yoy": 2.7,
+          "ev_revenue_acquirer": 81.6,
+          "overall_score": 14.5
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "SHOP",
@@ -8361,7 +11236,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Shopify's $11.56B revenue base growing at 30.1% YoY with 48.1% gross margins and a Rule of 40 score of 42.8 represents a mature, profitable SaaS platf...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 17.1,
+          "rule_of_40": 92.0,
+          "revenue_growth_yoy": 93.3,
+          "ev_revenue_acquirer": 6.6,
+          "overall_score": 13.2
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "NU",
@@ -8416,7 +11316,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Nu Holdings' $10.6B TTM revenue base with 28.5% YoY growth and a Rule of 40 score of 28.5 positions it as a scaled fintech platform, though the absenc...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": null,
+          "rule_of_40": 47.4,
+          "revenue_growth_yoy": 52.6,
+          "ev_revenue_acquirer": 26.3,
+          "overall_score": 10.5
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "OMCL",
@@ -8490,7 +11415,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Omnicell's $1.18B revenue base with 42.5% gross margins and 6.5% YoY growth presents an attractive platform for consolidation, though the Rule of 40 s...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "healthcare_tech",
+        "peer_count": 15,
+        "sector_medians": {
+          "gross_margin": 70.6,
+          "rule_of_40": 13.1,
+          "revenue_growth_yoy": 8.8,
+          "ev_revenue": 2.4,
+          "total_score": 60.2
+        },
+        "percentiles": {
+          "gross_margin": 26.7,
+          "rule_of_40": 40.0,
+          "revenue_growth_yoy": 40.0,
+          "ev_revenue_acquirer": 53.3,
+          "overall_score": 26.7
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "BAND",
@@ -8570,7 +11520,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Bandwidth Inc. presents an acquisition opportunity at a 2.88x EV/Revenue multiple despite near-flat 0.7% YoY growth and a negative Rule of 40 score of...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 14.5,
+          "rule_of_40": 13.3,
+          "revenue_growth_yoy": 9.3,
+          "ev_revenue_acquirer": 51.3,
+          "overall_score": 11.8
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "LSPD",
@@ -8644,7 +11619,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Lightspeed Commerce presents an attractive acquisition candidate with $1,227M in TTM revenue, 42.9% gross margins, and a Rule of 40 score of 1.9, offe...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "fintech",
+        "peer_count": 19,
+        "sector_medians": {
+          "gross_margin": 61.4,
+          "rule_of_40": 29.5,
+          "revenue_growth_yoy": 28.5,
+          "ev_revenue": 4.5,
+          "total_score": 57.2
+        },
+        "percentiles": {
+          "gross_margin": 7.7,
+          "rule_of_40": 15.8,
+          "revenue_growth_yoy": 26.3,
+          "ev_revenue_acquirer": 89.5,
+          "overall_score": 5.3
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "WDAY",
@@ -8718,7 +11718,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Workday's $9.55B revenue base growing at 13.1% YoY generates a Rule of 40 score of 20.6, indicating mature operational efficiency but limited upside f...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 6.6,
+          "rule_of_40": 49.3,
+          "revenue_growth_yoy": 41.3,
+          "ev_revenue_acquirer": 44.7,
+          "overall_score": 10.5
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "SNOW",
@@ -8792,7 +11817,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Snowflake presents a compelling acquisition target with $4.68B in TTM revenue, 67.2% gross margins comparable to historical SaaS targets, though the -...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 43.4,
+          "rule_of_40": 10.7,
+          "revenue_growth_yoy": 89.3,
+          "ev_revenue_acquirer": 5.3,
+          "overall_score": 9.2
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "TDOC",
@@ -8847,7 +11897,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Teladoc Health's $2.53B revenue base with 69.5% gross margins presents an attractive platform asset, though the -1.5% revenue decline and -8.0 Rule of...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "healthcare_tech",
+        "peer_count": 15,
+        "sector_medians": {
+          "gross_margin": 70.6,
+          "rule_of_40": 13.1,
+          "revenue_growth_yoy": 8.8,
+          "ev_revenue": 2.4,
+          "total_score": 60.2
+        },
+        "percentiles": {
+          "gross_margin": 46.7,
+          "rule_of_40": 33.3,
+          "revenue_growth_yoy": 20.0,
+          "ev_revenue_acquirer": 86.7,
+          "overall_score": 20.0
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "SSNC",
@@ -8902,7 +11977,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "SS&C Technologies' $6.3B revenue base with 48.2% gross margins and a Rule of 40 score of 29.5 reflects a mature, cash-generative business trading at 3...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 18.4,
+          "rule_of_40": 69.3,
+          "revenue_growth_yoy": 20.0,
+          "ev_revenue_acquirer": 30.3,
+          "overall_score": 7.9
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "FOUR",
@@ -8976,7 +12076,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Shift4 Payments commands acquisition interest with $4,180M in TTM revenue, 25.5% YoY growth, and a Rule of 40 score of 33.9, though the 6.7% gross mar...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 7.9,
+          "rule_of_40": 81.3,
+          "revenue_growth_yoy": 81.3,
+          "ev_revenue_acquirer": 75.0,
+          "overall_score": 6.6
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "TWLO",
@@ -9050,7 +12175,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Twilio's $5.07B revenue base with 48.9% gross margins and 13.7% YoY growth presents a moderately attractive profile, though the Rule of 40 score of 16...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 19.7,
+          "rule_of_40": 37.3,
+          "revenue_growth_yoy": 44.0,
+          "ev_revenue_acquirer": 19.7,
+          "overall_score": 5.3
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "TOST",
@@ -9124,7 +12274,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Toast's $6.15B revenue base growing at 24.1% YoY with a Rule of 40 score of 28.8 and 25.9% gross margin presents an attractive SaaS profile at a 1.89x...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 10.5,
+          "rule_of_40": 66.7,
+          "revenue_growth_yoy": 77.3,
+          "ev_revenue_acquirer": 78.9,
+          "overall_score": 3.9
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "EPAM",
@@ -9185,7 +12360,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "EPAM's $5.46B revenue base with 28.8% gross margins and a Rule of 40 score of 25.0 (15.4% growth + 9.6% margin contribution) represents a mature, prof...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 11.8,
+          "rule_of_40": 57.3,
+          "revenue_growth_yoy": 49.3,
+          "ev_revenue_acquirer": 90.8,
+          "overall_score": 2.6
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "RXRX",
@@ -9240,7 +12440,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Recursion's $74.3M TTM revenue with 27% YoY growth demonstrates meaningful momentum in healthcare-tech, though the 4.5% gross margin and deeply negati...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "healthcare_tech",
+        "peer_count": 15,
+        "sector_medians": {
+          "gross_margin": 70.6,
+          "rule_of_40": 13.1,
+          "revenue_growth_yoy": 8.8,
+          "ev_revenue": 2.4,
+          "total_score": 60.2
+        },
+        "percentiles": {
+          "gross_margin": 6.7,
+          "rule_of_40": 6.7,
+          "revenue_growth_yoy": 93.3,
+          "ev_revenue_acquirer": 0.0,
+          "overall_score": 13.3
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "EVH",
@@ -9314,7 +12539,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "Evolent Health presents a contrarian acquisition opportunity at a 0.69x EV/Revenue multiple despite generating $1,880M in TTM revenue, with the caveat...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "healthcare_tech",
+        "peer_count": 15,
+        "sector_medians": {
+          "gross_margin": 70.6,
+          "rule_of_40": 13.1,
+          "revenue_growth_yoy": 8.8,
+          "ev_revenue": 2.4,
+          "total_score": 60.2
+        },
+        "percentiles": {
+          "gross_margin": 13.3,
+          "rule_of_40": 20.0,
+          "revenue_growth_yoy": 6.7,
+          "ev_revenue_acquirer": 80.0,
+          "overall_score": 6.7
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     },
     {
       "ticker": "TNET",
@@ -9388,7 +12638,32 @@
       ],
       "has_thesis": true,
       "thesis_preview": "TriNet's $5.0B revenue base with 17.7% gross margins and -0.9% YoY growth presents a mature software platform trading at a depressed 0.51x EV/Revenue,...",
-      "thesis_generated_at": "2026-05-29T00:56:13.341500Z"
+      "thesis_generated_at": "2026-05-29T00:56:13.341500Z",
+      "peer_benchmarks": {
+        "sector": "saas",
+        "peer_count": 76,
+        "sector_medians": {
+          "gross_margin": 71.9,
+          "rule_of_40": 20.8,
+          "revenue_growth_yoy": 15.5,
+          "ev_revenue": 2.9,
+          "total_score": 58.4
+        },
+        "percentiles": {
+          "gross_margin": 9.2,
+          "rule_of_40": 17.3,
+          "revenue_growth_yoy": 8.0,
+          "ev_revenue_acquirer": 96.1,
+          "overall_score": 1.3
+        },
+        "labels": [
+          "Gross Margin",
+          "Rule of 40",
+          "Growth",
+          "Value",
+          "Overall"
+        ]
+      }
     }
   ]
 }

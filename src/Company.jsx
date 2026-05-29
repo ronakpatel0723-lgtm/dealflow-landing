@@ -203,7 +203,98 @@ function norm(raw) {
     thesis_preview: raw.thesis_preview ?? null,
     insider_pattern: raw.insider_pattern ?? null,
     likely_acquirers: raw.likely_acquirers ?? [],
+    peer_benchmarks: raw.peer_benchmarks ?? null,
   };
+}
+
+function RadarChart({ benchmarks }) {
+  if (!benchmarks?.percentiles) return null;
+  const { percentiles, labels, sector, peer_count } = benchmarks;
+  const axes = [
+    { key: "gross_margin",        label: "Margin" },
+    { key: "rule_of_40",          label: "R40" },
+    { key: "revenue_growth_yoy",  label: "Growth" },
+    { key: "ev_revenue_acquirer", label: "Value" },
+    { key: "overall_score",       label: "Overall" },
+  ];
+  const N = axes.length;
+  const cx = 110, cy = 110, r = 80;
+  const step = (2 * Math.PI) / N;
+  const angle = (i) => -Math.PI / 2 + i * step;
+
+  const pt = (pct, i) => {
+    const frac = (pct ?? 50) / 100;
+    return {
+      x: cx + r * frac * Math.cos(angle(i)),
+      y: cy + r * frac * Math.sin(angle(i)),
+    };
+  };
+
+  // Grid circles at 25/50/75/100
+  const gridCircles = [0.25, 0.5, 0.75, 1.0];
+
+  const points = axes.map((a, i) => pt(percentiles[a.key] ?? 50, i));
+  const poly = points.map(p => `${p.x},${p.y}`).join(" ");
+
+  // Spoke endpoints
+  const spokes = axes.map((_, i) => ({
+    x: cx + r * Math.cos(angle(i)),
+    y: cy + r * Math.sin(angle(i)),
+  }));
+
+  return (
+    <div style={{ display:"flex", flexDirection:"column", alignItems:"center" }}>
+      <svg width={220} height={220} viewBox="0 0 220 220">
+        {/* Grid rings */}
+        {gridCircles.map((frac, gi) => (
+          <circle key={gi} cx={cx} cy={cy} r={r * frac}
+            fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth={1} />
+        ))}
+        {/* Spokes */}
+        {spokes.map((sp, i) => (
+          <line key={i} x1={cx} y1={cy} x2={sp.x} y2={sp.y}
+            stroke="rgba(255,255,255,0.08)" strokeWidth={1} />
+        ))}
+        {/* Data polygon */}
+        <polygon points={poly}
+          fill="rgba(91,141,239,0.18)" stroke={C.blue} strokeWidth={1.5} />
+        {/* Data dots */}
+        {points.map((p, i) => (
+          <circle key={i} cx={p.x} cy={p.y} r={3} fill={C.blue} />
+        ))}
+        {/* Axis labels */}
+        {axes.map((a, i) => {
+          const sp = spokes[i];
+          const dx = sp.x - cx, dy = sp.y - cy;
+          const lx = cx + (r + 16) * Math.cos(angle(i));
+          const ly = cy + (r + 16) * Math.sin(angle(i));
+          const pct = percentiles[a.key] ?? 50;
+          return (
+            <text key={i} x={lx} y={ly + 4}
+              textAnchor="middle" dominantBaseline="middle"
+              fill={C.sub} fontSize={9} fontFamily={mono}>
+              {a.label}
+            </text>
+          );
+        })}
+      </svg>
+      <div style={{ fontFamily:mono, fontSize:10, color:C.muted, textAlign:"center" }}>
+        vs {peer_count} sector peers
+      </div>
+      <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"4px 16px", marginTop:12 }}>
+        {axes.map((a, i) => {
+          const pct = percentiles[a.key] ?? 50;
+          const col = pct >= 70 ? C.green : pct >= 40 ? C.amber : C.red;
+          return (
+            <div key={i} style={{ display:"flex", justifyContent:"space-between", gap:8 }}>
+              <span style={{ fontFamily:mono, fontSize:10, color:C.muted }}>{a.label}</span>
+              <span style={{ fontFamily:mono, fontSize:10, color:col, fontWeight:600 }}>{pct}th</span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 }
 
 export default function Company() {
@@ -806,6 +897,61 @@ export default function Company() {
               Fingerprint matching uses cosine distance on median revenue, gross margin, Rule of 40,
               and growth rate from {company.likely_acquirers[0]?.deal_count || "—"} historical deals.
               Not predictive of specific transactions.
+            </div>
+          </div>
+        )}
+
+        {/* Peer Benchmark Radar */}
+        {company.peer_benchmarks && (
+          <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:14,
+            padding:"24px 28px", marginBottom:24 }}>
+            <div style={{ fontFamily:mono, fontSize:10, color:C.muted, letterSpacing:1.5,
+              textTransform:"uppercase", marginBottom:6 }}>Sector Benchmarks</div>
+            <div style={{ display:"flex", gap:32, alignItems:"flex-start", flexWrap:"wrap" }}>
+              <div style={{ flex:"0 0 auto" }}>
+                <RadarChart benchmarks={company.peer_benchmarks} />
+              </div>
+              <div style={{ flex:1, minWidth:200 }}>
+                <div style={{ fontFamily:disp, fontSize:13, color:C.sub, lineHeight:1.7, marginBottom:16 }}>
+                  Percentile rankings vs {company.peer_benchmarks.peer_count} companies in the{" "}
+                  <span style={{ color:C.text }}>
+                    {SECTOR_LABELS[company.peer_benchmarks.sector] || company.peer_benchmarks.sector}
+                  </span>{" "}sector.
+                </div>
+                <div style={{ display:"flex", flexDirection:"column", gap:10 }}>
+                  {[
+                    { key:"gross_margin",        label:"Gross Margin",   val:company.gm,     fmt: v => `${v?.toFixed(1)}%` },
+                    { key:"rule_of_40",          label:"Rule of 40",     val:company.r40,    fmt: v => v?.toFixed(1) },
+                    { key:"revenue_growth_yoy",  label:"Revenue Growth", val:company.growth, fmt: v => `${v?.toFixed(1)}%` },
+                    { key:"ev_revenue_acquirer", label:"Valuation",      val:company.evRev,  fmt: v => `${v?.toFixed(1)}×` },
+                  ].map(({ key, label, val, fmt }) => {
+                    const pct = company.peer_benchmarks.percentiles[key] ?? 50;
+                    const col = pct >= 70 ? C.green : pct >= 40 ? C.amber : C.red;
+                    return (
+                      <div key={key} style={{ display:"flex", alignItems:"center", gap:10 }}>
+                        <div style={{ width:90, fontFamily:mono, fontSize:11, color:C.muted }}>{label}</div>
+                        <div style={{ flex:1, height:4, background:"rgba(255,255,255,0.07)", borderRadius:2 }}>
+                          <div style={{ height:"100%", width:`${pct}%`, background:col, borderRadius:2,
+                            transition:"width 0.6s ease" }} />
+                        </div>
+                        <div style={{ fontFamily:mono, fontSize:11, color:col, minWidth:28, textAlign:"right" }}>
+                          {pct}%
+                        </div>
+                        {val != null && (
+                          <div style={{ fontFamily:mono, fontSize:11, color:C.muted, minWidth:52, textAlign:"right" }}>
+                            {fmt(val)}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+                <div style={{ fontFamily:mono, fontSize:10, color:C.muted, marginTop:16 }}>
+                  Sector medians — GM: {company.peer_benchmarks.sector_medians?.gross_margin ?? "—"}% ·
+                  R40: {company.peer_benchmarks.sector_medians?.rule_of_40 ?? "—"} ·
+                  EV/Rev: {company.peer_benchmarks.sector_medians?.ev_revenue ?? "—"}×
+                </div>
+              </div>
             </div>
           </div>
         )}
