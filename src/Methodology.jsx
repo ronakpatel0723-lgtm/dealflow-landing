@@ -300,23 +300,40 @@ export default function Methodology() {
             </div>
           </div>
           <P>
-            The placebo test is the key validation. Under shuffled labels, XGBoost shallow collapses to
-            exactly 1.00× lift — indistinguishable from random. This rules out overfitting: the model
-            is not memorizing training patterns. We deliberately chose depth=3 to limit memorization
-            while preserving the non-linear interactions. Deeper configurations (depth=5+) showed higher
-            cross-validation lift but walk-forward performance degraded — the canonical overfitting
-            fingerprint. With 264 training positives, shallow is the right call. When the universe
-            grows past ~500 verified acquisitions, we'll revisit.
+            The placebo test is the key validation. Under shuffled labels, the ensemble collapses to
+            0.86× lift — near-random. This rules out overfitting: the model is not memorizing training
+            patterns. We deliberately chose shallow configurations (depth=3) to limit memorization while
+            preserving non-linear interactions. Deeper configurations showed higher cross-validation lift
+            but walk-forward performance degraded — the canonical overfitting fingerprint. With 203
+            training positives, shallow is the right call.
           </P>
+        </Section>
+
+        {/* How We Validate */}
+        <Section title="How we validate" tag="Verification">
+          <div style={{ display:"grid", gap:16, marginBottom:24 }}>
+            {[
+              ["EDGAR 8-K Item 2.01 Verification", "Every acquisition in our training set is confirmed via the SEC's Form 8-K, specifically Item 2.01 — Completion of Acquisition or Disposition of Assets. This is the legal notice companies must file within 4 business days of deal closing. We do not rely on press releases, news articles, or deal databases. Primary source only."],
+              ["Walk-Forward Backtesting", "We never test the model on data it saw during training. Each backtest year (2020–2024) uses a model trained exclusively on prior years' data. The 5.59× signal-to-noise ratio is the average across all 5 out-of-sample test years."],
+              ["Placebo Test", "We randomly shuffle the acquired/not-acquired labels and re-run the entire backtest. Result: 0.86× — near-random. This confirms the signal comes from real patterns in the data, not from artifacts of the backtesting methodology."],
+              ["Insider Transaction Signal", "Officers and directors of companies in our universe show distinct transaction patterns. Form 4 filings are analyzed using the Seyhun (1986) and Lakonishok & Lee (2001) methodology. Pattern scores ≥65 correlate with pre-acquisition behavior in our verified dataset."],
+            ].map(([title, desc]) => (
+              <div key={title} style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:8, padding:"20px 24px" }}>
+                <div style={{ fontFamily:mono, fontSize:13, color:C.blue, marginBottom:8 }}>{title}</div>
+                <P style={{ marginBottom:0, fontSize:15 }}>{desc}</P>
+              </div>
+            ))}
+          </div>
         </Section>
 
         {/* Data sources */}
         <Section title="Data sources" tag="Ground truth">
           <div style={{ display:"grid", gap:16, marginBottom:24 }}>
             {[
-              ["SEC EDGAR (XBRL)", "Primary financial source. Revenue, gross margin, operating margin, revenue growth — pulled from quarterly XBRL filings, 2009–2024. Point-in-time safe: each observation uses only data available as of that quarter's filing date."],
-              ["SEC Form 4 (insider transactions)", "Net buy/sell ratio, officer purchase volume across trailing 90-day and 180-day windows. Covers 19.5% of the panel after a full entity breadth pass across 893 companies."],
-              ["Gold set (ground truth)", "100 manually verified acquisition targets. Each label confirmed against the SEC 8-K filing body — not just the filing date. Announcement date, acquirer name, and deal type verified for all 100."],
+              ["SEC EDGAR (XBRL)", "Primary financial source. Revenue, gross margin, operating margin, revenue growth — pulled from quarterly XBRL filings, 2010–2024. Point-in-time safe: each observation uses only data available as of that quarter's filing date."],
+              ["SEC Form 4 (insider transactions)", "Net buy/sell ratio, officer purchase volume, selling acceleration. Pattern scores computed using the Seyhun (1986) academic framework. 41 of 131 live companies have Form 4 signal data."],
+              ["Gold set (ground truth)", "203 manually verified acquisition targets. Each label confirmed against the SEC 8-K filing body — not just the filing date. Announcement date, acquirer name, and deal type verified for all 203."],
+              ["LSEG SDC Platinum", "2,612 software M&A transactions used for comparable deal data, acquirer fingerprint building, and sector context. Deal values, announced/closed dates, acquirer names."],
             ].map(([title, desc]) => (
               <div key={title} style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:8, padding:"20px 24px" }}>
                 <div style={{ fontFamily:mono, fontSize:13, color:C.blue, marginBottom:8 }}>{title}</div>
@@ -330,9 +347,10 @@ export default function Methodology() {
         <Section title="Honest limitations" tag="What we don't claim">
           <div style={{ display:"grid", gap:0 }}>
             {[
-              ["Universe size", "27,949 company-year observations, 264 positives. 2024 test set has 4 positives — the 10.01× lift number carries high variance."],
-              ["Gross margin gap", "36% of entities don't file CostOfRevenue in XBRL. We impute with sector-year medians, flagged explicitly as a training feature."],
-              ["No macro signal", "No interest rate, deal-volume, or multiple-compression variables. 2020 lift (1.34×) reflects a compressed market — the model doesn't know macro."],
+              ["Universe size", "29,800 company-year observations, 397 positives. 2024 test set has 8 positives — lift estimate carries higher variance than earlier years."],
+              ["ML coverage", "57 of 131 live companies have ML scores from the trained model. The other 74 are scored by the rule-based component only (added after model training)."],
+              ["Gross margin gap", "Some entities don't file CostOfRevenue in XBRL. We impute with sector-year medians, flagged explicitly as a training feature."],
+              ["No macro signal", "No interest rate, deal-volume, or multiple-compression variables. 2020 lift (2.26×) reflects a compressed acquisition market — the model doesn't know macro."],
               ["Survival bias", "The negative class is companies that existed and weren't acquired. Companies delisted for other reasons may bias the negatives."],
               ["Static predictions", "Scores reflect most recent quarterly financials — not real-time market moves or strategic announcements."],
             ].map(([label, desc]) => (
@@ -351,7 +369,7 @@ export default function Methodology() {
             background:C.blue, borderRadius:8, fontFamily:disp, fontSize:15, fontWeight:600, color:"#fff" }}>
             See the screener →
           </Link>
-          <P style={{ marginTop:16, fontSize:14 }}>65 public SaaS companies ranked using this model.</P>
+          <P style={{ marginTop:16, fontSize:14 }}>131 public software companies ranked using this model.</P>
         </div>
       </div>
     </div>

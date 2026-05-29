@@ -583,6 +583,8 @@ export default function Company() {
 
           const hasHistory = histData && histData.length > 1;
           const isDecelerating = hasHistory && growthVals[growthVals.length-1] < growthVals[0];
+          const isEdgar = histData && histData[0]?.source === 'edgar_xbrl';
+          const isEstimated = histData && histData.length >= 2 && !isEdgar;
 
           return (
             <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:14,
@@ -593,6 +595,11 @@ export default function Company() {
                   {!hasHistory && (
                     <div style={{ fontFamily:disp, fontSize:12, color:C.muted }}>
                       Current period · historical trend available as data accumulates
+                    </div>
+                  )}
+                  {isEstimated && (
+                    <div style={{ fontFamily:mono, fontSize:10, color:C.muted }}>
+                      estimated from reported metrics
                     </div>
                   )}
                 </div>
@@ -1007,7 +1014,7 @@ export default function Company() {
           ) : thesis ? (
             <>
               <div style={{ marginBottom:16 }}>
-                {thesis.split('\n').filter(l => l.trim() && !l.startsWith('#') && !l.startsWith('**') && !l.startsWith('---')).map((para, i) => (
+                {thesis.split('\n').filter(l => l.trim() && !l.startsWith('#') && !l.startsWith('**') && !l.startsWith('---') && !l.startsWith('Score:')).map((para, i) => (
                   <p key={i} style={{ fontFamily:disp, fontSize:14, color:C.sub,
                     lineHeight:1.75, marginBottom:14 }}>{para}</p>
                 ))}
