@@ -444,6 +444,144 @@ export default function Company() {
           )}
         </div>
 
+        {/* Revenue & Growth Trajectory Chart */}
+        {(() => {
+          const rev = company.revenue;   // $M
+          const growth = company.growth; // %
+          // Build single current-year data point; history fetched in future
+          const histData = company.revenue_history ?? null;
+          if (!rev && !histData) return null;
+
+          // Chart dimensions
+          const W = 480, H = 100, padL = 48, padR = 16, padT = 10, padB = 24;
+          const chartW = W - padL - padR;
+          const chartH = H - padT - padB;
+
+          // Use score history dates as x-axis proxy if no dedicated history
+          const years = histData
+            ? histData.map(d => d.year)
+            : [2024]; // single point
+
+          const revVals = histData
+            ? histData.map(d => d.revenue_M)
+            : [rev];
+
+          const growthVals = histData
+            ? histData.map(d => d.growth_pct)
+            : [growth ?? 0];
+
+          const maxRev = Math.max(...revVals) * 1.15 || 100;
+          const minGrowth = Math.min(...growthVals, 0);
+          const maxGrowth = Math.max(...growthVals, 0);
+          const growthRange = maxGrowth - minGrowth || 20;
+
+          const xScale = (i) => padL + (years.length <= 1 ? chartW / 2 : (i / (years.length - 1)) * chartW);
+          const yRev = (v) => padT + chartH - (v / maxRev) * chartH;
+          const yGrowth = (v) => padT + chartH - ((v - minGrowth) / growthRange) * chartH;
+
+          // Bar width
+          const barW = years.length <= 1 ? 40 : Math.max(12, (chartW / years.length) * 0.5);
+
+          // Growth line path
+          const growthPts = revVals.map((_, i) => ({ x: xScale(i), y: yGrowth(growthVals[i] ?? 0) }));
+          const growthPath = growthPts.map((p, i) => `${i===0?"M":"L"}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(" ");
+
+          const sweetLoM = 200, sweetHiM = 2000;
+          const inSweet = rev >= sweetLoM && rev <= sweetHiM;
+
+          const hasHistory = histData && histData.length > 1;
+          const isDecelerating = hasHistory && growthVals[growthVals.length-1] < growthVals[0];
+
+          return (
+            <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:14,
+              padding:"24px 28px", marginBottom:24 }}>
+              <div style={{ display:"flex", justifyContent:"space-between", alignItems:"baseline", marginBottom:16 }}>
+                <div>
+                  <div style={{ fontFamily:mono, fontSize:10, color:C.muted, letterSpacing:1.5, textTransform:"uppercase", marginBottom:4 }}>Revenue & Growth Trajectory</div>
+                  {!hasHistory && (
+                    <div style={{ fontFamily:disp, fontSize:12, color:C.muted }}>
+                      Current period · historical trend available as data accumulates
+                    </div>
+                  )}
+                </div>
+                {inSweet && (
+                  <span style={{ fontFamily:mono, fontSize:10, color:C.blue, border:`1px solid rgba(91,141,239,0.3)`, borderRadius:5, padding:"3px 8px" }}>
+                    M&A sweet spot
+                  </span>
+                )}
+              </div>
+              <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ overflow:"visible" }}>
+                {/* Sweet spot shading: $200M-$2B revenue */}
+                {maxRev > 0 && (
+                  <rect
+                    x={padL} y={yRev(Math.min(sweetHiM, maxRev))}
+                    width={chartW}
+                    height={yRev(sweetLoM) - yRev(Math.min(sweetHiM, maxRev))}
+                    fill="rgba(91,141,239,0.05)" />
+                )}
+                {/* Revenue bars (left axis, blue) */}
+                {revVals.map((v, i) => {
+                  const barH = (v / maxRev) * chartH;
+                  return (
+                    <rect key={i}
+                      x={xScale(i) - barW/2} y={padT + chartH - barH}
+                      width={barW} height={barH}
+                      fill="rgba(91,141,239,0.45)" rx="2" />
+                  );
+                })}
+                {/* Growth rate line (right axis, amber) */}
+                {revVals.length > 1 && (
+                  <path d={growthPath} stroke={C.amber} strokeWidth="2" fill="none"
+                    strokeLinecap="round" strokeLinejoin="round" />
+                )}
+                {/* Growth dots */}
+                {growthPts.map((p, i) => (
+                  <circle key={i} cx={p.x} cy={p.y} r="3"
+                    fill={i === growthPts.length-1 ? C.amber : "transparent"}
+                    stroke={C.amber} strokeWidth="1.5" />
+                ))}
+                {/* Left axis labels */}
+                <text x={padL-4} y={padT+6} textAnchor="end"
+                  style={{ fontFamily:"monospace", fontSize:8, fill:"rgba(255,255,255,0.3)" }}>
+                  {maxRev >= 1000 ? `$${(maxRev/1000).toFixed(1)}B` : `$${Math.round(maxRev)}M`}
+                </text>
+                <text x={padL-4} y={padT+chartH} textAnchor="end"
+                  style={{ fontFamily:"monospace", fontSize:8, fill:"rgba(255,255,255,0.3)" }}>
+                  $0
+                </text>
+                {/* Year labels */}
+                {years.map((yr, i) => (
+                  <text key={i} x={xScale(i)} y={H-4} textAnchor="middle"
+                    style={{ fontFamily:"monospace", fontSize:8, fill:"rgba(255,255,255,0.3)" }}>
+                    {yr}
+                  </text>
+                ))}
+                {/* Deceleration annotation */}
+                {isDecelerating && (
+                  <text x={W/2} y={padT+10} textAnchor="middle"
+                    style={{ fontFamily:"monospace", fontSize:9, fill:C.amber }}>
+                    ↓ Growth Decelerating
+                  </text>
+                )}
+              </svg>
+              <div style={{ display:"flex", gap:20, marginTop:12 }}>
+                <div style={{ display:"flex", alignItems:"center", gap:6 }}>
+                  <div style={{ width:12, height:10, background:"rgba(91,141,239,0.45)", borderRadius:2 }} />
+                  <span style={{ fontFamily:mono, fontSize:10, color:C.muted }}>Revenue ($M)</span>
+                </div>
+                <div style={{ display:"flex", alignItems:"center", gap:6 }}>
+                  <div style={{ width:12, height:2, background:C.amber, borderRadius:1 }} />
+                  <span style={{ fontFamily:mono, fontSize:10, color:C.muted }}>YoY Growth (%)</span>
+                </div>
+                <div style={{ display:"flex", alignItems:"center", gap:6 }}>
+                  <div style={{ width:12, height:8, background:"rgba(91,141,239,0.05)", border:"1px solid rgba(91,141,239,0.2)", borderRadius:2 }} />
+                  <span style={{ fontFamily:mono, fontSize:10, color:C.muted }}>M&A sweet spot ($200M-$2B)</span>
+                </div>
+              </div>
+            </div>
+          );
+        })()}
+
         {/* Insider Signal */}
         {(() => {
           const ip = company.insider_pattern;
