@@ -85,7 +85,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 1,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -645152,
         "net_sell_6mo": -645152,
@@ -166,7 +166,9 @@
           "growth_pct": 55.8,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "EverQuote's $692.5M TTM revenue combined with a 97.2% gross margin and Rule of 40 score of 48.1 (driven by 38.5% YoY growth) demonstrates a high-quali...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "DOCS",
@@ -214,7 +216,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 1,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -519684,
         "net_sell_6mo": -519684,
@@ -307,7 +309,9 @@
           "growth_pct": 13.1,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Doximity's $644.9M revenue base, 89.1% gross margin, and 46.4 Rule of 40 score position it as an efficiently scaled healthcare technology platform wit...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "UPST",
@@ -355,7 +359,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 1,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -442,7 +446,9 @@
           "growth_pct": 64.0,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Upstart's $1,024M TTM revenue with 82.7% gross margins and a Rule of 40 score of 62.8 (driven by 62.8% YoY growth) positions it as a profitable, high-...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "QLYS",
@@ -490,7 +496,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 1,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -577,7 +583,9 @@
           "growth_pct": 14.5,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Qualys presents an attractive acquisition target with $670M in TTM revenue, an 82.8% gross margin, and a Rule of 40 score of 43.3, demonstrating disci...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "CWAN",
@@ -625,7 +633,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 2,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -4624601,
         "net_sell_6mo": -4624601,
@@ -718,7 +726,9 @@
           "growth_pct": 61.9,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Clearwater Analytics presents an attractive acquisition target with $730M in TTM revenue, 67.3% gross margins, and a Rule of 40 score of 60.8, driven ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "CLBT",
@@ -766,7 +776,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 2,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -827,7 +837,9 @@
           "revenue_M": 475.7,
           "growth_pct": 18.6
         }
-      ]
+      ],
+      "thesis_preview": "Cellebrite presents an attractive acquisition target with $475.7M in TTM revenue, an 84.2% gross margin, and a Rule of 40 score of 32.5, generating su...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "PRGS",
@@ -875,7 +887,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 2,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -962,7 +974,9 @@
           "growth_pct": -1.9,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Progress Software's $977.8M revenue base, 80.8% gross margin, and Rule of 40 score of 47.6 driven by 29.8% YoY growth position it as a mature, cash-ge...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "HOOD",
@@ -1010,7 +1024,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 3,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -1097,7 +1111,9 @@
           "growth_pct": 51.6,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Robinhood's $4.5B TTM revenue base combined with 83.3% gross margins and an exceptional Rule of 40 score of 98.4 (driven by 51.6% YoY growth) creates ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "PLTR",
@@ -1145,7 +1161,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 3,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -1232,7 +1248,9 @@
           "growth_pct": 56.2,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Palantir's $4.5B TTM revenue combined with 82.4% gross margins and an exceptional Rule of 40 score of 87.8 (driven by 56.2% YoY growth) positions it a...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "DUOL",
@@ -1280,7 +1298,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 4,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -685122,
         "net_sell_6mo": -685122,
@@ -1373,7 +1391,9 @@
           "growth_pct": 38.7,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Duolingo's $1.04B revenue base with a 72.2% gross margin and Rule of 40 score of 51.8 (38.7% growth + 13.1% implied profitability contribution) demons...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "AVPT",
@@ -1421,7 +1441,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 5,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -1508,7 +1528,9 @@
           "growth_pct": 26.9,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "AvePoint's $419.5M revenue run rate, 74.1% gross margin, and Rule of 40 score of 34.8 (driven by 26.9% YoY growth) position it as a mature, profitable...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "DCBO",
@@ -1556,7 +1578,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 6,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -1617,7 +1639,9 @@
           "revenue_M": 242.7,
           "growth_pct": 11.9
         }
-      ]
+      ],
+      "thesis_preview": "Docebo's $242.7M revenue base with 80.3% gross margins and an 11.9% YoY growth rate delivering a Rule of 40 score of 22.0 presents an attractive SaaS ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "GEN",
@@ -1665,7 +1689,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 3,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -21570,
         "net_sell_6mo": -21570,
@@ -1758,7 +1782,9 @@
           "growth_pct": -3.3,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Gen Digital's $5.0B revenue base with 78.5% gross margins and a Rule of 40 score of 70.2\u2014driven by 27.1% YoY growth\u2014positions it as a mature, cash-gen...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "HIMS",
@@ -1806,7 +1832,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 2,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -1893,7 +1919,9 @@
           "growth_pct": 59.0,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Hims & Hers presents a compelling acquisition target with $2.35B in TTM revenue growing at 59% YoY, paired with a 73.8% gross margin and Rule of 40 sc...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "OPRA",
@@ -2003,7 +2031,8 @@
           "revenue_M": 614.8,
           "growth_pct": 27.9
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "UPWK",
@@ -2051,7 +2080,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 8,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -2138,7 +2167,9 @@
           "growth_pct": 2.4,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Upwork's $787.8M revenue base with 77.8% gross margins and a Rule of 40 score of 18.8 presents an undervalued platform asset trading at 1.1x EV/Revenu...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "RDWR",
@@ -2186,7 +2217,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 9,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -2247,7 +2278,9 @@
           "revenue_M": 301.8,
           "growth_pct": 9.8
         }
-      ]
+      ],
+      "thesis_preview": "Radware's $301.9M revenue base with 80.7% gross margins and a Rule of 40 score of 13.6 reflects a mature, profitable software business generating subs...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "BL",
@@ -2295,7 +2328,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 10,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -63406,
         "net_sell_6mo": -63406,
@@ -2376,7 +2409,9 @@
           "growth_pct": 45.5,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "BlackLine's $700.4M revenue base with 75.2% gross margins and a Rule of 40 score of 12.9 presents an undervalued financial profile, particularly given...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "NRDS",
@@ -2424,7 +2459,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 4,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -901173,
         "net_sell_6mo": -901173,
@@ -2517,7 +2552,9 @@
           "growth_pct": 21.7,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "NerdWallet's $836.6M revenue base with 92.4% gross margins and 21.7% YoY growth generates a Rule of 40 score of 29.5, positioning it as a mature, cash...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "SEMR",
@@ -2565,7 +2602,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 11,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -2652,7 +2689,9 @@
           "growth_pct": 17.7,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "SEMrush's $440M revenue base with 80.5% gross margins and 17.7% YoY growth delivers a Rule of 40 score of 12.6, indicating mature cash generation char...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "GDRX",
@@ -2788,7 +2827,8 @@
           "growth_pct": 0.6,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "SPSC",
@@ -2836,7 +2876,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 12,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -2923,7 +2963,9 @@
           "growth_pct": 13.9,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "SPS Commerce's $750M revenue base with 69.2% gross margins and 33.6 Rule of 40 score positions it as an efficiently scaled SaaS operator approaching i...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "MNDY",
@@ -2971,7 +3013,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 13,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -3032,7 +3074,9 @@
           "revenue_M": 1232.0,
           "growth_pct": 26.7
         }
-      ]
+      ],
+      "thesis_preview": "monday.com presents an attractive acquisition target with $1,232M in TTM revenue, 89.2% gross margins, and a Rule of 40 score of 26.6, though the latt...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "IRTC",
@@ -3080,7 +3124,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 4,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -3167,7 +3211,9 @@
           "growth_pct": 26.2,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "iRhythm's $747.1M revenue base with 70.6% gross margins and 26.2% YoY growth positions it as an attractive healthcare-tech asset, though its Rule of 4...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "APPN",
@@ -3215,7 +3261,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 14,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": 99993,
         "net_sell_6mo": 99993,
@@ -3296,7 +3342,9 @@
           "growth_pct": 28.3,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Appian's $726.9M revenue base with 72.5% gross margins and 17.8% YoY growth generates a Rule of 40 score of 17.9, positioning it as a mature, profitab...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "FROG",
@@ -3344,7 +3392,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 4,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -148565,
         "net_sell_6mo": -148565,
@@ -3437,7 +3485,9 @@
           "growth_pct": 24.1,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "JFrog's $531.8M revenue base with 76.8% gross margins and 24.1% YoY growth offers an attractive software platform for consolidation, though the Rule o...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "PD",
@@ -3573,7 +3623,8 @@
           "growth_pct": 5.4,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "FLYW",
@@ -3709,7 +3760,8 @@
           "growth_pct": 26.6,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "AGYS",
@@ -3757,7 +3809,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 16,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -3844,7 +3896,9 @@
           "growth_pct": 15.9,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Agilysys presents an attractive acquisition profile with $319.3M in TTM revenue, 62.6% gross margins, and a Rule of 40 score of 29.4 despite 15.8% YoY...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "RBRK",
@@ -3892,7 +3946,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 5,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -3967,7 +4021,9 @@
           "growth_pct": 48.5,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Rubrik is attractive at current valuation given $1.32B in TTM revenue growing 48.5% YoY with an 80.1% gross margin, though the Rule of 40 score of 22....",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "TTD",
@@ -4015,7 +4071,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 17,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -4102,7 +4158,9 @@
           "growth_pct": 18.5,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "The Trade Desk's $2.9B revenue base with 77.8% gross margins and a Rule of 40 score of 38.8 reflects a mature SaaS platform generating substantial cas...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "CHKP",
@@ -4150,7 +4208,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 6,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -320438,
         "net_sell_6mo": -320438,
@@ -4217,7 +4275,9 @@
           "revenue_M": 2725.4,
           "growth_pct": 6.3
         }
-      ]
+      ],
+      "thesis_preview": "Check Point's $2.7B revenue base, 86.7% gross margins, and Rule of 40 score of 36.7 position it as a mature, cash-generative asset with sustainable pr...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "SPT",
@@ -4353,7 +4413,8 @@
           "growth_pct": 12.7,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "PAYC",
@@ -4401,7 +4462,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 18,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -4488,7 +4549,9 @@
           "growth_pct": 28.8,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Paycom presents an attractive acquisition candidate with $2.05B in TTM revenue, 83.2% gross margins, and a Rule of 40 score of 36.6, though the 8.9% Y...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "GTLB",
@@ -4536,7 +4599,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 20,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -5834632,
         "net_sell_6mo": -5834632,
@@ -4629,7 +4692,9 @@
           "growth_pct": 25.8,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "GitLab's $960M TTM revenue with 87.4% gross margins and 25.8% YoY growth present an attractive acquisition profile, though the Rule of 40 score of 18....",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "FRSH",
@@ -4677,7 +4742,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 21,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -4764,7 +4829,9 @@
           "growth_pct": 16.4,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Freshworks presents an attractive entry point at $840M TTM revenue with an 85% gross margin and 18 Rule of 40 score, offering a scaled platform with m...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "NTCT",
@@ -4812,7 +4879,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 7,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -698254,
         "net_sell_6mo": -698254,
@@ -4905,7 +4972,9 @@
           "growth_pct": -2.0,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "NetScout's $859.5M revenue base with a 79.4% gross margin and 4.5% YoY growth generates a Rule of 40 score of 17.4, positioning it as a mature, cash-g...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "DV",
@@ -4953,7 +5022,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 22,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -5040,7 +5109,9 @@
           "growth_pct": 13.9,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "DoubleVerify's $750.0M revenue base with 13.9% YoY growth and a Rule of 40 score of 24.5 presents an attractive acquisition target, though the modest ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "LMND",
@@ -5088,7 +5159,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 6,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -5175,7 +5246,9 @@
           "growth_pct": 40.2,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Lemonade's $737.9M TTM revenue base combined with a 53.2% gross margin and Rule of 40 score of 40.1 (driven by 40.1% YoY growth) positions it as a rar...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "ASAN",
@@ -5223,7 +5296,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 23,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -352668,
         "net_sell_6mo": -352668,
@@ -5316,7 +5389,9 @@
           "growth_pct": 9.2,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Asana presents an attractive acquisition target with $790.0M in TTM revenue and 89.0% gross margins, though the -15.7 Rule of 40 score indicates the c...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "VRNS",
@@ -5364,7 +5439,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 8,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -5451,7 +5526,9 @@
           "growth_pct": 25.5,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Varonis Systems presents an attractive acquisition target with $620.0M in TTM revenue and exceptional 78.8% gross margins, though the -10.3 Rule of 40...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "KVYO",
@@ -5499,7 +5576,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 24,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -6423225,
         "net_sell_6mo": -6423225,
@@ -5586,7 +5663,9 @@
           "growth_pct": 31.6,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Klaviyo's $1,230M TTM revenue with 74.7% gross margin and Rule of 40 score of 26.1 (31.6% growth + 26.1 margin expansion proxy) positions it as a matu...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "PEGA",
@@ -5634,7 +5713,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 25,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -3496542,
         "net_sell_6mo": -3496542,
@@ -5727,7 +5806,9 @@
           "growth_pct": 9.6,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Pegasystems' $1.75B revenue base with 75.9% gross margins and Rule of 40 score of 32.9 demonstrates a mature SaaS business generating substantial cash...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "DT",
@@ -5775,7 +5856,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 9,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -5862,7 +5943,9 @@
           "growth_pct": 18.8,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Dynatrace's $2.0B TTM revenue base with 81.6% gross margins and a Rule of 40 score of 31.9 (18.8% growth + 13.1% operating leverage proxy) demonstrate...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "WK",
@@ -5910,7 +5993,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 26,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -5997,7 +6080,9 @@
           "growth_pct": 19.7,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Workiva's $884.6M revenue base with 78.5% gross margins and 19.8% YoY growth delivers a Rule of 40 score of 14.9, positioning it as a mature, cash-gen...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "BOX",
@@ -6045,7 +6130,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 27,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -1284857,
         "net_sell_6mo": -1284857,
@@ -6132,7 +6217,9 @@
           "growth_pct": 27.0,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Box's $1.177B revenue base with 79.2% gross margins and 8.0% YoY growth presents an attractive SaaS platform, though the Rule of 40 score of 15.1 indi...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "APLM",
@@ -6180,7 +6267,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 28,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -6236,7 +6323,9 @@
           "revenue_M": 8.5,
           "growth_pct": null
         }
-      ]
+      ],
+      "thesis_preview": "Apollomics trades at 3.33x EV/Revenue on $10.0M TTM revenue with pristine 100% gross margins, though the absence of meaningful revenue growth and a Ru...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "MGNI",
@@ -6284,7 +6373,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 29,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -391648,
         "net_sell_6mo": -391648,
@@ -6377,7 +6466,9 @@
           "growth_pct": 30.3,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Magnite's $714.0M revenue base with 62.7% gross margins and a Rule of 40 score of 20.5 reflects a mature, cash-generative SaaS asset, though the 6.8% ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "APPF",
@@ -6425,7 +6516,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 30,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -6512,7 +6603,9 @@
           "growth_pct": 19.7,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "AppFolio's $950.8M revenue base with a 63.7% gross margin and Rule of 40 score of 35.8 reflects a mature SaaS operator delivering 19.7% YoY growth wit...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "CDNS",
@@ -6560,7 +6653,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 31,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -739119,
         "net_sell_6mo": -739119,
@@ -6653,7 +6746,9 @@
           "growth_pct": 14.1,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Cadence Design Systems commands a $5.3B revenue base growing 14.1% YoY with 86.4% gross margins and a Rule of 40 score of 45.3, positioning it as a pr...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "FTNT",
@@ -6701,7 +6796,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 10,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -6788,7 +6883,9 @@
           "growth_pct": 14.2,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Fortinet commands acquisition interest through $6.8B TTM revenue with 80.5% gross margins and a Rule of 40 score of 44.8, positioning it as a mature, ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "VEEV",
@@ -6836,7 +6933,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 5,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -6923,7 +7020,9 @@
           "growth_pct": 28.1,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Veeva Systems presents an attractive acquisition candidate with $3.2B TTM revenue growing 16.3% YoY, a 75.5% gross margin, and a Rule of 40 score of 4...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "WEAV",
@@ -6971,7 +7070,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 32,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -7046,7 +7145,9 @@
           "growth_pct": 17.0,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Weave Communications generates $240.0M in TTM revenue with a 72.1% gross margin and a Rule of 40 score of 4.2, positioning it as a profitable, mature ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "TENB",
@@ -7094,7 +7195,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 11,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -7181,7 +7282,9 @@
           "growth_pct": 11.0,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Tenable's $1.0B revenue scale with 78.1% gross margins and Rule of 40 score of 10.1 positions it as a mature, cash-generative cybersecurity asset, tho...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "IOT",
@@ -7229,7 +7332,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 33,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -7316,7 +7419,9 @@
           "growth_pct": 29.6,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Samsara's $1.6B revenue run rate with 76.7% gross margins and Rule of 40 score of 26.3 demonstrates a mature SaaS business with 29.6% YoY growth, offe...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "ADSK",
@@ -7364,7 +7469,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 34,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -7451,7 +7556,9 @@
           "growth_pct": 17.5,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Autodesk's $7.2B revenue base with 91% gross margins and a Rule of 40 score of 42.4 (driven by 17.5% YoY growth) positions it as a high-quality SaaS a...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "NTNX",
@@ -7499,7 +7606,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 35,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -7586,7 +7693,9 @@
           "growth_pct": 18.1,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Nutanix presents an attractive acquisition target at $2.54B TTM revenue with an exceptional 86.8% gross margin and Rule of 40 score of 24.9, demonstra...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "BILL",
@@ -7634,7 +7743,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 7,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -7721,7 +7830,9 @@
           "growth_pct": 13.4,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "BILL's $1.46B revenue base with 81.4% gross margins and fintech positioning creates an attractive acquisition target, particularly given the 13.4% YoY...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "CERT",
@@ -7769,7 +7880,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 6,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -7856,7 +7967,9 @@
           "growth_pct": 8.7,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Certara's $418.8M revenue base with 61.5% gross margins and 8.8% YoY growth presents an attractive acquisition candidate, though the Rule of 40 score ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "AMPL",
@@ -7904,7 +8017,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 36,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -142877,
         "net_sell_6mo": -142877,
@@ -7997,7 +8110,9 @@
           "growth_pct": 14.7,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Amplitude's $343.2M TTM revenue with 74.0% gross margins presents an attractive cash-generation profile, though the Rule of 40 score of -13.3 reflects...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "NVCR",
@@ -8045,7 +8160,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 7,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -8132,7 +8247,9 @@
           "growth_pct": 8.3,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "NovoCure's $655.4M revenue base with 74.5% gross margins presents an attractive asset, though the -15.2 Rule of 40 score\u2014driven by modest 8.3% YoY gro...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "PHR",
@@ -8180,7 +8297,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 8,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -8267,7 +8384,9 @@
           "growth_pct": 14.5,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Phreesia's $480M revenue base with 67.9% gross margins and 14.5% YoY growth presents an attractive healthcare-tech platform, though the Rule of 40 sco...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "PCOR",
@@ -8315,7 +8434,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 8,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -8402,7 +8521,9 @@
           "growth_pct": 14.8,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Procore's $1.32B revenue base with 79.5% gross margins and 14.8% YoY growth presents an attractive fintech acquisition target, though the Rule of 40 s...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "SOFI",
@@ -8450,7 +8571,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 9,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -8537,7 +8658,9 @@
           "growth_pct": 23.1,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "SoFi's $3.6B revenue base with 83.5% gross margins and a Rule of 40 score of 38.3 reflects a fintech platform generating substantial cash flow despite...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "NCNO",
@@ -8585,7 +8708,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 37,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -8672,7 +8795,9 @@
           "growth_pct": 10.0,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "nCino's $590.0M revenue base with 60.6% gross margins and 10.0% YoY growth presents an attractive platform for operational improvement, particularly g...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "ESTC",
@@ -8720,7 +8845,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 12,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -2542726,
         "net_sell_6mo": -2542726,
@@ -8813,7 +8938,9 @@
           "growth_pct": 17.0,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Elastic N.V. commands $1,480M in TTM revenue with a 74.4% gross margin and a Rule of 40 score of 13.3, positioning it as a profitable, albeit slower-g...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "GWRE",
@@ -8861,7 +8988,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 38,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -1672848,
         "net_sell_6mo": -1672848,
@@ -8954,7 +9081,9 @@
           "growth_pct": 10.2,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Guidewire's $1202.5M revenue base with 62.5% gross margins and a Rule of 40 score of 26.1 reflects a mature SaaS business generating $751.6M in gross ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "MANH",
@@ -9002,7 +9131,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 39,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -1016525,
         "net_sell_6mo": -1016525,
@@ -9089,7 +9218,9 @@
           "growth_pct": -2.5,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Manhattan Associates' $1.08B revenue base with a Rule of 40 score of 29.6 presents a moderately attractive acquisition target, though the 3.7% YoY gro...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "ZS",
@@ -9137,7 +9268,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 13,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -9224,7 +9355,9 @@
           "growth_pct": 23.3,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Zscaler presents an attractive acquisition target with $2,670M in TTM revenue, 76.9% gross margins, and 23.3% YoY growth, though its Rule of 40 score ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "NOW",
@@ -9272,7 +9405,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 40,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -9359,7 +9492,9 @@
           "growth_pct": 39.0,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "ServiceNow's $13.3B revenue base with 77.5% gross margins and Rule of 40 score of 34.6 (driven by 20.9% YoY growth) demonstrates operational maturity ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "PAYO",
@@ -9407,7 +9542,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 10,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -9494,7 +9629,9 @@
           "growth_pct": 7.7,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Payoneer Global Inc presents an attractive acquisition profile with $821.2M in TTM revenue, 84.9% gross margins, and meaningful operating leverage pot...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "OKTA",
@@ -9542,7 +9679,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 14,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -3866041,
         "net_sell_6mo": -3866041,
@@ -9635,7 +9772,9 @@
           "growth_pct": 11.8,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Okta's $2.92B revenue base with 77.4% gross margins and an 11.8% YoY growth rate presents a mature, profitable cybersecurity asset, though its Rule of...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "PATH",
@@ -9683,7 +9822,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 41,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -9770,7 +9909,9 @@
           "growth_pct": 12.7,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "UiPath's $1.6B revenue base, 83.2% gross margin, and 12.7% YoY growth create a compelling platform asset, though the Rule of 40 score of 16.2 signals ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "ALKT",
@@ -9888,7 +10029,8 @@
           "growth_pct": 35.7,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "BRZE",
@@ -9936,7 +10078,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 42,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -903017,
         "net_sell_6mo": -903017,
@@ -10029,7 +10171,9 @@
           "growth_pct": 24.4,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Braze's $740.0M TTM revenue base with 67.1% gross margins and 24.4% YoY growth represents a mature, profitable SaaS asset, though its Rule of 40 score...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "ALRM",
@@ -10077,7 +10221,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 43,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -3188903,
         "net_sell_6mo": -3188903,
@@ -10170,7 +10314,9 @@
           "growth_pct": 7.6,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Alarm.com's $1,011.2M revenue base with a 66.2% gross margin and Rule of 40 score of 20.8 positions it as a mature, cash-generative SaaS platform wher...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "CRM",
@@ -10218,7 +10364,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 44,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -10305,7 +10451,9 @@
           "growth_pct": 25.9,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Salesforce's $41.5B revenue base with 77.7% gross margins and a Rule of 40 score of 29.6 reflects a mature, profitable software business generating su...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "SNPS",
@@ -10353,7 +10501,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 9,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -10440,7 +10588,9 @@
           "growth_pct": 20.9,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Synopsys presents an attractive acquisition target with $7.1B in TTM revenue, a 77% gross margin that demonstrates pricing power, and a Rule of 40 sco...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "ZM",
@@ -10488,7 +10638,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 45,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": 391238,
         "net_sell_6mo": 391238,
@@ -10581,7 +10731,9 @@
           "growth_pct": 4.4,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Zoom's $4.87B revenue base with 77% gross margins and a Rule of 40 score of 27.4 represents a mature, cash-generative SaaS asset, though its 4.4% YoY ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "RELY",
@@ -10629,7 +10781,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 12,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -10716,7 +10868,9 @@
           "growth_pct": 29.4,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Remitly's $1.64B revenue base with 60.2% gross margins and a Rule of 40 score of 34.1 (driven by 29.4% YoY growth) positions it as a mature, profitabl...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "NET",
@@ -10764,7 +10918,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 15,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -41153639,
         "net_sell_6mo": -41153639,
@@ -10857,7 +11011,9 @@
           "growth_pct": 29.8,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Cloudflare's $2.17B TTM revenue with 74.5% gross margin and 29.8% YoY growth generates a Rule of 40 score of 20.3, positioning it as a mature, profita...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "DBX",
@@ -10905,7 +11061,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 47,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -1284857,
         "net_sell_6mo": -1284857,
@@ -10998,7 +11154,9 @@
           "growth_pct": -1.1,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Dropbox trades at 3.48x EV/Revenue with $2.5B in TTM revenue and 80.1% gross margins, but the Rule of 40 score of 26.2 reflects negative 1.1% YoY grow...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "RPD",
@@ -11134,7 +11292,8 @@
           "growth_pct": 28.0,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "AI",
@@ -11182,7 +11341,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 46,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -13529237,
         "net_sell_6mo": -13529237,
@@ -11275,7 +11434,9 @@
           "growth_pct": 25.3,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "C3.ai's $389.1M revenue base with 60.6% gross margins and 25.3% YoY growth presents an attractive scale for acquisition, though the severely negative ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "DDOG",
@@ -11323,7 +11484,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 17,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -54577950,
         "net_sell_6mo": -54577950,
@@ -11416,7 +11577,9 @@
           "growth_pct": 27.7,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Datadog's $3.43B TTM revenue with 80% gross margins and 27.7% YoY growth generates a Rule of 40 score of 26.4, positioning it as a mature, profitable ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "DOCN",
@@ -11464,7 +11627,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 48,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -564216069,
         "net_sell_6mo": -564216069,
@@ -11557,7 +11720,9 @@
           "growth_pct": 15.5,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "DigitalOcean's $900M revenue base with 59.9% gross margins and a Rule of 40 score of 32.9 (15.5% growth + 17.4% operating margin equivalent) positions...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "PCTY",
@@ -11605,7 +11770,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 49,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -11692,7 +11857,9 @@
           "growth_pct": 13.7,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Paylocity's $1,600M revenue base with 68.8% gross margins and a Rule of 40 score of 32.8 presents an attractive acquisition target, though the 13.7% Y...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "AFRM",
@@ -11740,7 +11907,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 13,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -11827,7 +11994,9 @@
           "growth_pct": 38.8,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Affirm's $3.2B revenue base with 67.5% gross margins and a Rule of 40 score of 49.3 demonstrates a fintech platform that has achieved scale while main...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "MDB",
@@ -11875,7 +12044,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 50,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -11868582,
         "net_sell_6mo": -11868582,
@@ -11968,7 +12137,9 @@
           "growth_pct": 22.8,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "MongoDB's $2.46B revenue base with 71.7% gross margins and 22.8% YoY growth positions it as an attractive database infrastructure asset, though its Ru...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "S",
@@ -12016,7 +12187,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 18,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -12103,7 +12274,9 @@
           "growth_pct": 21.9,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "SentinelOne's $1.0B revenue base with 74.1% gross margins and 21.9% YoY growth presents an established scale asset, though the -10.2 Rule of 40 score ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "STEP",
@@ -12151,7 +12324,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 14,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -12238,7 +12411,9 @@
           "growth_pct": 69.7,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "StepStone Group's $1.17B revenue base combined with 49.3% gross margins and a Rule of 40 score of 42.4 demonstrates a rare combination of scale and gr...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "HUBS",
@@ -12286,7 +12461,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 51,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -1413893,
         "net_sell_6mo": -1413893,
@@ -12379,7 +12554,9 @@
           "growth_pct": 39.3,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "HubSpot's $3.13B revenue base with an 83.8% gross margin and 19.2% YoY growth provides a profitable, scaled SaaS platform, though the Rule of 40 score...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "VRNT",
@@ -12515,7 +12692,8 @@
           "growth_pct": -2.3,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "BMBL",
@@ -12657,7 +12835,8 @@
           "growth_pct": -9.9,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "PANW",
@@ -12705,7 +12884,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 20,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -12792,7 +12971,9 @@
           "growth_pct": 29.0,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Palo Alto Networks presents an attractive acquisition target with $9.22B in TTM revenue, a 73.4% gross margin, and a Rule of 40 score of 28.4, though ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "HCAT",
@@ -12840,7 +13021,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 53,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -72230,
         "net_sell_6mo": -72230,
@@ -12933,7 +13114,9 @@
           "growth_pct": 1.5,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Health Catalyst's $310.0M revenue base and 1.5% YoY growth are undercut by a severely negative Rule of 40 score of -50.2, indicating the company is ne...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "DOCU",
@@ -12981,7 +13164,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 54,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -3044693,
         "net_sell_6mo": -3044693,
@@ -13074,7 +13257,9 @@
           "growth_pct": 8.2,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "DocuSign's $3.2B revenue base with 79.4% gross margins and 8.2% YoY growth presents an attractive entry point for strategic buyers, though the Rule of...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "RNG",
@@ -13122,7 +13307,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 56,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -13209,7 +13394,9 @@
           "growth_pct": 4.8,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "RingCentral's $2.5B revenue base with a 71.2% gross margin and 4.8% YoY growth presents an attractive platform for consolidation, though its Rule of 4...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "CSGP",
@@ -13257,7 +13444,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 55,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -13344,7 +13531,9 @@
           "growth_pct": 13.4,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "CoStar's $3.25B revenue base with 78.9% gross margins and 18.7% YoY growth delivers a Rule of 40 score of 16.5, positioning it as a mature, cash-gener...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "RXST",
@@ -13392,7 +13581,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 10,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -13479,7 +13668,9 @@
           "growth_pct": -3.9,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "RxSight's $130.0M revenue base and 76.6% gross margin represent an attractive foundation, though the -3.9% revenue decline and deeply negative Rule of...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "CALX",
@@ -13527,7 +13718,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 57,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -13614,7 +13805,9 @@
           "growth_pct": 19.5,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Calix's $1.0B revenue base growing at 20.3% YoY with 56.8% gross margins and a Rule of 40 score of 22.4 positions it as a mature, profitable SaaS oper...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "GLBE",
@@ -13662,7 +13855,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 58,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -13723,7 +13916,9 @@
           "revenue_M": 962.2,
           "growth_pct": 27.8
         }
-      ]
+      ],
+      "thesis_preview": "Global-E Online's $962.2M revenue base with a 45.3% gross margin and Rule of 40 score of 35.3 (driven by 27.8% YoY growth) positions it as a scaled Sa...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "GSHD",
@@ -13771,7 +13966,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 15,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -13858,7 +14053,9 @@
           "growth_pct": 16.2,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Goosehead Insurance presents an attractive acquisition target with $365.3M TTM revenue growing at 16.1% YoY, a 48.0% gross margin, and a Rule of 40 sc...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "RSKD",
@@ -13968,7 +14165,8 @@
           "revenue_M": 344.6,
           "growth_pct": 5.2
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "COUR",
@@ -14110,7 +14308,8 @@
           "growth_pct": 9.0,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "PUBM",
@@ -14246,7 +14445,8 @@
           "growth_pct": -2.9,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "AXON",
@@ -14382,7 +14582,8 @@
           "growth_pct": 33.5,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "U",
@@ -14430,7 +14631,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 62,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -14517,7 +14718,9 @@
           "growth_pct": 2.0,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Unity Software presents an acquisition opportunity with $1,849.6M in TTM revenue and 74.2% gross margin, though its Rule of 40 score of -23.9 signals ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "FIVN",
@@ -14565,7 +14768,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 63,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -1004022,
         "net_sell_6mo": -1004022,
@@ -14658,7 +14861,9 @@
           "growth_pct": 13.2,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Five9's $1,150M revenue base with 55.1% gross margins and a Rule of 40 score of 12.8 reflects a mature SaaS business trading at 1.51x EV/Revenue, pres...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "CRWD",
@@ -14706,7 +14911,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 21,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": -27433519,
         "net_sell_6mo": -27433519,
@@ -14799,7 +15004,9 @@
           "growth_pct": 21.7,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "CrowdStrike's $4.8B revenue base with 74.7% gross margins and 21.7% YoY growth demonstrates the scale and profitability required for a transformationa...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "AMSF",
@@ -14847,7 +15054,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 11,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -14934,7 +15141,9 @@
           "growth_pct": 2.7,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "AMERISAFE's $320.0M revenue base with 28.7% gross margins presents an attractive acquisition opportunity, though the modest 2.6% YoY growth and Rule o...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "WEX",
@@ -14982,7 +15191,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 17,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -15069,7 +15278,9 @@
           "growth_pct": 1.2,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "WEX Inc.'s $2.66B revenue base with 58.6% gross margins and a Rule of 40 score of 26.2 positions it as an operationally mature fintech platform with m...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "TASK",
@@ -15117,7 +15328,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 64,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -15204,7 +15415,9 @@
           "growth_pct": 19.0,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "TaskUs presents an attractive acquisition target with $1,180M in TTM revenue, 37.8% gross margins, and a Rule of 40 score of 30.9, trading at only 0.8...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "BLKB",
@@ -15340,7 +15553,8 @@
           "growth_pct": 3.6,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "APPS",
@@ -15482,7 +15696,8 @@
           "growth_pct": 38.6,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "SHOP",
@@ -15530,7 +15745,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 67,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -15605,7 +15820,9 @@
           "growth_pct": 30.1,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Shopify's $11.56B revenue base growing 30.1% YoY with a Rule of 40 score of 42.8 and 48.1% gross margins positions it as a mature, profitable SaaS pla...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "NU",
@@ -15653,7 +15870,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 18,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -15714,7 +15931,9 @@
           "revenue_M": 10626.9,
           "growth_pct": 28.5
         }
-      ]
+      ],
+      "thesis_preview": "Nu Holdings' $10.6B TTM revenue base with 28.5% YoY growth and a Rule of 40 score of 28.5 creates an attractive acquisition candidate, though the valu...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "OMCL",
@@ -15762,7 +15981,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 12,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -15849,7 +16068,9 @@
           "growth_pct": 10.5,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Omnicell's $1.18B revenue base with 42.5% gross margins and 6.5% YoY growth represents a mature healthcare-tech platform where the Rule of 40 score of...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "BAND",
@@ -15979,7 +16200,8 @@
           "growth_pct": 25.3,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "LSPD",
@@ -16027,7 +16249,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 19,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -16088,7 +16310,9 @@
           "revenue_M": 1227.0,
           "growth_pct": 14.0
         }
-      ]
+      ],
+      "thesis_preview": "Lightspeed Commerce presents an attractive acquisition target at $1227.0M revenue with a 42.9% gross margin and 13.9% YoY growth, though the Rule of 4...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "WDAY",
@@ -16136,7 +16360,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 69,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -16223,7 +16447,9 @@
           "growth_pct": 36.1,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Workday's $9.55B revenue base with 13.1% YoY growth and Rule of 40 score of 20.6 reflects a mature SaaS enterprise with limited near-term expansion po...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "SNOW",
@@ -16271,7 +16497,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 70,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -16358,7 +16584,9 @@
           "growth_pct": 29.2,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Snowflake's $4.68B TTM revenue with 67.2% gross margins presents an attractive platform for consolidation, though the negative Rule of 40 score of -1....",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "TDOC",
@@ -16494,7 +16722,8 @@
           "growth_pct": 18.4,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "SSNC",
@@ -16542,7 +16771,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 71,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -16617,7 +16846,9 @@
           "growth_pct": 25.8,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "SS&C Technologies presents an attractive acquisition target with $6.27B in TTM revenue, a 48.2% gross margin, and a Rule of 40 score of 29.5, position...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "FOUR",
@@ -16665,7 +16896,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 72,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -16752,7 +16983,9 @@
           "growth_pct": 25.5,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Shift4's $4.18B revenue scale with 25.5% YoY growth and a Rule of 40 score of 33.9 positions it as a mature, efficiently-growing payments platform, th...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "TWLO",
@@ -16800,7 +17033,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 73,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -16875,7 +17108,9 @@
           "growth_pct": 43.9,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Twilio's $5.07B revenue base with 48.9% gross margins and 13.7% YoY growth generates a Rule of 40 score of 16.8, indicating mature profitability but s...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "TOST",
@@ -16923,7 +17158,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 74,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -17010,7 +17245,9 @@
           "growth_pct": 24.1,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Toast's $6.15B revenue base, 25.9% gross margin, and Rule of 40 score of 28.8 reflect a scaled SaaS business delivering 24.1% YoY growth with margin e...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "EPAM",
@@ -17058,7 +17295,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 75,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "net_sell_12mo": 7500,
         "net_sell_6mo": 7500,
@@ -17151,7 +17388,9 @@
           "growth_pct": 25.0,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "EPAM's $5.5B revenue base with 28.8% gross margins and a Rule of 40 score of 25.0 reflects a mature software services business generating substantial ...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "RXRX",
@@ -17199,7 +17438,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 14,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -17286,7 +17525,9 @@
           "growth_pct": 26.9,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "Recursion trades at 16.71x EV/Revenue on $74.3M TTM revenue with 27% YoY growth, but the 4.5% gross margin and deeply negative Rule of 40 score of -84...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "EVH",
@@ -17416,7 +17657,8 @@
           "growth_pct": 44.0,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     },
     {
       "ticker": "TNET",
@@ -17464,7 +17706,7 @@
       "last_updated": "2026-05-29T15:06:46Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 76,
-      "has_thesis": false,
+      "has_thesis": true,
       "insider_pattern": {
         "pattern_score": null,
         "has_f4_signal": false
@@ -17551,7 +17793,9 @@
           "growth_pct": -0.9,
           "source": "edgar_xbrl"
         }
-      ]
+      ],
+      "thesis_preview": "TriNet's $5.0B revenue base with 17.7% gross margins and a Rule of 40 score of 4.6 reflects a mature SaaS business trading at a depressed 0.51x EV/Rev...",
+      "thesis_generated_at": "2026-05-29T15:07:28.351267Z"
     }
   ]
 }
