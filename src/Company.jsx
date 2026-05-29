@@ -202,6 +202,7 @@ function norm(raw) {
     has_thesis: raw.has_thesis ?? false,
     thesis_preview: raw.thesis_preview ?? null,
     insider_pattern: raw.insider_pattern ?? null,
+    likely_acquirers: raw.likely_acquirers ?? [],
   };
 }
 
@@ -760,6 +761,51 @@ export default function Company() {
                   </div>
                 );
               })}
+            </div>
+          </div>
+        )}
+
+        {/* Likely Acquirers */}
+        {(company.likely_acquirers?.length > 0) && (
+          <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:14,
+            padding:"24px 28px", marginBottom:24 }}>
+            <div style={{ fontFamily:mono, fontSize:10, color:C.blue, letterSpacing:1.5,
+              textTransform:"uppercase", marginBottom:6 }}>Likely Acquirers</div>
+            <div style={{ fontFamily:disp, fontSize:12, color:C.muted, marginBottom:18 }}>
+              Fingerprint matching based on {company.likely_acquirers[0]?.deal_count || "—"} historical acquisitions by top match
+            </div>
+            <div style={{ display:"flex", flexDirection:"column", gap:12 }}>
+              {company.likely_acquirers.slice(0, 3).map((acq, i) => {
+                const pct = acq.match_score ?? 0;
+                return (
+                  <div key={i} style={{ background:C.panelHi, border:`1px solid ${C.line}`,
+                    borderRadius:10, padding:"16px 20px" }}>
+                    <div style={{ display:"flex", justifyContent:"space-between", alignItems:"baseline", marginBottom:10 }}>
+                      <div>
+                        <span style={{ fontFamily:disp, fontSize:14, fontWeight:600, color:C.text }}>{acq.name}</span>
+                        <span style={{ fontFamily:mono, fontSize:11, color:C.muted, marginLeft:10 }}>
+                          {acq.deal_count} historical acquisitions
+                        </span>
+                      </div>
+                      <span style={{ fontFamily:mono, fontSize:13, fontWeight:600,
+                        color: pct >= 70 ? C.green : pct >= 50 ? C.amber : C.sub }}>
+                        {pct}% match
+                      </span>
+                    </div>
+                    <div style={{ height:4, background:"rgba(255,255,255,0.07)", borderRadius:2, marginBottom:10 }}>
+                      <div style={{ height:"100%", width:`${pct}%`,
+                        background: pct >= 70 ? C.green : pct >= 50 ? C.amber : C.sub,
+                        borderRadius:2, transition:"width 0.7s ease" }} />
+                    </div>
+                    <div style={{ fontFamily:disp, fontSize:12, color:C.muted }}>{acq.rationale}</div>
+                  </div>
+                );
+              })}
+            </div>
+            <div style={{ fontFamily:mono, fontSize:9.5, color:C.muted, marginTop:14 }}>
+              Fingerprint matching uses cosine distance on median revenue, gross margin, Rule of 40,
+              and growth rate from {company.likely_acquirers[0]?.deal_count || "—"} historical deals.
+              Not predictive of specific transactions.
             </div>
           </div>
         )}
