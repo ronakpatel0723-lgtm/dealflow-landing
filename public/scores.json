@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-05-29T14:47:24Z",
+    "last_updated": "2026-05-29T14:58:38Z",
     "model_version": "ensemble-v4-203pos-10feat",
     "score_methodology": "Hybrid: 36/65 companies scored with logistic regression (Form 4 + financials); remainder scored with rule-based attractiveness model only",
     "last_model_trained": "2026-05-29T14:39:44Z",
@@ -82,7 +82,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 1,
       "has_thesis": true,
@@ -198,7 +198,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 1,
       "has_thesis": true,
@@ -340,7 +340,7 @@
           "explanation": "Data unavailable"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 1,
       "has_thesis": true,
@@ -450,7 +450,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 1,
       "has_thesis": true,
@@ -586,7 +586,7 @@
           "explanation": "-1.1% margin \u2014 below sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 2,
       "has_thesis": true,
@@ -728,7 +728,7 @@
           "explanation": "14.0% margin \u2014 above sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 2,
       "has_thesis": true,
@@ -838,7 +838,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 2,
       "has_thesis": true,
@@ -974,7 +974,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 3,
       "has_thesis": true,
@@ -1084,7 +1084,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 3,
       "has_thesis": true,
@@ -1194,7 +1194,7 @@
           "explanation": "13.1% margin \u2014 above sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 4,
       "has_thesis": true,
@@ -1336,7 +1336,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 5,
       "has_thesis": true,
@@ -1446,7 +1446,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 6,
       "has_thesis": true,
@@ -1556,7 +1556,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 3,
       "has_thesis": true,
@@ -1672,7 +1672,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 2,
       "has_thesis": true,
@@ -1808,7 +1808,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 7,
       "has_thesis": true,
@@ -1918,7 +1918,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 8,
       "has_thesis": true,
@@ -2054,7 +2054,7 @@
           "explanation": "80.7% margin \u2014 above sector median 72.1%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 9,
       "has_thesis": true,
@@ -2164,7 +2164,7 @@
           "explanation": "7.2% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 10,
       "has_thesis": true,
@@ -2294,7 +2294,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 4,
       "has_thesis": true,
@@ -2410,7 +2410,7 @@
           "explanation": "80.5% margin \u2014 above sector median 72.1%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 11,
       "has_thesis": true,
@@ -2546,7 +2546,7 @@
           "explanation": "0.6% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 3,
       "has_thesis": true,
@@ -2682,7 +2682,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 12,
       "has_thesis": true,
@@ -2818,7 +2818,7 @@
           "explanation": "26.8% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 13,
       "has_thesis": true,
@@ -2928,7 +2928,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 4,
       "has_thesis": true,
@@ -3038,7 +3038,7 @@
           "explanation": "17.8% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 14,
       "has_thesis": true,
@@ -3168,7 +3168,7 @@
           "explanation": "24.1% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 4,
       "has_thesis": true,
@@ -3310,7 +3310,7 @@
           "explanation": "5.4% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 15,
       "has_thesis": true,
@@ -3420,7 +3420,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 5,
       "has_thesis": true,
@@ -3556,7 +3556,7 @@
           "explanation": "15.8% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 16,
       "has_thesis": true,
@@ -3692,7 +3692,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 5,
       "has_thesis": true,
@@ -3802,7 +3802,7 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 17,
       "has_thesis": true,
@@ -3938,7 +3938,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 6,
       "has_thesis": true,
@@ -4054,7 +4054,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 19,
       "has_thesis": true,
@@ -4164,7 +4164,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 18,
       "has_thesis": true,
@@ -4300,7 +4300,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 20,
       "has_thesis": true,
@@ -4442,7 +4442,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 21,
       "has_thesis": true,
@@ -4578,7 +4578,7 @@
           "explanation": "79.4% margin \u2014 above sector median 72.1%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 7,
       "has_thesis": true,
@@ -4658,7 +4658,7 @@
       "total_score": 64.2,
       "tier": "Medium",
       "revenue_M": 750.0,
-      "gross_margin": 0.0,
+      "gross_margin": 82.2,
       "rule_of_40": 24.5,
       "ev_revenue": 3.61,
       "revenue_growth_yoy": 13.9,
@@ -4694,7 +4694,7 @@
           "explanation": "13.9% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 22,
       "has_thesis": true,
@@ -4830,7 +4830,7 @@
           "explanation": "Data unavailable"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 6,
       "has_thesis": true,
@@ -4966,7 +4966,7 @@
           "explanation": "9.2% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 23,
       "has_thesis": true,
@@ -5108,7 +5108,7 @@
           "explanation": "78.8% margin \u2014 above sector median 72.1%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 8,
       "has_thesis": true,
@@ -5244,7 +5244,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 24,
       "has_thesis": true,
@@ -5380,7 +5380,7 @@
           "explanation": "16.3% margin \u2014 above sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 25,
       "has_thesis": true,
@@ -5496,7 +5496,7 @@
           "explanation": "13.1% margin \u2014 above sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 9,
       "has_thesis": true,
@@ -5632,7 +5632,7 @@
           "explanation": "19.8% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 26,
       "has_thesis": true,
@@ -5768,7 +5768,7 @@
           "explanation": "8.0% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 27,
       "has_thesis": true,
@@ -5904,7 +5904,7 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 28,
       "has_thesis": true,
@@ -6009,7 +6009,7 @@
           "explanation": "13.7% margin \u2014 above sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 29,
       "has_thesis": true,
@@ -6125,7 +6125,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 30,
       "has_thesis": true,
@@ -6261,7 +6261,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 31,
       "has_thesis": true,
@@ -6377,7 +6377,7 @@
           "explanation": "14.2% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 10,
       "has_thesis": true,
@@ -6513,7 +6513,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 5,
       "has_thesis": true,
@@ -6649,7 +6649,7 @@
           "explanation": "17.0% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 32,
       "has_thesis": true,
@@ -6773,7 +6773,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 11,
       "has_thesis": true,
@@ -6909,7 +6909,7 @@
           "explanation": "29.6% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 33,
       "has_thesis": true,
@@ -7045,7 +7045,7 @@
           "explanation": "17.5% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 34,
       "has_thesis": true,
@@ -7155,7 +7155,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 35,
       "has_thesis": true,
@@ -7291,7 +7291,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 7,
       "has_thesis": true,
@@ -7427,7 +7427,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 6,
       "has_thesis": true,
@@ -7563,7 +7563,7 @@
           "explanation": "74.0% margin \u2014 above sector median 72.1%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 36,
       "has_thesis": true,
@@ -7679,7 +7679,7 @@
           "explanation": "8.3% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 7,
       "has_thesis": true,
@@ -7789,7 +7789,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 8,
       "has_thesis": true,
@@ -7925,7 +7925,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 8,
       "has_thesis": true,
@@ -8061,7 +8061,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 9,
       "has_thesis": true,
@@ -8171,7 +8171,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 37,
       "has_thesis": true,
@@ -8307,7 +8307,7 @@
           "explanation": "Rule of 40 = 13.3 \u2014 below sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 12,
       "has_thesis": true,
@@ -8449,7 +8449,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 38,
       "has_thesis": true,
@@ -8529,7 +8529,7 @@
       "total_score": 58.5,
       "tier": "Low",
       "revenue_M": 1080.0,
-      "gross_margin": 0.0,
+      "gross_margin": 56.0,
       "rule_of_40": 29.6,
       "ev_revenue": 7.03,
       "revenue_growth_yoy": 3.7,
@@ -8565,7 +8565,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 39,
       "has_thesis": true,
@@ -8701,7 +8701,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 13,
       "has_thesis": true,
@@ -8837,7 +8837,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 40,
       "has_thesis": true,
@@ -8973,7 +8973,7 @@
           "explanation": "13.9% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 10,
       "has_thesis": true,
@@ -9109,7 +9109,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 14,
       "has_thesis": true,
@@ -9251,7 +9251,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 41,
       "has_thesis": true,
@@ -9387,7 +9387,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 11,
       "has_thesis": true,
@@ -9505,7 +9505,7 @@
           "explanation": "24.4% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 42,
       "has_thesis": true,
@@ -9647,7 +9647,7 @@
           "explanation": "13.2% margin \u2014 above sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 43,
       "has_thesis": true,
@@ -9789,7 +9789,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 44,
       "has_thesis": true,
@@ -9925,7 +9925,7 @@
           "explanation": "15.1% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 9,
       "has_thesis": true,
@@ -10035,7 +10035,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 45,
       "has_thesis": true,
@@ -10177,7 +10177,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 12,
       "has_thesis": true,
@@ -10313,7 +10313,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 15,
       "has_thesis": true,
@@ -10455,7 +10455,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 47,
       "has_thesis": true,
@@ -10597,7 +10597,7 @@
           "explanation": "70.3% margin \u2014 below sector median 72.1%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 16,
       "has_thesis": true,
@@ -10733,7 +10733,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 46,
       "has_thesis": true,
@@ -10875,7 +10875,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 17,
       "has_thesis": true,
@@ -11017,7 +11017,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 48,
       "has_thesis": true,
@@ -11159,7 +11159,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 49,
       "has_thesis": true,
@@ -11295,7 +11295,7 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 13,
       "has_thesis": true,
@@ -11405,7 +11405,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 50,
       "has_thesis": true,
@@ -11547,7 +11547,7 @@
           "explanation": "74.1% margin \u2014 above sector median 72.1%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 18,
       "has_thesis": true,
@@ -11683,7 +11683,7 @@
           "explanation": "-22.7% margin \u2014 below sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 14,
       "has_thesis": true,
@@ -11819,7 +11819,7 @@
           "explanation": "19.2% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 51,
       "has_thesis": true,
@@ -11961,7 +11961,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 19,
       "has_thesis": true,
@@ -12097,7 +12097,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 52,
       "has_thesis": true,
@@ -12239,7 +12239,7 @@
           "explanation": "14.9% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 20,
       "has_thesis": true,
@@ -12339,7 +12339,7 @@
       "total_score": 52.0,
       "tier": "Low",
       "revenue_M": 310.0,
-      "gross_margin": 0.0,
+      "gross_margin": 50.4,
       "rule_of_40": -50.2,
       "ev_revenue": 0.48,
       "revenue_growth_yoy": 1.5,
@@ -12375,7 +12375,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 53,
       "has_thesis": true,
@@ -12517,7 +12517,7 @@
           "explanation": "8.2% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 54,
       "has_thesis": true,
@@ -12633,7 +12633,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 56,
       "has_thesis": true,
@@ -12769,7 +12769,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 55,
       "has_thesis": true,
@@ -12905,7 +12905,7 @@
           "explanation": "76.6% margin \u2014 above sector median 72.1%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 10,
       "has_thesis": true,
@@ -13041,7 +13041,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 57,
       "has_thesis": true,
@@ -13177,7 +13177,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 58,
       "has_thesis": true,
@@ -13287,7 +13287,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 15,
       "has_thesis": true,
@@ -13423,7 +13423,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 16,
       "has_thesis": true,
@@ -13533,7 +13533,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 59,
       "has_thesis": true,
@@ -13649,7 +13649,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 60,
       "has_thesis": true,
@@ -13785,7 +13785,7 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 61,
       "has_thesis": true,
@@ -13921,7 +13921,7 @@
           "explanation": "Rule of 40 = -23.9 \u2014 below sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 62,
       "has_thesis": true,
@@ -14057,7 +14057,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 63,
       "has_thesis": true,
@@ -14199,7 +14199,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 21,
       "has_thesis": true,
@@ -14341,7 +14341,7 @@
           "explanation": "2.6% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 11,
       "has_thesis": true,
@@ -14477,7 +14477,7 @@
           "explanation": "24.9% margin \u2014 above sector median 3.2%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 17,
       "has_thesis": true,
@@ -14613,7 +14613,7 @@
           "explanation": "19.0% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 64,
       "has_thesis": true,
@@ -14749,7 +14749,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 65,
       "has_thesis": true,
@@ -14885,7 +14885,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 66,
       "has_thesis": true,
@@ -15027,7 +15027,7 @@
           "explanation": "30.1% growth \u2014 above sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 67,
       "has_thesis": true,
@@ -15151,7 +15151,7 @@
           "explanation": "Rule of 40 = 28.5 \u2014 above sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 18,
       "has_thesis": true,
@@ -15261,7 +15261,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 12,
       "has_thesis": true,
@@ -15397,7 +15397,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 68,
       "has_thesis": true,
@@ -15527,7 +15527,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 19,
       "has_thesis": true,
@@ -15601,7 +15601,7 @@
       "total_score": 37.3,
       "tier": "Low",
       "revenue_M": 9550.0,
-      "gross_margin": 0.0,
+      "gross_margin": 75.8,
       "rule_of_40": 20.6,
       "ev_revenue": 3.19,
       "revenue_growth_yoy": 13.1,
@@ -15637,7 +15637,7 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 69,
       "has_thesis": true,
@@ -15773,7 +15773,7 @@
           "explanation": "Rule of 40 = -1.5 \u2014 below sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 70,
       "has_thesis": true,
@@ -15909,7 +15909,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 13,
       "has_thesis": true,
@@ -16019,7 +16019,7 @@
           "explanation": "6.6% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 71,
       "has_thesis": true,
@@ -16129,7 +16129,7 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 72,
       "has_thesis": true,
@@ -16265,7 +16265,7 @@
           "explanation": "Binary indicator \u2014 above average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 73,
       "has_thesis": true,
@@ -16389,7 +16389,7 @@
           "explanation": "Binary indicator \u2014 below average"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 74,
       "has_thesis": true,
@@ -16525,7 +16525,7 @@
           "explanation": "15.4% growth \u2014 below sector median 15.5%"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 75,
       "has_thesis": true,
@@ -16641,7 +16641,7 @@
           "explanation": "$0.07B revenue \u2014 below sector median $1.03B"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 14,
       "has_thesis": true,
@@ -16751,7 +16751,7 @@
           "explanation": "$1.88B revenue \u2014 above sector median $1.03B"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 15,
       "has_thesis": true,
@@ -16881,7 +16881,7 @@
           "explanation": "Rule of 40 = 4.6 \u2014 below sector median 18.5"
         }
       ],
-      "last_updated": "2026-05-29T14:47:24Z",
+      "last_updated": "2026-05-29T14:58:38Z",
       "model_version": "ensemble-v4-203pos-10feat",
       "sector_rank": 76,
       "has_thesis": true,
