@@ -51,6 +51,7 @@ function normCompany(raw, i) {
     rank: i + 1,
     name: raw.company || raw.name || raw.ticker,
     score: Math.round(raw.total_score ?? raw.score ?? 0),
+    isScoredByML: (raw.ml_score ?? 0) > 0,
     revenue: raw.revenue_M ?? raw.revenue ?? 0,
     gm: raw.gross_margin ?? raw.gm ?? 0,
     r40: raw.rule_of_40 ?? raw.r40 ?? 0,
@@ -372,6 +373,13 @@ export default function Screener() {
       return matchQ && matchT && matchS && matchI;
     });
     return [...base].sort((a, b) => {
+      // Unscored companies (foreign/recent IPO) always sort to the bottom
+      if (sort.col === "score") {
+        const scoreVal = c => c.isScoredByML ? c.score : -1;
+        const diff = scoreVal(b) - scoreVal(a);
+        if (diff !== 0) return sort.dir === "desc" ? diff : -diff;
+        return 0;
+      }
       const va = a[sort.col] ?? 0, vb = b[sort.col] ?? 0;
       return sort.dir === "desc" ? vb - va : va - vb;
     });
@@ -649,10 +657,14 @@ export default function Screener() {
                     <span style={{ fontFamily:mono, fontSize:11, color:C.sub }}>{c.ticker}</span>
                     <div style={{ fontFamily:mono, fontSize:10, color:C.muted, marginTop:2 }}>{c.sector}</div>
                   </div>
-                  <span style={{ fontFamily:mono, fontSize:16, fontWeight:700, color:col }}>{c.score}</span>
+                  {c.isScoredByML ? (
+                    <span style={{ fontFamily:mono, fontSize:16, fontWeight:700, color:col }}>{c.score}</span>
+                  ) : (
+                    <span style={{ fontFamily:mono, fontSize:13, color:C.muted }} title="ML score unavailable (foreign-listed or recent IPO)">—</span>
+                  )}
                   <div className="df-hide-mobile" style={{ paddingRight:16 }}>
                     <div style={{ height:3, background:"rgba(255,255,255,0.07)", borderRadius:2 }}>
-                      <div style={{ height:"100%", width:`${c.score}%`, background:col, borderRadius:2 }}/>
+                      {c.isScoredByML && <div style={{ height:"100%", width:`${c.score}%`, background:col, borderRadius:2 }}/>}
                     </div>
                   </div>
                   <span style={{ fontFamily:disp, fontSize:10, fontWeight:600, color:tc,

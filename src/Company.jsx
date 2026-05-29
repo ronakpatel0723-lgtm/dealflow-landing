@@ -190,6 +190,7 @@ function norm(raw) {
     ...raw,
     name: raw.company || raw.name || raw.ticker,
     score: Math.round(raw.total_score ?? raw.score ?? 0),
+    isScoredByML: (raw.ml_score ?? 0) > 0,
     revenue: raw.revenue_M ?? raw.revenue ?? 0,
     gm: raw.gross_margin ?? raw.gm ?? 0,
     r40: raw.rule_of_40 ?? raw.r40 ?? 0,
@@ -480,8 +481,19 @@ export default function Company() {
             </div>
           </div>
           <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:8 }}>
-            <ScoreRing score={company.score} size={110} />
-            {scoreHistory.length >= 2 && (() => {
+            {company.isScoredByML ? (
+              <ScoreRing score={company.score} size={110} />
+            ) : (
+              <div style={{ textAlign:"center", padding:"16px 8px", width:110 }}>
+                <div style={{ fontFamily:mono, fontSize:12, color:C.muted, lineHeight:1.4 }}>
+                  ML Score<br/>Unavailable
+                </div>
+                <div style={{ fontFamily:mono, fontSize:10, color:C.muted, marginTop:6, lineHeight:1.4 }}>
+                  Foreign-listed or recent IPO — rule-based scoring only
+                </div>
+              </div>
+            )}
+            {company.isScoredByML && scoreHistory.length >= 2 && (() => {
               const scores = scoreHistory.map(h => h.score);
               const minS = Math.min(...scores), maxS = Math.max(...scores);
               const range = maxS - minS || 1;
