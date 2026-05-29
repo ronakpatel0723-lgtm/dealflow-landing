@@ -44,6 +44,8 @@ const SECTOR_LABELS = {
 };
 
 function normCompany(raw, i) {
+  const ip = raw.insider_pattern ?? null;
+  const insiderScore = ip?.pattern_score ?? null;
   return {
     ...raw,
     rank: i + 1,
@@ -60,6 +62,7 @@ function normCompany(raw, i) {
     sectorRank: raw.sector_rank ?? null,
     analystUpside: raw.analyst_target_upside ?? null,
     shap_factors: raw.shap_factors ?? null,
+    insiderScore,
   };
 }
 
@@ -294,6 +297,7 @@ export default function Screener() {
   const [query,    setQuery]    = useState("");
   const [tier,     setTier]     = useState("All");
   const [sector,   setSector]   = useState("All");
+  const [insiderFilter, setInsiderFilter] = useState("All");
   const [selected, setSelected] = useState(null);
   const [watchlist, setWatchlist]   = useState([]);
   const [viewMode,  setViewMode]    = useState("all");
@@ -335,6 +339,7 @@ export default function Screener() {
   const sectorKeys = Array.from(new Set(companies.map(c => c.sector))).sort();
   const sectors = ["All", ...sectorKeys];
   const tiers   = ["All", "High", "Medium", "Low"];
+  const insiderFilters = ["All", "Heavy Selling (>65)", "Moderate (50-65)", "Bullish (<50)"];
 
   const SORT_KEYS = { "#": "rank", "Score": "score", "Revenue": "revenue", "GM%": "gm", "R40": "r40" };
 
@@ -351,13 +356,18 @@ export default function Screener() {
       const matchQ = !q || c.name.toLowerCase().includes(q) || c.ticker.toLowerCase().includes(q);
       const matchT = tier   === "All" || c.tier   === tier;
       const matchS = sector === "All" || c.sector === sector;
-      return matchQ && matchT && matchS;
+      const ip = c.insiderScore;
+      const matchI = insiderFilter === "All"
+        || (insiderFilter === "Heavy Selling (>65)" && ip != null && ip > 65)
+        || (insiderFilter === "Moderate (50-65)"    && ip != null && ip >= 50 && ip <= 65)
+        || (insiderFilter === "Bullish (<50)"       && ip != null && ip < 50);
+      return matchQ && matchT && matchS && matchI;
     });
     return [...base].sort((a, b) => {
       const va = a[sort.col] ?? 0, vb = b[sort.col] ?? 0;
       return sort.dir === "desc" ? vb - va : va - vb;
     });
-  }, [query, tier, sector, companies, viewMode, watchlist, sort]);
+  }, [query, tier, sector, insiderFilter, companies, viewMode, watchlist, sort]);
 
   const downloadCSV = () => {
     const headers = ["Rank","Ticker","Company","Score","Tier","Revenue_M","GrossMargin","RuleOf40","RevenueGrowth","Sector"];
@@ -391,7 +401,7 @@ export default function Screener() {
         ::-webkit-scrollbar-thumb{background:${C.line};border-radius:2px}
         ::selection{background:rgba(91,141,239,0.3)}
         a{color:inherit;text-decoration:none}
-        .df-table-grid{display:grid;grid-template-columns:44px 1.8fr 60px 110px 70px 80px 86px 72px 72px 56px 32px;gap:0}
+        .df-table-grid{display:grid;grid-template-columns:44px 1.8fr 60px 110px 70px 80px 86px 72px 72px 52px 56px 32px;gap:0}
         @media(max-width:640px){
           .df-table-grid{grid-template-columns:44px 1fr 60px 70px 32px}
           .df-hide-mobile{display:none!important}
@@ -543,6 +553,18 @@ export default function Screener() {
                 <path d="M3 5l3 3 3-3" stroke={C.muted} strokeWidth="1.4" strokeLinecap="round"/>
               </svg>
             </div>
+            {/* insider signal filter */}
+            <div className="df-hide-mobile" style={{ position:"relative" }}>
+              <select value={insiderFilter} onChange={e => setInsiderFilter(e.target.value)} style={{
+                background:C.panel, border:`1px solid ${C.lineHi}`, borderRadius:9, padding:"9px 34px 9px 14px",
+                color: insiderFilter !== "All" ? C.amber : C.text, fontFamily:disp, fontSize:13.5, cursor:"pointer" }}>
+                <option value="All">Insider Signal</option>
+                {insiderFilters.slice(1).map(f => <option key={f} value={f}>{f}</option>)}
+              </select>
+              <svg style={{ position:"absolute", right:10, top:"50%", transform:"translateY(-50%)", pointerEvents:"none" }} width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M3 5l3 3 3-3" stroke={C.muted} strokeWidth="1.4" strokeLinecap="round"/>
+              </svg>
+            </div>
             <div style={{ fontFamily:mono, fontSize:12, color:C.muted, marginLeft:"auto" }}>
               {filtered.length} result{filtered.length !== 1 ? "s" : ""}
             </div>
@@ -552,12 +574,12 @@ export default function Screener() {
           <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:14, overflow:"hidden", marginBottom:40 }}>
             {/* header row */}
             <div className="df-table-grid" style={{ padding:"10px 20px", borderBottom:`1px solid ${C.lineHi}`, background:C.panelHi }}>
-              {["#","Company","Score","","Tier","Sector","Revenue","GM%","R40","7d",""].map((h, i) => {
+              {["#","Company","Score","","Tier","Sector","Revenue","GM%","R40","F4","7d",""].map((h, i) => {
                 const sortKey = SORT_KEYS[h];
                 const isActive = sortKey && sort.col === sortKey;
                 return (
                   <span key={i}
-                    className={[3,5,6,7,8,9].includes(i) ? "df-hide-mobile" : ""}
+                    className={[3,5,6,7,8,9,10].includes(i) ? "df-hide-mobile" : ""}
                     onClick={() => handleSort(h)}
                     style={{ fontFamily:mono, fontSize:9.5, letterSpacing:1,
                       color: isActive ? C.blue : C.muted,
@@ -621,6 +643,16 @@ export default function Screener() {
                   <span className="df-hide-mobile" style={{ fontFamily:mono, fontSize:12.5, textAlign:"right", color: c.r40 >= 40 ? C.green : c.r40 >= 20 ? C.amber : c.r40 < 0 ? C.red : C.sub }}>
                     {c.r40 > 0 ? "+" : ""}{c.r40.toFixed(1)}
                   </span>
+                  <div className="df-hide-mobile" style={{ display:"flex", alignItems:"center", justifyContent:"flex-end", gap:4 }}>
+                    {c.insiderScore != null ? (
+                      <>
+                        <span style={{ width:7, height:7, borderRadius:"50%", flexShrink:0, background: c.insiderScore > 65 ? C.red : c.insiderScore >= 50 ? C.amber : C.green }} />
+                        <span style={{ fontFamily:mono, fontSize:11, color:C.muted }}>{c.insiderScore}</span>
+                      </>
+                    ) : (
+                      <span style={{ width:7, height:7, borderRadius:"50%", background:"rgba(255,255,255,0.15)" }} />
+                    )}
+                  </div>
                   <div className="df-hide-mobile" style={{ display:"flex", justifyContent:"flex-end" }}>
                     <Sparkline data={c.spark} />
                   </div>
