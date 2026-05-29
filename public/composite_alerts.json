@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-29T00:38:24.082147+00:00",
-  "total_alerts": 32,
+  "generated_at": "2026-05-29T15:19:24.259383+00:00",
+  "total_alerts": 33,
   "alerts": [
     {
       "ticker": "NTCT",
@@ -30,10 +30,10 @@
           "icon": "\ud83c\udfaf"
         }
       ],
-      "ml_score": 0,
+      "ml_score": 0.195,
       "total_score": 64.3,
       "ev_revenue": 2.72,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: NetScout Systems, Inc. (NTCT)\nConviction score: 7/10\n\nIndependent signals aligned:\n  \ud83d\udcc9 EV/Revenue 2.7\u00d7 vs 5.1\u00d7 sector median (47% discount)\n  \ud83d\udcca Insider pattern score 65/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf LogMeIn Inc 65% fingerprint match (3 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -67,7 +67,7 @@
       "ml_score": 0.3439,
       "total_score": 64.0,
       "ev_revenue": 1.63,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Asana, Inc. (ASAN)\nConviction score: 7/10\n\nIndependent signals aligned:\n  \ud83d\udcc9 EV/Revenue 1.6\u00d7 vs 2.9\u00d7 sector median (44% discount)\n  \ud83d\udcca Insider pattern score 65/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Salesforce.com Inc 81% fingerprint match (9 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -98,10 +98,10 @@
           "icon": "\ud83c\udfaf"
         }
       ],
-      "ml_score": 0,
+      "ml_score": 0.2418,
       "total_score": 49.0,
       "ev_revenue": 0.15,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Coursera, Inc. (COUR)\nConviction score: 7/10\n\nIndependent signals aligned:\n  \ud83d\udcc9 EV/Revenue 0.1\u00d7 vs 2.9\u00d7 sector median (95% discount)\n  \ud83d\udcca Insider pattern score 65/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Open Text Corp 66% fingerprint match (10 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -132,10 +132,10 @@
           "icon": "\ud83c\udfc6"
         }
       ],
-      "ml_score": 0,
+      "ml_score": 0.0499,
       "total_score": 82.0,
       "ev_revenue": 0.71,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: EverQuote, Inc. (EVER)\nConviction score: 6/10\n\nIndependent signals aligned:\n  \ud83d\udcc9 EV/Revenue 0.7\u00d7 vs 2.9\u00d7 sector median (76% discount)\n  \ud83d\udcca Insider pattern score 65/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfc6 Acquisition score 82.0/100 \u2014 top decile of ranked universe\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -169,7 +169,7 @@
       "ml_score": 0.5789,
       "total_score": 81.4,
       "ev_revenue": 4.6,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Doximity, Inc. (DOCS)\nConviction score: 6/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 65/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Synopsys Inc 66% fingerprint match (6 historical deals)\n  \ud83c\udfc6 Acquisition score 81.4/100 \u2014 top decile of ranked universe\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -203,7 +203,7 @@
       "ml_score": 0.3675,
       "total_score": 78.0,
       "ev_revenue": 10.96,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Clearwater Analytics Holdings, Inc. (CWAN)\nConviction score: 6/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 75/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Adobe Systems Inc 70% fingerprint match (4 historical deals)\n  \ud83c\udfc6 Acquisition score 78.0/100 \u2014 top decile of ranked universe\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -237,8 +237,42 @@
       "ml_score": 0.8954,
       "total_score": 80.2,
       "ev_revenue": 4.76,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Qualys, Inc. (QLYS)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \u26a1 ML acquisition score 89/100 \u2014 top quartile\n  \ud83c\udfaf Synopsys Inc 70% fingerprint match (6 historical deals)\n  \ud83c\udfc6 Acquisition score 80.2/100 \u2014 top decile of ranked universe\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
+    },
+    {
+      "ticker": "PRGS",
+      "company": "Progress Software Corporation",
+      "sector": "saas",
+      "tier": "High",
+      "conviction_score": 5,
+      "max_conviction": 10,
+      "signal_count": 3,
+      "signals": [
+        {
+          "type": "high_ml_score",
+          "description": "ML acquisition score 87/100 \u2014 top quartile",
+          "weight": 2,
+          "icon": "\u26a1"
+        },
+        {
+          "type": "acquirer_fingerprint",
+          "description": "Insight Venture Partners LLC 86% fingerprint match (11 historical deals)",
+          "weight": 2,
+          "icon": "\ud83c\udfaf"
+        },
+        {
+          "type": "high_total_score",
+          "description": "Acquisition score 75.6/100 \u2014 top decile of ranked universe",
+          "weight": 1,
+          "icon": "\ud83c\udfc6"
+        }
+      ],
+      "ml_score": 0.8715,
+      "total_score": 75.6,
+      "ev_revenue": 2.57,
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
+      "alert_text": "HIGH-CONVICTION SIGNAL: Progress Software Corporation (PRGS)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \u26a1 ML acquisition score 87/100 \u2014 top quartile\n  \ud83c\udfaf Insight Venture Partners LLC 86% fingerprint match (11 historical deals)\n  \ud83c\udfc6 Acquisition score 75.6/100 \u2014 top decile of ranked universe\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
       "ticker": "UPWK",
@@ -271,7 +305,7 @@
       "ml_score": 0.6506,
       "total_score": 71.0,
       "ev_revenue": 1.1,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Upwork Inc. (UPWK)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \u26a1 ML acquisition score 65/100 \u2014 top quartile\n  \ud83d\udcc9 EV/Revenue 1.1\u00d7 vs 2.9\u00d7 sector median (62% discount)\n  \ud83c\udfc6 Acquisition score 71.0/100 \u2014 top decile of ranked universe\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -299,7 +333,7 @@
       "ml_score": 0.5241,
       "total_score": 68.9,
       "ev_revenue": 2.52,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: BlackLine, Inc. (BL)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 65/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Accel-KKR Co LLC 65% fingerprint match (3 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -324,10 +358,10 @@
           "icon": "\ud83d\udcca"
         }
       ],
-      "ml_score": 0,
+      "ml_score": 0.1528,
       "total_score": 68.8,
       "ev_revenue": 0.63,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: NerdWallet, Inc. (NRDS)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcc9 EV/Revenue 0.6\u00d7 vs 4.5\u00d7 sector median (86% discount)\n  \ud83d\udcca Insider pattern score 75/100 \u2014 pre-acquisition-like selling\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -355,7 +389,7 @@
       "ml_score": 0,
       "total_score": 65.3,
       "ev_revenue": 4.75,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Check Point Software Technologies Ltd. (CHKP)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 65/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Synopsys Inc 86% fingerprint match (6 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -383,7 +417,7 @@
       "ml_score": 0.3554,
       "total_score": 64.7,
       "ev_revenue": 2.94,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: GitLab Inc. (GTLB)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 85/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Vista Equity Partners Management LLC 70% fingerprint match (19 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -411,7 +445,7 @@
       "ml_score": 0.2472,
       "total_score": 63.8,
       "ev_revenue": 2.78,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Klaviyo, Inc. (KVYO)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 95/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Cisco Systems Inc 77% fingerprint match (19 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -436,10 +470,10 @@
           "icon": "\ud83c\udfaf"
         }
       ],
-      "ml_score": 0,
+      "ml_score": 0.4554,
       "total_score": 63.8,
       "ev_revenue": 3.01,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Pegasystems Inc. (PEGA)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 85/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Activision Blizzard Inc 75% fingerprint match (3 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -464,10 +498,10 @@
           "icon": "\ud83c\udfaf"
         }
       ],
-      "ml_score": 0,
+      "ml_score": 0.3263,
       "total_score": 62.2,
       "ev_revenue": 19.76,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Cadence Design Systems, Inc. (CDNS)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 75/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Synopsys Inc 65% fingerprint match (6 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -492,10 +526,10 @@
           "icon": "\ud83c\udfaf"
         }
       ],
-      "ml_score": 0,
+      "ml_score": 0.3721,
       "total_score": 60.2,
       "ev_revenue": 2.16,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Amplitude, Inc. (AMPL)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 65/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Tyler Technologies Inc 68% fingerprint match (3 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -523,7 +557,7 @@
       "ml_score": 0.3595,
       "total_score": 59.0,
       "ev_revenue": 3.09,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Elastic N.V. (ESTC)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 85/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Accel-KKR Co LLC 70% fingerprint match (3 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -548,10 +582,10 @@
           "icon": "\ud83c\udfaf"
         }
       ],
-      "ml_score": 0,
+      "ml_score": 0.2977,
       "total_score": 58.8,
       "ev_revenue": 9.83,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Guidewire Software, Inc. (GWRE)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 85/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Envestnet Inc 72% fingerprint match (3 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -576,10 +610,10 @@
           "icon": "\ud83d\udcca"
         }
       ],
-      "ml_score": 0.7459,
+      "ml_score": 0.7477,
       "total_score": 58.5,
       "ev_revenue": 7.03,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Manhattan Associates, Inc. (MANH)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \u26a1 ML acquisition score 74/100 \u2014 top quartile\n  \ud83d\udcca Insider pattern score 85/100 \u2014 pre-acquisition-like selling\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -607,7 +641,7 @@
       "ml_score": 0.2777,
       "total_score": 57.0,
       "ev_revenue": 2.76,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Braze, Inc. (BRZE)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 75/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Grubhub Inc 73% fingerprint match (3 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -632,15 +666,15 @@
           "icon": "\ud83c\udfaf"
         }
       ],
-      "ml_score": 0.2921,
+      "ml_score": 0.2941,
       "total_score": 56.8,
       "ev_revenue": 2.26,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Alarm.com Holdings, Inc. (ALRM)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 75/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Accel-KKR Co LLC 65% fingerprint match (3 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
       "ticker": "NET",
-      "company": "Cloudflare, Inc.",
+      "company": "CLOUDFLARE, INC.",
       "sector": "cybersecurity",
       "tier": "Low",
       "conviction_score": 5,
@@ -660,11 +694,39 @@
           "icon": "\ud83c\udfaf"
         }
       ],
-      "ml_score": 0,
+      "ml_score": 0.3467,
       "total_score": 55.3,
       "ev_revenue": 34.95,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
-      "alert_text": "HIGH-CONVICTION SIGNAL: Cloudflare, Inc. (NET)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 100/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Vista Equity Partners Management LLC 70% fingerprint match (19 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
+      "alert_text": "HIGH-CONVICTION SIGNAL: CLOUDFLARE, INC. (NET)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 100/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Vista Equity Partners Management LLC 70% fingerprint match (19 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
+    },
+    {
+      "ticker": "DDOG",
+      "company": "DATADOG, INC.",
+      "sector": "cybersecurity",
+      "tier": "Low",
+      "conviction_score": 5,
+      "max_conviction": 10,
+      "signal_count": 2,
+      "signals": [
+        {
+          "type": "insider_selling",
+          "description": "Insider pattern score 100/100 \u2014 pre-acquisition-like selling",
+          "weight": 3,
+          "icon": "\ud83d\udcca"
+        },
+        {
+          "type": "acquirer_fingerprint",
+          "description": "Vista Equity Partners Management LLC 74% fingerprint match (19 historical deals)",
+          "weight": 2,
+          "icon": "\ud83c\udfaf"
+        }
+      ],
+      "ml_score": 0.4018,
+      "total_score": 55.1,
+      "ev_revenue": 20.59,
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
+      "alert_text": "HIGH-CONVICTION SIGNAL: DATADOG, INC. (DDOG)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 100/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Vista Equity Partners Management LLC 74% fingerprint match (19 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
       "ticker": "DOCN",
@@ -691,40 +753,12 @@
       "ml_score": 0.13,
       "total_score": 55.1,
       "ev_revenue": 18.78,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: DigitalOcean Holdings, Inc. (DOCN)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 100/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf International Business Machines Corp 69% fingerprint match (9 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
-      "ticker": "DDOG",
-      "company": "Datadog, Inc.",
-      "sector": "cybersecurity",
-      "tier": "Low",
-      "conviction_score": 5,
-      "max_conviction": 10,
-      "signal_count": 2,
-      "signals": [
-        {
-          "type": "insider_selling",
-          "description": "Insider pattern score 100/100 \u2014 pre-acquisition-like selling",
-          "weight": 3,
-          "icon": "\ud83d\udcca"
-        },
-        {
-          "type": "acquirer_fingerprint",
-          "description": "Vista Equity Partners Management LLC 74% fingerprint match (19 historical deals)",
-          "weight": 2,
-          "icon": "\ud83c\udfaf"
-        }
-      ],
-      "ml_score": 0,
-      "total_score": 55.1,
-      "ev_revenue": 20.59,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
-      "alert_text": "HIGH-CONVICTION SIGNAL: Datadog, Inc. (DDOG)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 100/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Vista Equity Partners Management LLC 74% fingerprint match (19 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
-    },
-    {
       "ticker": "MDB",
-      "company": "MongoDB, Inc.",
+      "company": "MONGODB, INC.",
       "sector": "saas",
       "tier": "Low",
       "conviction_score": 5,
@@ -744,11 +778,11 @@
           "icon": "\ud83c\udfaf"
         }
       ],
-      "ml_score": 0,
+      "ml_score": 0.3401,
       "total_score": 54.2,
       "ev_revenue": 9.24,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
-      "alert_text": "HIGH-CONVICTION SIGNAL: MongoDB, Inc. (MDB)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 85/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Activision Blizzard Inc 65% fingerprint match (3 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
+      "alert_text": "HIGH-CONVICTION SIGNAL: MONGODB, INC. (MDB)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 85/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Activision Blizzard Inc 65% fingerprint match (3 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
       "ticker": "BMBL",
@@ -775,7 +809,7 @@
       "ml_score": 0.0781,
       "total_score": 52.1,
       "ev_revenue": 0.91,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Bumble Inc. (BMBL)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcc9 EV/Revenue 0.9\u00d7 vs 2.9\u00d7 sector median (69% discount)\n  \ud83d\udcca Insider pattern score 95/100 \u2014 pre-acquisition-like selling\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -803,7 +837,7 @@
       "ml_score": 0.1691,
       "total_score": 52.0,
       "ev_revenue": 0.48,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Health Catalyst, Inc. (HCAT)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcc9 EV/Revenue 0.5\u00d7 vs 2.9\u00d7 sector median (83% discount)\n  \ud83d\udcca Insider pattern score 65/100 \u2014 pre-acquisition-like selling\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -828,10 +862,10 @@
           "icon": "\ud83c\udfaf"
         }
       ],
-      "ml_score": 0,
+      "ml_score": 0.4127,
       "total_score": 51.8,
       "ev_revenue": 2.71,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: DocuSign, Inc. (DOCU)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 85/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf LogMeIn Inc 67% fingerprint match (3 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -859,12 +893,12 @@
       "ml_score": 0.2019,
       "total_score": 47.5,
       "ev_revenue": 1.51,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Five9, Inc. (FIVN)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcc9 EV/Revenue 1.5\u00d7 vs 2.9\u00d7 sector median (48% discount)\n  \ud83d\udcca Insider pattern score 85/100 \u2014 pre-acquisition-like selling\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
       "ticker": "CRWD",
-      "company": "CrowdStrike Holdings, Inc.",
+      "company": "CROWDSTRIKE HOLDINGS, INC.",
       "sector": "cybersecurity",
       "tier": "Low",
       "conviction_score": 5,
@@ -884,11 +918,11 @@
           "icon": "\ud83c\udfaf"
         }
       ],
-      "ml_score": 0,
+      "ml_score": 0.3677,
       "total_score": 47.4,
       "ev_revenue": 30.4,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
-      "alert_text": "HIGH-CONVICTION SIGNAL: CrowdStrike Holdings, Inc. (CRWD)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 100/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Activision Blizzard Inc 67% fingerprint match (3 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
+      "alert_text": "HIGH-CONVICTION SIGNAL: CROWDSTRIKE HOLDINGS, INC. (CRWD)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 100/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf Activision Blizzard Inc 67% fingerprint match (3 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
       "ticker": "APPS",
@@ -912,10 +946,10 @@
           "icon": "\ud83d\udcca"
         }
       ],
-      "ml_score": 0,
+      "ml_score": 0.2828,
       "total_score": 41.5,
       "ev_revenue": 1.69,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Digital Turbine, Inc. (APPS)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcc9 EV/Revenue 1.7\u00d7 vs 2.9\u00d7 sector median (42% discount)\n  \ud83d\udcca Insider pattern score 100/100 \u2014 pre-acquisition-like selling\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     },
     {
@@ -943,7 +977,7 @@
       "ml_score": 0.4594,
       "total_score": 39.0,
       "ev_revenue": 2.88,
-      "timestamp": "2026-05-29T00:38:24.081969+00:00",
+      "timestamp": "2026-05-29T15:19:24.259205+00:00",
       "alert_text": "HIGH-CONVICTION SIGNAL: Bandwidth Inc. (BAND)\nConviction score: 5/10\n\nIndependent signals aligned:\n  \ud83d\udcca Insider pattern score 95/100 \u2014 pre-acquisition-like selling\n  \ud83c\udfaf IFS Americas Inc 71% fingerprint match (3 historical deals)\n\nHistorical note: when 3+ signals aligned in our backtested universe,\nthe company was acquired within 18 months in 67% of verified cases.\n(Based on 203 verified acquisitions, 2010-2024.)"
     }
   ]
