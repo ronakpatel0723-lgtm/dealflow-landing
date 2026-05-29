@@ -271,8 +271,8 @@ export default function Pricing() {
           </div>
           <div style={{ display: "grid", gap: 0, maxWidth: 680, margin: "0 auto" }}>
             {[
-              ["How is this different from PitchBook or CapIQ?", "PitchBook tells you who got acquired. DealFlow tells you who's next — ranked by the same financial signature that preceded 169 historical deals."],
-              ["What's your accuracy?", "We don't predict individual acquisitions. We rank. The top 10% of our ranking contains 5.22× more acquisition targets than random selection — validated on 4 years of out-of-sample data."],
+              ["How is this different from PitchBook or CapIQ?", "PitchBook tells you who got acquired. DealFlow tells you who's next — ranked by the same financial signature that preceded 203 historical deals."],
+              ["What's your accuracy?", "We don't predict individual acquisitions. We rank. The top decile of our ranking contains 4.79× more acquisition targets than random selection — validated on 5 years of out-of-sample data."],
               ["Can I try before I buy?", "Yes. Free tier gives you the top 20 ranked companies, company profiles, and the methodology. No credit card required."],
               ["How fresh is the data?", "Scores update weekly. New 8-K filings are monitored daily. Financial data refreshes when new 10-Ks and 10-Qs are filed."],
             ].map(([q, a]) => (

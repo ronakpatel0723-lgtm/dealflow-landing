@@ -95,7 +95,7 @@ export default function DealFlowLanding() {
   const [load, setLoad] = useState(false);
   const [waitlistOpen, setWaitlistOpen] = useState(false);
   const [loginOpen, setLoginOpen] = useState(false);
-  const [heroSN, setHeroSN] = useState("5.81");
+  const [heroSN, setHeroSN] = useState("5.59");
   const [signalBanner, setSignalBanner] = useState(false);
   const [signalEmail, setSignalEmail] = useState("");
   const [signalDone, setSignalDone] = useState(false);
@@ -209,7 +209,7 @@ export default function DealFlowLanding() {
 
           {/* "show your work" proof strip */}
           <div style={{ ...hero(5), marginTop: 22, fontFamily: mono, fontSize: 12, color: C.muted, letterSpacing: 0.3 }}>
-            130 verified deals · 27,949 company-years · placebo 1.00×
+            203 verified deals · 29,800 company-years · placebo 0.86×
           </div>
         </header>
 
@@ -289,7 +289,7 @@ export default function DealFlowLanding() {
               {
                 color: C.green, bg: "rgba(54,211,153,0.08)", border: "rgba(54,211,153,0.2)",
                 step: "02", t: "Score",
-                d: "XGBoost model trained on 130 verified acquisitions scores each company on the financial signature that precedes deals.",
+                d: "XGBoost model trained on 203 verified acquisitions scores each company on the financial signature that precedes deals.",
                 icon: (
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
@@ -299,7 +299,7 @@ export default function DealFlowLanding() {
               {
                 color: C.amber, bg: "rgba(245,194,75,0.08)", border: "rgba(245,194,75,0.2)",
                 step: "03", t: "Rank",
-                d: "Sort your universe. The top decile contains 6.31× more future targets than random — validated walk-forward 2020–2024.",
+                d: "Sort your universe. The top decile contains 4.79× more future targets than random — validated walk-forward 2020–2024.",
                 icon: (
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
@@ -337,12 +337,12 @@ export default function DealFlowLanding() {
                 </p>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, maxWidth: 540 }}>
                   <div style={{ borderLeft: `2px solid ${C.green}`, paddingLeft: 18 }}>
-                    <div style={{ fontFamily: mono, fontSize: 34, fontWeight: 600, color: C.text }}><CountUp to={6.31} decimals={2} suffix="×" /></div>
-                    <div style={{ fontSize: 13, color: C.sub, marginTop: 6 }}>XGB signal/noise ratio</div>
+                    <div style={{ fontFamily: mono, fontSize: 34, fontWeight: 600, color: C.text }}><CountUp to={5.59} decimals={2} suffix="×" /></div>
+                    <div style={{ fontSize: 13, color: C.sub, marginTop: 6 }}>ensemble signal/noise ratio</div>
                   </div>
                   <div style={{ borderLeft: `2px solid ${C.muted}`, paddingLeft: 18 }}>
-                    <div style={{ fontFamily: mono, fontSize: 34, fontWeight: 600, color: C.sub }}><CountUp to={1.00} decimals={2} suffix="×" /></div>
-                    <div style={{ fontSize: 13, color: C.sub, marginTop: 6 }}>out-of-sample validated 2020–2024, placebo collapses to 1.00×</div>
+                    <div style={{ fontFamily: mono, fontSize: 34, fontWeight: 600, color: C.sub }}><CountUp to={0.86} decimals={2} suffix="×" /></div>
+                    <div style={{ fontSize: 13, color: C.sub, marginTop: 6 }}>out-of-sample validated 2020–2024, placebo collapses to 0.86×</div>
                   </div>
                 </div>
               </div>

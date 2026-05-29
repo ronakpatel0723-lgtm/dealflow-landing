@@ -41,7 +41,7 @@ const ENDPOINTS = [
     desc:"Model metadata: version, last trained, score distribution.",
     params:[],
     curl:`curl "${BASE}/api/health"`,
-    example:`{"model_version":"logistic-v2-form4","positive_count":169,"total_count":100,"tiers":{"High":10}}`,
+    example:`{"model_version":"ensemble-v4-203pos-10feat","positive_count":203,"total_count":131,"tiers":{"High":27,"Medium":39,"Low":65}}`,
   },
 ];
 

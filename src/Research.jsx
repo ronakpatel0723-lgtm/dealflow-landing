@@ -130,7 +130,7 @@ export default function Research() {
             Section 1 · The Signal
           </div>
           <h2 style={{ fontFamily: disp, fontSize: 26, fontWeight: 700, letterSpacing: "-0.02em", marginBottom: 24 }}>
-            6.31× signal-to-noise: what it means and why it matters
+            5.59× signal-to-noise: what it means and why it matters
           </h2>
 
           <P>
@@ -152,12 +152,12 @@ export default function Research() {
           <PullQuote>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, maxWidth: 480 }}>
               <div>
-                <div style={{ fontFamily: mono, fontSize: 32, fontWeight: 600, color: C.green }}>6.31×</div>
-                <div style={{ fontFamily: disp, fontSize: 13, color: C.sub, marginTop: 4 }}>real top-decile lift — model trained on past, tested on future</div>
+                <div style={{ fontFamily: mono, fontSize: 32, fontWeight: 600, color: C.green }}>5.59×</div>
+                <div style={{ fontFamily: disp, fontSize: 13, color: C.sub, marginTop: 4 }}>signal-to-noise (WF lift 4.79× / placebo 0.86×)</div>
               </div>
               <div>
-                <div style={{ fontFamily: mono, fontSize: 32, fontWeight: 600, color: C.muted }}>1.00×</div>
-                <div style={{ fontFamily: disp, fontSize: 13, color: C.sub, marginTop: 4 }}>placebo lift on shuffled labels — collapses to random</div>
+                <div style={{ fontFamily: mono, fontSize: 32, fontWeight: 600, color: C.muted }}>0.86×</div>
+                <div style={{ fontFamily: disp, fontSize: 13, color: C.sub, marginTop: 4 }}>placebo lift on shuffled labels — near-random</div>
               </div>
             </div>
           </PullQuote>
@@ -166,7 +166,7 @@ export default function Research() {
             The placebo test is the critical validation. Take the same model, same features, same walk-forward
             protocol — but randomly shuffle the acquisition labels. If the signal were a data artifact, lift would
             persist even on shuffled labels. It doesn't: placebo lift across all five test years averages 1.00×,
-            indistinguishable from random selection. The ratio of real lift to placebo lift (6.31 / 1.00 = 6.31×)
+            near-random selection (0.86×). The ratio of real lift to placebo lift (4.79 / 0.86 = 5.59×)
             is the signal-to-noise ratio. That number is the honest measure of how much information the model
             contains beyond noise.
           </P>
@@ -178,14 +178,14 @@ export default function Research() {
             Section 2 · The Data
           </div>
           <h2 style={{ fontFamily: disp, fontSize: 26, fontWeight: 700, letterSpacing: "-0.02em", marginBottom: 24 }}>
-            130 verified acquisitions, independently confirmed
+            203 verified acquisitions, independently confirmed
           </h2>
 
           <StatStrip stats={[
-            { value: "130", label: "verified acquisitions" },
-            { value: "27,949", label: "panel rows" },
-            { value: "877", label: "unique companies" },
-            { value: "15 yrs", label: "2009–2024" },
+            { value: "203", label: "verified acquisitions" },
+            { value: "29,800", label: "panel rows" },
+            { value: "131", label: "live companies" },
+            { value: "15 yrs", label: "2010–2024" },
           ]} />
 
           <P>
@@ -296,7 +296,7 @@ export default function Research() {
             DealFlow AI moves that moment earlier.
           </P>
           <P>
-            The 5.81× signal-to-noise ratio means that if you review the top 10 companies in the DealFlow ranking
+            The 5.59× signal-to-noise ratio means that if you review the top 10 companies in the DealFlow ranking
             each quarter, you're looking at a pool that historically contains roughly <strong style={{ color: C.text }}>
             5–6× more acquisitions than a random selection of 10 companies</strong> from the same universe.
             That's not a prediction — it's a prioritization filter that dramatically compresses the diligence funnel.

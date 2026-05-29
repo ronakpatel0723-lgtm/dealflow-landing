@@ -526,7 +526,7 @@ export default function Screener() {
             <p style={{ fontSize:14, color:C.sub, marginTop:6, display:"flex", alignItems:"center", gap:8 }}>
               <span style={{ fontFamily:mono, color:C.green, fontSize:12 }}>● LIVE</span>
               Public SaaS universe ranked by acquisition attractiveness ·
-              <span style={{ fontFamily:mono, color:C.amber }}> 6.31× signal/noise, walk-forward 2020–2024</span>
+              <span style={{ fontFamily:mono, color:C.amber }}> 5.59× signal/noise, walk-forward 2020–2024</span>
             </p>
           </div>
 
@@ -705,7 +705,7 @@ export default function Screener() {
               <button onClick={() => setLoginOpen(true)}
                 style={{ fontFamily:disp, fontSize:14, fontWeight:600, color:"#fff",
                   background:C.blue, border:"none", borderRadius:8, padding:"10px 24px", cursor:"pointer" }}>
-                Upgrade to see all 100 companies →
+                Upgrade to see all 131 companies →
               </button>
             </div>
           )}

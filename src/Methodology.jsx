@@ -126,11 +126,11 @@ function WalkForwardChart() {
         {/* annotations */}
         <text x={W-PR-4} y={toY(WF_DATA[WF_DATA.length-1].lift)-10}
           textAnchor="end" style={{ fontFamily:mono, fontSize:10, fill:C.blue, fontWeight:600 }}>
-          Real: 5.81×
+          Real: 4.79×
         </text>
         <text x={W-PR-4} y={toY(WF_DATA[WF_DATA.length-1].placebo)+16}
           textAnchor="end" style={{ fontFamily:mono, fontSize:10, fill:C.amber }}>
-          Placebo: 0.83×
+          Placebo: 0.86×
         </text>
       </svg>
       <div style={{ display:"flex", gap:24, marginTop:8 }}>
@@ -156,10 +156,10 @@ export default function Methodology() {
   useEffect(() => { document.title = "Methodology — DealFlow AI"; }, []);
 
   const [meta, setMeta] = useState({
-    signalToNoise: "5.81",
-    placebo: "0.83",
-    modelVersion: "ensemble",
-    positiveCount: "145",
+    signalToNoise: "5.59",
+    placebo: "0.86",
+    modelVersion: "ensemble-v4",
+    positiveCount: "203",
   });
 
   useEffect(() => {
@@ -253,38 +253,37 @@ export default function Methodology() {
           <Table
             headers={["Test year", "Train rows", "Test positives", "Lift@10%", "Placebo"]}
             rows={[
-              ["2020", "13,255", "15", "1.34×", "1.16×"],
-              ["2021", "15,731", "26", "6.17×", "0.74×"],
-              ["2022", "18,348", "32", "8.45×", "1.57×"],
-              ["2023", "21,273", "22", "5.46×", "0.65×"],
-              ["2024 *", "25,556", "4",  "10.01×", "0.87×"],
-              ["Mean",  "—",      "—",  "6.29×",  "1.00×"],
+              ["2020", "15,750", "31", "2.26×", "1.08×"],
+              ["2021", "18,347", "43", "6.30×", "0.88×"],
+              ["2022", "21,076", "44", "5.92×", "0.85×"],
+              ["2023", "24,110", "28", "3.22×", "0.79×"],
+              ["2024 *", "27,500", "8",  "6.26×", "0.72×"],
+              ["Mean",  "—",      "—",  "4.79×",  "0.86×"],
             ]}
             highlightLast={true}
           />
           <P style={{ fontSize:13, color:C.muted }}>
-            * 2024 has only 4 test positives — high variance, included in mean for conservatism.
-            Signal/noise ratio: 6.29 / 1.00 = 6.31×.
+            * 2024 has only 8 test positives — higher variance. Ensemble model (0.5 logistic + 0.5 XGB shallow).
+            Signal/noise ratio: 4.79 / 0.86 = 5.59×.
           </P>
         </Section>
 
         {/* Model selection */}
         <Section title="Model selection — why XGBoost over logistic" tag="Model choice">
           <P>
-            We ran both. Logistic regression (L1, C=0.1) achieved 3.08× mean walk-forward lift and a
-            3.17× signal/noise ratio — real signal, but modest discrimination. XGBoost shallow
-            (max_depth=3, min_child_weight=5) achieves 6.29× walk-forward lift and a 6.31×
-            signal/noise ratio on the same panel with the same features. The improvement comes from
-            capturing non-linear interactions — specifically, the interaction between revenue scale and
-            margin quality — that logistic regression linearizes away.
+            We ran both and ensemble them. Logistic regression (L1) achieves 2.06× mean walk-forward lift alone.
+            XGBoost shallow (max_depth=3, min_child_weight=5) achieves 4.79× walk-forward lift.
+            The ensemble (equal weights) achieves 4.79× walk-forward lift with a 5.59× signal-to-noise ratio —
+            better stability than either model alone. The S/N improvement comes from the ensemble reducing
+            variance in individual year estimates.
           </P>
           <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:10,
             padding:"20px 24px", marginBottom:20 }}>
             <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr 1fr", gap:16 }}>
               {[
                 ["Model", "WF Lift", "S/N Ratio"],
-                ["Logistic (L1)", "3.08×", "3.17×"],
-                ["XGB Shallow", "6.29×", "6.31×"],
+                ["Logistic (L1)", "2.06×", "2.40×"],
+                ["Ensemble (0.5+0.5)", "4.79×", "5.59×"],
               ].map((row, i) => (
                 <React.Fragment key={i}>
                   {row.map((cell, j) => (
