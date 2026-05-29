@@ -433,6 +433,7 @@ export default function Company() {
           .co-why{gap:10px!important}
           .co-header{flex-direction:column!important;align-items:center!important;text-align:center!important}
           .co-header-text{align-items:center!important;justify-content:center!important}
+          .co-insider-grid{grid-template-columns:1fr 1fr!important}
         }
         @keyframes pulse{0%,100%{opacity:0.4}50%{opacity:0.8}}
       `}</style>
@@ -736,7 +737,7 @@ export default function Company() {
               <div style={{ fontFamily:disp, fontSize:12, color:C.muted, marginBottom:18 }}>
                 Based on SEC Form 4 filings — last 12 months ({ip.transaction_count} transactions)
               </div>
-              <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:12, marginBottom:16 }}>
+              <div className="co-insider-grid" style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:12, marginBottom:16 }}>
                 {/* Card 1 */}
                 <div style={{ background:C.panelHi, border:`1px solid ${C.line}`, borderRadius:10, padding:"16px 18px" }}>
                   <div style={{ fontFamily:mono, fontSize:9.5, color:C.muted, letterSpacing:1, textTransform:"uppercase", marginBottom:8 }}>Net Insider Flow</div>

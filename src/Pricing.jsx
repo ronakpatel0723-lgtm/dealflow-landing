@@ -225,7 +225,8 @@ export default function Pricing() {
           <div style={{ fontFamily: mono, fontSize: 11, color: C.blue, letterSpacing: 2, textTransform: "uppercase", marginBottom: 24, textAlign: "center" }}>
             Feature Comparison
           </div>
-          <div style={{ background: C.panel, border: `1px solid ${C.line}`, borderRadius: 14, overflow: "hidden" }}>
+          <div style={{ overflowX: "auto" }}>
+          <div style={{ background: C.panel, border: `1px solid ${C.line}`, borderRadius: 14, overflow: "hidden", minWidth: 480 }}>
             <div style={{ display: "grid", gridTemplateColumns: "1.8fr 1fr 1fr 1fr", padding: "12px 20px", background: C.panelHi, borderBottom: `1px solid ${C.line}` }}>
               {["Feature", "Free", "Analyst", "Team"].map((h, i) => (
                 <span key={h} style={{ fontFamily: mono, fontSize: 10, color: i > 0 ? C.blue : C.muted, letterSpacing: 1, textTransform: "uppercase", textAlign: i > 0 ? "center" : "left" }}>{h}</span>
@@ -241,6 +242,7 @@ export default function Pricing() {
                 ))}
               </div>
             ))}
+          </div>
           </div>
         </div>
 
