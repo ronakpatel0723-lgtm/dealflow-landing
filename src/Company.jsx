@@ -720,10 +720,10 @@ export default function Company() {
           const accelColor = accel < -0.3 ? C.red : accel > 0.3 ? C.green : C.sub;
 
           const contextSentence = ps > 65
-            ? "Insider selling pattern matches pre-acquisition profile seen in 61% of historical deals 6-18 months before announcement."
+            ? "Insider selling pattern matches the pre-acquisition profile in our validated dataset — acquired companies scored 71/100 on average vs a 50-point baseline, a 42% lift above random. This company's pattern is consistent with that signal."
             : ps >= 50
-            ? "Moderate insider selling activity — within normal range for software companies at this growth stage."
-            : "Net insider buying or minimal selling — insiders appear bullish on the company independently.";
+            ? "Moderate insider selling activity. Our validation shows acquired companies averaged 71/100 on this metric — this company's pattern is below the historical threshold but warrants monitoring."
+            : "Net insider buying or minimal selling — diverges from the pre-acquisition selling pattern validated across 203 historical deals in our dataset.";
 
           const r = 14, cx = 18, cy = 18, circ = 2 * Math.PI * r;
           const dash = (ps / 100) * circ;
