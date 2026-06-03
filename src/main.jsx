@@ -13,6 +13,7 @@ const Monitor     = lazy(() => import("./Monitor.jsx"));
 const ApiDocs     = lazy(() => import("./ApiDocs.jsx"));
 const Demo        = lazy(() => import("./Demo.jsx"));
 const Alerts      = lazy(() => import("./Alerts.jsx"));
+const Interrogate = lazy(() => import("./Interrogate.jsx"));
 
 const Fallback = () => (
   <div style={{ background: "#04060D", minHeight: "100vh" }} />
@@ -34,6 +35,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/api-docs" element={<ApiDocs />} />
           <Route path="/demo" element={<Demo />} />
           <Route path="/alerts" element={<Alerts />} />
+          <Route path="/interrogate/:ticker" element={<Interrogate />} />
           </Routes>
         </Suspense>
       </BrowserRouter>
