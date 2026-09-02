@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import WaitlistModal from "./WaitlistModal.jsx";
 
 const C = {
   bg:"#04060D", panel:"#0A0E1A", panelHi:"#0E1424",
@@ -305,7 +304,6 @@ export default function Company() {
   const [comps, setComps]         = useState([]);
   const [sectorContext, setSectorContext] = useState({});
   const [loading, setLoading]     = useState(true);
-  const [thesisModal, setThesisModal] = useState(false);
   const [thesis, setThesis]         = useState(null);
   const [thesisLoading, setThesisLoading] = useState(false);
   const [scoreHistory, setScoreHistory] = useState([]);
@@ -1039,16 +1037,12 @@ export default function Company() {
           ) : (
             <>
               <p style={{ fontFamily:disp, fontSize:14, color:C.muted, lineHeight:1.7, marginBottom:20 }}>
-                Deep-dive acquisition thesis available to Team plan subscribers — sector positioning,
-                likely acquirers, deal structure analysis, and full probability driver breakdown.
+                No generated thesis on file for this ticker. Theses were generated only for
+                companies that cleared the scoring pipeline's data-completeness checks.
               </p>
-              <button onClick={() => setThesisModal(true)} style={{
-                fontFamily:disp, fontSize:13, fontWeight:600, color:C.blue,
-                background:"rgba(91,141,239,0.1)", border:`1px solid rgba(91,141,239,0.25)`,
-                borderRadius:8, padding:"10px 20px", cursor:"pointer",
-              }}>
-                Get Access →
-              </button>
+              <Link to="/methodology" style={{ fontFamily:disp, fontSize:13, color:C.blue }}>
+                Full model methodology →
+              </Link>
             </>
           )}
         </div>
@@ -1067,8 +1061,6 @@ export default function Company() {
           </Link>
         </div>
       </div>
-
-      <WaitlistModal open={thesisModal} onClose={() => setThesisModal(false)} tier="Team" />
     </div>
   );
 }

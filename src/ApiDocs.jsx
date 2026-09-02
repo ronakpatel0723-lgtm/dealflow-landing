@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useAuth } from "./AuthContext.jsx";
-import LoginModal from "./LoginModal.jsx";
 
 const C = {
   bg:"#04060D", panel:"#0A0E1A", panelHi:"#0E1424",
@@ -111,9 +109,6 @@ function TryIt() {
 }
 
 export default function ApiDocs() {
-  const { isLoggedIn, userTier } = useAuth();
-  const [loginOpen, setLoginOpen] = useState(false);
-
   return (
     <div style={{ background:C.bg, color:C.text, minHeight:"100vh", fontFamily:disp }}>
       <style>{`
@@ -135,12 +130,7 @@ export default function ApiDocs() {
         <div style={{ display:"flex", alignItems:"center", gap:20 }}>
           <Link to="/screener" style={{ fontFamily:mono, fontSize:13, color:C.sub }}>Screener</Link>
           <Link to="/methodology" style={{ fontFamily:mono, fontSize:13, color:C.sub }}>Methodology</Link>
-          {!isLoggedIn && (
-            <button onClick={() => setLoginOpen(true)}
-              style={{ fontFamily:mono, fontSize:13, color:C.blue, background:"none", border:`1px solid rgba(91,141,239,0.3)`, borderRadius:6, padding:"6px 14px", cursor:"pointer" }}>
-              Sign In
-            </button>
-          )}
+          <Link to="/interrogate/DUOL" style={{ fontFamily:mono, fontSize:13, color:C.sub }}>Interrogation</Link>
         </div>
       </nav>
 
@@ -168,15 +158,10 @@ export default function ApiDocs() {
           Authentication
         </div>
         <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:12, padding:"24px 28px", marginBottom:32 }}>
-          <p style={{ fontFamily:disp, fontSize:15, color:C.sub, lineHeight:1.65, marginBottom:12 }}>
-            Include your API key in the Authorization header:
-          </p>
-          <pre style={{ fontFamily:mono, fontSize:13, color:C.text, background:C.panelHi,
-            border:`1px solid ${C.line}`, borderRadius:8, padding:"12px 16px" }}>
-{`Authorization: Bearer YOUR_API_KEY`}
-          </pre>
-          <p style={{ fontFamily:disp, fontSize:13, color:C.muted, marginTop:12 }}>
-            API keys available on Team and Enterprise plans. The current API is unauthenticated for demo purposes.
+          <p style={{ fontFamily:disp, fontSize:15, color:C.sub, lineHeight:1.65 }}>
+            None. Every endpoint is open and unauthenticated. All responses are read
+            from a static artifact of the validated run — there is no live compute
+            and no upstream paid API behind these routes.
           </p>
         </div>
 
@@ -190,18 +175,17 @@ export default function ApiDocs() {
           ))}
         </div>
 
-        {/* Section 4: Webhooks */}
+        {/* Section 4: Tier-change payload */}
         <div style={{ fontFamily:mono, fontSize:10, color:C.muted, letterSpacing:1.5, textTransform:"uppercase", marginBottom:12 }}>
-          Webhook Alerts
+          Tier-change records
         </div>
         <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:12, padding:"24px 28px", marginBottom:32 }}>
           <p style={{ fontFamily:disp, fontSize:15, color:C.sub, lineHeight:1.65, marginBottom:12 }}>
-            Configure a webhook URL to receive real-time tier change alerts:
+            Diffs between scoring runs are recorded as tier-change records, each shaped like:
           </p>
           <pre style={{ fontFamily:mono, fontSize:13, color:C.sub, background:C.panelHi,
             border:`1px solid ${C.line}`, borderRadius:8, padding:"12px 16px" }}>
-{`POST https://your-endpoint.com/webhook
-{
+{`{
   "event": "tier_change",
   "ticker": "QLYS",
   "company": "Qualys",
@@ -211,8 +195,7 @@ export default function ApiDocs() {
 }`}
           </pre>
           <p style={{ fontFamily:disp, fontSize:13, color:C.muted, marginTop:12 }}>
-            Webhooks available on Team plan. Configure at{" "}
-            <Link to="/pricing" style={{ color:C.blue }}>dealflow-landing-six.vercel.app/pricing</Link>.
+            Served as a static file from <code style={{ fontFamily:mono, color:C.blue }}>/score_changes.json</code>.
           </p>
         </div>
 
@@ -220,8 +203,6 @@ export default function ApiDocs() {
         <TryIt />
 
       </div>
-
-      <LoginModal open={loginOpen} onClose={() => setLoginOpen(false)} />
     </div>
   );
 }

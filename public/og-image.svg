@@ -37,21 +37,21 @@
   <text x="214" y="100" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#5B8DEF" letter-spacing="-0.3"> AI</text>
 
   <!-- Main stat -->
-  <text x="100" y="280" font-family="'Courier New', 'IBM Plex Mono', ui-monospace, monospace" font-size="120" font-weight="700" fill="#5B8DEF" letter-spacing="-4" opacity="0.95">5.59×</text>
+  <text x="100" y="280" font-family="'Courier New', 'IBM Plex Mono', ui-monospace, monospace" font-size="120" font-weight="700" fill="#5B8DEF" letter-spacing="-4" opacity="0.95">4.27×</text>
 
   <!-- Stat label -->
-  <text x="103" y="330" font-family="'Courier New', 'IBM Plex Mono', ui-monospace, monospace" font-size="18" font-weight="500" fill="#9BA8C6" letter-spacing="2">SIGNAL-TO-NOISE  ·  WALK-FORWARD VALIDATED  ·  2020–2024</text>
+  <text x="103" y="330" font-family="'Courier New', 'IBM Plex Mono', ui-monospace, monospace" font-size="18" font-weight="500" fill="#9BA8C6" letter-spacing="2">SIGNAL-TO-NOISE  ·  ROLLING WALK-FORWARD  ·  2021–2023</text>
 
   <!-- Divider line -->
   <rect x="100" y="370" width="1000" height="1" fill="rgba(255,255,255,0.08)"/>
 
   <!-- Subtitle -->
-  <text x="100" y="420" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="600" fill="#F3F6FD" letter-spacing="-0.5">Acquisition intelligence for software M&amp;A</text>
+  <text x="100" y="420" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="600" fill="#F3F6FD" letter-spacing="-0.5">An M&amp;A screening model, and the evidence it works</text>
 
   <!-- Sub-proof strip -->
-  <text x="100" y="470" font-family="'Courier New', 'IBM Plex Mono', ui-monospace, monospace" font-size="15" fill="#5C6880" letter-spacing="0.5">203 verified deals  ·  29,800 company-years  ·  131 companies  ·  placebo 0.86×</text>
+  <text x="100" y="470" font-family="'Courier New', 'IBM Plex Mono', ui-monospace, monospace" font-size="15" fill="#5C6880" letter-spacing="0.5">203 verified deals  ·  30,715 company-quarters  ·  131 companies  ·  placebo 0.75×</text>
 
-  <!-- Bottom CTA -->
-  <rect x="100" y="530" width="220" height="50" rx="8" fill="#5B8DEF"/>
-  <text x="210" y="561" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff" text-anchor="middle">Request Access →</text>
+  <!-- Bottom tag -->
+  <rect x="100" y="530" width="300" height="50" rx="8" fill="none" stroke="rgba(255,255,255,0.14)"/>
+  <text x="250" y="561" font-family="'Courier New', 'IBM Plex Mono', ui-monospace, monospace" font-size="14" font-weight="500" fill="#9BA8C6" text-anchor="middle" letter-spacing="1">RESEARCH ARTIFACT · OPEN · NO SIGNUP</text>
 </svg>

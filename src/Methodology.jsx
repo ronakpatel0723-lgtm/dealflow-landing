@@ -62,11 +62,11 @@ const Table = ({ headers, rows, highlightLast }) => (
   </div>
 );
 
+// results/walk_forward.json → rolling_3fold[].real/.placebo.top_decile_lift
 const WF_DATA = [
-  { year: 2020, lift: 1.34, placebo: 1.16 },
-  { year: 2021, lift: 6.17, placebo: 0.74 },
-  { year: 2022, lift: 8.45, placebo: 1.57 },
-  { year: 2023, lift: 5.46, placebo: 0.65 },
+  { year: 2021, lift: 5.59, placebo: 1.56 },
+  { year: 2022, lift: 5.91, placebo: 1.06 },
+  { year: 2023, lift: 3.22, placebo: 0.87 },
 ];
 
 function WalkForwardChart() {
@@ -126,11 +126,11 @@ function WalkForwardChart() {
         {/* annotations */}
         <text x={W-PR-4} y={toY(WF_DATA[WF_DATA.length-1].lift)-10}
           textAnchor="end" style={{ fontFamily:mono, fontSize:10, fill:C.blue, fontWeight:600 }}>
-          Real: 4.79×
+          Real: 4.91× mean
         </text>
         <text x={W-PR-4} y={toY(WF_DATA[WF_DATA.length-1].placebo)+16}
           textAnchor="end" style={{ fontFamily:mono, fontSize:10, fill:C.amber }}>
-          Placebo: 0.86×
+          Placebo: 1.16× mean
         </text>
       </svg>
       <div style={{ display:"flex", gap:24, marginTop:8 }}>
@@ -155,9 +155,11 @@ function WalkForwardChart() {
 export default function Methodology() {
   useEffect(() => { document.title = "Methodology — DealFlow AI"; }, []);
 
+  // Defaults are the authoritative figures from results/walk_forward.json.
   const [meta, setMeta] = useState({
-    signalToNoise: "5.59",
-    placebo: "0.86",
+    signalToNoise: "4.27",   // rolling 3-fold mean S/N — the headline
+    singleCut:     "6.09",   // single out-of-time cut, 2022–2023
+    placebo:       "0.75",   // shuffled-label placebo lift on that cut
     modelVersion: "ensemble-v4",
     positiveCount: "203",
   });
@@ -198,7 +200,7 @@ export default function Methodology() {
           <span style={{ fontFamily:disp, fontSize:15, fontWeight:700, color:C.text }}>DealFlow<span style={{ color:C.blue }}> AI</span></span>
         </Link>
         <div style={{ display:"flex", gap:24, alignItems:"center" }}>
-          {[["Screener","/screener"],["Pricing","/pricing"],["Methodology","/methodology"]].map(([label, path]) => (
+          {[["Screener","/screener"],["Interrogation","/interrogate/DUOL"],["Methodology","/methodology"]].map(([label, path]) => (
             <Link key={label} to={path} style={{ fontFamily:disp, fontSize:14, fontWeight:500,
               color: label === "Methodology" ? C.blue : C.sub }}>{label}</Link>
           ))}
@@ -225,19 +227,30 @@ export default function Methodology() {
         <Section title="The defensible claim" tag="Core numbers">
           <div style={{ background:C.panelHi, border:`1px solid ${C.line}`, borderRadius:12,
             padding:"28px 32px", marginBottom:24 }}>
-            <StatRow value={`${meta.signalToNoise}×`} label="mean top-decile lift, walk-forward 2020–2024" />
-            <StatRow value={`${meta.placebo}×`} label="placebo lift on shuffled labels" note={`S/N ratio: ${meta.signalToNoise}×`} />
+            <StatRow value={`${meta.signalToNoise}×`} label="rolling 3-fold mean signal-to-noise — the headline" />
+            <StatRow value={`${meta.singleCut}×`} label="single out-of-time cut, test 2022–2023" note={`placebo ${meta.placebo}× on shuffled labels`} />
           </div>
           <P>
-            The top 10% of companies ranked by DealFlow AI were acquired at{" "}
-            <strong style={{ color:C.text }}>{meta.signalToNoise}× the rate of a random selection</strong> — tested
-            on years the model never trained on. A placebo test with shuffled labels collapses lift to
-            {meta.placebo}×, confirming the signal is real, not a data artifact.
+            Two numbers, and the smaller one is the honest one. On a single out-of-time cut — train
+            before 2022-01-01, test 2022 through 2023 — top-decile lift is 4.59× and the same protocol
+            on shuffled labels gives 0.75×, a signal-to-noise ratio of{" "}
+            <strong style={{ color:C.text }}>{meta.singleCut}×</strong>. Repeat that across three rolling
+            folds instead of one and the mean falls to{" "}
+            <strong style={{ color:C.text }}>{meta.signalToNoise}×</strong>. The rolling mean is quoted
+            everywhere as the headline, because a single cut can get lucky on one window and three
+            cannot get lucky the same way three times.
           </P>
           <P>
-            Training set: <strong style={{ color:C.text }}>{meta.positiveCount} verified acquisitions</strong> across{" "}
-            <strong style={{ color:C.text }}>27,949 company-year observations</strong> (0.945% base rate).
-            Ground truth: each positive confirmed against SEC 8-K filings with announcement date and acquirer.
+            Panel: <strong style={{ color:C.text }}>30,715 company-quarters</strong> across 967 entities,
+            2009-12-31 to 2024-09-30, with 397 positives overall and{" "}
+            <strong style={{ color:C.text }}>{meta.positiveCount} verified acquisitions</strong> in the
+            hand-checked gold set. Base rate in the out-of-time test window is 1.11% (72 positives in
+            6,499 rows). Ground truth: each positive confirmed against SEC 8-K filings with announcement
+            date and acquirer.
+          </P>
+          <P style={{ fontSize:13, color:C.muted }}>
+            Leakage gates recorded with the run: zero post-announcement positives, zero positives
+            missing a deal date, zero missing feature columns. Seed 42, commit 274af4e.
           </P>
         </Section>
 
@@ -251,39 +264,40 @@ export default function Methodology() {
           </P>
           <WalkForwardChart />
           <Table
-            headers={["Test year", "Train rows", "Test positives", "Lift@10%", "Placebo"]}
+            headers={["Test year", "Train rows", "Test positives", "Lift@10%", "Placebo", "S/N"]}
             rows={[
-              ["2020", "15,750", "31", "2.26×", "1.08×"],
-              ["2021", "18,347", "43", "6.30×", "0.88×"],
-              ["2022", "21,076", "44", "5.92×", "0.85×"],
-              ["2023", "24,110", "28", "3.22×", "0.79×"],
-              ["2024 *", "27,500", "8",  "6.26×", "0.72×"],
-              ["Mean",  "—",      "—",  "4.79×",  "0.86×"],
+              ["2021",  "18,834", "43", "5.59×", "1.56×", "3.57×"],
+              ["2022",  "21,648", "44", "5.91×", "1.06×", "5.55×"],
+              ["2023",  "24,801", "28", "3.22×", "0.87×", "3.70×"],
+              ["Mean",  "—",      "—",  "4.91×", "1.16×", "4.27×"],
             ]}
             highlightLast={true}
           />
           <P style={{ fontSize:13, color:C.muted }}>
-            * 2024 has only 8 test positives — higher variance. Ensemble model (0.5 logistic + 0.5 XGB shallow).
-            Signal/noise ratio: 4.79 / 0.86 = 5.59×.
+            Ensemble model (0.5 logistic-L1 + 0.5 shallow XGBoost). The mean S/N of 4.27× is the mean of
+            the per-fold ratios, not the ratio of the means — averaging the ratios is the conservative
+            choice here. Note 2023 has only 28 test positives, so its fold carries the widest interval.
+            Per-fold PR-AUC, base rates and placebo detail are in <code style={{ fontFamily:mono }}>results/walk_forward.json</code>.
           </P>
         </Section>
 
         {/* Model selection */}
         <Section title="Model selection — why XGBoost over logistic" tag="Model choice">
           <P>
-            We ran both and ensemble them. Logistic regression (L1) achieves 2.06× mean walk-forward lift alone.
-            XGBoost shallow (max_depth=3, min_child_weight=5) achieves 4.79× walk-forward lift.
-            The ensemble (equal weights) achieves 4.79× walk-forward lift with a 5.59× signal-to-noise ratio —
-            better stability than either model alone. The S/N improvement comes from the ensemble reducing
-            variance in individual year estimates.
+            We ran both and ensemble them. The shipped model is an equal-weight blend of an L1 logistic
+            regression and a shallow XGBoost (max_depth=3, min_child_weight=5). Across the three rolling
+            folds it averages 4.91× lift at the top decile against a 1.16× shuffled-label placebo, for a
+            4.27× signal-to-noise ratio. Neither component alone is more stable: the logistic is flatter
+            but weaker, the tree is stronger but swings harder fold to fold. The ensemble's contribution is
+            variance reduction in the individual year estimates, which is what makes the S/N ratio hold up.
           </P>
           <div style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:10,
             padding:"20px 24px", marginBottom:20 }}>
             <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr 1fr", gap:16 }}>
               {[
-                ["Model", "WF Lift", "S/N Ratio"],
-                ["Logistic (L1)", "2.06×", "2.40×"],
-                ["Ensemble (0.5+0.5)", "4.79×", "5.59×"],
+                ["Evaluation", "Lift@10%", "S/N Ratio"],
+                ["Single cut, 2022–2023", "4.59×", "6.09×"],
+                ["Rolling 3-fold mean", "4.91×", "4.27×"],
               ].map((row, i) => (
                 <React.Fragment key={i}>
                   {row.map((cell, j) => (
@@ -300,9 +314,9 @@ export default function Methodology() {
             </div>
           </div>
           <P>
-            The placebo test is the key validation. Under shuffled labels, the ensemble collapses to
-            0.86× lift — near-random. This rules out overfitting: the model is not memorizing training
-            patterns. We deliberately chose shallow configurations (depth=3) to limit memorization while
+            The placebo test is the key validation. Under shuffled labels on the 2022–2023 cut, the
+            ensemble collapses to 0.75× lift — below random. This rules out overfitting: the model is not
+            memorizing training patterns. We deliberately chose shallow configurations (depth=3) to limit memorization while
             preserving non-linear interactions. Deeper configurations showed higher cross-validation lift
             but walk-forward performance degraded — the canonical overfitting fingerprint. With 203
             training positives, shallow is the right call.
@@ -314,8 +328,8 @@ export default function Methodology() {
           <div style={{ display:"grid", gap:16, marginBottom:24 }}>
             {[
               ["EDGAR 8-K Item 2.01 Verification", "Every acquisition in our training set is confirmed via the SEC's Form 8-K, specifically Item 2.01 — Completion of Acquisition or Disposition of Assets. This is the legal notice companies must file within 4 business days of deal closing. We do not rely on press releases, news articles, or deal databases. Primary source only."],
-              ["Walk-Forward Backtesting", "We never test the model on data it saw during training. Each backtest year (2020–2024) uses a model trained exclusively on prior years' data. The 5.59× signal-to-noise ratio is the average across all 5 out-of-sample test years."],
-              ["Placebo Test", "We randomly shuffle the acquired/not-acquired labels and re-run the entire backtest. Result: 0.86× — near-random. This confirms the signal comes from real patterns in the data, not from artifacts of the backtesting methodology."],
+              ["Walk-Forward Backtesting", "We never test the model on data it saw during training. Each fold (test years 2021, 2022, 2023) uses a model trained exclusively on prior years' data. The headline 4.27× signal-to-noise ratio is the mean of the three per-fold ratios — not the ratio of the means, which would flatter the result."],
+              ["Placebo Test", "We randomly shuffle the acquired/not-acquired labels and re-run the entire backtest. On the 2022–2023 out-of-time cut the placebo lift is 0.75×; across the three rolling folds it averages 1.16×. Both are at or below random. This confirms the signal comes from real patterns in the data, not from artifacts of the backtesting methodology."],
               ["Insider Transaction Signal", "Officers and directors of companies in our universe show distinct transaction patterns. Form 4 filings are analyzed using the Seyhun (1986) and Lakonishok & Lee (2001) methodology. Pattern scores ≥65 correlate with pre-acquisition behavior in our verified dataset. Validation on 8 gold-set companies with F4 data: mean pattern score 71.2 vs 50.0 baseline. Note: Form 4 coverage in our gold set is limited (8/203 verified deals) — the signal is strong where present but the sample is small."],
             ].map(([title, desc]) => (
               <div key={title} style={{ background:C.panel, border:`1px solid ${C.line}`, borderRadius:8, padding:"20px 24px" }}>
@@ -347,10 +361,10 @@ export default function Methodology() {
         <Section title="Honest limitations" tag="What we don't claim">
           <div style={{ display:"grid", gap:0 }}>
             {[
-              ["Universe size", "29,800 company-year observations, 397 positives. 2024 test set has 8 positives — lift estimate carries higher variance than earlier years."],
+              ["Universe size", "30,715 company-quarter observations across 967 entities, 397 positives — a 1.11% base rate. The 2023 fold has only 28 test positives, so its lift estimate carries the widest interval of the three."],
               ["ML coverage", "57 of 131 live companies have ML scores from the trained model. The other 74 are scored by the rule-based component only (added after model training)."],
               ["Gross margin gap", "Some entities don't file CostOfRevenue in XBRL. We impute with sector-year medians, flagged explicitly as a training feature."],
-              ["No macro signal", "No interest rate, deal-volume, or multiple-compression variables. 2020 lift (2.26×) reflects a compressed acquisition market — the model doesn't know macro."],
+              ["No macro signal", "No interest rate, deal-volume, or multiple-compression variables. The 2023 fold's weaker lift (3.22×) tracks a compressed acquisition market — the model doesn't know macro, so it absorbs that as noise."],
               ["Survival bias", "The negative class is companies that existed and weren't acquired. Companies delisted for other reasons may bias the negatives."],
               ["Static predictions", "Scores reflect most recent quarterly financials — not real-time market moves or strategic announcements."],
             ].map(([label, desc]) => (

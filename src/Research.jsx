@@ -100,7 +100,7 @@ export default function Research() {
           </span>
         </Link>
         <div style={{ display: "flex", gap: 24, alignItems: "center" }}>
-          {[["Screener", "/screener"], ["Methodology", "/methodology"], ["Pricing", "/pricing"], ["Research", "/research"]].map(([label, path]) => (
+          {[["Screener", "/screener"], ["Methodology", "/methodology"], ["Interrogation", "/interrogate/DUOL"], ["Research", "/research"]].map(([label, path]) => (
             <Link key={label} to={path} style={{
               fontFamily: disp, fontSize: 14, fontWeight: 500,
               color: label === "Research" ? C.blue : C.sub,
@@ -130,7 +130,7 @@ export default function Research() {
             Section 1 · The Signal
           </div>
           <h2 style={{ fontFamily: disp, fontSize: 26, fontWeight: 700, letterSpacing: "-0.02em", marginBottom: 24 }}>
-            5.59× signal-to-noise: what it means and why it matters
+            4.27× signal-to-noise: what it means and why it matters
           </h2>
 
           <P>
@@ -143,8 +143,8 @@ export default function Research() {
 
           <P>
             The core result is a <strong style={{ color: C.text }}>walk-forward backtest</strong>: train only on
-            observations before year Y, predict year Y, never allow future data to bleed into training. Each row in the
-            table below is an independent experiment — the 2022 model never saw a single 2022 data point. This is
+            observations before year Y, predict year Y, never allow future data to bleed into training. Each fold is an
+            independent experiment — the 2022 model never saw a single 2022 data point. This is
             the same validation discipline used in quantitative finance, and it produces a meaningfully harder test
             than standard cross-validation, which can inadvertently mix train and test across time.
           </P>
@@ -152,23 +152,32 @@ export default function Research() {
           <PullQuote>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, maxWidth: 480 }}>
               <div>
-                <div style={{ fontFamily: mono, fontSize: 32, fontWeight: 600, color: C.green }}>5.59×</div>
-                <div style={{ fontFamily: disp, fontSize: 13, color: C.sub, marginTop: 4 }}>signal-to-noise (WF lift 4.79× / placebo 0.86×)</div>
+                <div style={{ fontFamily: mono, fontSize: 32, fontWeight: 600, color: C.green }}>4.27×</div>
+                <div style={{ fontFamily: disp, fontSize: 13, color: C.sub, marginTop: 4 }}>rolling 3-fold mean signal-to-noise (lift 4.91× / placebo 1.16×)</div>
               </div>
               <div>
-                <div style={{ fontFamily: mono, fontSize: 32, fontWeight: 600, color: C.muted }}>0.86×</div>
-                <div style={{ fontFamily: disp, fontSize: 13, color: C.sub, marginTop: 4 }}>placebo lift on shuffled labels — near-random</div>
+                <div style={{ fontFamily: mono, fontSize: 32, fontWeight: 600, color: C.muted }}>0.75×</div>
+                <div style={{ fontFamily: disp, fontSize: 13, color: C.sub, marginTop: 4 }}>placebo lift on the 2022–2023 cut — below random</div>
               </div>
             </div>
           </PullQuote>
 
           <P>
-            The placebo test is the critical validation. Take the same model, same features, same walk-forward
-            protocol — but randomly shuffle the acquisition labels. If the signal were a data artifact, lift would
-            persist even on shuffled labels. It doesn't: placebo lift across all five test years averages 1.00×,
-            near-random selection (0.86×). The ratio of real lift to placebo lift (4.79 / 0.86 = 5.59×)
-            is the signal-to-noise ratio. That number is the honest measure of how much information the model
-            contains beyond noise.
+            Two numbers are reported and the smaller one is the honest one. A single out-of-time cut on 2022–2023
+            gives 4.59× lift against a 0.75× shuffled-label placebo — a 6.09× ratio. But one cut is one draw, and
+            quoting it alone would be cherry-picking the best window. Rolling the protocol across three folds
+            (test years 2021, 2022, 2023) gives 4.91× mean lift against 1.16× mean placebo, and averaging the
+            per-fold ratios rather than taking the ratio of the means gives <strong style={{ color: C.text }}>4.27×</strong>.
+            That is the headline figure, and it is deliberately the more conservative of the two.
+          </P>
+
+          <P>
+            The placebo test is what makes either number meaningful. Take the same model, same features, same
+            walk-forward protocol — but randomly shuffle the acquisition labels. If the signal were an artifact of
+            the backtesting machinery, lift would persist under shuffling. It doesn't: placebo lift lands at or
+            below 1.0× in every fold. The ratio of real lift to placebo lift is the honest measure of how much
+            information the model carries beyond noise. Per-fold lift, placebo, PR-AUC and base rates are in{" "}
+            <code style={{ fontFamily: mono, fontSize: 13 }}>results/walk_forward.json</code>.
           </P>
         </section>
 
@@ -183,7 +192,7 @@ export default function Research() {
 
           <StatStrip stats={[
             { value: "203", label: "verified acquisitions" },
-            { value: "29,800", label: "panel rows" },
+            { value: "30,715", label: "panel rows" },
             { value: "131", label: "live companies" },
             { value: "15 yrs", label: "2010–2024" },
           ]} />
@@ -226,9 +235,9 @@ export default function Research() {
             that make companies attractive to acquirers.
           </P>
           <P>
-            DealFlow AI's panel includes <strong style={{ color: C.text }}>877 unique companies</strong> across
+            DealFlow AI's panel includes <strong style={{ color: C.text }}>967 unique entities</strong> across
             15 years, including all companies that were acquired and delisted during that period. The result is a
-            training set where the acquisition base rate (0.945% per company-year) reflects the true historical
+            training set where the acquisition base rate (1.11% per company-quarter) reflects the true historical
             rate, not a rate suppressed by survivorship. When the model scores a company highly, it has learned
             that pattern from a dataset that includes the full consequence of that pattern — including the companies
             that were taken private precisely because of it.
@@ -287,25 +296,25 @@ export default function Research() {
             Section 5 · For Corp Dev
           </div>
           <h2 style={{ fontFamily: disp, fontSize: 26, fontWeight: 700, letterSpacing: "-0.02em", marginBottom: 24 }}>
-            Why this matters for corporate development teams
+            What a corp dev team would actually do with this
           </h2>
           <P>
-            M&A intelligence has historically been available only to teams with access to a Bloomberg terminal
-            and an army of analysts running screens against stale data. The first call from a banker is rarely
-            the first time a target becomes attractive — it's the first time your competitor's banker noticed.
-            DealFlow AI moves that moment earlier.
+            The practical unit of value is analyst hours, not predictions. A corp dev team can only diligence a
+            handful of names per quarter, and the cost of the screening step is that most of the names reviewed
+            turn out to be nothing. Lift at the top decile is a direct measure of how much that cost falls.
           </P>
           <P>
-            The 5.59× signal-to-noise ratio means that if you review the top 10 companies in the DealFlow ranking
-            each quarter, you're looking at a pool that historically contains roughly <strong style={{ color: C.text }}>
-            5–6× more acquisitions than a random selection of 10 companies</strong> from the same universe.
-            That's not a prediction — it's a prioritization filter that dramatically compresses the diligence funnel.
+            At 4.91× mean lift, reviewing the top decile of the ranking historically surfaced roughly{" "}
+            <strong style={{ color: C.text }}>5× more eventual acquisitions than reviewing the same number of
+            companies at random</strong> from the same universe. Against a 1.11% base rate that is still a
+            low absolute hit rate — most top-decile names are not acquired. The claim is relative, not absolute:
+            the ranking reorders the queue, it does not tell you the answer.
           </P>
           <P>
-            This isn't a prediction. It's a prioritization engine. The question isn't
-            whether <strong style={{ color: C.text }}>{topPick}</strong> will be acquired — it's whether your team
-            should spend 2 hours on it before the banker calls. If the model says yes and your competitor's
-            analyst is already in their data room, you've already lost the timing advantage.
+            So this is a prioritization filter, not a forecast. The question isn't
+            whether <strong style={{ color: C.text }}>{topPick}</strong> will be acquired — it's whether it belongs
+            in the first ten names an analyst opens rather than the last ten. That is a narrower claim than
+            "predicts M&A," and it's the one the validation actually supports.
           </P>
         </section>
 

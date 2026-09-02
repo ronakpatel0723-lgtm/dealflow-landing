@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, Navigate } from "react-router-dom";
-import { useAuth } from "./AuthContext.jsx";
+import { Link } from "react-router-dom";
 
 const C = {
   bg:"#04060D", panel:"#0A0E1A", panelHi:"#0E1424",
@@ -23,9 +22,7 @@ function Chip({ label, value, ok }) {
 }
 
 export default function Monitor() {
-  const { isLoggedIn } = useAuth();
-  if (!isLoggedIn) return <Navigate to="/" replace />;
-  useEffect(() => { document.title = "Monitor — DealFlow AI [internal]"; }, []);
+  useEffect(() => { document.title = "Monitor — DealFlow AI"; }, []);
 
   const [meta, setMeta] = useState(null);
   const [companies, setCompanies] = useState([]);
@@ -48,19 +45,19 @@ export default function Monitor() {
       .then(data => { if (data) setChanges(data); })
       .catch(() => {});
 
-    fetch("/score_history.csv")
-      .then(r => r.ok ? r.text() : null)
-      .then(text => {
-        if (!text) return;
-        const rows = text.trim().split("\n").slice(1).map(r => r.split(","));
-        setHistory(rows.slice(-10).reverse());
-      })
-      .catch(() => {});
-
     fetch("/score_history.json")
       .then(r => r.ok ? r.json() : null)
       .then(data => {
         if (!data) return;
+
+        // Flatten to the 10 most recent (date, ticker, score) observations.
+        const flat = [];
+        Object.entries(data).forEach(([ticker, runs]) => {
+          runs.forEach(r => flat.push([String(r.date).slice(0, 10), ticker, String(r.score)]));
+        });
+        flat.sort((a, b) => (a[0] === b[0] ? a[1].localeCompare(b[1]) : a[0].localeCompare(b[0])));
+        setHistory(flat.slice(-10).reverse());
+
         // Compute median score per run date across all tickers
         const byDate = {};
         Object.values(data).forEach(runs => {

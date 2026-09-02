@@ -1,9 +1,6 @@
 import React, { useState, useMemo, useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Bookmark, BookmarkCheck, Download } from "lucide-react";
-import WaitlistModal from "./WaitlistModal.jsx";
-import LoginModal from "./LoginModal.jsx";
-import { useAuth } from "./AuthContext.jsx";
 
 /* ── DealFlow AI — Screener Page ────────────────────────────────────────────
    Same visual language as App.jsx: Bricolage Grotesque, IBM Plex Mono,
@@ -292,7 +289,6 @@ function RowReveal({ rowIndex, style, className, onClick, children }) {
 
 // ─── Main Screener ────────────────────────────────────────────────────────────
 export default function Screener() {
-  const { isLoggedIn, userTier, userEmail, logout } = useAuth();
   const [companies, setCompanies] = useState(SAMPLE_COMPANIES);
   const [loading,   setLoading]   = useState(true);
   const [query,    setQuery]    = useState("");
@@ -305,11 +301,7 @@ export default function Screener() {
   const [changes,   setChanges]     = useState(null);
   const [changesDismissed, setChangesDismissed] = useState(false);
   const [sort, setSort]             = useState({ col: "score", dir: "desc" });
-  const [exportUnlocked, setExportUnlocked] = useState(false);
-  const [exportModal, setExportModal] = useState(false);
-  const [loginOpen, setLoginOpen] = useState(false);
   const [compositeAlerts, setCompositeAlerts] = useState([]);
-  const FREE_TIER_LIMIT = 20;
 
   const toggleWatch = (ticker, e) => {
     if (e) e.stopPropagation();
@@ -443,10 +435,11 @@ export default function Screener() {
             </Link>
             <div style={{ display:"flex", gap:6 }}>
               {[
-                { label:"Dashboard", to:"/" },
-                { label:"Screener",  to:"/screener", active: viewMode === "all" },
-                { label:"Companies", to:"/screener" },
-                { label:"Reports",   to:"/screener" },
+                { label:"Overview",      to:"/" },
+                { label:"Screener",      to:"/screener", active: viewMode === "all" },
+                { label:"Interrogation", to:"/interrogate/DUOL" },
+                { label:"Methodology",   to:"/methodology" },
+                { label:"Research",      to:"/research" },
               ].map(({ label, to, active }) => (
                 <Link key={label} to={to} onClick={() => setViewMode("all")}
                   style={{ fontFamily:disp, fontSize:13, fontWeight: active ? 600 : 400,
@@ -483,17 +476,9 @@ export default function Screener() {
               </button>
             </div>
           </div>
-          {/* right: auth badge + export */}
+          {/* right: export */}
           <div style={{ display:"flex", alignItems:"center", gap:12 }}>
-            {isLoggedIn ? (
-              <div style={{ display:"flex", alignItems:"center", gap:8 }}>
-                <span style={{ fontFamily:mono, fontSize:10, color:C.blue, border:`1px solid rgba(91,141,239,0.35)`, borderRadius:4, padding:"2px 7px", textTransform:"uppercase" }}>{userTier}</span>
-                <button onClick={logout} style={{ fontFamily:mono, fontSize:11, color:C.muted, background:"none", border:"none", cursor:"pointer" }}>Sign Out</button>
-              </div>
-            ) : (
-              <button onClick={() => setLoginOpen(true)} style={{ fontFamily:disp, fontSize:13, color:C.sub, background:"none", border:"none", cursor:"pointer" }}>Sign In</button>
-            )}
-            <button onClick={() => isLoggedIn && userTier !== "free" ? (exportUnlocked ? downloadCSV() : setExportModal(true)) : setLoginOpen(true)}
+            <button onClick={downloadCSV}
               style={{ display:"flex", alignItems:"center", gap:7, fontFamily:disp, fontSize:13, fontWeight:600,
                 background:"none", color:C.text, border:`1px solid ${C.lineHi}`, borderRadius:8,
                 padding:"7px 14px", cursor:"pointer" }}>
@@ -532,9 +517,9 @@ export default function Screener() {
           <div style={{ marginBottom:24 }}>
             <h1 style={{ fontFamily:disp, fontSize:28, fontWeight:700, letterSpacing:"-0.02em" }}>Acquisition Screener</h1>
             <p style={{ fontSize:14, color:C.sub, marginTop:6, display:"flex", alignItems:"center", gap:8 }}>
-              <span style={{ fontFamily:mono, color:C.green, fontSize:12 }}>● LIVE</span>
-              Public SaaS universe ranked by acquisition attractiveness ·
-              <span style={{ fontFamily:mono, color:C.amber }}> 5.59× signal/noise, walk-forward 2020–2024</span>
+              <span style={{ fontFamily:mono, color:C.amber, fontSize:12 }}>● PRECOMPUTED</span>
+              Public software universe ranked by acquisition attractiveness ·
+              <span style={{ fontFamily:mono, color:C.amber }}> 4.27× signal/noise, rolling walk-forward 2021–2023</span>
             </p>
           </div>
 
@@ -641,16 +626,14 @@ export default function Screener() {
               const col = scoreColor(c.score);
               const tc  = tierColor(c.tier);
               const isSelected = selected === c.rank;
-              const isBlurred = !isLoggedIn && i >= FREE_TIER_LIMIT;
               return (
                 <RowReveal key={c.ticker} rowIndex={i}
                   className={`df-row df-table-grid${isSelected ? " df-sel" : ""}`}
-                  onClick={() => isBlurred ? setLoginOpen(true) : setSelected(isSelected ? null : c.rank)}
+                  onClick={() => setSelected(isSelected ? null : c.rank)}
                   style={{ alignItems:"center", padding:"13px 20px",
                     borderBottom: i < filtered.length - 1 ? `1px solid ${C.line}` : "none",
                     background: i % 2 ? "rgba(255,255,255,0.010)" : "transparent",
-                    borderLeft: isSelected ? `2px solid ${C.blue}` : watchlist.includes(c.ticker) ? `2px solid ${C.blue}50` : "2px solid transparent",
-                    ...(isBlurred ? { filter:"blur(4px)", userSelect:"none", pointerEvents:"none" } : {}) }}>
+                    borderLeft: isSelected ? `2px solid ${C.blue}` : watchlist.includes(c.ticker) ? `2px solid ${C.blue}50` : "2px solid transparent" }}>
                   <span style={{ fontFamily:mono, fontSize:11.5, color:C.muted }}>{String(c.rank).padStart(2,"0")}</span>
                   <div style={{ paddingRight:12 }}>
                     <span style={{ fontSize:14, fontWeight:600 }}>{c.name} </span>
@@ -706,19 +689,11 @@ export default function Screener() {
             })}
           </div>
 
-          {/* Upgrade overlay for free-tier blur */}
-          {!isLoggedIn && filtered.length > FREE_TIER_LIMIT && (
-            <div style={{ position:"relative", zIndex:5, textAlign:"center", padding:"24px 32px",
-              background:`linear-gradient(to bottom, transparent, ${C.bg} 60%)`,
-              marginTop:-80 }}>
-              <p style={{ fontFamily:disp, fontSize:14, color:C.sub, marginBottom:12 }}>
-                Sign in to see all {filtered.length} companies
+          {filtered.length > 0 && (
+            <div style={{ textAlign:"center", padding:"18px 32px" }}>
+              <p style={{ fontFamily:mono, fontSize:11, color:C.muted }}>
+                Showing all {filtered.length} companies · scores precomputed from the validated run
               </p>
-              <button onClick={() => setLoginOpen(true)}
-                style={{ fontFamily:disp, fontSize:14, fontWeight:600, color:"#fff",
-                  background:C.blue, border:"none", borderRadius:8, padding:"10px 24px", cursor:"pointer" }}>
-                Upgrade to see all 131 companies →
-              </button>
             </div>
           )}
         </div>
@@ -727,13 +702,6 @@ export default function Screener() {
       {/* ── DETAIL PANEL ─────────────────────────────────────────────────── */}
       {selC && <DetailPanel company={selC} onClose={() => setSelected(null)} watchlist={watchlist} onWatch={toggleWatch} />}
 
-      {/* Export lead-capture modal */}
-      <WaitlistModal
-        open={exportModal}
-        onClose={() => { setExportModal(false); setExportUnlocked(true); }}
-        tier="Export Access"
-      />
-      <LoginModal open={loginOpen} onClose={() => setLoginOpen(false)} />
     </div>
   );
 }

@@ -1,0 +1,37 @@
+{
+  "deals": [
+    {
+      "ticker": "DUOL",
+      "company": "Duolingo, Inc.",
+      "sector": "SaaS",
+      "moic": 3.5198750781249974,
+      "irr": 0.28619095192816624,
+      "final_moic": 2.5275872326500015,
+      "final_irr": 0.2037636660294455,
+      "challenges": 2,
+      "node_count": 48
+    },
+    {
+      "ticker": "CRWD",
+      "company": "CrowdStrike Holdings",
+      "sector": "Cybersecurity",
+      "moic": 4.158012558769231,
+      "irr": 0.3297719241989814,
+      "final_moic": 2.6828937961344703,
+      "final_irr": 0.21820589355894637,
+      "challenges": 2,
+      "node_count": 48
+    },
+    {
+      "ticker": "BILL",
+      "company": "BILL Holdings",
+      "sector": "Fintech",
+      "moic": 3.7132748076923066,
+      "irr": 0.30002414445464476,
+      "final_moic": 2.5881583712341354,
+      "final_irr": 0.2094785470167846,
+      "challenges": 2,
+      "node_count": 48
+    }
+  ]
+}
